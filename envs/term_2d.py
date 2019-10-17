@@ -51,7 +51,7 @@ class TrajectoryEnvTerm2D(tenv.TrajectoryEnv2D):
             self.t += self.dt
         done = self.terminal()
         self.obs = self.get_obs((xy, sin_zeta, cos_zeta, uv, r), data[:-1])
-        self.set_prev_dists((xy, sin_zeta, cos_zeta, uv, r), data[:-1])
+        self.set_prev_dists()
         info.update({"term_rew" : term_rew})
         return self.obs, reward, done, info
     

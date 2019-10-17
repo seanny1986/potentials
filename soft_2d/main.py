@@ -6,7 +6,7 @@ from common.multiprocessing_env import SubprocVecEnv
 import os
 import pandas as pd
 
-def run(num_envs=16, hidden_dim=256, batch_size=1024, iterations=1000, log_interval=10, runs=5):
+def run(num_envs=32, hidden_dim=256, batch_size=1024, iterations=2500, log_interval=10, runs=1):
     envs = [tl.make_soft_2d() for i in range(num_envs)]
     envs = SubprocVecEnv(envs)
     t_env = tenv.TrajectoryEnv2D()
@@ -15,8 +15,8 @@ def run(num_envs=16, hidden_dim=256, batch_size=1024, iterations=1000, log_inter
     path = os.getcwd()+"/soft_2d/"
     for i in range(runs):
         agent = ag.Agent(state_dim, hidden_dim, action_dim)
-        opt = torch.optim.Adam(agent.parameters(), lr=1e-4)
-        ep, rew, agent = tl.train_mp(envs, t_env, agent, opt, batch_size, iterations, log_interval, render=False, fname="gaussian_"+str(2))
+        opt = torch.optim.Adam(agent.parameters(), lr=1e-5)
+        ep, rew, agent = tl.train_mp(envs, t_env, agent, opt, batch_size, iterations, log_interval, render=False, fname=path+"gaussian_"+str(2))
         if i == 0:
             csv_input = pd.DataFrame()
             csv_input["timesteps"] = ep

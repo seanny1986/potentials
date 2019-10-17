@@ -21,9 +21,11 @@ class SimplePolicy(nn.Module):
         
         self.mu = nn.Sequential(
                                     nn.Linear(input_dim, hidden_dim),
-                                    nn.Tanh(),
+                                    nn.ReLU(),
                                     nn.Linear(hidden_dim, hidden_dim),
-                                    nn.Tanh(),
+                                    nn.ReLU(),
+                                    nn.Linear(hidden_dim, hidden_dim),
+                                    nn.ReLU(),
                                     nn.Linear(hidden_dim, output_dim)).to(device)
 
         self.logvar = nn.Sequential(
@@ -39,7 +41,7 @@ class SimplePolicy(nn.Module):
         return mu, logvar.exp().sqrt()
 
 class SimpleREINFORCE(nn.Module):
-    def __init__(self, input_dim, hidden_dim, output_dim, dim=2):
+    def __init__(self, input_dim, hidden_dim, output_dim, dim=2, lookahead=1):
         super(SimpleREINFORCE, self).__init__()
         self.beta = SimplePolicy(input_dim, hidden_dim, output_dim).to(device)
         self.critic = nn.Sequential(
@@ -49,7 +51,7 @@ class SimpleREINFORCE(nn.Module):
                                     nn.Tanh(),
                                     nn.Linear(hidden_dim, 1)).to(device)
         self.pos_val_fn = nn.Sequential(
-                                    nn.Linear(int(3*dim), hidden_dim),
+                                    nn.Linear(int(lookahead*dim), hidden_dim),
                                     nn.Tanh(),
                                     nn.Linear(hidden_dim, hidden_dim),
                                     nn.Tanh(),
@@ -100,14 +102,14 @@ class SimpleREINFORCE(nn.Module):
                     "values" : trajectory["values"],
                     "next_states" : trajectory["next_states"]}
     
-        val_fn_preds = [self.pos_val_fn(state) for state in trajectory["inertial_position"]]
+        val_fn_preds = [self.pos_val_fn(state) for state in trajectory["goal_position"]]
         val_fn_traj = {
-                    "states" : trajectory["inertial_position"],
+                    "states" : trajectory["goal_position"],
                     "rewards" : trajectory["rewards"],
                     "masks" : trajectory["masks"],
                     "values" : val_fn_preds,
-                    "next_states" : trajectory["next_inertial_pos"]}
-
+                    "next_states" : trajectory["next_goal_position"]}
+                    
         for i in range(iters):
             deltas, _ = self.get_phi(traj, self.critic)
             val_fn, _ = self.get_phi(val_fn_traj, self.pos_val_fn)
@@ -125,8 +127,8 @@ class SimpleREINFORCE(nn.Module):
 
 
 class Agent(SimpleREINFORCE):
-    def __init__(self, input_dim, hidden_dim, output_dim, dim=2):
-        super(Agent, self).__init__(input_dim, hidden_dim, output_dim, dim)
+    def __init__(self, input_dim, hidden_dim, output_dim, dim=2, lookahead=1):
+        super(Agent, self).__init__(input_dim, hidden_dim, output_dim, dim, lookahead)
         self.pi = SimplePolicy(input_dim, hidden_dim, output_dim).to(device)              
         hard_update(self.pi, self.beta)
 
@@ -142,7 +144,7 @@ class Agent(SimpleREINFORCE):
         loss = -log_probs*deltas.detach()
         return loss.mean()
 
-    def trpo_update(self, trajectory, policy_loss_fn, pi, beta, critic, fvp, max_kl=1e-3):
+    def trpo_update(self, trajectory, policy_loss_fn, pi, beta, critic, fvp, max_kl=1e-2):
         states = torch.stack(trajectory["states"])
         actions = torch.stack(trajectory["actions"])
         policy_loss = policy_loss_fn(trajectory, pi, critic)
@@ -167,28 +169,24 @@ class Agent(SimpleREINFORCE):
                     "masks" : trajectory["masks"],
                     "values" : trajectory["values"],
                     "next_states" : trajectory["next_states"]}
-
-        #print(next(iter(trajectory["inertial_position"])).size())
-        #print(next(iter(trajectory["goal_position"])).size())
-        #print(next(iter(trajectory["next_goal_position"])).size())
-        val_fn_state = [torch.cat([p, g], dim=-1) for p, g in zip(trajectory["inertial_position"], trajectory["goal_position"])]
-        next_val_fn_state = [torch.cat([p, g], dim=-1) for p, g in zip(trajectory["next_inertial_position"], trajectory["next_goal_position"])]
-        val_fn_preds = [self.pos_val_fn(state) for state in val_fn_state]
+    
+        val_fn_preds = [self.pos_val_fn(state) for state in trajectory["goal_position"]]
         val_fn_traj = {
-                    "states" : val_fn_state,
+                    "states" : trajectory["goal_position"],
                     "rewards" : trajectory["rewards"],
                     "masks" : trajectory["masks"],
                     "values" : val_fn_preds,
-                    "next_states" : next_val_fn_state}
+                    "next_states" : trajectory["next_goal_position"]}
 
-        for _ in range(iters):
+        for i in range(iters):
             deltas, _ = self.get_phi(traj, self.critic)
             val_fn, _ = self.get_phi(val_fn_traj, self.pos_val_fn)
             opt.zero_grad()
             crit_loss = deltas**2
             val_fn_loss = val_fn**2
             loss = crit_loss.mean()+val_fn_loss.mean()
-            loss.backward(retain_graph=True)
+            if i < iters-1: loss.backward(retain_graph=True)
+            else: loss.backward()
             opt.step()
         
         self.trpo_update(traj, self.get_gaussian_policy_loss, self.pi, self.beta, self.critic, gaussian_fvp)

@@ -25,11 +25,8 @@ def worker(remote, parent_remote, env_fn_wrapper):
             break
         elif cmd == 'get_spaces':
             remote.send((env.observation_space, env.action_space))
-        elif cmd == 'get_inertial_pos':
-            pos = env.get_inertial_pos()
-            remote.send(pos)
         elif cmd == 'get_goal_positions':
-            pos = env.get_goal_positions(data)
+            pos = env.get_goal_positions()
             remote.send(pos)
         else:
             raise NotImplementedError
@@ -143,14 +140,9 @@ class SubprocVecEnv(VecEnv):
             remote.send(('reset_task', None))
         return np.stack([remote.recv() for remote in self.remotes])
     
-    def get_inertial_pos(self):
+    def get_goal_positions(self):
         for remote in self.remotes:
-            remote.send(('get_inertial_pos', None))
-        return np.stack([remote.recv() for remote in self.remotes])
-    
-    def get_goal_positions(self, n):
-        for remote in self.remotes:
-            remote.send(('get_goal_positions', n))
+            remote.send(('get_goal_positions', None))
         return np.stack([remote.recv() for remote in self.remotes])
 
     def close(self):

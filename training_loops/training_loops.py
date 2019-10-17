@@ -3,6 +3,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 
+import envs.waypoint_2d as wp_2d
+import envs.waypoint_3d as wp_3d
+import envs.nh_waypoint_3d as nh_wp_3d
+
 import envs.traj_2d as traj_2d
 import envs.soft_2d as soft_2d
 import envs.term_2d as term_2d
@@ -14,6 +18,24 @@ import gym
 import gym_aero
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+def make_waypoint_2d():
+    def _thunk():
+        env = wp_2d.WaypointEnv2D()
+        return env
+    return _thunk
+
+def make_waypoint_3d():
+    def _thunk():
+        env = wp_3d.WaypointEnv3D()
+        return env
+    return _thunk
+
+def make_nh_waypoint_3d():
+    def _thunk():
+        env = nh_wp_3d.WaypointEnv3D()
+        return env
+    return _thunk
 
 def make_traj_2d():
     def _thunk():
@@ -78,7 +100,7 @@ def test(env, agent, render=False):
     #if render: env.close()
     return reward_sum
 
-def train_mp(envs, t_env, agent, opt, iterations=1000, batch_size=4096, log_interval=10, t_runs=30, render=False, fname=None):
+def train_mp(envs, t_env, agent, opt, batch_size, iterations, log_interval, t_runs=30, render=False, fname=None):
     rews = []
     eps = []
     test_rew_best = np.mean([test(t_env, agent, render=render) for _ in range(t_runs)])
@@ -90,26 +112,22 @@ def train_mp(envs, t_env, agent, opt, iterations=1000, batch_size=4096, log_inte
     print("Reward: ", test_rew_best)
     print()
     state = torch.Tensor(envs.reset()).to(device)
-    i_pos = torch.Tensor(envs.get_inertial_pos()).to(device)
-    g_pos = torch.Tensor(envs.get_goal_positions(2)).to(device)
     for ep in range(1, iterations+1):
         s_, a_, ns_, r_, v_, lp_, masks = [], [], [], [], [], [], []
-        inertial_pos, next_inertial_pos, goal_pos, next_goal_pos = [], [], [], []
+        goal_pos, next_goal_pos = [], []
         t = 0
         while t < batch_size:
             actions, values, log_probs, entropies = agent.select_action(state)
+            g_pos = torch.Tensor(envs.get_goal_positions()).to(device)
             next_state, reward, done, info = envs.step(actions.cpu().data.numpy())
             dones = [not d for d in done]
             reward = torch.Tensor(reward).unsqueeze(1).to(device)
             next_state = torch.Tensor(next_state).to(device)
-            next_i_pos = torch.Tensor(envs.get_inertial_pos()).to(device)
-            next_g_pos = torch.Tensor(envs.get_goal_positions(2)).to(device)
+            next_g_pos = torch.Tensor(envs.get_goal_positions()).to(device)
 
             reward += entropies.sum(dim=-1, keepdim=True)
 
             s_.append(state)
-            inertial_pos.append(i_pos)
-            next_inertial_pos.append(next_i_pos)
             goal_pos.append(g_pos)
             next_goal_pos.append(next_g_pos)
             a_.append(actions)
@@ -120,13 +138,9 @@ def train_mp(envs, t_env, agent, opt, iterations=1000, batch_size=4096, log_inte
             masks.append(torch.Tensor(dones).to(device))
             
             state = next_state
-            i_pos = next_i_pos
-            g_pos = next_g_pos
             t += 1
         trajectory = {
                     "states" : s_,
-                    "inertial_position": inertial_pos,
-                    "next_inertial_position": next_inertial_pos,
                     "goal_position": goal_pos,
                     "next_goal_position": next_goal_pos,
                     "actions" : a_,
