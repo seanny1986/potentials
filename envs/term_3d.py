@@ -9,15 +9,17 @@ import numpy as np
 class TrajectoryEnvTerm(trajectory_env.TrajectoryEnv):
     def __init__(self):
         super(TrajectoryEnvTerm, self).__init__()
-        self.num_fut_wp = 3
+        self.num_fut_wp = 2
         state_size = (1+self.num_fut_wp)*15+5
         self.observation_space = gym.spaces.Box(-np.inf, np.inf, shape=(state_size,))
+        self.temperature = 5
+        self.amplitude = 100
 
     def term_reward(self, state):
-        xy, sin_zeta, cos_zeta, uv, r = state
+        xyz, sin_zeta, cos_zeta, uvw, pqr = state
         u = self.curr_dist
         if self.goal_counter <= self.traj_len-2:
-            v = sum([(x-g)**2 for x, g in zip(xy, self.goal_list_xy[self.goal_counter+1])])**0.5
+            v = sum([(x-g)**2 for x, g in zip(xyz, self.goal_list_xyz[self.goal_counter+1])])**0.5
         else:
             v = 0
         dist = exp(-self.temperature*(u**2+u*v))

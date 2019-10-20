@@ -77,7 +77,7 @@ class TrajectoryEnv2D(gym.Env):
         ctrl_rew += ctrl_dev_rew+vel_dev_rew+ang_dev_rew+dist_dev_rew+sin_att_dev_rew+cos_att_dev_rew
 
         # time reward to incentivize using the full time period
-        time_rew = 0
+        time_rew = 1
 
         # calculate total reward
         total_reward = dist_rew+att_rew+vel_rew+ang_rew+ctrl_rew+time_rew
@@ -171,7 +171,7 @@ class TrajectoryEnv2D(gym.Env):
                 self.goal_counter += 1
                 self.set_curr_dists((xy, sin_zeta, cos_zeta, uv, r), data)
                 self.t = 0
-            else: self.t += 1
+            else: self.t += self.dt
         else: self.t += self.dt
         done = self.terminal()
         self.obs = self.get_obs((xy, sin_zeta, cos_zeta, uv, r), data)
@@ -182,13 +182,13 @@ class TrajectoryEnv2D(gym.Env):
         self.t = 0
         self.goal_counter = 0
         self.goal_list_xy = []
-        angle = np.random.RandomState().uniform(low=-pi/2, high=pi/2)
-        rad = np.random.RandomState().uniform(0, 1.5)
+        angle = np.random.RandomState().uniform(low=-pi/3, high=pi/3)
+        rad = np.random.RandomState().uniform(1, 1.5)
         xy_ = np.array([rad*cos(angle), rad*sin(angle)])
         self.goal_list_xy.append(xy_.copy())
         for _ in range(self.traj_len-1):
-            angle = np.random.RandomState().uniform(low=-pi/2, high=pi/2)
-            rad = np.random.RandomState().uniform(0, 1.5)
+            angle = np.random.RandomState().uniform(low=-pi/3, high=pi/3)
+            rad = np.random.RandomState().uniform(1, 1.5)
             temp = np.array([rad*cos(angle), rad*sin(angle)])
             xy_ += temp
             self.goal_list_xy.append(xy_.copy())
@@ -202,15 +202,14 @@ class TrajectoryEnv2D(gym.Env):
             self.goal_list_r.append(0.)
         
         xy, zeta, uv, r = self.player.reset()
-        angle = np.random.RandomState().uniform(low=-pi/2, high=pi/2)
-        self.player.angle = degrees(angle)
-        sin_zeta, cos_zeta = sin(angle), cos(angle)
+        sin_zeta, cos_zeta = sin(zeta), cos(zeta)
         self.set_curr_dists((xy, sin_zeta, cos_zeta, uv, r), np.zeros((2,)))
         self.set_prev_dists()
         self.obs = self.get_obs((xy, sin_zeta, cos_zeta, uv, r), np.zeros((2,)))
         return self.obs
     
     def render(self, close=False):
+        return
         if not self.init:
             pygame.init()
             self.screen = pygame.display.set_mode((self.window_dim[0], self.window_dim[1]))

@@ -19,7 +19,6 @@ class TerminationPolicy(nn.Module):
         self.input_dim = input_dim
         self.hidden_dim = hidden_dim
         self.output_dim = output_dim
-        
         self.termination_score = nn.Sequential(
                                     nn.Linear(input_dim, hidden_dim),
                                     nn.Tanh(),
@@ -32,8 +31,8 @@ class TerminationPolicy(nn.Module):
         return termination_score
 
 class TermREINFORCE(agents.SimpleREINFORCE):
-    def __init__(self, input_dim, hidden_dim, output_dim, dim):
-        super(TermREINFORCE, self).__init__(input_dim, hidden_dim, output_dim, dim)
+    def __init__(self, input_dim, hidden_dim, output_dim, dim, lookahead):
+        super(TermREINFORCE, self).__init__(input_dim, hidden_dim, output_dim, dim, lookahead)
         self.term_beta = TerminationPolicy(input_dim, hidden_dim, 2).to(device)
         self.term_critic = nn.Sequential(
                                     nn.Linear(input_dim, hidden_dim),
@@ -79,13 +78,13 @@ class TermREINFORCE(agents.SimpleREINFORCE):
                     "values" : trajectory["term_val"],
                     "next_states" : trajectory["next_states"]}
 
-        val_fn_preds = [self.pos_val_fn(state) for state in trajectory["inertial_position"]]
+        val_fn_preds = [self.pos_val_fn(state) for state in trajectory["goal_position"]]
         val_fn_traj = {
-                    "states" : trajectory["inertial_position"],
+                    "states" : trajectory["goal_position"],
                     "rewards" : trajectory["rewards"],
                     "masks" : trajectory["masks"],
                     "values" : val_fn_preds,
-                    "next_states" : trajectory["next_inertial_pos"]}
+                    "next_states" : trajectory["next_goal_position"]}
 
         for i in range(iters):
             deltas, _ = self.get_phi(traj, self.critic)
@@ -108,8 +107,8 @@ class TermREINFORCE(agents.SimpleREINFORCE):
 
 
 class Agent(TermREINFORCE):
-    def __init__(self, input_dim, hidden_dim, output_dim, dim):
-        super(Agent, self).__init__(input_dim, hidden_dim, output_dim, dim)
+    def __init__(self, input_dim, hidden_dim, output_dim, dim=2, lookahead=1):
+        super(Agent, self).__init__(input_dim, hidden_dim, output_dim, dim, lookahead)
         self.pi = agents.SimplePolicy(input_dim, hidden_dim, output_dim).to(device)
         self.term_pi = TerminationPolicy(input_dim, hidden_dim, 2).to(device)        
         hard_update(self.pi, self.beta)
@@ -159,28 +158,26 @@ class Agent(TermREINFORCE):
         traj = {
                     "states" : trajectory["states"],
                     "actions" : trajectory["actions"],
-                    "log_probs" : trajectory["log_probs"],
                     "rewards" : trajectory["rewards"],
                     "masks" : trajectory["masks"],
                     "values" : trajectory["values"],
                     "next_states" : trajectory["next_states"]}
-
+        
         term_traj = {
-                    "states" : trajectory["term_states"],
+                    "states" : trajectory["states"],
                     "actions" : trajectory["terminations"],
-                    "log_probs" : trajectory["term_log_probs"],
                     "rewards" : trajectory["term_rew"],
                     "masks" : trajectory["masks"],
                     "values" : trajectory["term_val"],
                     "next_states" : trajectory["next_states"]}
-        
-        val_fn_preds = [self.pos_val_fn(state) for state in trajectory["inertial_position"]]
+
+        val_fn_preds = [self.pos_val_fn(state) for state in trajectory["goal_position"]]
         val_fn_traj = {
-                    "states" : trajectory["inertial_position"],
+                    "states" : trajectory["goal_position"],
                     "rewards" : trajectory["rewards"],
                     "masks" : trajectory["masks"],
                     "values" : val_fn_preds,
-                    "next_states" : trajectory["next_inertial_pos"]}
+                    "next_states" : trajectory["next_goal_position"]}
 
         for _ in range(iters):
             deltas, _ = self.get_phi(traj, self.critic)

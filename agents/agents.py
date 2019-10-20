@@ -21,11 +21,9 @@ class SimplePolicy(nn.Module):
         
         self.mu = nn.Sequential(
                                     nn.Linear(input_dim, hidden_dim),
-                                    nn.ReLU(),
+                                    nn.Tanh(),
                                     nn.Linear(hidden_dim, hidden_dim),
-                                    nn.ReLU(),
-                                    nn.Linear(hidden_dim, hidden_dim),
-                                    nn.ReLU(),
+                                    nn.Tanh(),
                                     nn.Linear(hidden_dim, output_dim)).to(device)
 
         self.logvar = nn.Sequential(

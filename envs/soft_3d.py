@@ -12,6 +12,7 @@ class TrajectoryEnv3D(trajectory_env.TrajectoryEnv):
         self.num_fut_wp = 3
         state_size = (1+self.num_fut_wp)*15+5
         self.observation_space = gym.spaces.Box(-np.inf, np.inf, shape=(state_size,))
+        self.temperature = 10
 
     def switch_goal(self, state):
         xyz, sin_zeta, cos_zeta, uvw, pqr = state
@@ -26,27 +27,26 @@ class TrajectoryEnv3D(trajectory_env.TrajectoryEnv):
         else: return False
 
     def step(self, data):
-        action = data[:-1]
-        term = data[-1]
+        action = data
         commanded_rpm = self.translate_action(action)
-        xyz, zeta, xyz_dot, pqr = super(trajectory_env.TrajectoryEnv, self).step(commanded_rpm)        
+        xyz, zeta, uvw, pqr = super(trajectory_env.TrajectoryEnv, self).step(commanded_rpm)
         sin_zeta = [sin(z) for z in zeta]
         cos_zeta = [cos(z) for z in zeta]
         current_rpm = self.get_rpm()
         normalized_rpm = [rpm/self.max_rpm for rpm in current_rpm]
-        self.set_curr_dists((xyz, sin_zeta, cos_zeta, xyz_dot, pqr), commanded_rpm, normalized_rpm)
-        reward, info = self.reward((xyz, sin_zeta, cos_zeta, xyz_dot, pqr), commanded_rpm, normalized_rpm)
-        term = self.switch_goal((xyz, sin_zeta, cos_zeta, xyz_dot, pqr))
+        self.set_curr_dists((xyz, sin_zeta, cos_zeta, uvw, pqr), commanded_rpm, normalized_rpm)
+        reward, info = self.reward((xyz, sin_zeta, cos_zeta, uvw, pqr), commanded_rpm, normalized_rpm)
+        term = self.switch_goal((xyz, sin_zeta, cos_zeta, uvw, pqr))
         if term:
-            if self.goal_counter <= self.traj_len-1:
+            if self.goal_counter < self.traj_len-1:
                 self.goal_counter += 1
-                self.set_curr_dists((xyz, sin_zeta, cos_zeta, xyz_dot, pqr), commanded_rpm, normalized_rpm)
+                self.set_current_dists((xyz, sin_zeta, cos_zeta, uvw, pqr), commanded_rpm, normalized_rpm)
                 self.t = 0
             else: self.t += 1
         else: self.t += 1
         done = self.terminal()
-        obs = self.get_obs((xyz, sin_zeta, cos_zeta, xyz_dot, pqr), commanded_rpm, normalized_rpm)
-        self.set_prev_dists((xyz, sin_zeta, cos_zeta, xyz_dot, pqr), commanded_rpm, normalized_rpm)
+        obs = self.get_obs((xyz, sin_zeta, cos_zeta, uvw, pqr), commanded_rpm, normalized_rpm)
+        self.set_prev_dists((xyz, sin_zeta, cos_zeta, uvw, pqr), commanded_rpm, normalized_rpm)
         return obs, reward, done, info
     
     def reset(self):

@@ -17,68 +17,97 @@ import envs.term_3d as term_3d
 import gym
 import gym_aero
 
+import config as cfg
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def make_waypoint_2d():
     def _thunk():
         env = wp_2d.WaypointEnv2D()
+        env.num_fut_wp = int(cfg.waypoints-1)
+        state_size = 10+7*(env.num_fut_wp+1)
+        env.observation_space = gym.spaces.Box(-1, 1, shape=(state_size,))
         return env
     return _thunk
 
 def make_waypoint_3d():
     def _thunk():
         env = wp_3d.WaypointEnv3D()
+        env.num_fut_wp = int(cfg.waypoints-1)
+        state_size = 5+15*(env.num_fut_wp+1)
+        env.observation_space = gym.spaces.Box(-1, 1, shape=(state_size,))
         return env
     return _thunk
 
 def make_nh_waypoint_3d():
     def _thunk():
         env = nh_wp_3d.WaypointEnv3D()
+        env.num_fut_wp = int(cfg.waypoints-1)
+        state_size = 5+15*(env.num_fut_wp+1)
+        env.observation_space = gym.spaces.Box(-1, 1, shape=(state_size,))
         return env
     return _thunk
 
 def make_traj_2d():
     def _thunk():
         env = traj_2d.TrajectoryEnv2D()
+        env.num_fut_wp = int(cfg.waypoints-1)
+        state_size = 10+7*(env.num_fut_wp+1)
+        env.observation_space = gym.spaces.Box(-1, 1, shape=(state_size,))
         return env
     return _thunk
 
 def make_soft_2d():
     def _thunk():
         env = soft_2d.TrajectoryEnv2D()
+        env.num_fut_wp = int(cfg.waypoints-1)
+        state_size = 10+7*(env.num_fut_wp+1)
+        env.observation_space = gym.spaces.Box(-1, 1, shape=(state_size,))
         return env
     return _thunk
 
 def make_term_2d():
     def _thunk():
         env = term_2d.TrajectoryEnvTerm2D()
+        env.num_fut_wp = int(cfg.waypoints-1)
+        state_size = 10+7*(env.num_fut_wp+1)
+        env.observation_space = gym.spaces.Box(-1, 1, shape=(state_size,))
         return env
     return _thunk
 
 def make_traj_3d():
     def _thunk():
         env = gym.make("Trajectory-v0")
+        env.num_fut_wp = int(cfg.waypoints-1)
+        state_size = 5+15*(env.num_fut_wp+1)
+        env.observation_space = gym.spaces.Box(-1, 1, shape=(state_size,))
         return env
     return _thunk
 
 def make_soft_3d():
     def _thunk():
         env = soft_3d.TrajectoryEnv3D()
+        env.num_fut_wp = int(cfg.waypoints-1)
+        state_size = 5+15*(env.num_fut_wp+1)
+        env.observation_space = gym.spaces.Box(-1, 1, shape=(state_size,))
         return env
     return _thunk
 
 def make_term_3d():
     def _thunk():
         env = term_3d.TrajectoryEnvTerm()
+        env.num_fut_wp = int(cfg.waypoints-1)
+        state_size = 5+15*(env.num_fut_wp+1)
+        env.observation_space = gym.spaces.Box(-1, 1, shape=(state_size,))
         return env
     return _thunk
 
 def plot(episodes, rewards, fname=None):
     plt.figure(figsize=(10,10))
     plt.subplot(111)
-    plt.title("Timesteps %s. Cumulative Reward: %s" % (episodes[-1], rewards[-1]))
+    plt.title("Iterations: %s. Cumulative Reward: %s" % (episodes[-1], rewards[-1]))
     plt.plot(episodes, rewards)
-    plt.xlabel("Time Steps")
+    plt.xlabel("Iterations")
     plt.ylabel("Cumulative Reward")
     if fname is None: plt.show()
     else: plt.savefig(fname+".pdf")
@@ -161,11 +190,11 @@ def train_mp(envs, t_env, agent, opt, batch_size, iterations, log_interval, t_ru
             print("Reward: ", test_rew)
             if (test_rew > test_rew_best) and (fname is not None): 
                 print("Saving best parameters.")
-                torch.save(agent.state_dict(), fname+"_term.pth.tar")
+                torch.save(agent.state_dict(), fname+".pth.tar")
                 test_rew_best = test_rew
             print()
-    if fname is not None: torch.save(agent.state_dict(), fname+"_term_final.pth.tar")
-    plot(eps, rews, fname=fname)
+    if fname is not None: torch.save(agent.state_dict(), fname+"final.pth.tar")
+    #plot(eps, rews, fname=fname)
     return eps, rews, agent
 
 def test_term(env, agent, render=False):
@@ -187,7 +216,7 @@ def test_term(env, agent, render=False):
         state = next_state
     return reward_sum, term_reward_sum
 
-def train_term_mp(envs, t_env, agent, opt, iterations=1000, batch_size=4096, log_interval=10, t_runs=100, render=False, fname=None):
+def train_term_mp(envs, t_env, agent, opt, batch_size, iterations, log_interval, t_runs=30, render=False, fname=None):
     rews = []
     term_rews = []
     eps = []
@@ -204,15 +233,14 @@ def train_term_mp(envs, t_env, agent, opt, iterations=1000, batch_size=4096, log
     print("Term Reward: ", test_rew_term_best)
     print()
     state = torch.Tensor(envs.reset()).to(device)
-    i_pos = torch.Tensor(envs.get_inertial_pos()).to(device)
-    g_pos = torch.Tensor(envs.get_goal_positions(2)).to(device)
     for ep in range(1, iterations+1):
         s_, a_, ns_, r_, v_, lp_,  masks = [], [], [], [], [], [], []
-        inertial_pos, next_inertial_pos, goal_pos, next_goal_pos = [], [], [], []
+        goal_pos, next_goal_pos = [], []
         t_s_, t_a_, t_r_, t_v_, t_lp_ = [], [], [], [], []
         t = 0
         while t < batch_size:
             actions, values, log_probs, entropies = agent.select_action(state)
+            g_pos = torch.Tensor(envs.get_goal_positions()).to(device)
             next_state, reward, done, info = envs.step(actions.cpu().data.numpy())
             
             term_rew = [i["term_rew"] for i in info]
@@ -221,15 +249,12 @@ def train_term_mp(envs, t_env, agent, opt, iterations=1000, batch_size=4096, log
             term_rew = torch.Tensor(term_rew).unsqueeze(1).to(device)
             reward = torch.Tensor(reward).unsqueeze(1).to(device)
             next_state = torch.Tensor(next_state).to(device)
-            next_i_pos = torch.Tensor(envs.get_inertial_pos()).to(device)
-            next_g_pos = torch.Tensor(envs.get_goal_positions(2)).to(device)
+            next_g_pos = torch.Tensor(envs.get_goal_positions()).to(device)
 
             reward += entropies[0].sum(dim=-1, keepdim=True)
             term_rew += entropies[1].unsqueeze(1)
 
             s_.append(state)
-            inertial_pos.append(i_pos)
-            next_inertial_pos.append(next_i_pos)
             goal_pos.append(g_pos)
             next_goal_pos.append(next_g_pos)
             a_.append(actions[:,:-1])
@@ -246,14 +271,10 @@ def train_term_mp(envs, t_env, agent, opt, iterations=1000, batch_size=4096, log
             t_a_.append(actions[:,-1])
             
             state = next_state
-            state = next_state
-            i_pos = next_i_pos
             g_pos = next_g_pos
             t += 1
         trajectory = {
                     "states" : s_,
-                    "inertial_position": inertial_pos,
-                    "next_inertial_position": next_inertial_pos,
                     "goal_position": goal_pos,
                     "next_goal_position": next_goal_pos,
                     "actions" : a_,
@@ -282,10 +303,10 @@ def train_term_mp(envs, t_env, agent, opt, iterations=1000, batch_size=4096, log
             print("Term Reward: ", mean_term_rew)
             if (mean_test_rew > test_rew_best) and (fname is not None): 
                 print("Saving best parameters.")
-                torch.save(agent.state_dict(), fname+"_term.pth.tar")
+                torch.save(agent.state_dict(), fname+"term.pth.tar")
                 test_rew_best = mean_test_rew
             print()
-    if fname is not None: torch.save(agent.state_dict(), fname+"_term_final.pth.tar")
-    plot(eps, rews, fname=fname)
-    plot(eps, term_rews, fname="term_"+fname)
-    return eps, rews, agent
+    if fname is not None: torch.save(agent.state_dict(), fname+"term_final.pth.tar")
+    #plot(eps, rews, fname=fname)
+    #plot(eps, term_rews, fname="term_"+fname)
+    return eps, rews, term_rews, agent
