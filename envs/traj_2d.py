@@ -289,7 +289,7 @@ class TrajectoryEnv2D(gym.Env):
             beta = self.curr_zeta - radians(self.player.steering_angle)
             vec = [cos(beta), sin(beta)]
             end = [u*self.scaling + x for u, x in zip(vec, start)]
-            arrow(self.screen, (200, 200, 200), (200, 200, 200), start, end, 0.05 * self.scaling)
+            arrow(self.screen, (180, 180, 180), (180, 180, 180), start, end, 0.05 * self.scaling)
 
             prev_x = int(0+self.WINDOW_SIZE/3)
             prev_y = int(0+self.WINDOW_SIZE/2)
