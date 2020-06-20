@@ -30,6 +30,8 @@ class TrajectoryEnv2D(gym.Env):
         self.scaling = self.WINDOW_SIZE/self.WINDOW_RANGE
         self.target_size = int(self.scaling*0.1)
 
+        self.pdf_norm = 1/sqrt(pi/self.temperature)
+
         self.init = False
 
         print("Trajectory Env 2D initialized.")
@@ -146,11 +148,11 @@ class TrajectoryEnv2D(gym.Env):
         r_obs = []
         for i in range(self.num_fut_wp+1):
             if self.goal_counter+i <= len(self.goal_list_xy)-1:
-                xy_obs = xy_obs+self.rotate([x-g for x, g in zip(xy, self.goal_list_xy[self.goal_counter+i])], angle)
-                sin_zeta_obs = sin_zeta_obs+[sin_zeta-sin(self.goal_list_zeta[self.goal_counter+i])]
-                cos_zeta_obs = cos_zeta_obs+[cos_zeta-cos(self.goal_list_zeta[self.goal_counter+i])]
-                uv_obs = uv_obs+[u-g for u, g in zip(uv, self.goal_list_uv[self.goal_counter+i])]
-                r_obs = r_obs+[r[0]-self.goal_list_r[self.goal_counter+i]]
+                xy_obs = xy_obs+self.rotate([g-x for x, g in zip(xy, self.goal_list_xy[self.goal_counter+i])], angle)
+                sin_zeta_obs = sin_zeta_obs+[sin(self.goal_list_zeta[self.goal_counter+i]) - sin_zeta]
+                cos_zeta_obs = cos_zeta_obs+[cos(self.goal_list_zeta[self.goal_counter+i]) - cos_zeta]
+                uv_obs = uv_obs+[g - u for u, g in zip(uv, self.goal_list_uv[self.goal_counter+i])]
+                r_obs = r_obs+[self.goal_list_r[self.goal_counter+i] - r[0]]
             else:
                 xy_obs = xy_obs+[0., 0.]
                 sin_zeta_obs = sin_zeta_obs+[0.]
@@ -225,7 +227,7 @@ class TrajectoryEnv2D(gym.Env):
         
         xy, zeta, uv, r = self.player.reset()
         angle = np.random.RandomState().uniform(low=-pi/3, high=pi/3)
-        self.player.angle = angle
+        self.player.angle = degrees(angle)
         sin_zeta, cos_zeta = sin(angle), cos(angle)
         self.set_curr_dists((xy, sin_zeta, cos_zeta, uv, r), [0., 0.])
         self.set_prev_dists()
@@ -274,7 +276,7 @@ class TrajectoryEnv2D(gym.Env):
                 vec = curr_goals[2*i:2*i+2]
                 mag = sum([x**2 for x in vec])**0.5
                 if not mag == 0:
-                    normed = [-x/mag for x in vec]
+                    normed = [0.75 * x / mag for x in vec]
                     uv = self.rotate(normed, angle_rad)
                     start = [self.curr_xy[0]*self.scaling + self.WINDOW_SIZE/3, self.curr_xy[1]*self.scaling+self.WINDOW_SIZE/2]
                     end = [u*self.scaling + x for u, x in zip(uv, start)]
@@ -326,11 +328,14 @@ class TrajectoryEnv2D(gym.Env):
             curr_goal_text = self.font.render("Current Goal Position: [{:.2f}, {:.2f}]".format(self.goal_list_xy[self.goal_counter][0], self.goal_list_xy[self.goal_counter][1]), False, (0,0,0))
             space_text = self.font.render(" ", False, (0,0,0))
             state_text = self.font.render("-------- State --------", False, (0,0,0))
+            action_text = self.font.render("Thrust: [{:.2f}], Steering: [{:.2f}]".format(self.curr_action[0], self.curr_action[1]), False, (0,0,0))
+            drag_text = self.font.render("Drag: [{:.2f}]".format(-self.player.drag), False, (0,0,0))
             pos_text = self.font.render("Position: [{:.2f}, {:.2f}]".format(self.player.position.x, self.player.position.y), False, (0,0,0))
             uv_text = self.font.render("Linear velocity: [{:.2f}, {:.2f}]".format(self.player.velocity.x,self.player.velocity.y), False, (0,0,0))
+            accel_text = self.font.render("Linear acceleration: [{:.2f}, {:.2f}]".format(self.player.acceleration, 0.), False, (0,0,0))
             angle_text = self.font.render("Zeta: [{:.2f}]".format(radians(self.player.angle)), False, (0,0,0))
-            r_text = self.font.render("Rotational velocity: [{:.2f}]".format(self.player.angular_velocity), False, (0,0,0))
-            action_text = self.font.render("Thrust: [{:.2f}], Steering: [{:.2f}]".format(self.curr_action[0], self.curr_action[1]), False, (0,0,0))
+            r_text = self.font.render("Angular velocity: [{:.2f}]".format(self.player.angular_velocity), False, (0,0,0))
+            transition_probability_text = self.font.render("Transition PDF: {:.8f}".format(self.pdf_norm*exp(-self.temperature*self.curr_dist**2)), False, (0,0,0))
             
             break_text = self.font.render("-------- Observation --------", False, (0,0,0))
             obs_pos_text = self.font.render("Position Vector: [{:.2f}, {:.2f}, {:.2f}, {:.2f}, {:.2f}, {:.2f}]".format(self.obs[0], self.obs[1], self.obs[2], self.obs[3], self.obs[4], self.obs[5]), False, (0,0,0))
@@ -347,7 +352,7 @@ class TrajectoryEnv2D(gym.Env):
             text_list = [time_text, frame_text, goal_text, curr_goal_text,
                          space_text,
                          state_text,
-                         pos_text, uv_text, angle_text, r_text, action_text,
+                         action_text, drag_text, pos_text, transition_probability_text, uv_text, accel_text, angle_text, r_text, 
                          space_text,
                          break_text,
                          obs_pos_text, obs_zeta_text, obs_vel_text, obs_omega_text,
@@ -383,6 +388,7 @@ class Player:
         self.acceleration = 0.
         self.steering_angle = 0.
         self.thrust = 0.
+        self.drag = 0.
 
         # points for rendering
         self.pts = [[0.2, 0.], [-0.1, 0.1], [-0.1, -0.1]]
@@ -398,7 +404,8 @@ class Player:
         self.steering_angle = np.clip(self.steering_angle, -self.max_steering_angle, self.max_steering_angle)
         
         # update acceleration and steering angle
-        self.acceleration = (self.thrust - self.cd * self.velocity.x ** 2) / self.mass
+        self.drag = self.cd * self.velocity.x ** 2
+        self.acceleration = (self.thrust - self.drag) / self.mass
         #self.acceleration = np.clip(self.acceleration, -self.max_acceleration, self.max_acceleration)
         
         # update linear velocity and clamp
@@ -451,6 +458,7 @@ class Player:
         self.acceleration = 0.
         self.steering_angle = 0.
         self.thrust = 0.
+        self.drag = 0.
         position = [self.position.x, self.position.y]
         angle = [radians(self.angle)]
         velocity = [self.velocity.x, self.velocity.y]

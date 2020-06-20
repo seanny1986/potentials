@@ -14,9 +14,9 @@ class SoftTrajectoryEnv2D(traj_2d.TrajectoryEnv2D):
         
     def switch_goal(self, state):
         xy, sin_zeta, cos_zeta, uv, r = state
-        dist = exp(-self.temperature * self.curr_dist**2)
-        sample = np.random.RandomState().uniform(low=0, high=1)
-        if sample < dist: return True
+        dist = self.pdf_norm * exp(-self.temperature * self.curr_dist**2)
+        sample = np.random.RandomState().uniform(low=0, high=self.pdf_norm)
+        if sample <= dist: return True
         else: return False
     
     def term_reward(self, state):
