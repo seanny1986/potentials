@@ -21,7 +21,7 @@ class TrajectoryEnv2D(gym.Env):
 
         self.num_fut_wp = 2
         self.action_space = gym.spaces.Box(-1, 1, shape=(2,))
-        state_size = 10+7*(self.num_fut_wp+1)
+        state_size = 13+7*(self.num_fut_wp+1)
         self.observation_space = gym.spaces.Box(-1, 1, shape=(state_size,))
         
         self.WINDOW_SIZE = 1000
@@ -63,17 +63,17 @@ class TrajectoryEnv2D(gym.Env):
         dist_rew = 100*(self.prev_dist-self.curr_dist)
         sin_att_rew = 0*(self.prev_att_sin-self.curr_att_sin)
         cos_att_rew = 0*(self.prev_att_cos-self.curr_att_cos)
-        vel_rew = 10*(self.prev_vel-self.curr_vel)
-        ang_rew = 1*(self.prev_ang-self.curr_ang)
+        vel_rew = 1*(self.prev_vel-self.curr_vel)
+        ang_rew = 0.1*(self.prev_ang-self.curr_ang)
 
         att_rew = sin_att_rew+cos_att_rew
 
         # agent gets a negative reward for excessive action inputs
-        ctrl_rew = -1e-6*sum([a**2 for a in action])
+        ctrl_rew = -1e-4*sum([a**2 for a in action]) - 1e-4*(self.player.steering_angle**2)
 
         # derivative rewards
-        ctrl_dev_rew = -1e-5*sum([(a-b)**2 for a,b in zip(action, self.prev_action)])
-        dist_dev_rew = -1e-2*sum([(x-y)**2 for x, y in zip(xy, self.prev_xy)])
+        ctrl_dev_rew = -0*sum([(a-b)**2 for a,b in zip(action, self.prev_action)])
+        dist_dev_rew = -0*sum([(x-y)**2 for x, y in zip(xy, self.prev_xy)])
         sin_att_dev_rew = -0*(sin_zeta-sin(self.prev_zeta))**2
         cos_att_dev_rew = -0*(cos_zeta-cos(self.prev_zeta))**2
         vel_dev_rew = -0*sum([(u-v)**2 for u,v in zip(uv, self.prev_uv)])
@@ -168,14 +168,17 @@ class TrajectoryEnv2D(gym.Env):
         # actions
         da_dt = [(a-b)/self.dt for a, b in zip(action, self.prev_action)]
         tar_obs = xy_obs+sin_zeta_obs+cos_zeta_obs+uv_obs+r_obs+derivatives
-        next_state = tar_obs+action+da_dt+[self.t]
+        thrust = [self.player.thrust]
+        steering = [self.player.steering]
+        steering_angle = [self.player.steering_angle]
+        next_state = tar_obs+action+da_dt+thrust+steering+steering_angle+[self.t]
         return next_state
     
     def translate_action(self, actions):
         # update thrust and clip to max thrust percentage
         thrust_c, steering_c = actions
         thrust_c += 0.25 * self.player.max_thrust
-        steering_c *= 100
+        steering_c *= 5.
         return thrust_c, steering_c
 
     def step(self, data):
@@ -276,7 +279,7 @@ class TrajectoryEnv2D(gym.Env):
                 vec = curr_goals[2*i:2*i+2]
                 mag = sum([x**2 for x in vec])**0.5
                 if not mag == 0:
-                    normed = [0.75 * x / mag for x in vec]
+                    normed = [0.5 * x for x in vec]
                     uv = self.rotate(normed, angle_rad)
                     start = [self.curr_xy[0]*self.scaling + self.WINDOW_SIZE/3, self.curr_xy[1]*self.scaling+self.WINDOW_SIZE/2]
                     end = [u*self.scaling + x for u, x in zip(uv, start)]
@@ -347,7 +350,10 @@ class TrajectoryEnv2D(gym.Env):
             obs_derivative_domega_text = self.font.render("Derivatives -- dR_dt: [{:.2f}]".format(self.obs[25]), False, (0,0,0))
             obs_action_text = self.font.render("Action: [{:.2f}, {:.2f}]".format(self.obs[26], self.obs[27]), False, (0,0,0))
             obs_action_derivative_text = self.font.render("Action Derivative: [{:.2f}, {:.2f}]".format(self.obs[28], self.obs[29]), False, (0,0,0))
-            obs_time_text = self.font.render("Time: [{:.2f}]".format(self.obs[30]), False, (0,0,0))
+            obs_thrust_text = self.font.render("Thrust: [{:.2f}]".format(self.obs[30]), False, (0,0,0))
+            obs_steering_text = self.font.render("Steering: [{:.2f}]".format(self.obs[31]), False, (0,0,0))
+            obs_steering_angle_text = self.font.render("Steering Angle: [{:.2f}]".format(self.obs[32]), False, (0,0,0))
+            obs_time_text = self.font.render("Time: [{:.2f}]".format(self.obs[33]), False, (0,0,0))
             
             text_list = [time_text, frame_text, goal_text, curr_goal_text,
                          space_text,
@@ -357,7 +363,7 @@ class TrajectoryEnv2D(gym.Env):
                          break_text,
                          obs_pos_text, obs_zeta_text, obs_vel_text, obs_omega_text,
                          obs_derivative_uv_text, obs_derivative_duv_text, obs_derivative_domega_text,
-                         obs_action_text, obs_action_derivative_text, obs_time_text]
+                         obs_action_text, obs_action_derivative_text, obs_thrust_text, obs_steering_text, obs_steering_angle_text, obs_time_text]
             for i, t in enumerate(text_list):
                 text_rect = t.get_rect()
                 text_rect.left += 5
@@ -388,6 +394,7 @@ class Player:
         self.acceleration = 0.
         self.steering_angle = 0.
         self.thrust = 0.
+        self.steering = 0.
         self.drag = 0.
 
         # points for rendering
@@ -400,7 +407,8 @@ class Player:
         self.thrust = np.clip(self.thrust, 0., self.max_thrust)
 
         # update steering and clip to max steering percentage
-        self.steering_angle = self.tau_steering * steering_c + (1 - self.tau_steering) * self.steering_angle
+        self.steering = self.tau_steering * steering_c + (1 - self.tau_steering) * self.steering
+        self.steering_angle += self.steering
         self.steering_angle = np.clip(self.steering_angle, -self.max_steering_angle, self.max_steering_angle)
         
         # update acceleration and steering angle
@@ -458,6 +466,7 @@ class Player:
         self.acceleration = 0.
         self.steering_angle = 0.
         self.thrust = 0.
+        self.steering = 0.
         self.drag = 0.
         position = [self.position.x, self.position.y]
         angle = [radians(self.angle)]
