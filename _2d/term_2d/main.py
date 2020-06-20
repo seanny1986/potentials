@@ -25,7 +25,7 @@ def run(num_envs=16, hidden_dim=256, batch_size=1024, iterations=1000, log_inter
     for i in range(runs):
         agent = ag.Agent(state_dim, hidden_dim, action_dim, dim=2, lookahead=lookahead)
         opt = torch.optim.Adam(agent.parameters(), lr=cfg.lr)
-        ep, rew, term_rew, agent = tl.train_term_mp(envs, t_env, agent, opt, batch_size, iterations, log_interval, render=False, fname=path+wps+"-wps")
+        ep, rew, term_rew, agent = tl.train_term_mp(envs, t_env, agent, opt, batch_size, iterations, log_interval, render=True, fname=path+wps+"-wps")
         if i == 0:
             csv_input = pd.DataFrame()
             csv_input["iterations"] = ep

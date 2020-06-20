@@ -38,9 +38,64 @@ class SimplePolicy(nn.Module):
         logvar = self.logvar(x)
         return mu, logvar.exp().sqrt()
 
-class SimpleREINFORCE(nn.Module):
+
+class ValueFunctionLSTM(nn.Module):
+    def __init__(self, input_dim, hidden_dim, output_dim):
+        super(ValueFunctionLSTM, self).__init__()
+        self.input_dim = input_dim
+        self.hidden_dim = hidden_dim
+        self.output_dim = output_dim
+        self.__lstm = nn.LSTM(input_dim, hidden_dim, 2)
+        self.__value = nn.Linear(hidden_dim, 1)
+    
+    def step(self, x, hidden=None):
+        hx, cx = self.__lstm(x.unsqueeze(0), hidden)
+        val = self.__value(hx.squeeze(0))
+        return val, cx
+
+    def forward(self, x, hidden=None, force=True, steps=0):
+        if force or steps == 0: steps = len(x)
+        vals = torch.zeros(steps, 1, 1)
+        for i in range(steps):
+            if force or i == 0:
+                input = x[i]
+            value, hidden = self.step(input, hidden)
+            vals[i] = value
+        return vals, hidden
+
+
+class GaussianPolicyLSTM(nn.Module):
+    def __init__(self, input_dim, hidden_dim, output_dim):
+        super(GaussianPolicyLSTM, self).__init__()
+        self.input_dim = input_dim
+        self.hidden_dim = hidden_dim
+        self.output_dim = output_dim
+        self.__lstm = nn.LSTM(input_dim, hidden_dim, 2)
+        self.__mu = nn.Linear(hidden_dim, output_dim)
+        self.__logvar = nn.Linear(hidden_dim, output_dim)
+    
+    def step(self, x, hidden=None):
+        hx, cx = self.__lstm(x.unsqueeze(0), hidden)
+        mu = self.__mu(hx.squeeze(0))
+        logvar = self.__logvar(hx.squeeze(0))
+        return mu, logvar.exp().sqrt(), cx
+
+    def forward(self, x, hidden=None, force=True, steps=0):
+        if force or steps == 0: steps = len(x)
+        mus = torch.zeros(steps, 1, self.output_dim)
+        sigmas = torch.zeros(steps, 1, self.output_dim)
+        for i in range(steps):
+            if force or i == 0:
+                input = x[i]
+            mu, sigma, hidden = self.step(input, hidden)
+            mus[i] = mu
+            sigmas[i] = sigma
+        return mus, sigmas, hidden
+
+
+class SimpleA2C(nn.Module):
     def __init__(self, input_dim, hidden_dim, output_dim, dim=2, lookahead=1):
-        super(SimpleREINFORCE, self).__init__()
+        super(SimpleA2C, self).__init__()
         self.beta = SimplePolicy(input_dim, hidden_dim, output_dim).to(device)
         self.critic = nn.Sequential(
                                     nn.Linear(input_dim, hidden_dim),
@@ -48,83 +103,53 @@ class SimpleREINFORCE(nn.Module):
                                     nn.Linear(hidden_dim, hidden_dim),
                                     nn.Tanh(),
                                     nn.Linear(hidden_dim, 1)).to(device)
-        self.pos_val_fn = nn.Sequential(
-                                    nn.Linear(int(lookahead*dim), hidden_dim),
-                                    nn.Tanh(),
-                                    nn.Linear(hidden_dim, hidden_dim),
-                                    nn.Tanh(),
-                                    nn.Linear(hidden_dim, 1)).to(device)
-    
-    def get_integrated_value(self, x):
-        return self.pos_val_fn(x)
 
-    def select_action(self, x):
-        mu, sigma = self.beta(x)
-        dist = Normal(mu, sigma)
-        action = dist.sample()
-        log_prob = dist.log_prob(action)
-        entropy = dist.entropy()
-        log_prob = torch.sum(log_prob, dim=-1, keepdim=True)
-        entropy = torch.sum(entropy, dim=-1, keepdim=True)
-        value = self.critic(x)
-        return action, value, log_prob, entropy
+    def select_action(self, x, deterministic=False):
+        if deterministic == True:
+            mu, sigma = self.beta(x)
+            #print("Action: ", mu)
+            return mu
+        else:
+            mu, sigma = self.beta(x)
+            dist = Normal(mu, sigma)
+            action = dist.sample()
+            log_prob = dist.log_prob(action)
+            entropy = dist.entropy()
+            log_prob = torch.sum(log_prob, dim=-1, keepdim=True)
+            entropy = torch.sum(entropy, dim=-1, keepdim=True)
+            #print("Action: ", action)
+            return action, log_prob, entropy
 
     def get_phi(self, trajectory, critic, gamma=0.99):
+        states = torch.stack(trajectory["states"]).to(device)
         rewards = torch.stack(trajectory["rewards"]).to(device)
         next_states = torch.stack(trajectory["next_states"]).to(device)
-        values = torch.stack(trajectory["values"]).to(device)
         masks = torch.stack(trajectory["masks"]).to(device)
-        masks = masks.unsqueeze(2)
         returns = torch.Tensor(rewards.size()).to(device)
         deltas = torch.Tensor(rewards.size()).to(device)
         prev_return = 0
         for j in reversed(range(rewards.size(0))):
             next_val = critic(next_states[j])
-            if j == rewards.size(0)-1:
-                bootstrap = next_val
-            else:
-                bootstrap = (next_val*(1-masks[j]))
-            returns[j] = rewards[j]+gamma*(prev_return*masks[j]+bootstrap)
+            bootstrap = next_val * (1-masks[j])
+            returns[j] = rewards[j] + gamma * (prev_return * masks[j] + bootstrap)
             prev_return = returns[j]
-        deltas = returns.detach()-values
-        return (deltas.squeeze(2)).view(-1,1), (returns.squeeze(2)).view(-1,1)
+        deltas = returns.detach() - critic(states)
+        return deltas.view(-1,1), returns.view(-1,1)
 
-    def update(self, optim, trajectory, iters=1):
+    def update(self, optim, trajectory, iters=4):
         log_probs = torch.stack(trajectory["log_probs"]).to(device)
-        traj = {
-                    "states" : trajectory["states"],
-                    "actions" : trajectory["actions"],
-                    "log_probs" : trajectory["log_probs"],
-                    "rewards" : trajectory["rewards"],
-                    "masks" : trajectory["masks"],
-                    "values" : trajectory["values"],
-                    "next_states" : trajectory["next_states"]}
-    
-        val_fn_preds = [self.pos_val_fn(state) for state in trajectory["goal_position"]]
-        val_fn_traj = {
-                    "states" : trajectory["goal_position"],
-                    "rewards" : trajectory["rewards"],
-                    "masks" : trajectory["masks"],
-                    "values" : val_fn_preds,
-                    "next_states" : trajectory["next_goal_position"]}
-                    
         for i in range(iters):
-            deltas, _ = self.get_phi(traj, self.critic)
-            val_fn, _ = self.get_phi(val_fn_traj, self.pos_val_fn)
+            deltas, _ = self.get_phi(trajectory, self.critic)
             phi = (deltas-deltas.mean())/deltas.std()
-            crit_loss = torch.mean(deltas**2)
-            val_fn_loss = torch.mean(val_fn**2)
-            pol_loss = -torch.mean(log_probs.view(-1,1)*phi.detach())
-            loss = pol_loss+crit_loss+val_fn_loss
+            crit_loss = torch.mean(deltas ** 2)
+            pol_loss = -torch.mean(log_probs.view(-1,1) * phi.detach())
+            loss = pol_loss+crit_loss
             optim.zero_grad()
-            if i < iters-1:
-                loss.backward(retain_graph=True)
-            else:
-                loss.backward()
+            loss.backward()
             optim.step()
 
 
-class Agent(SimpleREINFORCE):
+class Agent(SimpleA2C):
     def __init__(self, input_dim, hidden_dim, output_dim, dim=2, lookahead=1):
         super(Agent, self).__init__(input_dim, hidden_dim, output_dim, dim, lookahead)
         self.pi = SimplePolicy(input_dim, hidden_dim, output_dim).to(device)              
@@ -133,61 +158,42 @@ class Agent(SimpleREINFORCE):
     def get_gaussian_policy_loss(self, trajectory, pi, critic):
         states = torch.stack(trajectory["states"])
         actions = torch.stack(trajectory["actions"])
+        fixed_log_probs = torch.stack(trajectory["log_probs"]).detach()
         mus, stds = pi(states)
         dist = Normal(mus, stds)
         log_probs = torch.sum(dist.log_prob(actions), dim=-1)
-        deltas, _ = self.get_phi(trajectory, critic)
-        deltas = (deltas-deltas.mean())/deltas.std()
-        log_probs = log_probs.view(-1, 1)
-        loss = -log_probs*deltas.detach()
+        deltas, returns = self.get_phi(trajectory, critic)
+        phi = (deltas / returns.std())
+        ratio = torch.exp(log_probs.view(-1, 1) - fixed_log_probs.view(-1,1))
+        loss = -ratio * phi.detach()
         return loss.mean()
 
     def trpo_update(self, trajectory, policy_loss_fn, pi, beta, critic, fvp, max_kl=1e-2):
-        states = torch.stack(trajectory["states"])
-        actions = torch.stack(trajectory["actions"])
+        print("Updating agent.")
+        states = torch.stack(trajectory["states"]).to(device)
+        actions = torch.stack(trajectory["actions"]).to(device)
         policy_loss = policy_loss_fn(trajectory, pi, critic)
         grads = torch.autograd.grad(policy_loss, pi.parameters())
         loss_grad = torch.cat([grad.view(-1) for grad in grads]).detach()
         stepdir = conjugate_gradient(fvp, -loss_grad, states, actions, pi, beta)
         shs = 0.5*(stepdir.dot(fvp(stepdir, states, actions, pi, beta)))
         lm = torch.sqrt(max_kl/shs)
-        fullstep = stepdir*lm
+        fullstep = stepdir * lm
         expected_improve = -loss_grad.dot(fullstep)
         old_params = get_flat_params_from(beta)
         _, params = linesearch(trajectory, pi, critic, policy_loss_fn, old_params, fullstep, expected_improve)
         set_flat_params_to(pi, params)
         hard_update(beta, pi)
 
-    def update(self, opt, trajectory, iters=3):
-        traj = {
-                    "states" : trajectory["states"],
-                    "actions" : trajectory["actions"],
-                    "log_probs" : trajectory["log_probs"],
-                    "rewards" : trajectory["rewards"],
-                    "masks" : trajectory["masks"],
-                    "values" : trajectory["values"],
-                    "next_states" : trajectory["next_states"]}
-    
-        val_fn_preds = [self.pos_val_fn(state) for state in trajectory["goal_position"]]
-        val_fn_traj = {
-                    "states" : trajectory["goal_position"],
-                    "rewards" : trajectory["rewards"],
-                    "masks" : trajectory["masks"],
-                    "values" : val_fn_preds,
-                    "next_states" : trajectory["next_goal_position"]}
-
-        for i in range(iters):
-            deltas, _ = self.get_phi(traj, self.critic)
-            val_fn, _ = self.get_phi(val_fn_traj, self.pos_val_fn)
+    def update(self, opt, trajectory, iters=4):
+        for _ in range(iters):
+            deltas, _ = self.get_phi(trajectory, self.critic)
             opt.zero_grad()
-            crit_loss = deltas**2
-            val_fn_loss = val_fn**2
-            loss = crit_loss.mean()+val_fn_loss.mean()
-            if i < iters-1: loss.backward(retain_graph=True)
-            else: loss.backward()
+            loss = torch.mean(deltas ** 2)
+            loss.backward()
             opt.step()
-        
-        self.trpo_update(traj, self.get_gaussian_policy_loss, self.pi, self.beta, self.critic, gaussian_fvp)
+        self.trpo_update(trajectory, self.get_gaussian_policy_loss, self.pi, self.beta, self.critic, gaussian_fvp)
+
        
 def gaussian_fvp(gradient_vector, states, actions, pi, beta):
     mus_pi, sigmas_pi = pi(states)
@@ -217,11 +223,11 @@ def conjugate_gradient(fvp, gradient_vector, states, actions, pi, beta, n_steps=
     for i in range(n_steps):
         fisher_vector_product = fvp(p, states, actions, pi, beta)
         alpha = rdotr/p.dot(fisher_vector_product)
-        x += alpha*p
+        x = x + alpha * p
         r -= alpha*fisher_vector_product
         new_rdotr = r.dot(r)
         tau = new_rdotr/rdotr
-        p = r+tau*p
+        p = r + tau * p
         rdotr = new_rdotr
         if rdotr <= residual_tol:
             break

@@ -24,11 +24,11 @@ r = cfg.runs
 
 #wp_2d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
 #traj_2d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
-#soft_2d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
+soft_2d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
 #term_2d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
 
 #wp_3d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
 #nh_wp_3d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
-traj_3d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
-soft_3d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
-term_3d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
+#traj_3d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
+#soft_3d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
+#term_3d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
