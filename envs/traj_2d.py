@@ -230,6 +230,7 @@ class TrajectoryEnv2D(gym.Env):
         
         xy, zeta, uv, r = self.player.reset()
         angle = np.random.RandomState().uniform(low=-pi/3, high=pi/3)
+        angle = zeta[0]
         self.player.angle = degrees(angle)
         sin_zeta, cos_zeta = sin(angle), cos(angle)
         self.set_curr_dists((xy, sin_zeta, cos_zeta, uv, r), [0., 0.])
@@ -275,15 +276,20 @@ class TrajectoryEnv2D(gym.Env):
 
             curr_goals = self.obs[:6]
             angle_rad = -self.curr_zeta
+            start = [self.curr_xy[0]*self.scaling + self.WINDOW_SIZE/3, self.curr_xy[1]*self.scaling+self.WINDOW_SIZE/2]
             for i in range(self.num_fut_wp + 1):
                 vec = curr_goals[2*i:2*i+2]
                 mag = sum([x**2 for x in vec])**0.5
                 if not mag == 0:
                     normed = [0.5 * x for x in vec]
                     uv = self.rotate(normed, angle_rad)
-                    start = [self.curr_xy[0]*self.scaling + self.WINDOW_SIZE/3, self.curr_xy[1]*self.scaling+self.WINDOW_SIZE/2]
                     end = [u*self.scaling + x for u, x in zip(uv, start)]
                     arrow(self.screen, (200, 0, 50), (200, 0, 50), start, end, 0.1 * self.scaling)
+
+            beta = self.curr_zeta - radians(self.player.steering_angle)
+            vec = [cos(beta), sin(beta)]
+            end = [u*self.scaling + x for u, x in zip(vec, start)]
+            arrow(self.screen, (200, 200, 200), (200, 200, 200), start, end, 0.05 * self.scaling)
 
             prev_x = int(0+self.WINDOW_SIZE/3)
             prev_y = int(0+self.WINDOW_SIZE/2)
@@ -433,14 +439,15 @@ class Player:
         self.position += self.velocity.rotate(-self.angle) * self.dt
         self.angle += degrees(self.angular_velocity) * self.dt
         
-#        print("thrust command: ", thrust_c)
-#        print("thrust: ", self.thrust)
-#        print("drag: ", self.cd * self.velocity.x ** 2)
-#        print("acceleration: ", self.acceleration)
-#        print("steering command: ", steering_c)
-#        print("steering angle: ", self.steering_angle)
-#        print()
-#        input()
+        #print("thrust command: ", thrust_c)
+        #print("thrust: ", self.thrust)
+        #print("drag: ", self.cd * self.velocity.x ** 2)
+        #print("acceleration: ", self.acceleration)
+        #print("steering command: ", steering_c)
+        #print("steering: ", self.steering)
+        #print("steering angle: ", self.steering_angle)
+        #print()
+        #input()
 
         # get new values and return
         position = [self.position.x, self.position.y]
