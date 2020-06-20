@@ -38,15 +38,15 @@ class TrajectoryEnv2D(gym.Env):
     
     def rotate(self, vec, angle):
         """
-        Rotates 2D vector by angle theta
+        Rotates 2D vector by angle theta (radians)
         """
         u, v = vec
-        cz = cos(angle)
-        sz = sin(angle)
+        cz = np.cos(angle)
+        sz = np.sin(angle)
         x = u * cz - v * sz
         y = u * sz + v * cz
         return [x, y]
-    
+
     def get_goal_positions(self):
         n = int(2*(self.num_fut_wp+1))
         return self.obs[:n]
@@ -120,7 +120,7 @@ class TrajectoryEnv2D(gym.Env):
             self.curr_ang = abs(r[0]-self.goal_list_r[self.goal_counter])
         self.curr_action = action
         self.curr_xy = xy
-        self.curr_zeta = acos(cos_zeta)
+        self.curr_zeta = self.player.angle
         self.curr_uv = uv
         self.curr_r = r[0]
         #print(self.curr_dist)
@@ -140,7 +140,7 @@ class TrajectoryEnv2D(gym.Env):
     
     def get_obs(self, state, action):
         xy, sin_zeta, cos_zeta, uv, r = state
-        angle = acos(cos_zeta)
+        angle = self.player.angle
         xy_obs = []
         sin_zeta_obs = []
         cos_zeta_obs = []
@@ -178,7 +178,7 @@ class TrajectoryEnv2D(gym.Env):
         # update thrust and clip to max thrust percentage
         thrust_c, steering_c = actions
         thrust_c += 0.25 * self.player.max_thrust
-        steering_c *= 5.
+        steering_c *= 5. * pi / 180
         return thrust_c, steering_c
 
     def step(self, data):
@@ -231,7 +231,7 @@ class TrajectoryEnv2D(gym.Env):
         xy, zeta, uv, r = self.player.reset()
         angle = np.random.RandomState().uniform(low=-pi/3, high=pi/3)
         angle = zeta[0]
-        self.player.angle = degrees(angle)
+        self.player.angle = angle
         sin_zeta, cos_zeta = sin(angle), cos(angle)
         self.set_curr_dists((xy, sin_zeta, cos_zeta, uv, r), [0., 0.])
         self.set_prev_dists()
@@ -242,26 +242,12 @@ class TrajectoryEnv2D(gym.Env):
 
         def arrow(screen, lcolor, tricolor, start, end, trirad):
             pygame.draw.line(screen, lcolor, start, end, 2) # draw the line
-            rotation = degrees(atan2(start[1] - end[1], end[0] - start[0])) + 90 # calculate rotation angle
+            rotation = atan2(start[1] - end[1], end[0] - start[0]) + pi/2 # calculate rotation angle
             pygame.draw.polygon(screen, 
                                 tricolor, 
-                                (
-                                    (
-                                        end[0] + trirad * sin(radians(rotation)), 
-                                        end[1] + trirad * cos(radians(rotation))
-                                    ), 
-                                    
-                                    (
-                                        end[0] + trirad * sin(radians(rotation - 120)), 
-                                        end[1] + trirad * cos(radians(rotation - 120))
-                                    ), 
-                                    
-                                    (
-                                        end[0] + trirad * sin(radians(rotation + 120)), 
-                                        end[1] + trirad * cos(radians(rotation + 120))
-                                    )
-                                )
-                                )
+                                ((end[0] + trirad * sin(rotation), end[1] + trirad * cos(rotation)),                                     
+                                 (end[0] + trirad * sin(rotation-+2*pi/3), end[1] + trirad * cos(rotation-2*pi/3)), 
+                                 (end[0] + trirad * sin(rotation+2*pi/3), end[1] + trirad * cos(rotation+2*pi/3))))
 
         if not self.init:
             pygame.init()
@@ -275,21 +261,21 @@ class TrajectoryEnv2D(gym.Env):
             self.screen.fill([255, 255, 255])
 
             curr_goals = self.obs[:6]
-            angle_rad = -self.curr_zeta
             start = [self.curr_xy[0]*self.scaling + self.WINDOW_SIZE/3, self.curr_xy[1]*self.scaling+self.WINDOW_SIZE/2]
             for i in range(self.num_fut_wp + 1):
                 vec = curr_goals[2*i:2*i+2]
                 mag = sum([x**2 for x in vec])**0.5
                 if not mag == 0:
                     normed = [0.5 * x for x in vec]
-                    uv = self.rotate(normed, angle_rad)
+                    uv = self.rotate(normed, -self.curr_zeta)
                     end = [u*self.scaling + x for u, x in zip(uv, start)]
                     arrow(self.screen, (200, 0, 50), (200, 0, 50), start, end, 0.1 * self.scaling)
 
-            beta = self.curr_zeta - radians(self.player.steering_angle)
-            vec = [cos(beta), sin(beta)]
+            steering_angle = self.player.steering_angle
+            beta = self.curr_zeta + steering_angle
+            vec = self.rotate([0.5, 0], -beta)
             end = [u*self.scaling + x for u, x in zip(vec, start)]
-            arrow(self.screen, (180, 180, 180), (180, 180, 180), start, end, 0.05 * self.scaling)
+            arrow(self.screen, (180, 180, 180), (180, 180, 180), start, end, 0.1 * self.scaling)
 
             prev_x = int(0+self.WINDOW_SIZE/3)
             prev_y = int(0+self.WINDOW_SIZE/2)
@@ -342,7 +328,7 @@ class TrajectoryEnv2D(gym.Env):
             pos_text = self.font.render("Position: [{:.2f}, {:.2f}]".format(self.player.position.x, self.player.position.y), False, (0,0,0))
             uv_text = self.font.render("Linear velocity: [{:.2f}, {:.2f}]".format(self.player.velocity.x,self.player.velocity.y), False, (0,0,0))
             accel_text = self.font.render("Linear acceleration: [{:.2f}, {:.2f}]".format(self.player.acceleration, 0.), False, (0,0,0))
-            angle_text = self.font.render("Zeta: [{:.2f}]".format(radians(self.player.angle)), False, (0,0,0))
+            angle_text = self.font.render("Zeta: [{:.2f}]".format(degrees(self.player.angle)), False, (0,0,0))
             r_text = self.font.render("Angular velocity: [{:.2f}]".format(self.player.angular_velocity), False, (0,0,0))
             transition_probability_text = self.font.render("Transition PDF: {:.8f}".format(self.pdf_norm*exp(-self.temperature*self.curr_dist**2)), False, (0,0,0))
             
@@ -383,7 +369,7 @@ class Player:
     def __init__(self, x=0., y=0., angle=0., length=0.3, max_steering_angle=30., max_thrust=7.5, dt=0.05):
         self.length = length
         self.max_thrust = max_thrust
-        self.max_steering_angle = max_steering_angle
+        self.max_steering_angle = max_steering_angle * pi / 180
         self.max_acceleration = 5.
         self.max_velocity = 3
         self.tau_thrust = 0.5
@@ -429,15 +415,15 @@ class Player:
         
         # update angular velocity
         if not self.steering_angle == 0:
-            turning_radius = self.length / tan(radians(self.steering_angle))
+            turning_radius = self.length / tan(self.steering_angle)
             #print(turning_radius)
             self.angular_velocity = self.velocity.x / turning_radius
         else:
             self.angular_velocity = 0.
 
         # update position and angle
-        self.position += self.velocity.rotate(-self.angle) * self.dt
-        self.angle += degrees(self.angular_velocity) * self.dt
+        self.position += self.velocity.rotate(-degrees(self.angle)) * self.dt
+        self.angle += self.angular_velocity * self.dt
         
         #print("thrust command: ", thrust_c)
         #print("thrust: ", self.thrust)
@@ -451,13 +437,13 @@ class Player:
 
         # get new values and return
         position = [self.position.x, self.position.y]
-        angle = [radians(self.angle)]
+        angle = [self.angle]
         velocity = [self.velocity.x, self.velocity.y]
         angular_velocity = [self.angular_velocity] 
         return position, angle, velocity, angular_velocity 
     
     def update_gfx(self):
-        rad_angle = -radians(self.angle)
+        rad_angle = -self.angle
         pts = []
         for p in self.pts:
             x_ = self.position.x +(p[0] * cos(rad_angle) - p[1] * sin(rad_angle))
@@ -476,7 +462,9 @@ class Player:
         self.steering = 0.
         self.drag = 0.
         position = [self.position.x, self.position.y]
-        angle = [radians(self.angle)]
+        angle = [self.angle]
         velocity = [self.velocity.x, self.velocity.y]
         angular_velocity = [self.angular_velocity] 
         return position, angle, velocity, angular_velocity
+    
+    
