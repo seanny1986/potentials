@@ -14,9 +14,9 @@ import _3d.term_3d.visualization as term_3d_main
 #wp_3d_main.run()
 #nh_wp_3d_main.run()
 
-traj_2d_main.run()
+#traj_2d_main.run()
 #soft_2d_main.run()
-#term_2d_main.run()
+term_2d_main.run()
 
 #traj_3d_main.run()
 #term_3d_main.run()

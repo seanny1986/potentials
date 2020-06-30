@@ -5,9 +5,9 @@ from math import sin, cos, pi
 
 import gym
 import gym_aero
-import gym_aero.envs.trajectory_env as trajectory_env
+import envs.traj_3d as trajectory_env
 
-class WaypointEnv3D(trajectory_env.TrajectoryEnv):
+class WaypointEnv3D(trajectory_env.TrajectoryEnv3D):
     def __init__(self):
         super(WaypointEnv3D, self).__init__()
         self.num_fut_wp = 0

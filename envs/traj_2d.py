@@ -9,28 +9,33 @@ from pygame.math import Vector2
 import pygame
 import pygame.gfxdraw
 
-class TrajectoryEnv2D(gym.Env):
-    def __init__(self, dt=0.05):
-        self.dt = dt                                                    # simulation timestep
-        self.player = Player(dt=dt)                                          # list of player characters in the environment
-        self.DIM = [15, 15]
-        self.temperature = 15
-        self.T = 3
-        self.goal_thresh = 1e-1
-        self.traj_len = 5
+import envs.env_config as cfg
 
-        self.num_fut_wp = 2
+class TrajectoryEnv2D(gym.Env):
+    def __init__(self):
+        self.dt = cfg.dt                                                     # simulation timestep
+        self.player = Player()                                          # list of player characters in the environment
+        self.DIM = [cfg.DIM, cfg.DIM]
+        self.temperature = cfg.temperature
+        self.T = cfg.subtraj_time
+        self.goal_thresh = cfg.goal_thresh
+        self.traj_len = cfg.traj_len
+
+        self.num_fut_wp = cfg.num_fut_wp
         self.action_space = gym.spaces.Box(-1, 1, shape=(2,))
-        state_size = 13+7*(self.num_fut_wp+1)
+        state_size = 13 + 7 * (self.num_fut_wp + 1)  # calculate the size of the state given the number of future waypoints in obs space
         self.observation_space = gym.spaces.Box(-1, 1, shape=(state_size,))
         
-        self.WINDOW_SIZE = 1000
+        self.WINDOW_SIZE = cfg.WINDOW_SIZE
         self.WINDOW_RANGE = self.DIM[0]
         self.window_dim = np.array([self.WINDOW_SIZE, self.WINDOW_SIZE])
-        self.scaling = self.WINDOW_SIZE/self.WINDOW_RANGE
-        self.target_size = int(self.scaling*0.1)
+        self.scaling = self.WINDOW_SIZE / self.WINDOW_RANGE
+        self.target_size = int(self.scaling * 0.1)
 
-        self.pdf_norm = 1/sqrt(pi/self.temperature)
+        self.pdf_norm = 1 / sqrt(pi / self.temperature)
+        self.waypoint_dist_upper_bound = cfg.waypoint_dist_upper_bound
+        self.waypoint_dist_lower_bound = cfg.waypoint_dist_lower_bound
+        self.max_spread = cfg.max_spread
 
         self.init = False
 
@@ -47,11 +52,7 @@ class TrajectoryEnv2D(gym.Env):
         y = u * sz + v * cz
         return [x, y]
 
-    def get_goal_positions(self):
-        n = int(2*(self.num_fut_wp+1))
-        return self.obs[:n]
-
-    def switch_goal(self, state):
+    def switch_goal(self, data):
         if self.curr_dist < self.goal_thresh: return True
         else: return False
 
@@ -98,12 +99,9 @@ class TrajectoryEnv2D(gym.Env):
                                 "ang_dev" : ang_dev_rew,
                                 "time_rew": time_rew}
     
-    def term_reward(self, state):
-        xy, sin_zeta, cos_zeta, uv, r = state
-        if self.curr_dist < self.goal_thresh and not self.flagged:
-            rew = 100
+    def term_reward(self, term):
+        if term: return 100
         else: return 0.
-        return rew
 
     def terminal(self):
         if self.curr_dist > 5: return True
@@ -167,7 +165,7 @@ class TrajectoryEnv2D(gym.Env):
 
         # actions
         da_dt = [(a-b)/self.dt for a, b in zip(action, self.prev_action)]
-        tar_obs = xy_obs+sin_zeta_obs+cos_zeta_obs+uv_obs+r_obs+derivatives
+        tar_obs = xy_obs + sin_zeta_obs + cos_zeta_obs + uv_obs + r_obs + derivatives
         thrust = [self.player.thrust]
         steering = [self.player.steering]
         steering_angle = [self.player.steering_angle]
@@ -175,9 +173,7 @@ class TrajectoryEnv2D(gym.Env):
         return next_state
     
     def translate_action(self, actions):
-        # update thrust and clip to max thrust percentage
-        thrust_c, steering_c = actions
-        thrust_c += 0.25 * self.player.max_thrust
+        thrust_c, steering_c = actions[0], actions[1]
         steering_c *= 5. * pi / 180
         return thrust_c, steering_c
 
@@ -189,19 +185,21 @@ class TrajectoryEnv2D(gym.Env):
         self.t += self.dt
         self.set_curr_dists((xy, sin_zeta, cos_zeta, uv, r), [thrust, steering])
         reward, info = self.reward((xy, sin_zeta, cos_zeta, uv, r), [thrust, steering])
-        term = self.switch_goal((xy, sin_zeta, cos_zeta, uv, r))
+        term = self.switch_goal(data)
         if term:
-            term_rew = self.term_reward((xy, sin_zeta, cos_zeta, uv, r))
             if self.goal_counter < self.traj_len-1:
+                term_rew = self.term_reward(True)
                 self.goal_counter += 1
                 self.set_curr_dists((xy, sin_zeta, cos_zeta, uv, r), [thrust, steering])
-                self.t = 0.
+                self.t = 0
+            else: term_rew = self.term_reward(False)
         else:
-            term_rew = 0.
+            term_rew = self.term_reward(False)
         reward += term_rew
         done = self.terminal()
         self.obs = self.get_obs((xy, sin_zeta, cos_zeta, uv, r), [thrust, steering])
         self.set_prev_dists()
+        info.update({"term_rew" : term_rew})
         return self.obs, reward, done, info
     
     def reset(self):
@@ -209,13 +207,13 @@ class TrajectoryEnv2D(gym.Env):
         self.t = 0
         self.goal_counter = 0
         self.goal_list_xy = []
-        angle = np.random.RandomState().uniform(low=-pi/3, high=pi/3)
-        rad = np.random.RandomState().uniform(1, 2.5)
+        angle = np.random.RandomState().uniform(low=-self.max_spread, high=self.max_spread)
+        rad = np.random.RandomState().uniform(self.waypoint_dist_lower_bound, self.waypoint_dist_upper_bound)
         xy_ = np.array([rad*cos(angle), rad*sin(angle)])
         self.goal_list_xy.append(xy_.copy())
         for _ in range(self.traj_len-1):
-            angle = np.random.RandomState().uniform(low=-pi/3, high=pi/3)
-            rad = np.random.RandomState().uniform(1, 2.5)
+            angle = np.random.RandomState().uniform(low=-self.max_spread, high=self.max_spread)
+            rad = np.random.RandomState().uniform(self.waypoint_dist_lower_bound, self.waypoint_dist_upper_bound)
             temp = np.array([rad*cos(angle), rad*sin(angle)])
             xy_ += temp
             self.goal_list_xy.append(list(xy_.copy()))
@@ -229,7 +227,7 @@ class TrajectoryEnv2D(gym.Env):
             self.goal_list_r.append(0.)
         
         xy, zeta, uv, r = self.player.reset()
-        angle = np.random.RandomState().uniform(low=-pi/3, high=pi/3)
+        angle = np.random.RandomState().uniform(low=-self.max_spread, high=self.max_spread)
         angle = zeta[0]
         self.player.angle = angle
         sin_zeta, cos_zeta = sin(angle), cos(angle)
@@ -271,9 +269,10 @@ class TrajectoryEnv2D(gym.Env):
                     end = [u*self.scaling + x for u, x in zip(uv, start)]
                     arrow(self.screen, (200, 0, 50), (200, 0, 50), start, end, 0.1 * self.scaling)
 
+            thrust_mag = 2 * self.player.thrust / self.player.max_thrust
             steering_angle = self.player.steering_angle
             beta = self.curr_zeta + steering_angle
-            vec = self.rotate([0.5, 0], -beta)
+            vec = self.rotate([thrust_mag, 0], -beta)
             end = [u*self.scaling + x for u, x in zip(vec, start)]
             arrow(self.screen, (180, 180, 180), (180, 180, 180), start, end, 0.1 * self.scaling)
 
@@ -366,28 +365,17 @@ class TrajectoryEnv2D(gym.Env):
 
 
 class Player:
-    def __init__(self, x=0., y=0., angle=0., length=0.3, max_steering_angle=30., max_thrust=7.5, dt=0.05):
-        self.length = length
-        self.max_thrust = max_thrust
-        self.max_steering_angle = max_steering_angle * pi / 180
-        self.max_acceleration = 5.
-        self.max_velocity = 3
-        self.tau_thrust = 0.5
-        self.tau_steering = 0.5
-        self.mass = 1.
-        self.cd = 1.
-        self.dt = dt
-
-        # simulation parameters
-        self.position = Vector2(x, y)
-        self.velocity = Vector2(0., 0.)
-        self.angle = angle
-        self.angular_velocity = 0.
-        self.acceleration = 0.
-        self.steering_angle = 0.
-        self.thrust = 0.
-        self.steering = 0.
-        self.drag = 0.
+    def __init__(self):
+        self.length = cfg.length
+        self.max_thrust = cfg.max_thrust
+        self.max_steering_angle = cfg.max_steering_angle * pi / 180
+        self.max_acceleration = cfg.max_acceleration
+        self.max_velocity = cfg.max_velocity
+        self.tau_thrust = cfg.tau_thrust
+        self.tau_steering = cfg.tau_steering
+        self.mass = cfg.mass
+        self.cd = cfg.cd
+        self.dt = cfg.dt
 
         # points for rendering
         self.pts = [[0.2, 0.], [-0.1, 0.1], [-0.1, -0.1]]
@@ -452,15 +440,16 @@ class Player:
         return pts
 
     def reset(self):
-        self.position = Vector2(0., 0.)
-        self.velocity = Vector2(0., 0.)
-        self.angle = 0.
-        self.angular_velocity = 0.
-        self.acceleration = 0.
-        self.steering_angle = 0.
-        self.thrust = 0.
-        self.steering = 0.
-        self.drag = 0.
+        self.position = Vector2(cfg.x, cfg.y)
+        self.velocity = Vector2(cfg.u, cfg.v)
+        self.angle = cfg.angle
+        self.angular_velocity = cfg.angular_velocity
+        self.acceleration = cfg.acceleration
+        self.steering_angle = cfg.steering_angle
+        self.thrust = cfg.thrust
+        self.steering = cfg.steering
+        self.drag = cfg.drag
+
         position = [self.position.x, self.position.y]
         angle = [self.angle]
         velocity = [self.velocity.x, self.velocity.y]

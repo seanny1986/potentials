@@ -1,12 +1,12 @@
 import gym
 import gym_aero
-import gym_aero.envs.trajectory_env as trajectory_env
+import envs.traj_3d as trajectory_env
 import random
 from math import sin, cos, exp
 from gym import spaces
 import numpy as np
 
-class TrajectoryEnv3D(trajectory_env.TrajectoryEnv):
+class TrajectoryEnv3D(trajectory_env.TrajectoryEnv3D):
     def __init__(self):
         super(TrajectoryEnv3D, self).__init__()
         self.num_fut_wp = 3

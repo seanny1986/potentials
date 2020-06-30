@@ -94,7 +94,7 @@ class GaussianPolicyLSTM(nn.Module):
 
 
 class SimpleA2C(nn.Module):
-    def __init__(self, input_dim, hidden_dim, output_dim, dim=2, lookahead=1):
+    def __init__(self, input_dim, hidden_dim, output_dim, dim=2):
         super(SimpleA2C, self).__init__()
         self.beta = SimplePolicy(input_dim, hidden_dim, output_dim).to(device)
         self.critic = nn.Sequential(
@@ -139,8 +139,8 @@ class SimpleA2C(nn.Module):
     def update(self, optim, trajectory, iters=4):
         log_probs = torch.stack(trajectory["log_probs"]).to(device)
         for i in range(iters):
-            deltas, _ = self.get_phi(trajectory, self.critic)
-            phi = (deltas-deltas.mean())/deltas.std()
+            deltas, returns = self.get_phi(trajectory, self.critic)
+            phi = deltas / returns.std()
             crit_loss = torch.mean(deltas ** 2)
             pol_loss = -torch.mean(log_probs.view(-1,1) * phi.detach())
             loss = pol_loss+crit_loss
@@ -150,8 +150,8 @@ class SimpleA2C(nn.Module):
 
 
 class Agent(SimpleA2C):
-    def __init__(self, input_dim, hidden_dim, output_dim, dim=2, lookahead=1):
-        super(Agent, self).__init__(input_dim, hidden_dim, output_dim, dim, lookahead)
+    def __init__(self, input_dim, hidden_dim, output_dim, dim=2):
+        super(Agent, self).__init__(input_dim, hidden_dim, output_dim, dim)
         self.pi = SimplePolicy(input_dim, hidden_dim, output_dim).to(device)              
         hard_update(self.pi, self.beta)
 
@@ -169,7 +169,6 @@ class Agent(SimpleA2C):
         return loss.mean()
 
     def trpo_update(self, trajectory, policy_loss_fn, pi, beta, critic, fvp, max_kl=1e-2):
-        print("Updating agent.")
         states = torch.stack(trajectory["states"]).to(device)
         actions = torch.stack(trajectory["actions"]).to(device)
         policy_loss = policy_loss_fn(trajectory, pi, critic)
@@ -186,6 +185,7 @@ class Agent(SimpleA2C):
         hard_update(beta, pi)
 
     def update(self, opt, trajectory, iters=4):
+        print("Updating agent.")
         for _ in range(iters):
             deltas, _ = self.get_phi(trajectory, self.critic)
             opt.zero_grad()

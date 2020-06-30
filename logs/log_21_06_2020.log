@@ -1,0 +1,560 @@
+INFO: 2020-06-21 22:34:20,530:  
+INFO: 2020-06-21 22:34:20,530: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-06-21 22:34:20,530: Working directory is /home/seanny/Dropbox/potentials/_2d/traj_2d/
+INFO: 2020-06-21 22:34:20,530:  
+INFO: 2020-06-21 22:34:20,530: ----------------------------------------------
+INFO: 2020-06-21 22:34:20,530: Experiment Settings
+INFO: 2020-06-21 22:34:20,531: ----------------------------------------------
+INFO: 2020-06-21 22:34:20,531: Number of workers: 16
+INFO: 2020-06-21 22:34:20,531: Batch size: 512
+INFO: 2020-06-21 22:34:20,531: Iterations: 500
+INFO: 2020-06-21 22:34:20,531: Log interval: 10
+INFO: 2020-06-21 22:34:20,531: Experiment runs: 500
+INFO: 2020-06-21 22:34:20,531: Number of test runs: 30
+INFO: 2020-06-21 22:34:20,531: ----------------------------------------------
+INFO: 2020-06-21 22:34:20,531: Network Parameters
+INFO: 2020-06-21 22:34:20,531: ----------------------------------------------
+INFO: 2020-06-21 22:34:20,531: Network input dim: 34
+INFO: 2020-06-21 22:34:20,531: Network hidden dim: 512
+INFO: 2020-06-21 22:34:20,532: Network layers: 2
+INFO: 2020-06-21 22:34:20,532: Network output dim: 2
+INFO: 2020-06-21 22:34:20,532: ----------------------------------------------
+INFO: 2020-06-21 22:34:20,532: Environment Parameters
+INFO: 2020-06-21 22:34:20,532: ----------------------------------------------
+INFO: 2020-06-21 22:34:20,532: Trajectory length: 5
+INFO: 2020-06-21 22:34:20,532: Obs future waypoints: 2
+INFO: 2020-06-21 22:34:20,532: Distribution temperature: 150
+INFO: 2020-06-21 22:34:20,532: Waypoint distance bounds: 1, 2.5
+INFO: 2020-06-21 22:34:20,532: Maximum spread: 1.5707963267948966
+INFO: 2020-06-21 22:36:09,059:  
+INFO: 2020-06-21 22:36:09,059: Iterations: 0
+INFO: 2020-06-21 22:36:09,059: Time steps: 0
+INFO: 2020-06-21 22:36:09,059: Reward: 0.02545
+INFO: 2020-06-21 22:36:09,059:  
+INFO: 2020-06-21 22:36:56,181:  
+INFO: 2020-06-21 22:36:56,181: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-06-21 22:36:56,181: Working directory is /home/seanny/Dropbox/potentials/_2d/traj_2d/
+INFO: 2020-06-21 22:36:56,181:  
+INFO: 2020-06-21 22:36:56,181: ----------------------------------------------
+INFO: 2020-06-21 22:36:56,181: Experiment Settings
+INFO: 2020-06-21 22:36:56,181: ----------------------------------------------
+INFO: 2020-06-21 22:36:56,181: Number of workers: 16
+INFO: 2020-06-21 22:36:56,182: Batch size: 512
+INFO: 2020-06-21 22:36:56,182: Iterations: 500
+INFO: 2020-06-21 22:36:56,182: Log interval: 10
+INFO: 2020-06-21 22:36:56,182: Experiment runs: 500
+INFO: 2020-06-21 22:36:56,182: Number of test runs: 30
+INFO: 2020-06-21 22:36:56,182: ----------------------------------------------
+INFO: 2020-06-21 22:36:56,182: Network Parameters
+INFO: 2020-06-21 22:36:56,182: ----------------------------------------------
+INFO: 2020-06-21 22:36:56,182: Network input dim: 34
+INFO: 2020-06-21 22:36:56,182: Network hidden dim: 512
+INFO: 2020-06-21 22:36:56,182: Network layers: 2
+INFO: 2020-06-21 22:36:56,182: Network output dim: 2
+INFO: 2020-06-21 22:36:56,182: ----------------------------------------------
+INFO: 2020-06-21 22:36:56,182: Environment Parameters
+INFO: 2020-06-21 22:36:56,182: ----------------------------------------------
+INFO: 2020-06-21 22:36:56,182: Trajectory length: 5
+INFO: 2020-06-21 22:36:56,183: Obs future waypoints: 2
+INFO: 2020-06-21 22:36:56,183: Distribution temperature: 150
+INFO: 2020-06-21 22:36:56,183: Waypoint distance bounds: 1, 2.5
+INFO: 2020-06-21 22:36:56,183: Maximum spread: 1.5707963267948966
+INFO: 2020-06-21 22:37:05,761:  
+INFO: 2020-06-21 22:37:05,761: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-06-21 22:37:05,762: Working directory is /home/seanny/Dropbox/potentials/_2d/traj_2d/
+INFO: 2020-06-21 22:37:05,762:  
+INFO: 2020-06-21 22:37:05,762: ----------------------------------------------
+INFO: 2020-06-21 22:37:05,762: Experiment Settings
+INFO: 2020-06-21 22:37:05,762: ----------------------------------------------
+INFO: 2020-06-21 22:37:05,762: Number of workers: 16
+INFO: 2020-06-21 22:37:05,762: Batch size: 512
+INFO: 2020-06-21 22:37:05,762: Iterations: 500
+INFO: 2020-06-21 22:37:05,762: Log interval: 10
+INFO: 2020-06-21 22:37:05,762: Experiment runs: 500
+INFO: 2020-06-21 22:37:05,762: Number of test runs: 30
+INFO: 2020-06-21 22:37:05,762: ----------------------------------------------
+INFO: 2020-06-21 22:37:05,762: Network Parameters
+INFO: 2020-06-21 22:37:05,762: ----------------------------------------------
+INFO: 2020-06-21 22:37:05,762: Network input dim: 34
+INFO: 2020-06-21 22:37:05,762: Network hidden dim: 512
+INFO: 2020-06-21 22:37:05,762: Network layers: 2
+INFO: 2020-06-21 22:37:05,763: Network output dim: 2
+INFO: 2020-06-21 22:37:05,763: ----------------------------------------------
+INFO: 2020-06-21 22:37:05,763: Environment Parameters
+INFO: 2020-06-21 22:37:05,763: ----------------------------------------------
+INFO: 2020-06-21 22:37:05,763: Trajectory length: 5
+INFO: 2020-06-21 22:37:05,763: Obs future waypoints: 2
+INFO: 2020-06-21 22:37:05,763: Distribution temperature: 150
+INFO: 2020-06-21 22:37:05,763: Waypoint distance bounds: 1, 2.5
+INFO: 2020-06-21 22:37:05,763: Maximum spread: 1.5707963267948966
+INFO: 2020-06-21 22:38:54,146:  
+INFO: 2020-06-21 22:38:54,146: Iterations: 0
+INFO: 2020-06-21 22:38:54,146: Time steps: 0
+INFO: 2020-06-21 22:38:54,146: Reward: 26.33252
+INFO: 2020-06-21 22:38:54,146:  
+INFO: 2020-06-21 22:43:17,316: Iterations: 10
+INFO: 2020-06-21 22:43:17,316: Time steps: 81920
+INFO: 2020-06-21 22:43:17,316: Reward: 65.35525
+INFO: 2020-06-21 22:43:17,317:  
+INFO: 2020-06-21 22:43:17,317: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-21 22:47:46,664: Iterations: 20
+INFO: 2020-06-21 22:47:46,664: Time steps: 163840
+INFO: 2020-06-21 22:47:46,664: Reward: 90.77761
+INFO: 2020-06-21 22:47:46,664:  
+INFO: 2020-06-21 22:47:46,664: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-21 22:52:14,059: Iterations: 30
+INFO: 2020-06-21 22:52:14,059: Time steps: 245760
+INFO: 2020-06-21 22:52:14,059: Reward: 95.92579
+INFO: 2020-06-21 22:52:14,059:  
+INFO: 2020-06-21 22:52:14,060: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-21 22:56:41,844: Iterations: 40
+INFO: 2020-06-21 22:56:41,844: Time steps: 327680
+INFO: 2020-06-21 22:56:41,845: Reward: 88.96083
+INFO: 2020-06-21 22:56:41,845:  
+INFO: 2020-06-21 23:01:12,719: Iterations: 50
+INFO: 2020-06-21 23:01:12,719: Time steps: 409600
+INFO: 2020-06-21 23:01:12,719: Reward: 111.48649
+INFO: 2020-06-21 23:01:12,719:  
+INFO: 2020-06-21 23:01:12,719: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-21 23:05:50,229: Iterations: 60
+INFO: 2020-06-21 23:05:50,230: Time steps: 491520
+INFO: 2020-06-21 23:05:50,230: Reward: 132.74932
+INFO: 2020-06-21 23:05:50,230:  
+INFO: 2020-06-21 23:05:50,230: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-21 23:10:20,914: Iterations: 70
+INFO: 2020-06-21 23:10:20,914: Time steps: 573440
+INFO: 2020-06-21 23:10:20,915: Reward: 119.75971
+INFO: 2020-06-21 23:10:20,915:  
+INFO: 2020-06-21 23:14:59,432: Iterations: 80
+INFO: 2020-06-21 23:14:59,432: Time steps: 655360
+INFO: 2020-06-21 23:14:59,432: Reward: 155.10418
+INFO: 2020-06-21 23:14:59,432:  
+INFO: 2020-06-21 23:14:59,432: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-21 23:19:34,586: Iterations: 90
+INFO: 2020-06-21 23:19:34,586: Time steps: 737280
+INFO: 2020-06-21 23:19:34,586: Reward: 147.54977
+INFO: 2020-06-21 23:19:34,586:  
+INFO: 2020-06-21 23:24:19,553: Iterations: 100
+INFO: 2020-06-21 23:24:19,553: Time steps: 819200
+INFO: 2020-06-21 23:24:19,553: Reward: 197.09833
+INFO: 2020-06-21 23:24:19,554:  
+INFO: 2020-06-21 23:24:19,554: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-21 23:29:04,850: Iterations: 110
+INFO: 2020-06-21 23:29:04,850: Time steps: 901120
+INFO: 2020-06-21 23:29:04,850: Reward: 170.53868
+INFO: 2020-06-21 23:29:04,851:  
+INFO: 2020-06-21 23:34:05,615: Iterations: 120
+INFO: 2020-06-21 23:34:05,615: Time steps: 983040
+INFO: 2020-06-21 23:34:05,615: Reward: 248.03917
+INFO: 2020-06-21 23:34:05,615:  
+INFO: 2020-06-21 23:34:05,615: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-21 23:39:12,277: Iterations: 130
+INFO: 2020-06-21 23:39:12,278: Time steps: 1064960
+INFO: 2020-06-21 23:39:12,278: Reward: 249.41530
+INFO: 2020-06-21 23:39:12,278:  
+INFO: 2020-06-21 23:39:12,278: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-21 23:43:58,170: Iterations: 140
+INFO: 2020-06-21 23:43:58,170: Time steps: 1146880
+INFO: 2020-06-21 23:43:58,170: Reward: 165.17271
+INFO: 2020-06-21 23:43:58,171:  
+INFO: 2020-06-21 23:48:30,610: Iterations: 150
+INFO: 2020-06-21 23:48:30,610: Time steps: 1228800
+INFO: 2020-06-21 23:48:30,610: Reward: 133.02310
+INFO: 2020-06-21 23:48:30,611:  
+INFO: 2020-06-21 23:53:31,800: Iterations: 160
+INFO: 2020-06-21 23:53:31,800: Time steps: 1310720
+INFO: 2020-06-21 23:53:31,800: Reward: 226.38565
+INFO: 2020-06-21 23:53:31,800:  
+INFO: 2020-06-21 23:58:50,486: Iterations: 170
+INFO: 2020-06-21 23:58:50,486: Time steps: 1392640
+INFO: 2020-06-21 23:58:50,486: Reward: 239.31640
+INFO: 2020-06-21 23:58:50,486:  
+INFO: 2020-06-22 00:04:23,948: Iterations: 180
+INFO: 2020-06-22 00:04:23,949: Time steps: 1474560
+INFO: 2020-06-22 00:04:23,949: Reward: 321.46549
+INFO: 2020-06-22 00:04:23,949:  
+INFO: 2020-06-22 00:04:23,949: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-22 00:09:50,701: Iterations: 190
+INFO: 2020-06-22 00:09:50,701: Time steps: 1556480
+INFO: 2020-06-22 00:09:50,701: Reward: 325.54338
+INFO: 2020-06-22 00:09:50,701:  
+INFO: 2020-06-22 00:09:50,702: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-22 00:15:23,163: Iterations: 200
+INFO: 2020-06-22 00:15:23,164: Time steps: 1638400
+INFO: 2020-06-22 00:15:23,164: Reward: 328.35376
+INFO: 2020-06-22 00:15:23,164:  
+INFO: 2020-06-22 00:15:23,164: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-22 00:20:24,965: Iterations: 210
+INFO: 2020-06-22 00:20:24,965: Time steps: 1720320
+INFO: 2020-06-22 00:20:24,965: Reward: 223.22278
+INFO: 2020-06-22 00:20:24,965:  
+INFO: 2020-06-22 00:26:41,744: Iterations: 220
+INFO: 2020-06-22 00:26:41,744: Time steps: 1802240
+INFO: 2020-06-22 00:26:41,744: Reward: 469.90381
+INFO: 2020-06-22 00:26:41,744:  
+INFO: 2020-06-22 00:26:41,744: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-22 00:32:25,272: Iterations: 230
+INFO: 2020-06-22 00:32:25,272: Time steps: 1884160
+INFO: 2020-06-22 00:32:25,272: Reward: 374.08032
+INFO: 2020-06-22 00:32:25,272:  
+INFO: 2020-06-22 00:37:42,645: Iterations: 240
+INFO: 2020-06-22 00:37:42,646: Time steps: 1966080
+INFO: 2020-06-22 00:37:42,646: Reward: 300.03418
+INFO: 2020-06-22 00:37:42,646:  
+INFO: 2020-06-22 00:44:24,578: Iterations: 250
+INFO: 2020-06-22 00:44:24,578: Time steps: 2048000
+INFO: 2020-06-22 00:44:24,578: Reward: 553.53369
+INFO: 2020-06-22 00:44:24,578:  
+INFO: 2020-06-22 00:44:24,578: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-22 00:51:20,320: Iterations: 260
+INFO: 2020-06-22 00:51:20,320: Time steps: 2129920
+INFO: 2020-06-22 00:51:20,320: Reward: 582.49466
+INFO: 2020-06-22 00:51:20,320:  
+INFO: 2020-06-22 00:51:20,320: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-22 00:56:54,767: Iterations: 270
+INFO: 2020-06-22 00:56:54,767: Time steps: 2211840
+INFO: 2020-06-22 00:56:54,767: Reward: 367.19601
+INFO: 2020-06-22 00:56:54,767:  
+INFO: 2020-06-22 01:04:20,523: Iterations: 280
+INFO: 2020-06-22 01:04:20,523: Time steps: 2293760
+INFO: 2020-06-22 01:04:20,524: Reward: 710.21917
+INFO: 2020-06-22 01:04:20,524:  
+INFO: 2020-06-22 01:04:20,524: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-06-22 01:10:46,700: Iterations: 290
+INFO: 2020-06-22 01:10:46,700: Time steps: 2375680
+INFO: 2020-06-22 01:10:46,701: Reward: 495.15330
+INFO: 2020-06-22 01:10:46,701:  
+INFO: 2020-06-22 01:17:11,978: Iterations: 300
+INFO: 2020-06-22 01:17:11,978: Time steps: 2457600
+INFO: 2020-06-22 01:17:11,978: Reward: 530.20826
+INFO: 2020-06-22 01:17:11,978:  
+INFO: 2020-06-22 01:23:20,962: Iterations: 310
+INFO: 2020-06-22 01:23:20,963: Time steps: 2539520
+INFO: 2020-06-22 01:23:20,963: Reward: 492.42334
+INFO: 2020-06-22 01:23:20,963:  
+INFO: 2020-06-22 01:29:44,685: Iterations: 320
+INFO: 2020-06-22 01:29:44,685: Time steps: 2621440
+INFO: 2020-06-22 01:29:44,686: Reward: 495.79801
+INFO: 2020-06-22 01:29:44,686:  
+INFO: 2020-06-22 01:36:02,709: Iterations: 330
+INFO: 2020-06-22 01:36:02,709: Time steps: 2703360
+INFO: 2020-06-22 01:36:02,709: Reward: 492.39196
+INFO: 2020-06-22 01:36:02,709:  
+INFO: 2020-06-22 01:42:50,504: Iterations: 340
+INFO: 2020-06-22 01:42:50,504: Time steps: 2785280
+INFO: 2020-06-22 01:42:50,504: Reward: 603.54685
+INFO: 2020-06-22 01:42:50,504:  
+INFO: 2020-06-22 01:48:55,142: Iterations: 350
+INFO: 2020-06-22 01:48:55,143: Time steps: 2867200
+INFO: 2020-06-22 01:48:55,143: Reward: 481.40503
+INFO: 2020-06-22 01:48:55,143:  
+INFO: 2020-06-22 01:55:31,684: Iterations: 360
+INFO: 2020-06-22 01:55:31,684: Time steps: 2949120
+INFO: 2020-06-22 01:55:31,685: Reward: 553.09851
+INFO: 2020-06-22 01:55:31,685:  
+INFO: 2020-06-22 02:01:52,471: Iterations: 370
+INFO: 2020-06-22 02:01:52,471: Time steps: 3031040
+INFO: 2020-06-22 02:01:52,472: Reward: 522.62615
+INFO: 2020-06-22 02:01:52,472:  
+INFO: 2020-06-22 02:09:13,762: Iterations: 380
+INFO: 2020-06-22 02:09:13,763: Time steps: 3112960
+INFO: 2020-06-22 02:09:13,763: Reward: 703.87109
+INFO: 2020-06-22 02:09:13,763:  
+INFO: 2020-06-22 02:15:52,750: Iterations: 390
+INFO: 2020-06-22 02:15:52,750: Time steps: 3194880
+INFO: 2020-06-22 02:15:52,750: Reward: 525.49345
+INFO: 2020-06-22 02:15:52,750:  
+INFO: 2020-06-22 02:22:05,265: Iterations: 400
+INFO: 2020-06-22 02:22:05,266: Time steps: 3276800
+INFO: 2020-06-22 02:22:05,266: Reward: 465.27209
+INFO: 2020-06-22 02:22:05,266:  
+INFO: 2020-06-22 02:28:46,847: Iterations: 410
+INFO: 2020-06-22 02:28:46,847: Time steps: 3358720
+INFO: 2020-06-22 02:28:46,847: Reward: 560.36103
+INFO: 2020-06-22 02:28:46,848:  
+INFO: 2020-06-22 02:35:47,244: Iterations: 420
+INFO: 2020-06-22 02:35:47,245: Time steps: 3440640
+INFO: 2020-06-22 02:35:47,245: Reward: 622.25722
+INFO: 2020-06-22 02:35:47,245:  
+INFO: 2020-06-22 02:42:09,542: Iterations: 430
+INFO: 2020-06-22 02:42:09,542: Time steps: 3522560
+INFO: 2020-06-22 02:42:09,542: Reward: 458.40532
+INFO: 2020-06-22 02:42:09,542:  
+INFO: 2020-06-22 02:47:49,541: Iterations: 440
+INFO: 2020-06-22 02:47:49,541: Time steps: 3604480
+INFO: 2020-06-22 02:47:49,541: Reward: 348.15957
+INFO: 2020-06-22 02:47:49,541:  
+INFO: 2020-06-22 02:53:56,845: Iterations: 450
+INFO: 2020-06-22 02:53:56,845: Time steps: 3686400
+INFO: 2020-06-22 02:53:56,846: Reward: 421.64450
+INFO: 2020-06-22 02:53:56,846:  
+INFO: 2020-06-22 03:00:37,325: Iterations: 460
+INFO: 2020-06-22 03:00:37,326: Time steps: 3768320
+INFO: 2020-06-22 03:00:37,326: Reward: 535.00145
+INFO: 2020-06-22 03:00:37,326:  
+INFO: 2020-06-22 03:07:03,715: Iterations: 470
+INFO: 2020-06-22 03:07:03,715: Time steps: 3850240
+INFO: 2020-06-22 03:07:03,715: Reward: 518.20687
+INFO: 2020-06-22 03:07:03,715:  
+INFO: 2020-06-22 03:12:28,105: Iterations: 480
+INFO: 2020-06-22 03:12:28,105: Time steps: 3932160
+INFO: 2020-06-22 03:12:28,105: Reward: 331.15136
+INFO: 2020-06-22 03:12:28,106:  
+INFO: 2020-06-22 03:18:59,096: Iterations: 490
+INFO: 2020-06-22 03:18:59,097: Time steps: 4014080
+INFO: 2020-06-22 03:18:59,097: Reward: 507.76595
+INFO: 2020-06-22 03:18:59,097:  
+INFO: 2020-06-22 03:25:50,255: Iterations: 500
+INFO: 2020-06-22 03:25:50,255: Time steps: 4096000
+INFO: 2020-06-22 03:25:50,255: Reward: 597.93812
+INFO: 2020-06-22 03:25:50,256:  
+INFO: 2020-06-22 03:25:50,256: Saving final model as /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1_2020-06-22 03:25:50.256095_final.pth.tar
+INFO: 2020-06-22 03:25:50,473:  
+INFO: 2020-06-22 03:25:50,473: Initializing Soft Goals 2D Waypoint Navigation Environment
+INFO: 2020-06-22 03:25:50,473: Working directory is /home/seanny/Dropbox/potentials/_2d/soft_2d/
+INFO: 2020-06-22 03:25:50,473:  
+INFO: 2020-06-22 03:25:50,473: ----------------------------------------------
+INFO: 2020-06-22 03:25:50,473: Experiment Settings
+INFO: 2020-06-22 03:25:50,473: ----------------------------------------------
+INFO: 2020-06-22 03:25:50,473: Number of workers: 16
+INFO: 2020-06-22 03:25:50,473: Batch size: 512
+INFO: 2020-06-22 03:25:50,473: Iterations: 500
+INFO: 2020-06-22 03:25:50,474: Log interval: 10
+INFO: 2020-06-22 03:25:50,474: Experiment runs: 500
+INFO: 2020-06-22 03:25:50,474: Number of test runs: 30
+INFO: 2020-06-22 03:25:50,474: ----------------------------------------------
+INFO: 2020-06-22 03:25:50,474: Network Parameters
+INFO: 2020-06-22 03:25:50,474: ----------------------------------------------
+INFO: 2020-06-22 03:25:50,474: Network input dim: 34
+INFO: 2020-06-22 03:25:50,474: Network hidden dim: 512
+INFO: 2020-06-22 03:25:50,474: Network layers: 2
+INFO: 2020-06-22 03:25:50,474: Network output dim: 2
+INFO: 2020-06-22 03:25:50,474: ----------------------------------------------
+INFO: 2020-06-22 03:25:50,474: Environment Parameters
+INFO: 2020-06-22 03:25:50,474: ----------------------------------------------
+INFO: 2020-06-22 03:25:50,474: Trajectory length: 5
+INFO: 2020-06-22 03:25:50,474: Obs future waypoints: 2
+INFO: 2020-06-22 03:25:50,474: Distribution temperature: 150
+INFO: 2020-06-22 03:25:50,475: Waypoint distance bounds: 1, 2.5
+INFO: 2020-06-22 03:25:50,475: Maximum spread: 1.5707963267948966
+INFO: 2020-06-22 03:27:42,951:  
+INFO: 2020-06-22 03:27:42,951: Iterations: 0
+INFO: 2020-06-22 03:27:42,951: Time steps: 0
+INFO: 2020-06-22 03:27:42,951: Reward: 4.50271
+INFO: 2020-06-22 03:27:42,951:  
+INFO: 2020-06-22 03:32:13,533: Iterations: 10
+INFO: 2020-06-22 03:32:13,534: Time steps: 81920
+INFO: 2020-06-22 03:32:13,534: Reward: 19.03735
+INFO: 2020-06-22 03:32:13,534:  
+INFO: 2020-06-22 03:32:13,534: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 03:36:48,024: Iterations: 20
+INFO: 2020-06-22 03:36:48,024: Time steps: 163840
+INFO: 2020-06-22 03:36:48,024: Reward: 47.17836
+INFO: 2020-06-22 03:36:48,024:  
+INFO: 2020-06-22 03:36:48,024: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 03:41:25,696: Iterations: 30
+INFO: 2020-06-22 03:41:25,696: Time steps: 245760
+INFO: 2020-06-22 03:41:25,696: Reward: 64.52101
+INFO: 2020-06-22 03:41:25,696:  
+INFO: 2020-06-22 03:41:25,697: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 03:46:14,656: Iterations: 40
+INFO: 2020-06-22 03:46:14,656: Time steps: 327680
+INFO: 2020-06-22 03:46:14,656: Reward: 120.93798
+INFO: 2020-06-22 03:46:14,656:  
+INFO: 2020-06-22 03:46:14,656: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 03:50:49,720: Iterations: 50
+INFO: 2020-06-22 03:50:49,721: Time steps: 409600
+INFO: 2020-06-22 03:50:49,721: Reward: 88.75719
+INFO: 2020-06-22 03:50:49,721:  
+INFO: 2020-06-22 03:55:40,047: Iterations: 60
+INFO: 2020-06-22 03:55:40,047: Time steps: 491520
+INFO: 2020-06-22 03:55:40,047: Reward: 103.86245
+INFO: 2020-06-22 03:55:40,047:  
+INFO: 2020-06-22 04:00:42,619: Iterations: 70
+INFO: 2020-06-22 04:00:42,619: Time steps: 573440
+INFO: 2020-06-22 04:00:42,619: Reward: 144.54369
+INFO: 2020-06-22 04:00:42,619:  
+INFO: 2020-06-22 04:00:42,619: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 04:05:50,680: Iterations: 80
+INFO: 2020-06-22 04:05:50,680: Time steps: 655360
+INFO: 2020-06-22 04:05:50,681: Reward: 177.44553
+INFO: 2020-06-22 04:05:50,681:  
+INFO: 2020-06-22 04:05:50,681: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 04:10:56,332: Iterations: 90
+INFO: 2020-06-22 04:10:56,332: Time steps: 737280
+INFO: 2020-06-22 04:10:56,332: Reward: 163.01084
+INFO: 2020-06-22 04:10:56,332:  
+INFO: 2020-06-22 04:16:09,355: Iterations: 100
+INFO: 2020-06-22 04:16:09,355: Time steps: 819200
+INFO: 2020-06-22 04:16:09,355: Reward: 174.51259
+INFO: 2020-06-22 04:16:09,356:  
+INFO: 2020-06-22 04:20:55,005: Iterations: 110
+INFO: 2020-06-22 04:20:55,005: Time steps: 901120
+INFO: 2020-06-22 04:20:55,005: Reward: 131.90688
+INFO: 2020-06-22 04:20:55,005:  
+INFO: 2020-06-22 04:25:47,000: Iterations: 120
+INFO: 2020-06-22 04:25:47,001: Time steps: 983040
+INFO: 2020-06-22 04:25:47,001: Reward: 157.54191
+INFO: 2020-06-22 04:25:47,001:  
+INFO: 2020-06-22 04:30:44,847: Iterations: 130
+INFO: 2020-06-22 04:30:44,847: Time steps: 1064960
+INFO: 2020-06-22 04:30:44,847: Reward: 184.48069
+INFO: 2020-06-22 04:30:44,847:  
+INFO: 2020-06-22 04:30:44,848: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 04:35:44,614: Iterations: 140
+INFO: 2020-06-22 04:35:44,614: Time steps: 1146880
+INFO: 2020-06-22 04:35:44,614: Reward: 212.81837
+INFO: 2020-06-22 04:35:44,615:  
+INFO: 2020-06-22 04:35:44,615: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 04:40:46,717: Iterations: 150
+INFO: 2020-06-22 04:40:46,717: Time steps: 1228800
+INFO: 2020-06-22 04:40:46,717: Reward: 194.02472
+INFO: 2020-06-22 04:40:46,717:  
+INFO: 2020-06-22 04:46:03,290: Iterations: 160
+INFO: 2020-06-22 04:46:03,291: Time steps: 1310720
+INFO: 2020-06-22 04:46:03,291: Reward: 211.13006
+INFO: 2020-06-22 04:46:03,291:  
+INFO: 2020-06-22 04:51:08,387: Iterations: 170
+INFO: 2020-06-22 04:51:08,387: Time steps: 1392640
+INFO: 2020-06-22 04:51:08,387: Reward: 185.25958
+INFO: 2020-06-22 04:51:08,387:  
+INFO: 2020-06-22 04:56:17,493: Iterations: 180
+INFO: 2020-06-22 04:56:17,493: Time steps: 1474560
+INFO: 2020-06-22 04:56:17,493: Reward: 222.36244
+INFO: 2020-06-22 04:56:17,493:  
+INFO: 2020-06-22 04:56:17,493: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 05:01:57,547: Iterations: 190
+INFO: 2020-06-22 05:01:57,548: Time steps: 1556480
+INFO: 2020-06-22 05:01:57,548: Reward: 277.70199
+INFO: 2020-06-22 05:01:57,548:  
+INFO: 2020-06-22 05:01:57,548: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 05:06:55,901: Iterations: 200
+INFO: 2020-06-22 05:06:55,901: Time steps: 1638400
+INFO: 2020-06-22 05:06:55,901: Reward: 175.25932
+INFO: 2020-06-22 05:06:55,901:  
+INFO: 2020-06-22 05:12:35,182: Iterations: 210
+INFO: 2020-06-22 05:12:35,183: Time steps: 1720320
+INFO: 2020-06-22 05:12:35,183: Reward: 275.91210
+INFO: 2020-06-22 05:12:35,183:  
+INFO: 2020-06-22 05:18:01,493: Iterations: 220
+INFO: 2020-06-22 05:18:01,493: Time steps: 1802240
+INFO: 2020-06-22 05:18:01,494: Reward: 254.59202
+INFO: 2020-06-22 05:18:01,494:  
+INFO: 2020-06-22 05:23:37,161: Iterations: 230
+INFO: 2020-06-22 05:23:37,161: Time steps: 1884160
+INFO: 2020-06-22 05:23:37,161: Reward: 295.81915
+INFO: 2020-06-22 05:23:37,162:  
+INFO: 2020-06-22 05:23:37,162: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 05:29:27,520: Iterations: 240
+INFO: 2020-06-22 05:29:27,520: Time steps: 1966080
+INFO: 2020-06-22 05:29:27,520: Reward: 291.70180
+INFO: 2020-06-22 05:29:27,520:  
+INFO: 2020-06-22 05:35:11,287: Iterations: 250
+INFO: 2020-06-22 05:35:11,287: Time steps: 2048000
+INFO: 2020-06-22 05:35:11,287: Reward: 278.02991
+INFO: 2020-06-22 05:35:11,287:  
+INFO: 2020-06-22 05:40:51,801: Iterations: 260
+INFO: 2020-06-22 05:40:51,801: Time steps: 2129920
+INFO: 2020-06-22 05:40:51,802: Reward: 281.90105
+INFO: 2020-06-22 05:40:51,802:  
+INFO: 2020-06-22 05:46:21,295: Iterations: 270
+INFO: 2020-06-22 05:46:21,295: Time steps: 2211840
+INFO: 2020-06-22 05:46:21,296: Reward: 249.67512
+INFO: 2020-06-22 05:46:21,296:  
+INFO: 2020-06-22 05:52:17,928: Iterations: 280
+INFO: 2020-06-22 05:52:17,929: Time steps: 2293760
+INFO: 2020-06-22 05:52:17,929: Reward: 320.59787
+INFO: 2020-06-22 05:52:17,929:  
+INFO: 2020-06-22 05:52:17,929: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 05:57:58,741: Iterations: 290
+INFO: 2020-06-22 05:57:58,741: Time steps: 2375680
+INFO: 2020-06-22 05:57:58,741: Reward: 291.64640
+INFO: 2020-06-22 05:57:58,742:  
+INFO: 2020-06-22 06:04:16,755: Iterations: 300
+INFO: 2020-06-22 06:04:16,756: Time steps: 2457600
+INFO: 2020-06-22 06:04:16,756: Reward: 345.07729
+INFO: 2020-06-22 06:04:16,756:  
+INFO: 2020-06-22 06:04:16,756: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 06:10:33,475: Iterations: 310
+INFO: 2020-06-22 06:10:33,476: Time steps: 2539520
+INFO: 2020-06-22 06:10:33,476: Reward: 353.14522
+INFO: 2020-06-22 06:10:33,476:  
+INFO: 2020-06-22 06:10:33,476: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 06:16:35,312: Iterations: 320
+INFO: 2020-06-22 06:16:35,312: Time steps: 2621440
+INFO: 2020-06-22 06:16:35,312: Reward: 337.80769
+INFO: 2020-06-22 06:16:35,312:  
+INFO: 2020-06-22 06:22:38,728: Iterations: 330
+INFO: 2020-06-22 06:22:38,728: Time steps: 2703360
+INFO: 2020-06-22 06:22:38,728: Reward: 347.31739
+INFO: 2020-06-22 06:22:38,728:  
+INFO: 2020-06-22 06:28:48,940: Iterations: 340
+INFO: 2020-06-22 06:28:48,940: Time steps: 2785280
+INFO: 2020-06-22 06:28:48,940: Reward: 348.30355
+INFO: 2020-06-22 06:28:48,941:  
+INFO: 2020-06-22 06:35:55,215: Iterations: 350
+INFO: 2020-06-22 06:35:55,215: Time steps: 2867200
+INFO: 2020-06-22 06:35:55,215: Reward: 481.89951
+INFO: 2020-06-22 06:35:55,215:  
+INFO: 2020-06-22 06:35:55,216: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps.pth.tar
+INFO: 2020-06-22 06:42:19,303: Iterations: 360
+INFO: 2020-06-22 06:42:19,303: Time steps: 2949120
+INFO: 2020-06-22 06:42:19,303: Reward: 410.63799
+INFO: 2020-06-22 06:42:19,303:  
+INFO: 2020-06-22 06:48:41,372: Iterations: 370
+INFO: 2020-06-22 06:48:41,372: Time steps: 3031040
+INFO: 2020-06-22 06:48:41,372: Reward: 368.64989
+INFO: 2020-06-22 06:48:41,372:  
+INFO: 2020-06-22 06:55:22,333: Iterations: 380
+INFO: 2020-06-22 06:55:22,334: Time steps: 3112960
+INFO: 2020-06-22 06:55:22,334: Reward: 429.50650
+INFO: 2020-06-22 06:55:22,334:  
+INFO: 2020-06-22 07:01:58,983: Iterations: 390
+INFO: 2020-06-22 07:01:58,983: Time steps: 3194880
+INFO: 2020-06-22 07:01:58,983: Reward: 410.31157
+INFO: 2020-06-22 07:01:58,983:  
+INFO: 2020-06-22 07:08:12,587: Iterations: 400
+INFO: 2020-06-22 07:08:12,587: Time steps: 3276800
+INFO: 2020-06-22 07:08:12,588: Reward: 351.43040
+INFO: 2020-06-22 07:08:12,588:  
+INFO: 2020-06-22 07:14:52,331: Iterations: 410
+INFO: 2020-06-22 07:14:52,331: Time steps: 3358720
+INFO: 2020-06-22 07:14:52,331: Reward: 441.93237
+INFO: 2020-06-22 07:14:52,331:  
+INFO: 2020-06-22 07:20:59,698: Iterations: 420
+INFO: 2020-06-22 07:20:59,699: Time steps: 3440640
+INFO: 2020-06-22 07:20:59,699: Reward: 347.53779
+INFO: 2020-06-22 07:20:59,699:  
+INFO: 2020-06-22 07:27:00,807: Iterations: 430
+INFO: 2020-06-22 07:27:00,807: Time steps: 3522560
+INFO: 2020-06-22 07:27:00,807: Reward: 314.90533
+INFO: 2020-06-22 07:27:00,807:  
+INFO: 2020-06-22 07:32:59,957: Iterations: 440
+INFO: 2020-06-22 07:32:59,957: Time steps: 3604480
+INFO: 2020-06-22 07:32:59,957: Reward: 329.22297
+INFO: 2020-06-22 07:32:59,957:  
+INFO: 2020-06-22 07:39:16,530: Iterations: 450
+INFO: 2020-06-22 07:39:16,530: Time steps: 3686400
+INFO: 2020-06-22 07:39:16,530: Reward: 359.40370
+INFO: 2020-06-22 07:39:16,530:  
+INFO: 2020-06-22 07:45:41,067: Iterations: 460
+INFO: 2020-06-22 07:45:41,067: Time steps: 3768320
+INFO: 2020-06-22 07:45:41,067: Reward: 391.31496
+INFO: 2020-06-22 07:45:41,067:  
+INFO: 2020-06-22 07:51:44,873: Iterations: 470
+INFO: 2020-06-22 07:51:44,873: Time steps: 3850240
+INFO: 2020-06-22 07:51:44,874: Reward: 338.70288
+INFO: 2020-06-22 07:51:44,874:  
+INFO: 2020-06-22 07:58:41,126: Iterations: 480
+INFO: 2020-06-22 07:58:41,126: Time steps: 3932160
+INFO: 2020-06-22 07:58:41,126: Reward: 454.92574
+INFO: 2020-06-22 07:58:41,126:  
+INFO: 2020-06-22 08:05:10,008: Iterations: 490
+INFO: 2020-06-22 08:05:10,008: Time steps: 4014080
+INFO: 2020-06-22 08:05:10,008: Reward: 399.52978
+INFO: 2020-06-22 08:05:10,008:  
+INFO: 2020-06-22 08:11:07,630: Iterations: 500
+INFO: 2020-06-22 08:11:07,630: Time steps: 4096000
+INFO: 2020-06-22 08:11:07,630: Reward: 314.03196
+INFO: 2020-06-22 08:11:07,630:  
+INFO: 2020-06-22 08:11:07,631: Saving final model as /home/seanny/Dropbox/potentials/_2d/soft_2d/2-wps_2020-06-22 08:11:07.631067_final.pth.tar

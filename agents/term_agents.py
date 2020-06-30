@@ -53,19 +53,18 @@ class TerminationPolicy(nn.Module):
                                     nn.Linear(hidden_dim, output_dim))
 
     def forward(self, x):
-        termination_score = F.softmax(self.termination_score(x), dim=-1)
+        termination_score = torch.softmax(self.termination_score(x), dim=-1)
         return termination_score
 
 class TermA2C(agents.SimpleA2C):
-    def __init__(self, input_dim, hidden_dim, output_dim, dim, lookahead):
-        super(TermA2C, self).__init__(input_dim, hidden_dim, output_dim, dim, lookahead)
+    def __init__(self, input_dim, hidden_dim, output_dim, dim):
+        super(TermA2C, self).__init__(input_dim, hidden_dim, output_dim, dim)
         self.term_beta = TerminationPolicy(input_dim, 64, 2).to(device)
-        #self.term_critic = nn.Sequential(
-        #                           nn.Linear(input_dim, 64),
-        #                            nn.Tanh(),
-        #                            nn.Linear(64, 64),
-        #                            nn.Tanh(),
-        #                            nn.Linear(64, 1)).to(device)
+        self.term_critic = nn.Sequential(nn.Linear(input_dim, 64),
+                                         nn.Tanh(),
+                                         nn.Linear(64, 64),
+                                         nn.Tanh(),
+                                         nn.Linear(64, 1)).to(device)
 
     def terminate(self, x):
         score = self.term_beta(x)
@@ -93,48 +92,35 @@ class TermA2C(agents.SimpleA2C):
         term_log_probs = torch.stack(trajectory["term_log_probs"])
         
         traj = {
-                    "rewards" : [r+t for r,t in zip(trajectory["rewards"], trajectory["term_rew"])],
+                    "states" : trajectory["states"],
+                    "rewards" : trajectory["rewards"],
                     "masks" : trajectory["masks"],
-                    "values" : trajectory["values"],
                     "next_states" : trajectory["next_states"]}
         
         term_traj = {
+                    "states" : trajectory["states"],
                     "rewards" : trajectory["term_rew"],
                     "masks" : trajectory["masks"],
-                    "values" : trajectory["term_val"],
                     "next_states" : trajectory["next_states"]}
 
-        val_fn_preds = [self.pos_val_fn(state) for state in trajectory["goal_position"]]
-        val_fn_traj = {
-                    "states" : trajectory["goal_position"],
-                    "rewards" : trajectory["rewards"],
-                    "masks" : trajectory["masks"],
-                    "values" : val_fn_preds,
-                    "next_states" : trajectory["next_goal_position"]}
-
         for i in range(iters):
-            deltas, _ = self.get_phi(traj, self.critic)
-            term_deltas, _ = self.get_phi(term_traj, self.term_critic)
-            val_fn, _ = self.get_phi(val_fn_traj, self.pos_val_fn)
-            phi = (deltas-deltas.mean())/deltas.std()
-            term_phi = (term_deltas-term_deltas.mean())/term_deltas.std()
-            crit_loss = torch.mean(deltas**2)
-            term_crit_loss = torch.mean(term_deltas**2)
-            val_fn_loss = torch.mean(torch.mean(val_fn**2))
-            pol_loss = -torch.mean(log_probs.view(-1,1)*phi.detach())
+            deltas, returns = self.get_phi(traj, self.critic)
+            term_deltas, term_returns = self.get_phi(term_traj, self.term_critic)
+            phi = deltas / returns.std()
+            term_phi = term_deltas / term_returns.std()
+            crit_loss = torch.mean(deltas ** 2)
+            term_crit_loss = torch.mean(term_deltas ** 2)
+            pol_loss = -torch.mean(log_probs.view(-1,1) * phi.detach())
             term_pol_loss = -torch.mean(term_log_probs.view(-1,1)*term_phi.detach())
-            loss = pol_loss+term_pol_loss+crit_loss+term_crit_loss+val_fn_loss
+            loss = pol_loss + term_pol_loss + crit_loss + term_crit_loss
             optim.zero_grad()
-            if i < iters-1:
-                loss.backward(retain_graph=True)
-            else:
-                loss.backward()
+            loss.backward(retain_graph=True)
             optim.step()
 
 
 class Agent(TermA2C):
-    def __init__(self, input_dim, hidden_dim, output_dim, dim=2, lookahead=1):
-        super(Agent, self).__init__(input_dim, hidden_dim, output_dim, dim, lookahead)
+    def __init__(self, input_dim, hidden_dim, output_dim, dim=2):
+        super(Agent, self).__init__(input_dim, hidden_dim, output_dim, dim)
         self.pi = agents.SimplePolicy(input_dim, hidden_dim, output_dim).to(device)
         self.term_pi = TerminationPolicy(input_dim, 64, 2).to(device)        
         hard_update(self.pi, self.beta)
@@ -156,7 +142,7 @@ class Agent(TermA2C):
         hard_update(beta, pi)
 
     def update(self, opt, trajectory, iters=3):
-        
+        print("Updating agent.")
         def get_gaussian_policy_loss(trajectory, pi, critic):
             states = torch.stack(trajectory["states"])
             actions = torch.stack(trajectory["actions"])
@@ -166,7 +152,7 @@ class Agent(TermA2C):
             dist = Normal(mus, stds)
             log_probs = torch.sum(dist.log_prob(actions), dim=-1)
             log_probs = log_probs.view(-1, 1)
-            loss = -log_probs*phi.detach()
+            loss = -log_probs * phi.detach()
             return loss.mean()
 
         def get_categorical_policy_loss(trajectory, pi, critic):
@@ -185,7 +171,6 @@ class Agent(TermA2C):
                     "actions" : trajectory["actions"],
                     "rewards" : trajectory["rewards"],
                     "masks" : trajectory["masks"],
-                    "values" : trajectory["values"],
                     "next_states" : trajectory["next_states"]}
         
         term_traj = {
@@ -194,27 +179,15 @@ class Agent(TermA2C):
                     "rewards" : trajectory["rewards"],
                     "term_rew" : trajectory["term_rew"],
                     "masks" : trajectory["masks"],
-                    "values" : trajectory["values"],
                     "next_states" : trajectory["next_states"]}
-
-        val_fn_preds = [self.pos_val_fn(state) for state in trajectory["goal_position"]]
-        val_fn_traj = {
-                    "states" : trajectory["goal_position"],
-                    "rewards" : trajectory["rewards"],
-                    "masks" : trajectory["masks"],
-                    "values" : val_fn_preds,
-                    "next_states" : trajectory["next_goal_position"]}
 
         for _ in range(iters):
             deltas, _ = self.get_phi(traj, self.critic)
             #term_deltas, _ = self.get_phi(term_traj, self.term_critic)
-            val_fn, _ = self.get_phi(val_fn_traj, self.pos_val_fn)
             opt.zero_grad()
             crit_loss = torch.mean(deltas ** 2)
             #term_crit_loss = torch.mean(term_deltas ** 2)
-            val_fn_loss = torch.mean(torch.mean(val_fn ** 2))
-            loss = crit_loss + val_fn_loss
-            loss.backward(retain_graph=True)
+            crit_loss.backward()
             opt.step()
         self.trpo_update(traj, 
                         get_gaussian_policy_loss, 
