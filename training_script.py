@@ -6,7 +6,7 @@ import _2d.term_2d.main as term_2d_main
 #import _3d.waypoint_3d.main as wp_3d_main
 #import _3d.nh_waypoint_3d.main as nh_wp_3d_main
 import _3d.traj_3d.main as traj_3d_main
-#import _3d.soft_3d.main as soft_3d_main
+import _3d.soft_3d.main as soft_3d_main
 #import _3d.term_3d.main as term_3d_main
 
 import config as cfg
@@ -33,6 +33,6 @@ logger = log.get_logger()
 
 #wp_3d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
 #nh_wp_3d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
-traj_3d_main.run(logger, envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r, t_runs=test_runs)
-#soft_3d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)
+#traj_3d_main.run(logger, envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r, t_runs=test_runs)
+soft_3d_main.run(logger, envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r, t_runs=test_runs)
 #term_3d_main.run(num_envs=envs, hidden_dim=hd, batch_size=bs, iterations=iters, log_interval=li, runs=r)

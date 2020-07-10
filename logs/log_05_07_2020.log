@@ -1,0 +1,2200 @@
+INFO: 2020-07-05 13:07:59,134:  
+INFO: 2020-07-05 13:07:59,135: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:07:59,135: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:07:59,135:  
+INFO: 2020-07-05 13:07:59,135: ----------------------------------------------
+INFO: 2020-07-05 13:07:59,135: Experiment Settings
+INFO: 2020-07-05 13:07:59,135: ----------------------------------------------
+INFO: 2020-07-05 13:07:59,135: Number of workers: 16
+INFO: 2020-07-05 13:07:59,135: Batch size: 512
+INFO: 2020-07-05 13:07:59,135: Iterations: 500
+INFO: 2020-07-05 13:07:59,135: Log interval: 10
+INFO: 2020-07-05 13:07:59,135: Experiment runs: 500
+INFO: 2020-07-05 13:07:59,135: Number of test runs: 30
+INFO: 2020-07-05 13:07:59,135: ----------------------------------------------
+INFO: 2020-07-05 13:07:59,135: Network Parameters
+INFO: 2020-07-05 13:07:59,135: ----------------------------------------------
+INFO: 2020-07-05 13:07:59,135: Network input dim: 67
+INFO: 2020-07-05 13:07:59,135: Network hidden dim: 512
+INFO: 2020-07-05 13:07:59,136: Network layers: 2
+INFO: 2020-07-05 13:07:59,136: Network output dim: 4
+INFO: 2020-07-05 13:07:59,136: ----------------------------------------------
+INFO: 2020-07-05 13:07:59,136: Environment Parameters
+INFO: 2020-07-05 13:07:59,136: ----------------------------------------------
+INFO: 2020-07-05 13:07:59,136: Trajectory length: 7
+INFO: 2020-07-05 13:07:59,136: Obs future waypoints: 2
+INFO: 2020-07-05 13:07:59,136: Distribution temperature: 150
+INFO: 2020-07-05 13:07:59,136: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:07:59,136: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:14:52,722:  
+INFO: 2020-07-05 13:14:52,722: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:14:52,722: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:14:52,723:  
+INFO: 2020-07-05 13:14:52,723: ----------------------------------------------
+INFO: 2020-07-05 13:14:52,723: Experiment Settings
+INFO: 2020-07-05 13:14:52,723: ----------------------------------------------
+INFO: 2020-07-05 13:14:52,723: Number of workers: 16
+INFO: 2020-07-05 13:14:52,723: Batch size: 512
+INFO: 2020-07-05 13:14:52,723: Iterations: 500
+INFO: 2020-07-05 13:14:52,723: Log interval: 10
+INFO: 2020-07-05 13:14:52,723: Experiment runs: 500
+INFO: 2020-07-05 13:14:52,723: Number of test runs: 30
+INFO: 2020-07-05 13:14:52,723: ----------------------------------------------
+INFO: 2020-07-05 13:14:52,723: Network Parameters
+INFO: 2020-07-05 13:14:52,723: ----------------------------------------------
+INFO: 2020-07-05 13:14:52,723: Network input dim: 67
+INFO: 2020-07-05 13:14:52,723: Network hidden dim: 512
+INFO: 2020-07-05 13:14:52,723: Network layers: 2
+INFO: 2020-07-05 13:14:52,723: Network output dim: 4
+INFO: 2020-07-05 13:14:52,723: ----------------------------------------------
+INFO: 2020-07-05 13:14:52,723: Environment Parameters
+INFO: 2020-07-05 13:14:52,723: ----------------------------------------------
+INFO: 2020-07-05 13:14:52,724: Trajectory length: 7
+INFO: 2020-07-05 13:14:52,724: Obs future waypoints: 2
+INFO: 2020-07-05 13:14:52,724: Distribution temperature: 150
+INFO: 2020-07-05 13:14:52,724: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:14:52,724: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:15:52,849:  
+INFO: 2020-07-05 13:15:52,849: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:15:52,849: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:15:52,849:  
+INFO: 2020-07-05 13:15:52,849: ----------------------------------------------
+INFO: 2020-07-05 13:15:52,849: Experiment Settings
+INFO: 2020-07-05 13:15:52,850: ----------------------------------------------
+INFO: 2020-07-05 13:15:52,850: Number of workers: 16
+INFO: 2020-07-05 13:15:52,850: Batch size: 512
+INFO: 2020-07-05 13:15:52,850: Iterations: 500
+INFO: 2020-07-05 13:15:52,850: Log interval: 10
+INFO: 2020-07-05 13:15:52,850: Experiment runs: 500
+INFO: 2020-07-05 13:15:52,850: Number of test runs: 30
+INFO: 2020-07-05 13:15:52,850: ----------------------------------------------
+INFO: 2020-07-05 13:15:52,850: Network Parameters
+INFO: 2020-07-05 13:15:52,850: ----------------------------------------------
+INFO: 2020-07-05 13:15:52,850: Network input dim: 67
+INFO: 2020-07-05 13:15:52,850: Network hidden dim: 512
+INFO: 2020-07-05 13:15:52,850: Network layers: 2
+INFO: 2020-07-05 13:15:52,850: Network output dim: 4
+INFO: 2020-07-05 13:15:52,850: ----------------------------------------------
+INFO: 2020-07-05 13:15:52,850: Environment Parameters
+INFO: 2020-07-05 13:15:52,850: ----------------------------------------------
+INFO: 2020-07-05 13:15:52,850: Trajectory length: 7
+INFO: 2020-07-05 13:15:52,851: Obs future waypoints: 2
+INFO: 2020-07-05 13:15:52,851: Distribution temperature: 150
+INFO: 2020-07-05 13:15:52,851: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:15:52,851: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:16:36,355:  
+INFO: 2020-07-05 13:16:36,355: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:16:36,355: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:16:36,355:  
+INFO: 2020-07-05 13:16:36,355: ----------------------------------------------
+INFO: 2020-07-05 13:16:36,355: Experiment Settings
+INFO: 2020-07-05 13:16:36,356: ----------------------------------------------
+INFO: 2020-07-05 13:16:36,356: Number of workers: 16
+INFO: 2020-07-05 13:16:36,356: Batch size: 512
+INFO: 2020-07-05 13:16:36,356: Iterations: 500
+INFO: 2020-07-05 13:16:36,356: Log interval: 10
+INFO: 2020-07-05 13:16:36,356: Experiment runs: 500
+INFO: 2020-07-05 13:16:36,356: Number of test runs: 30
+INFO: 2020-07-05 13:16:36,356: ----------------------------------------------
+INFO: 2020-07-05 13:16:36,356: Network Parameters
+INFO: 2020-07-05 13:16:36,356: ----------------------------------------------
+INFO: 2020-07-05 13:16:36,356: Network input dim: 67
+INFO: 2020-07-05 13:16:36,357: Network hidden dim: 512
+INFO: 2020-07-05 13:16:36,357: Network layers: 2
+INFO: 2020-07-05 13:16:36,357: Network output dim: 4
+INFO: 2020-07-05 13:16:36,357: ----------------------------------------------
+INFO: 2020-07-05 13:16:36,357: Environment Parameters
+INFO: 2020-07-05 13:16:36,357: ----------------------------------------------
+INFO: 2020-07-05 13:16:36,357: Trajectory length: 7
+INFO: 2020-07-05 13:16:36,357: Obs future waypoints: 2
+INFO: 2020-07-05 13:16:36,357: Distribution temperature: 150
+INFO: 2020-07-05 13:16:36,357: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:16:36,357: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:17:13,817:  
+INFO: 2020-07-05 13:17:13,817: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:17:13,817: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:17:13,817:  
+INFO: 2020-07-05 13:17:13,817: ----------------------------------------------
+INFO: 2020-07-05 13:17:13,817: Experiment Settings
+INFO: 2020-07-05 13:17:13,817: ----------------------------------------------
+INFO: 2020-07-05 13:17:13,817: Number of workers: 16
+INFO: 2020-07-05 13:17:13,818: Batch size: 512
+INFO: 2020-07-05 13:17:13,818: Iterations: 500
+INFO: 2020-07-05 13:17:13,818: Log interval: 10
+INFO: 2020-07-05 13:17:13,818: Experiment runs: 500
+INFO: 2020-07-05 13:17:13,818: Number of test runs: 30
+INFO: 2020-07-05 13:17:13,818: ----------------------------------------------
+INFO: 2020-07-05 13:17:13,818: Network Parameters
+INFO: 2020-07-05 13:17:13,818: ----------------------------------------------
+INFO: 2020-07-05 13:17:13,818: Network input dim: 67
+INFO: 2020-07-05 13:17:13,818: Network hidden dim: 512
+INFO: 2020-07-05 13:17:13,818: Network layers: 2
+INFO: 2020-07-05 13:17:13,818: Network output dim: 4
+INFO: 2020-07-05 13:17:13,818: ----------------------------------------------
+INFO: 2020-07-05 13:17:13,818: Environment Parameters
+INFO: 2020-07-05 13:17:13,818: ----------------------------------------------
+INFO: 2020-07-05 13:17:13,818: Trajectory length: 7
+INFO: 2020-07-05 13:17:13,818: Obs future waypoints: 2
+INFO: 2020-07-05 13:17:13,818: Distribution temperature: 150
+INFO: 2020-07-05 13:17:13,818: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:17:13,818: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:18:46,593:  
+INFO: 2020-07-05 13:18:46,593: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:18:46,593: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:18:46,593:  
+INFO: 2020-07-05 13:18:46,593: ----------------------------------------------
+INFO: 2020-07-05 13:18:46,593: Experiment Settings
+INFO: 2020-07-05 13:18:46,594: ----------------------------------------------
+INFO: 2020-07-05 13:18:46,594: Number of workers: 16
+INFO: 2020-07-05 13:18:46,594: Batch size: 512
+INFO: 2020-07-05 13:18:46,594: Iterations: 500
+INFO: 2020-07-05 13:18:46,594: Log interval: 10
+INFO: 2020-07-05 13:18:46,594: Experiment runs: 500
+INFO: 2020-07-05 13:18:46,594: Number of test runs: 30
+INFO: 2020-07-05 13:18:46,594: ----------------------------------------------
+INFO: 2020-07-05 13:18:46,594: Network Parameters
+INFO: 2020-07-05 13:18:46,594: ----------------------------------------------
+INFO: 2020-07-05 13:18:46,594: Network input dim: 67
+INFO: 2020-07-05 13:18:46,594: Network hidden dim: 512
+INFO: 2020-07-05 13:18:46,594: Network layers: 2
+INFO: 2020-07-05 13:18:46,594: Network output dim: 4
+INFO: 2020-07-05 13:18:46,594: ----------------------------------------------
+INFO: 2020-07-05 13:18:46,594: Environment Parameters
+INFO: 2020-07-05 13:18:46,594: ----------------------------------------------
+INFO: 2020-07-05 13:18:46,594: Trajectory length: 7
+INFO: 2020-07-05 13:18:46,594: Obs future waypoints: 2
+INFO: 2020-07-05 13:18:46,594: Distribution temperature: 150
+INFO: 2020-07-05 13:18:46,594: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:18:46,595: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:21:20,332:  
+INFO: 2020-07-05 13:21:20,332: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:21:20,332: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:21:20,332:  
+INFO: 2020-07-05 13:21:20,332: ----------------------------------------------
+INFO: 2020-07-05 13:21:20,332: Experiment Settings
+INFO: 2020-07-05 13:21:20,332: ----------------------------------------------
+INFO: 2020-07-05 13:21:20,332: Number of workers: 16
+INFO: 2020-07-05 13:21:20,332: Batch size: 512
+INFO: 2020-07-05 13:21:20,332: Iterations: 500
+INFO: 2020-07-05 13:21:20,332: Log interval: 10
+INFO: 2020-07-05 13:21:20,332: Experiment runs: 500
+INFO: 2020-07-05 13:21:20,332: Number of test runs: 30
+INFO: 2020-07-05 13:21:20,332: ----------------------------------------------
+INFO: 2020-07-05 13:21:20,333: Network Parameters
+INFO: 2020-07-05 13:21:20,333: ----------------------------------------------
+INFO: 2020-07-05 13:21:20,333: Network input dim: 67
+INFO: 2020-07-05 13:21:20,333: Network hidden dim: 512
+INFO: 2020-07-05 13:21:20,333: Network layers: 2
+INFO: 2020-07-05 13:21:20,333: Network output dim: 4
+INFO: 2020-07-05 13:21:20,333: ----------------------------------------------
+INFO: 2020-07-05 13:21:20,333: Environment Parameters
+INFO: 2020-07-05 13:21:20,333: ----------------------------------------------
+INFO: 2020-07-05 13:21:20,333: Trajectory length: 7
+INFO: 2020-07-05 13:21:20,333: Obs future waypoints: 2
+INFO: 2020-07-05 13:21:20,333: Distribution temperature: 150
+INFO: 2020-07-05 13:21:20,333: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:21:20,334: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:23:22,752:  
+INFO: 2020-07-05 13:23:22,753: Iterations: 0
+INFO: 2020-07-05 13:23:22,753: Time steps: 0
+INFO: 2020-07-05 13:23:22,753: Reward: -2001.95666
+INFO: 2020-07-05 13:23:22,753:  
+INFO: 2020-07-05 13:26:50,865:  
+INFO: 2020-07-05 13:26:50,865: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:26:50,865: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:26:50,865:  
+INFO: 2020-07-05 13:26:50,865: ----------------------------------------------
+INFO: 2020-07-05 13:26:50,865: Experiment Settings
+INFO: 2020-07-05 13:26:50,865: ----------------------------------------------
+INFO: 2020-07-05 13:26:50,865: Number of workers: 16
+INFO: 2020-07-05 13:26:50,865: Batch size: 512
+INFO: 2020-07-05 13:26:50,865: Iterations: 2500
+INFO: 2020-07-05 13:26:50,865: Log interval: 10
+INFO: 2020-07-05 13:26:50,866: Experiment runs: 2500
+INFO: 2020-07-05 13:26:50,866: Number of test runs: 30
+INFO: 2020-07-05 13:26:50,866: ----------------------------------------------
+INFO: 2020-07-05 13:26:50,866: Network Parameters
+INFO: 2020-07-05 13:26:50,866: ----------------------------------------------
+INFO: 2020-07-05 13:26:50,866: Network input dim: 67
+INFO: 2020-07-05 13:26:50,866: Network hidden dim: 512
+INFO: 2020-07-05 13:26:50,866: Network layers: 2
+INFO: 2020-07-05 13:26:50,866: Network output dim: 4
+INFO: 2020-07-05 13:26:50,866: ----------------------------------------------
+INFO: 2020-07-05 13:26:50,866: Environment Parameters
+INFO: 2020-07-05 13:26:50,866: ----------------------------------------------
+INFO: 2020-07-05 13:26:50,866: Trajectory length: 7
+INFO: 2020-07-05 13:26:50,866: Obs future waypoints: 2
+INFO: 2020-07-05 13:26:50,866: Distribution temperature: 150
+INFO: 2020-07-05 13:26:50,866: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:26:50,866: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:28:16,290:  
+INFO: 2020-07-05 13:28:16,290: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:28:16,290: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:28:16,291:  
+INFO: 2020-07-05 13:28:16,291: ----------------------------------------------
+INFO: 2020-07-05 13:28:16,291: Experiment Settings
+INFO: 2020-07-05 13:28:16,291: ----------------------------------------------
+INFO: 2020-07-05 13:28:16,291: Number of workers: 16
+INFO: 2020-07-05 13:28:16,291: Batch size: 512
+INFO: 2020-07-05 13:28:16,291: Iterations: 2500
+INFO: 2020-07-05 13:28:16,291: Log interval: 10
+INFO: 2020-07-05 13:28:16,291: Experiment runs: 2500
+INFO: 2020-07-05 13:28:16,291: Number of test runs: 30
+INFO: 2020-07-05 13:28:16,291: ----------------------------------------------
+INFO: 2020-07-05 13:28:16,291: Network Parameters
+INFO: 2020-07-05 13:28:16,291: ----------------------------------------------
+INFO: 2020-07-05 13:28:16,291: Network input dim: 67
+INFO: 2020-07-05 13:28:16,292: Network hidden dim: 512
+INFO: 2020-07-05 13:28:16,292: Network layers: 2
+INFO: 2020-07-05 13:28:16,292: Network output dim: 4
+INFO: 2020-07-05 13:28:16,292: ----------------------------------------------
+INFO: 2020-07-05 13:28:16,292: Environment Parameters
+INFO: 2020-07-05 13:28:16,292: ----------------------------------------------
+INFO: 2020-07-05 13:28:16,292: Trajectory length: 7
+INFO: 2020-07-05 13:28:16,292: Obs future waypoints: 2
+INFO: 2020-07-05 13:28:16,292: Distribution temperature: 150
+INFO: 2020-07-05 13:28:16,292: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:28:16,292: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:29:10,494:  
+INFO: 2020-07-05 13:29:10,494: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:29:10,494: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:29:10,494:  
+INFO: 2020-07-05 13:29:10,494: ----------------------------------------------
+INFO: 2020-07-05 13:29:10,494: Experiment Settings
+INFO: 2020-07-05 13:29:10,494: ----------------------------------------------
+INFO: 2020-07-05 13:29:10,494: Number of workers: 16
+INFO: 2020-07-05 13:29:10,494: Batch size: 512
+INFO: 2020-07-05 13:29:10,495: Iterations: 2500
+INFO: 2020-07-05 13:29:10,495: Log interval: 10
+INFO: 2020-07-05 13:29:10,495: Experiment runs: 2500
+INFO: 2020-07-05 13:29:10,495: Number of test runs: 30
+INFO: 2020-07-05 13:29:10,495: ----------------------------------------------
+INFO: 2020-07-05 13:29:10,495: Network Parameters
+INFO: 2020-07-05 13:29:10,495: ----------------------------------------------
+INFO: 2020-07-05 13:29:10,495: Network input dim: 67
+INFO: 2020-07-05 13:29:10,495: Network hidden dim: 512
+INFO: 2020-07-05 13:29:10,495: Network layers: 2
+INFO: 2020-07-05 13:29:10,495: Network output dim: 4
+INFO: 2020-07-05 13:29:10,495: ----------------------------------------------
+INFO: 2020-07-05 13:29:10,495: Environment Parameters
+INFO: 2020-07-05 13:29:10,495: ----------------------------------------------
+INFO: 2020-07-05 13:29:10,495: Trajectory length: 7
+INFO: 2020-07-05 13:29:10,495: Obs future waypoints: 2
+INFO: 2020-07-05 13:29:10,495: Distribution temperature: 150
+INFO: 2020-07-05 13:29:10,496: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:29:10,496: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:29:53,966:  
+INFO: 2020-07-05 13:29:53,966: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:29:53,967: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:29:53,967:  
+INFO: 2020-07-05 13:29:53,967: ----------------------------------------------
+INFO: 2020-07-05 13:29:53,967: Experiment Settings
+INFO: 2020-07-05 13:29:53,967: ----------------------------------------------
+INFO: 2020-07-05 13:29:53,967: Number of workers: 16
+INFO: 2020-07-05 13:29:53,967: Batch size: 512
+INFO: 2020-07-05 13:29:53,967: Iterations: 2500
+INFO: 2020-07-05 13:29:53,967: Log interval: 10
+INFO: 2020-07-05 13:29:53,967: Experiment runs: 2500
+INFO: 2020-07-05 13:29:53,968: Number of test runs: 30
+INFO: 2020-07-05 13:29:53,968: ----------------------------------------------
+INFO: 2020-07-05 13:29:53,968: Network Parameters
+INFO: 2020-07-05 13:29:53,968: ----------------------------------------------
+INFO: 2020-07-05 13:29:53,968: Network input dim: 67
+INFO: 2020-07-05 13:29:53,968: Network hidden dim: 512
+INFO: 2020-07-05 13:29:53,968: Network layers: 2
+INFO: 2020-07-05 13:29:53,968: Network output dim: 4
+INFO: 2020-07-05 13:29:53,968: ----------------------------------------------
+INFO: 2020-07-05 13:29:53,968: Environment Parameters
+INFO: 2020-07-05 13:29:53,968: ----------------------------------------------
+INFO: 2020-07-05 13:29:53,968: Trajectory length: 7
+INFO: 2020-07-05 13:29:53,968: Obs future waypoints: 2
+INFO: 2020-07-05 13:29:53,968: Distribution temperature: 150
+INFO: 2020-07-05 13:29:53,968: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:29:53,968: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:31:58,481:  
+INFO: 2020-07-05 13:31:58,482: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:31:58,482: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:31:58,482:  
+INFO: 2020-07-05 13:31:58,482: ----------------------------------------------
+INFO: 2020-07-05 13:31:58,482: Experiment Settings
+INFO: 2020-07-05 13:31:58,482: ----------------------------------------------
+INFO: 2020-07-05 13:31:58,482: Number of workers: 16
+INFO: 2020-07-05 13:31:58,482: Batch size: 512
+INFO: 2020-07-05 13:31:58,482: Iterations: 2500
+INFO: 2020-07-05 13:31:58,482: Log interval: 10
+INFO: 2020-07-05 13:31:58,482: Experiment runs: 2500
+INFO: 2020-07-05 13:31:58,482: Number of test runs: 30
+INFO: 2020-07-05 13:31:58,482: ----------------------------------------------
+INFO: 2020-07-05 13:31:58,482: Network Parameters
+INFO: 2020-07-05 13:31:58,482: ----------------------------------------------
+INFO: 2020-07-05 13:31:58,482: Network input dim: 67
+INFO: 2020-07-05 13:31:58,483: Network hidden dim: 512
+INFO: 2020-07-05 13:31:58,483: Network layers: 2
+INFO: 2020-07-05 13:31:58,483: Network output dim: 4
+INFO: 2020-07-05 13:31:58,483: ----------------------------------------------
+INFO: 2020-07-05 13:31:58,483: Environment Parameters
+INFO: 2020-07-05 13:31:58,483: ----------------------------------------------
+INFO: 2020-07-05 13:31:58,483: Trajectory length: 7
+INFO: 2020-07-05 13:31:58,483: Obs future waypoints: 2
+INFO: 2020-07-05 13:31:58,483: Distribution temperature: 150
+INFO: 2020-07-05 13:31:58,483: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:31:58,483: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:34:05,921:  
+INFO: 2020-07-05 13:34:05,921: Iterations: 0
+INFO: 2020-07-05 13:34:05,921: Time steps: 0
+INFO: 2020-07-05 13:34:05,922: Reward: -2610.46749
+INFO: 2020-07-05 13:34:05,922:  
+INFO: 2020-07-05 13:38:07,359: Iterations: 10
+INFO: 2020-07-05 13:38:07,359: Time steps: 81920
+INFO: 2020-07-05 13:38:07,360: Reward: -2490.33130
+INFO: 2020-07-05 13:38:07,360:  
+INFO: 2020-07-05 13:38:07,360: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 13:41:46,765: Iterations: 20
+INFO: 2020-07-05 13:41:46,766: Time steps: 163840
+INFO: 2020-07-05 13:41:46,766: Reward: -2598.08106
+INFO: 2020-07-05 13:41:46,766:  
+INFO: 2020-07-05 13:46:06,972: Iterations: 30
+INFO: 2020-07-05 13:46:06,972: Time steps: 245760
+INFO: 2020-07-05 13:46:06,973: Reward: -3287.90867
+INFO: 2020-07-05 13:46:06,973:  
+INFO: 2020-07-05 13:48:36,812:  
+INFO: 2020-07-05 13:48:36,812: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 13:48:36,812: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 13:48:36,812:  
+INFO: 2020-07-05 13:48:36,812: ----------------------------------------------
+INFO: 2020-07-05 13:48:36,812: Experiment Settings
+INFO: 2020-07-05 13:48:36,812: ----------------------------------------------
+INFO: 2020-07-05 13:48:36,812: Number of workers: 16
+INFO: 2020-07-05 13:48:36,813: Batch size: 512
+INFO: 2020-07-05 13:48:36,813: Iterations: 2500
+INFO: 2020-07-05 13:48:36,813: Log interval: 10
+INFO: 2020-07-05 13:48:36,813: Experiment runs: 2500
+INFO: 2020-07-05 13:48:36,813: Number of test runs: 30
+INFO: 2020-07-05 13:48:36,813: ----------------------------------------------
+INFO: 2020-07-05 13:48:36,813: Network Parameters
+INFO: 2020-07-05 13:48:36,813: ----------------------------------------------
+INFO: 2020-07-05 13:48:36,813: Network input dim: 67
+INFO: 2020-07-05 13:48:36,813: Network hidden dim: 512
+INFO: 2020-07-05 13:48:36,813: Network layers: 2
+INFO: 2020-07-05 13:48:36,813: Network output dim: 4
+INFO: 2020-07-05 13:48:36,813: ----------------------------------------------
+INFO: 2020-07-05 13:48:36,813: Environment Parameters
+INFO: 2020-07-05 13:48:36,813: ----------------------------------------------
+INFO: 2020-07-05 13:48:36,814: Trajectory length: 7
+INFO: 2020-07-05 13:48:36,814: Obs future waypoints: 2
+INFO: 2020-07-05 13:48:36,814: Distribution temperature: 150
+INFO: 2020-07-05 13:48:36,814: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 13:48:36,814: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 13:48:37,642:  
+INFO: 2020-07-05 13:48:37,643: Iterations: 0
+INFO: 2020-07-05 13:48:37,643: Time steps: 0
+INFO: 2020-07-05 13:48:37,643: Reward: -2788.89533
+INFO: 2020-07-05 13:48:37,643:  
+INFO: 2020-07-05 13:50:38,601: Iterations: 10
+INFO: 2020-07-05 13:50:38,601: Time steps: 81920
+INFO: 2020-07-05 13:50:38,601: Reward: -2665.07210
+INFO: 2020-07-05 13:50:38,601:  
+INFO: 2020-07-05 13:50:38,601: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 13:52:37,090: Iterations: 20
+INFO: 2020-07-05 13:52:37,091: Time steps: 163840
+INFO: 2020-07-05 13:52:37,091: Reward: -2506.86324
+INFO: 2020-07-05 13:52:37,091:  
+INFO: 2020-07-05 13:52:37,091: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 13:54:46,486: Iterations: 30
+INFO: 2020-07-05 13:54:46,486: Time steps: 245760
+INFO: 2020-07-05 13:54:46,486: Reward: -3081.93484
+INFO: 2020-07-05 13:54:46,486:  
+INFO: 2020-07-05 13:57:00,907: Iterations: 40
+INFO: 2020-07-05 13:57:00,907: Time steps: 327680
+INFO: 2020-07-05 13:57:00,907: Reward: -2444.00676
+INFO: 2020-07-05 13:57:00,907:  
+INFO: 2020-07-05 13:57:00,907: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 13:59:16,208: Iterations: 50
+INFO: 2020-07-05 13:59:16,208: Time steps: 409600
+INFO: 2020-07-05 13:59:16,208: Reward: -2813.72346
+INFO: 2020-07-05 13:59:16,208:  
+INFO: 2020-07-05 14:01:33,259: Iterations: 60
+INFO: 2020-07-05 14:01:33,259: Time steps: 491520
+INFO: 2020-07-05 14:01:33,259: Reward: -2614.63092
+INFO: 2020-07-05 14:01:33,260:  
+INFO: 2020-07-05 14:04:01,239: Iterations: 70
+INFO: 2020-07-05 14:04:01,240: Time steps: 573440
+INFO: 2020-07-05 14:04:01,241: Reward: -2470.62067
+INFO: 2020-07-05 14:04:01,243:  
+INFO: 2020-07-05 14:07:01,623: Iterations: 80
+INFO: 2020-07-05 14:07:01,624: Time steps: 655360
+INFO: 2020-07-05 14:07:01,624: Reward: -3083.04152
+INFO: 2020-07-05 14:07:01,624:  
+INFO: 2020-07-05 14:09:22,346: Iterations: 90
+INFO: 2020-07-05 14:09:22,346: Time steps: 737280
+INFO: 2020-07-05 14:09:22,346: Reward: -2150.43306
+INFO: 2020-07-05 14:09:22,346:  
+INFO: 2020-07-05 14:09:22,346: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 14:11:54,617: Iterations: 100
+INFO: 2020-07-05 14:11:54,617: Time steps: 819200
+INFO: 2020-07-05 14:11:54,617: Reward: -2200.72262
+INFO: 2020-07-05 14:11:54,617:  
+INFO: 2020-07-05 14:14:35,522: Iterations: 110
+INFO: 2020-07-05 14:14:35,523: Time steps: 901120
+INFO: 2020-07-05 14:14:35,523: Reward: -2559.42333
+INFO: 2020-07-05 14:14:35,523:  
+INFO: 2020-07-05 14:17:10,570: Iterations: 120
+INFO: 2020-07-05 14:17:10,571: Time steps: 983040
+INFO: 2020-07-05 14:17:10,571: Reward: -2384.76656
+INFO: 2020-07-05 14:17:10,571:  
+INFO: 2020-07-05 14:19:44,163: Iterations: 130
+INFO: 2020-07-05 14:19:44,163: Time steps: 1064960
+INFO: 2020-07-05 14:19:44,164: Reward: -2571.22666
+INFO: 2020-07-05 14:19:44,164:  
+INFO: 2020-07-05 14:22:20,676: Iterations: 140
+INFO: 2020-07-05 14:22:20,677: Time steps: 1146880
+INFO: 2020-07-05 14:22:20,677: Reward: -2520.00405
+INFO: 2020-07-05 14:22:20,677:  
+INFO: 2020-07-05 14:24:56,229: Iterations: 150
+INFO: 2020-07-05 14:24:56,231: Time steps: 1228800
+INFO: 2020-07-05 14:24:56,231: Reward: -2925.76039
+INFO: 2020-07-05 14:24:56,231:  
+INFO: 2020-07-05 14:27:20,843: Iterations: 160
+INFO: 2020-07-05 14:27:20,844: Time steps: 1310720
+INFO: 2020-07-05 14:27:20,844: Reward: -2540.00207
+INFO: 2020-07-05 14:27:20,844:  
+INFO: 2020-07-05 14:29:30,550: Iterations: 170
+INFO: 2020-07-05 14:29:30,550: Time steps: 1392640
+INFO: 2020-07-05 14:29:30,550: Reward: -2621.32249
+INFO: 2020-07-05 14:29:30,550:  
+INFO: 2020-07-05 14:31:40,504: Iterations: 180
+INFO: 2020-07-05 14:31:40,505: Time steps: 1474560
+INFO: 2020-07-05 14:31:40,505: Reward: -3101.20301
+INFO: 2020-07-05 14:31:40,505:  
+INFO: 2020-07-05 14:33:50,191: Iterations: 190
+INFO: 2020-07-05 14:33:50,192: Time steps: 1556480
+INFO: 2020-07-05 14:33:50,192: Reward: -3086.23797
+INFO: 2020-07-05 14:33:50,192:  
+INFO: 2020-07-05 14:35:59,948: Iterations: 200
+INFO: 2020-07-05 14:35:59,948: Time steps: 1638400
+INFO: 2020-07-05 14:35:59,949: Reward: -3068.88483
+INFO: 2020-07-05 14:35:59,949:  
+INFO: 2020-07-05 14:38:09,573: Iterations: 210
+INFO: 2020-07-05 14:38:09,574: Time steps: 1720320
+INFO: 2020-07-05 14:38:09,574: Reward: -2089.03515
+INFO: 2020-07-05 14:38:09,574:  
+INFO: 2020-07-05 14:38:09,574: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 14:40:19,195: Iterations: 220
+INFO: 2020-07-05 14:40:19,195: Time steps: 1802240
+INFO: 2020-07-05 14:40:19,195: Reward: -2465.12587
+INFO: 2020-07-05 14:40:19,195:  
+INFO: 2020-07-05 14:42:29,385: Iterations: 230
+INFO: 2020-07-05 14:42:29,385: Time steps: 1884160
+INFO: 2020-07-05 14:42:29,385: Reward: -2234.33309
+INFO: 2020-07-05 14:42:29,385:  
+INFO: 2020-07-05 14:44:39,385: Iterations: 240
+INFO: 2020-07-05 14:44:39,385: Time steps: 1966080
+INFO: 2020-07-05 14:44:39,385: Reward: -2946.62068
+INFO: 2020-07-05 14:44:39,385:  
+INFO: 2020-07-05 14:46:49,517: Iterations: 250
+INFO: 2020-07-05 14:46:49,517: Time steps: 2048000
+INFO: 2020-07-05 14:46:49,517: Reward: -2451.06186
+INFO: 2020-07-05 14:46:49,518:  
+INFO: 2020-07-05 14:48:58,881: Iterations: 260
+INFO: 2020-07-05 14:48:58,881: Time steps: 2129920
+INFO: 2020-07-05 14:48:58,881: Reward: -3045.05732
+INFO: 2020-07-05 14:48:58,881:  
+INFO: 2020-07-05 14:51:08,398: Iterations: 270
+INFO: 2020-07-05 14:51:08,398: Time steps: 2211840
+INFO: 2020-07-05 14:51:08,398: Reward: -2662.11775
+INFO: 2020-07-05 14:51:08,398:  
+INFO: 2020-07-05 14:53:18,454: Iterations: 280
+INFO: 2020-07-05 14:53:18,454: Time steps: 2293760
+INFO: 2020-07-05 14:53:18,454: Reward: -2969.14800
+INFO: 2020-07-05 14:53:18,454:  
+INFO: 2020-07-05 14:55:28,213: Iterations: 290
+INFO: 2020-07-05 14:55:28,213: Time steps: 2375680
+INFO: 2020-07-05 14:55:28,213: Reward: -2182.16577
+INFO: 2020-07-05 14:55:28,213:  
+INFO: 2020-07-05 14:56:12,553:  
+INFO: 2020-07-05 14:56:12,554: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 14:56:12,554: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 14:56:12,554:  
+INFO: 2020-07-05 14:56:12,554: ----------------------------------------------
+INFO: 2020-07-05 14:56:12,554: Experiment Settings
+INFO: 2020-07-05 14:56:12,554: ----------------------------------------------
+INFO: 2020-07-05 14:56:12,554: Number of workers: 16
+INFO: 2020-07-05 14:56:12,554: Batch size: 512
+INFO: 2020-07-05 14:56:12,554: Iterations: 2500
+INFO: 2020-07-05 14:56:12,554: Log interval: 10
+INFO: 2020-07-05 14:56:12,554: Experiment runs: 2500
+INFO: 2020-07-05 14:56:12,554: Number of test runs: 30
+INFO: 2020-07-05 14:56:12,554: ----------------------------------------------
+INFO: 2020-07-05 14:56:12,554: Network Parameters
+INFO: 2020-07-05 14:56:12,554: ----------------------------------------------
+INFO: 2020-07-05 14:56:12,555: Network input dim: 67
+INFO: 2020-07-05 14:56:12,555: Network hidden dim: 512
+INFO: 2020-07-05 14:56:12,555: Network layers: 2
+INFO: 2020-07-05 14:56:12,555: Network output dim: 4
+INFO: 2020-07-05 14:56:12,555: ----------------------------------------------
+INFO: 2020-07-05 14:56:12,555: Environment Parameters
+INFO: 2020-07-05 14:56:12,555: ----------------------------------------------
+INFO: 2020-07-05 14:56:12,555: Trajectory length: 7
+INFO: 2020-07-05 14:56:12,555: Obs future waypoints: 2
+INFO: 2020-07-05 14:56:12,555: Distribution temperature: 150
+INFO: 2020-07-05 14:56:12,555: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-05 14:56:12,555: Maximum spread: 1.5707963267948966
+INFO: 2020-07-05 14:56:13,509:  
+INFO: 2020-07-05 14:56:13,509: Iterations: 0
+INFO: 2020-07-05 14:56:13,509: Time steps: 0
+INFO: 2020-07-05 14:56:13,509: Reward: -358.66357
+INFO: 2020-07-05 14:56:13,509:  
+INFO: 2020-07-05 14:58:19,796: Iterations: 10
+INFO: 2020-07-05 14:58:19,796: Time steps: 81920
+INFO: 2020-07-05 14:58:19,797: Reward: -359.36966
+INFO: 2020-07-05 14:58:19,797:  
+INFO: 2020-07-05 15:00:26,807: Iterations: 20
+INFO: 2020-07-05 15:00:26,807: Time steps: 163840
+INFO: 2020-07-05 15:00:26,807: Reward: -365.31691
+INFO: 2020-07-05 15:00:26,807:  
+INFO: 2020-07-05 15:02:34,153: Iterations: 30
+INFO: 2020-07-05 15:02:34,154: Time steps: 245760
+INFO: 2020-07-05 15:02:34,154: Reward: -360.80817
+INFO: 2020-07-05 15:02:34,154:  
+INFO: 2020-07-05 15:04:40,784: Iterations: 40
+INFO: 2020-07-05 15:04:40,785: Time steps: 327680
+INFO: 2020-07-05 15:04:40,785: Reward: -370.29181
+INFO: 2020-07-05 15:04:40,785:  
+INFO: 2020-07-05 15:06:47,561: Iterations: 50
+INFO: 2020-07-05 15:06:47,561: Time steps: 409600
+INFO: 2020-07-05 15:06:47,561: Reward: -363.63872
+INFO: 2020-07-05 15:06:47,561:  
+INFO: 2020-07-05 15:08:54,718: Iterations: 60
+INFO: 2020-07-05 15:08:54,718: Time steps: 491520
+INFO: 2020-07-05 15:08:54,718: Reward: -364.78146
+INFO: 2020-07-05 15:08:54,718:  
+INFO: 2020-07-05 15:11:01,094: Iterations: 70
+INFO: 2020-07-05 15:11:01,095: Time steps: 573440
+INFO: 2020-07-05 15:11:01,095: Reward: -363.31223
+INFO: 2020-07-05 15:11:01,095:  
+INFO: 2020-07-05 15:13:09,198: Iterations: 80
+INFO: 2020-07-05 15:13:09,199: Time steps: 655360
+INFO: 2020-07-05 15:13:09,199: Reward: -354.85585
+INFO: 2020-07-05 15:13:09,199:  
+INFO: 2020-07-05 15:13:09,199: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 15:15:17,172: Iterations: 90
+INFO: 2020-07-05 15:15:17,173: Time steps: 737280
+INFO: 2020-07-05 15:15:17,173: Reward: -356.65422
+INFO: 2020-07-05 15:15:17,173:  
+INFO: 2020-07-05 15:17:24,729: Iterations: 100
+INFO: 2020-07-05 15:17:24,730: Time steps: 819200
+INFO: 2020-07-05 15:17:24,730: Reward: -349.05610
+INFO: 2020-07-05 15:17:24,730:  
+INFO: 2020-07-05 15:17:24,730: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 15:19:32,010: Iterations: 110
+INFO: 2020-07-05 15:19:32,010: Time steps: 901120
+INFO: 2020-07-05 15:19:32,010: Reward: -370.82300
+INFO: 2020-07-05 15:19:32,010:  
+INFO: 2020-07-05 15:21:38,924: Iterations: 120
+INFO: 2020-07-05 15:21:38,924: Time steps: 983040
+INFO: 2020-07-05 15:21:38,924: Reward: -348.13065
+INFO: 2020-07-05 15:21:38,924:  
+INFO: 2020-07-05 15:21:38,924: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 15:23:46,567: Iterations: 130
+INFO: 2020-07-05 15:23:46,567: Time steps: 1064960
+INFO: 2020-07-05 15:23:46,567: Reward: -365.75112
+INFO: 2020-07-05 15:23:46,567:  
+INFO: 2020-07-05 15:25:53,717: Iterations: 140
+INFO: 2020-07-05 15:25:53,717: Time steps: 1146880
+INFO: 2020-07-05 15:25:53,717: Reward: -368.90769
+INFO: 2020-07-05 15:25:53,718:  
+INFO: 2020-07-05 15:28:00,496: Iterations: 150
+INFO: 2020-07-05 15:28:00,496: Time steps: 1228800
+INFO: 2020-07-05 15:28:00,496: Reward: -341.49071
+INFO: 2020-07-05 15:28:00,496:  
+INFO: 2020-07-05 15:28:00,496: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 15:30:08,159: Iterations: 160
+INFO: 2020-07-05 15:30:08,159: Time steps: 1310720
+INFO: 2020-07-05 15:30:08,159: Reward: -344.57341
+INFO: 2020-07-05 15:30:08,159:  
+INFO: 2020-07-05 15:32:16,308: Iterations: 170
+INFO: 2020-07-05 15:32:16,308: Time steps: 1392640
+INFO: 2020-07-05 15:32:16,308: Reward: -350.67865
+INFO: 2020-07-05 15:32:16,308:  
+INFO: 2020-07-05 15:34:23,827: Iterations: 180
+INFO: 2020-07-05 15:34:23,827: Time steps: 1474560
+INFO: 2020-07-05 15:34:23,827: Reward: -366.06437
+INFO: 2020-07-05 15:34:23,827:  
+INFO: 2020-07-05 15:36:30,835: Iterations: 190
+INFO: 2020-07-05 15:36:30,835: Time steps: 1556480
+INFO: 2020-07-05 15:36:30,835: Reward: -364.26059
+INFO: 2020-07-05 15:36:30,836:  
+INFO: 2020-07-05 15:38:38,433: Iterations: 200
+INFO: 2020-07-05 15:38:38,433: Time steps: 1638400
+INFO: 2020-07-05 15:38:38,433: Reward: -360.85298
+INFO: 2020-07-05 15:38:38,433:  
+INFO: 2020-07-05 15:40:45,223: Iterations: 210
+INFO: 2020-07-05 15:40:45,223: Time steps: 1720320
+INFO: 2020-07-05 15:40:45,223: Reward: -362.15655
+INFO: 2020-07-05 15:40:45,223:  
+INFO: 2020-07-05 15:42:52,393: Iterations: 220
+INFO: 2020-07-05 15:42:52,393: Time steps: 1802240
+INFO: 2020-07-05 15:42:52,394: Reward: -361.45627
+INFO: 2020-07-05 15:42:52,394:  
+INFO: 2020-07-05 15:44:59,120: Iterations: 230
+INFO: 2020-07-05 15:44:59,120: Time steps: 1884160
+INFO: 2020-07-05 15:44:59,120: Reward: -352.56490
+INFO: 2020-07-05 15:44:59,120:  
+INFO: 2020-07-05 15:47:06,315: Iterations: 240
+INFO: 2020-07-05 15:47:06,315: Time steps: 1966080
+INFO: 2020-07-05 15:47:06,315: Reward: -370.56582
+INFO: 2020-07-05 15:47:06,315:  
+INFO: 2020-07-05 15:49:14,448: Iterations: 250
+INFO: 2020-07-05 15:49:14,448: Time steps: 2048000
+INFO: 2020-07-05 15:49:14,448: Reward: -363.06431
+INFO: 2020-07-05 15:49:14,448:  
+INFO: 2020-07-05 15:51:22,302: Iterations: 260
+INFO: 2020-07-05 15:51:22,302: Time steps: 2129920
+INFO: 2020-07-05 15:51:22,302: Reward: -360.98896
+INFO: 2020-07-05 15:51:22,302:  
+INFO: 2020-07-05 15:53:29,188: Iterations: 270
+INFO: 2020-07-05 15:53:29,189: Time steps: 2211840
+INFO: 2020-07-05 15:53:29,189: Reward: -345.71894
+INFO: 2020-07-05 15:53:29,189:  
+INFO: 2020-07-05 15:55:36,334: Iterations: 280
+INFO: 2020-07-05 15:55:36,334: Time steps: 2293760
+INFO: 2020-07-05 15:55:36,334: Reward: -357.17502
+INFO: 2020-07-05 15:55:36,334:  
+INFO: 2020-07-05 15:57:43,649: Iterations: 290
+INFO: 2020-07-05 15:57:43,649: Time steps: 2375680
+INFO: 2020-07-05 15:57:43,650: Reward: -350.77977
+INFO: 2020-07-05 15:57:43,650:  
+INFO: 2020-07-05 15:59:50,326: Iterations: 300
+INFO: 2020-07-05 15:59:50,326: Time steps: 2457600
+INFO: 2020-07-05 15:59:50,326: Reward: -374.61090
+INFO: 2020-07-05 15:59:50,326:  
+INFO: 2020-07-05 16:01:57,071: Iterations: 310
+INFO: 2020-07-05 16:01:57,071: Time steps: 2539520
+INFO: 2020-07-05 16:01:57,071: Reward: -343.86403
+INFO: 2020-07-05 16:01:57,071:  
+INFO: 2020-07-05 16:04:04,473: Iterations: 320
+INFO: 2020-07-05 16:04:04,473: Time steps: 2621440
+INFO: 2020-07-05 16:04:04,473: Reward: -345.13294
+INFO: 2020-07-05 16:04:04,473:  
+INFO: 2020-07-05 16:06:12,168: Iterations: 330
+INFO: 2020-07-05 16:06:12,168: Time steps: 2703360
+INFO: 2020-07-05 16:06:12,168: Reward: -339.35779
+INFO: 2020-07-05 16:06:12,168:  
+INFO: 2020-07-05 16:06:12,168: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 16:08:19,848: Iterations: 340
+INFO: 2020-07-05 16:08:19,848: Time steps: 2785280
+INFO: 2020-07-05 16:08:19,848: Reward: -356.31553
+INFO: 2020-07-05 16:08:19,848:  
+INFO: 2020-07-05 16:10:26,155: Iterations: 350
+INFO: 2020-07-05 16:10:26,155: Time steps: 2867200
+INFO: 2020-07-05 16:10:26,155: Reward: -347.58022
+INFO: 2020-07-05 16:10:26,155:  
+INFO: 2020-07-05 16:12:33,873: Iterations: 360
+INFO: 2020-07-05 16:12:33,874: Time steps: 2949120
+INFO: 2020-07-05 16:12:33,874: Reward: -362.71814
+INFO: 2020-07-05 16:12:33,874:  
+INFO: 2020-07-05 16:14:41,358: Iterations: 370
+INFO: 2020-07-05 16:14:41,359: Time steps: 3031040
+INFO: 2020-07-05 16:14:41,359: Reward: -367.06804
+INFO: 2020-07-05 16:14:41,359:  
+INFO: 2020-07-05 16:16:49,379: Iterations: 380
+INFO: 2020-07-05 16:16:49,379: Time steps: 3112960
+INFO: 2020-07-05 16:16:49,379: Reward: -361.97327
+INFO: 2020-07-05 16:16:49,379:  
+INFO: 2020-07-05 16:18:56,092: Iterations: 390
+INFO: 2020-07-05 16:18:56,093: Time steps: 3194880
+INFO: 2020-07-05 16:18:56,093: Reward: -369.02227
+INFO: 2020-07-05 16:18:56,093:  
+INFO: 2020-07-05 16:21:04,343: Iterations: 400
+INFO: 2020-07-05 16:21:04,343: Time steps: 3276800
+INFO: 2020-07-05 16:21:04,344: Reward: -357.19997
+INFO: 2020-07-05 16:21:04,344:  
+INFO: 2020-07-05 16:23:11,635: Iterations: 410
+INFO: 2020-07-05 16:23:11,635: Time steps: 3358720
+INFO: 2020-07-05 16:23:11,635: Reward: -365.14008
+INFO: 2020-07-05 16:23:11,635:  
+INFO: 2020-07-05 16:25:19,574: Iterations: 420
+INFO: 2020-07-05 16:25:19,575: Time steps: 3440640
+INFO: 2020-07-05 16:25:19,575: Reward: -360.69828
+INFO: 2020-07-05 16:25:19,575:  
+INFO: 2020-07-05 16:27:27,132: Iterations: 430
+INFO: 2020-07-05 16:27:27,132: Time steps: 3522560
+INFO: 2020-07-05 16:27:27,132: Reward: -346.27561
+INFO: 2020-07-05 16:27:27,132:  
+INFO: 2020-07-05 16:29:34,078: Iterations: 440
+INFO: 2020-07-05 16:29:34,078: Time steps: 3604480
+INFO: 2020-07-05 16:29:34,078: Reward: -365.08135
+INFO: 2020-07-05 16:29:34,078:  
+INFO: 2020-07-05 16:31:42,101: Iterations: 450
+INFO: 2020-07-05 16:31:42,101: Time steps: 3686400
+INFO: 2020-07-05 16:31:42,101: Reward: -365.94499
+INFO: 2020-07-05 16:31:42,101:  
+INFO: 2020-07-05 16:33:49,876: Iterations: 460
+INFO: 2020-07-05 16:33:49,876: Time steps: 3768320
+INFO: 2020-07-05 16:33:49,876: Reward: -361.45635
+INFO: 2020-07-05 16:33:49,876:  
+INFO: 2020-07-05 16:35:57,341: Iterations: 470
+INFO: 2020-07-05 16:35:57,341: Time steps: 3850240
+INFO: 2020-07-05 16:35:57,342: Reward: -374.05185
+INFO: 2020-07-05 16:35:57,342:  
+INFO: 2020-07-05 16:38:05,791: Iterations: 480
+INFO: 2020-07-05 16:38:05,792: Time steps: 3932160
+INFO: 2020-07-05 16:38:05,792: Reward: -354.09703
+INFO: 2020-07-05 16:38:05,792:  
+INFO: 2020-07-05 16:40:12,235: Iterations: 490
+INFO: 2020-07-05 16:40:12,235: Time steps: 4014080
+INFO: 2020-07-05 16:40:12,235: Reward: -351.73716
+INFO: 2020-07-05 16:40:12,235:  
+INFO: 2020-07-05 16:42:20,008: Iterations: 500
+INFO: 2020-07-05 16:42:20,008: Time steps: 4096000
+INFO: 2020-07-05 16:42:20,008: Reward: -363.52531
+INFO: 2020-07-05 16:42:20,008:  
+INFO: 2020-07-05 16:44:26,868: Iterations: 510
+INFO: 2020-07-05 16:44:26,868: Time steps: 4177920
+INFO: 2020-07-05 16:44:26,868: Reward: -364.04530
+INFO: 2020-07-05 16:44:26,868:  
+INFO: 2020-07-05 16:46:35,147: Iterations: 520
+INFO: 2020-07-05 16:46:35,148: Time steps: 4259840
+INFO: 2020-07-05 16:46:35,148: Reward: -372.80549
+INFO: 2020-07-05 16:46:35,148:  
+INFO: 2020-07-05 16:48:42,880: Iterations: 530
+INFO: 2020-07-05 16:48:42,880: Time steps: 4341760
+INFO: 2020-07-05 16:48:42,880: Reward: -350.48746
+INFO: 2020-07-05 16:48:42,880:  
+INFO: 2020-07-05 16:50:51,286: Iterations: 540
+INFO: 2020-07-05 16:50:51,286: Time steps: 4423680
+INFO: 2020-07-05 16:50:51,286: Reward: -360.63698
+INFO: 2020-07-05 16:50:51,286:  
+INFO: 2020-07-05 16:52:59,467: Iterations: 550
+INFO: 2020-07-05 16:52:59,468: Time steps: 4505600
+INFO: 2020-07-05 16:52:59,468: Reward: -369.83091
+INFO: 2020-07-05 16:52:59,468:  
+INFO: 2020-07-05 16:55:07,820: Iterations: 560
+INFO: 2020-07-05 16:55:07,820: Time steps: 4587520
+INFO: 2020-07-05 16:55:07,820: Reward: -372.05183
+INFO: 2020-07-05 16:55:07,820:  
+INFO: 2020-07-05 16:57:16,521: Iterations: 570
+INFO: 2020-07-05 16:57:16,522: Time steps: 4669440
+INFO: 2020-07-05 16:57:16,522: Reward: -373.00667
+INFO: 2020-07-05 16:57:16,522:  
+INFO: 2020-07-05 16:59:25,667: Iterations: 580
+INFO: 2020-07-05 16:59:25,667: Time steps: 4751360
+INFO: 2020-07-05 16:59:25,667: Reward: -368.81330
+INFO: 2020-07-05 16:59:25,668:  
+INFO: 2020-07-05 17:01:33,433: Iterations: 590
+INFO: 2020-07-05 17:01:33,433: Time steps: 4833280
+INFO: 2020-07-05 17:01:33,433: Reward: -361.04615
+INFO: 2020-07-05 17:01:33,433:  
+INFO: 2020-07-05 17:03:41,882: Iterations: 600
+INFO: 2020-07-05 17:03:41,882: Time steps: 4915200
+INFO: 2020-07-05 17:03:41,882: Reward: -371.20630
+INFO: 2020-07-05 17:03:41,883:  
+INFO: 2020-07-05 17:05:49,356: Iterations: 610
+INFO: 2020-07-05 17:05:49,356: Time steps: 4997120
+INFO: 2020-07-05 17:05:49,357: Reward: -347.94365
+INFO: 2020-07-05 17:05:49,357:  
+INFO: 2020-07-05 17:07:57,036: Iterations: 620
+INFO: 2020-07-05 17:07:57,036: Time steps: 5079040
+INFO: 2020-07-05 17:07:57,036: Reward: -376.39120
+INFO: 2020-07-05 17:07:57,036:  
+INFO: 2020-07-05 17:10:05,851: Iterations: 630
+INFO: 2020-07-05 17:10:05,851: Time steps: 5160960
+INFO: 2020-07-05 17:10:05,851: Reward: -363.33883
+INFO: 2020-07-05 17:10:05,851:  
+INFO: 2020-07-05 17:12:16,592: Iterations: 640
+INFO: 2020-07-05 17:12:16,592: Time steps: 5242880
+INFO: 2020-07-05 17:12:16,592: Reward: -375.80384
+INFO: 2020-07-05 17:12:16,592:  
+INFO: 2020-07-05 17:14:26,115: Iterations: 650
+INFO: 2020-07-05 17:14:26,115: Time steps: 5324800
+INFO: 2020-07-05 17:14:26,115: Reward: -371.20257
+INFO: 2020-07-05 17:14:26,115:  
+INFO: 2020-07-05 17:16:36,097: Iterations: 660
+INFO: 2020-07-05 17:16:36,098: Time steps: 5406720
+INFO: 2020-07-05 17:16:36,098: Reward: -359.59038
+INFO: 2020-07-05 17:16:36,098:  
+INFO: 2020-07-05 17:18:45,121: Iterations: 670
+INFO: 2020-07-05 17:18:45,121: Time steps: 5488640
+INFO: 2020-07-05 17:18:45,121: Reward: -349.06040
+INFO: 2020-07-05 17:18:45,121:  
+INFO: 2020-07-05 17:20:54,894: Iterations: 680
+INFO: 2020-07-05 17:20:54,894: Time steps: 5570560
+INFO: 2020-07-05 17:20:54,894: Reward: -355.72343
+INFO: 2020-07-05 17:20:54,894:  
+INFO: 2020-07-05 17:23:03,470: Iterations: 690
+INFO: 2020-07-05 17:23:03,470: Time steps: 5652480
+INFO: 2020-07-05 17:23:03,470: Reward: -371.89441
+INFO: 2020-07-05 17:23:03,470:  
+INFO: 2020-07-05 17:25:13,813: Iterations: 700
+INFO: 2020-07-05 17:25:13,813: Time steps: 5734400
+INFO: 2020-07-05 17:25:13,813: Reward: -367.92233
+INFO: 2020-07-05 17:25:13,813:  
+INFO: 2020-07-05 17:27:23,302: Iterations: 710
+INFO: 2020-07-05 17:27:23,302: Time steps: 5816320
+INFO: 2020-07-05 17:27:23,302: Reward: -375.89488
+INFO: 2020-07-05 17:27:23,302:  
+INFO: 2020-07-05 17:29:32,187: Iterations: 720
+INFO: 2020-07-05 17:29:32,187: Time steps: 5898240
+INFO: 2020-07-05 17:29:32,187: Reward: -361.61148
+INFO: 2020-07-05 17:29:32,188:  
+INFO: 2020-07-05 17:31:41,633: Iterations: 730
+INFO: 2020-07-05 17:31:41,633: Time steps: 5980160
+INFO: 2020-07-05 17:31:41,633: Reward: -358.03604
+INFO: 2020-07-05 17:31:41,633:  
+INFO: 2020-07-05 17:33:50,463: Iterations: 740
+INFO: 2020-07-05 17:33:50,463: Time steps: 6062080
+INFO: 2020-07-05 17:33:50,463: Reward: -368.86361
+INFO: 2020-07-05 17:33:50,463:  
+INFO: 2020-07-05 17:36:15,444:  
+INFO: 2020-07-05 17:36:15,445: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 17:36:15,445: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 17:36:15,445:  
+INFO: 2020-07-05 17:36:15,445: ----------------------------------------------
+INFO: 2020-07-05 17:36:15,445: Experiment Settings
+INFO: 2020-07-05 17:36:15,445: ----------------------------------------------
+INFO: 2020-07-05 17:36:15,445: Number of workers: 16
+INFO: 2020-07-05 17:36:15,445: Batch size: 512
+INFO: 2020-07-05 17:36:15,445: Iterations: 2500
+INFO: 2020-07-05 17:36:15,445: Log interval: 10
+INFO: 2020-07-05 17:36:15,445: Experiment runs: 2500
+INFO: 2020-07-05 17:36:15,445: Number of test runs: 30
+INFO: 2020-07-05 17:36:15,445: ----------------------------------------------
+INFO: 2020-07-05 17:36:15,445: Network Parameters
+INFO: 2020-07-05 17:36:15,445: ----------------------------------------------
+INFO: 2020-07-05 17:36:15,446: Network input dim: 20
+INFO: 2020-07-05 17:36:15,446: Network hidden dim: 512
+INFO: 2020-07-05 17:36:15,446: Network layers: 2
+INFO: 2020-07-05 17:36:15,446: Network output dim: 4
+INFO: 2020-07-05 17:36:15,446: ----------------------------------------------
+INFO: 2020-07-05 17:36:15,446: Environment Parameters
+INFO: 2020-07-05 17:36:15,446: ----------------------------------------------
+INFO: 2020-07-05 17:36:55,206:  
+INFO: 2020-07-05 17:36:55,206: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 17:36:55,206: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 17:36:55,206:  
+INFO: 2020-07-05 17:36:55,206: ----------------------------------------------
+INFO: 2020-07-05 17:36:55,207: Experiment Settings
+INFO: 2020-07-05 17:36:55,207: ----------------------------------------------
+INFO: 2020-07-05 17:36:55,207: Number of workers: 16
+INFO: 2020-07-05 17:36:55,207: Batch size: 512
+INFO: 2020-07-05 17:36:55,207: Iterations: 2500
+INFO: 2020-07-05 17:36:55,207: Log interval: 10
+INFO: 2020-07-05 17:36:55,207: Experiment runs: 2500
+INFO: 2020-07-05 17:36:55,207: Number of test runs: 30
+INFO: 2020-07-05 17:36:55,207: ----------------------------------------------
+INFO: 2020-07-05 17:36:55,207: Network Parameters
+INFO: 2020-07-05 17:36:55,207: ----------------------------------------------
+INFO: 2020-07-05 17:36:55,208: Network input dim: 20
+INFO: 2020-07-05 17:36:55,208: Network hidden dim: 512
+INFO: 2020-07-05 17:36:55,208: Network layers: 2
+INFO: 2020-07-05 17:36:55,208: Network output dim: 4
+INFO: 2020-07-05 17:36:55,208: ----------------------------------------------
+INFO: 2020-07-05 17:36:55,208: Environment Parameters
+INFO: 2020-07-05 17:36:55,208: ----------------------------------------------
+INFO: 2020-07-05 17:37:58,496:  
+INFO: 2020-07-05 17:37:58,497: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 17:37:58,497: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 17:37:58,497:  
+INFO: 2020-07-05 17:37:58,497: ----------------------------------------------
+INFO: 2020-07-05 17:37:58,497: Experiment Settings
+INFO: 2020-07-05 17:37:58,497: ----------------------------------------------
+INFO: 2020-07-05 17:37:58,497: Number of workers: 16
+INFO: 2020-07-05 17:37:58,497: Batch size: 512
+INFO: 2020-07-05 17:37:58,497: Iterations: 2500
+INFO: 2020-07-05 17:37:58,497: Log interval: 10
+INFO: 2020-07-05 17:37:58,498: Experiment runs: 2500
+INFO: 2020-07-05 17:37:58,498: Number of test runs: 30
+INFO: 2020-07-05 17:37:58,498: ----------------------------------------------
+INFO: 2020-07-05 17:37:58,498: Network Parameters
+INFO: 2020-07-05 17:37:58,498: ----------------------------------------------
+INFO: 2020-07-05 17:37:58,498: Network input dim: 20
+INFO: 2020-07-05 17:37:58,498: Network hidden dim: 512
+INFO: 2020-07-05 17:37:58,498: Network layers: 2
+INFO: 2020-07-05 17:37:58,498: Network output dim: 4
+INFO: 2020-07-05 17:37:58,498: ----------------------------------------------
+INFO: 2020-07-05 17:37:58,498: Environment Parameters
+INFO: 2020-07-05 17:37:58,498: ----------------------------------------------
+INFO: 2020-07-05 17:38:25,151:  
+INFO: 2020-07-05 17:38:25,151: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 17:38:25,151: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 17:38:25,151:  
+INFO: 2020-07-05 17:38:25,151: ----------------------------------------------
+INFO: 2020-07-05 17:38:25,151: Experiment Settings
+INFO: 2020-07-05 17:38:25,152: ----------------------------------------------
+INFO: 2020-07-05 17:38:25,152: Number of workers: 16
+INFO: 2020-07-05 17:38:25,152: Batch size: 512
+INFO: 2020-07-05 17:38:25,152: Iterations: 2500
+INFO: 2020-07-05 17:38:25,152: Log interval: 10
+INFO: 2020-07-05 17:38:25,152: Experiment runs: 2500
+INFO: 2020-07-05 17:38:25,152: Number of test runs: 30
+INFO: 2020-07-05 17:38:25,152: ----------------------------------------------
+INFO: 2020-07-05 17:38:25,152: Network Parameters
+INFO: 2020-07-05 17:38:25,152: ----------------------------------------------
+INFO: 2020-07-05 17:38:25,152: Network input dim: 20
+INFO: 2020-07-05 17:38:25,152: Network hidden dim: 512
+INFO: 2020-07-05 17:38:25,153: Network layers: 2
+INFO: 2020-07-05 17:38:25,153: Network output dim: 4
+INFO: 2020-07-05 17:38:25,153: ----------------------------------------------
+INFO: 2020-07-05 17:38:25,153: Environment Parameters
+INFO: 2020-07-05 17:38:25,153: ----------------------------------------------
+INFO: 2020-07-05 17:39:36,551:  
+INFO: 2020-07-05 17:39:36,551: Iterations: 0
+INFO: 2020-07-05 17:39:36,551: Time steps: 0
+INFO: 2020-07-05 17:39:36,552: Reward: -523.97411
+INFO: 2020-07-05 17:39:36,552:  
+INFO: 2020-07-05 17:42:54,001: Iterations: 10
+INFO: 2020-07-05 17:42:54,001: Time steps: 81920
+INFO: 2020-07-05 17:42:54,002: Reward: -517.90551
+INFO: 2020-07-05 17:42:54,002:  
+INFO: 2020-07-05 17:42:54,002: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 17:46:34,519: Iterations: 20
+INFO: 2020-07-05 17:46:34,520: Time steps: 163840
+INFO: 2020-07-05 17:46:34,520: Reward: -520.35197
+INFO: 2020-07-05 17:46:34,520:  
+INFO: 2020-07-05 17:49:59,429: Iterations: 30
+INFO: 2020-07-05 17:49:59,429: Time steps: 245760
+INFO: 2020-07-05 17:49:59,429: Reward: -519.30275
+INFO: 2020-07-05 17:49:59,430:  
+INFO: 2020-07-05 17:53:48,443: Iterations: 40
+INFO: 2020-07-05 17:53:48,444: Time steps: 327680
+INFO: 2020-07-05 17:53:48,444: Reward: -509.94481
+INFO: 2020-07-05 17:53:48,444:  
+INFO: 2020-07-05 17:53:48,444: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 17:58:12,127: Iterations: 50
+INFO: 2020-07-05 17:58:12,127: Time steps: 409600
+INFO: 2020-07-05 17:58:12,127: Reward: -502.01184
+INFO: 2020-07-05 17:58:12,127:  
+INFO: 2020-07-05 17:58:12,128: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 18:03:21,250: Iterations: 60
+INFO: 2020-07-05 18:03:21,251: Time steps: 491520
+INFO: 2020-07-05 18:03:21,251: Reward: -494.87704
+INFO: 2020-07-05 18:03:21,251:  
+INFO: 2020-07-05 18:03:21,252: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 18:08:51,272: Iterations: 70
+INFO: 2020-07-05 18:08:51,273: Time steps: 573440
+INFO: 2020-07-05 18:08:51,273: Reward: -486.46377
+INFO: 2020-07-05 18:08:51,274:  
+INFO: 2020-07-05 18:08:51,274: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 18:15:07,156: Iterations: 80
+INFO: 2020-07-05 18:15:07,157: Time steps: 655360
+INFO: 2020-07-05 18:15:07,157: Reward: -473.07158
+INFO: 2020-07-05 18:15:07,157:  
+INFO: 2020-07-05 18:15:07,158: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 18:21:43,211: Iterations: 90
+INFO: 2020-07-05 18:21:43,211: Time steps: 737280
+INFO: 2020-07-05 18:21:43,212: Reward: -474.20602
+INFO: 2020-07-05 18:21:43,212:  
+INFO: 2020-07-05 18:29:23,710: Iterations: 100
+INFO: 2020-07-05 18:29:23,711: Time steps: 819200
+INFO: 2020-07-05 18:29:23,711: Reward: -461.38220
+INFO: 2020-07-05 18:29:23,712:  
+INFO: 2020-07-05 18:29:23,712: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 18:38:08,216: Iterations: 110
+INFO: 2020-07-05 18:38:08,216: Time steps: 901120
+INFO: 2020-07-05 18:38:08,216: Reward: -445.80756
+INFO: 2020-07-05 18:38:08,217:  
+INFO: 2020-07-05 18:38:08,217: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 18:47:51,218: Iterations: 120
+INFO: 2020-07-05 18:47:51,218: Time steps: 983040
+INFO: 2020-07-05 18:47:51,218: Reward: -425.22874
+INFO: 2020-07-05 18:47:51,219:  
+INFO: 2020-07-05 18:47:51,219: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 18:58:09,562: Iterations: 130
+INFO: 2020-07-05 18:58:09,563: Time steps: 1064960
+INFO: 2020-07-05 18:58:09,563: Reward: -419.64302
+INFO: 2020-07-05 18:58:09,563:  
+INFO: 2020-07-05 18:58:09,563: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 19:09:34,092: Iterations: 140
+INFO: 2020-07-05 19:09:34,093: Time steps: 1146880
+INFO: 2020-07-05 19:09:34,093: Reward: -405.10943
+INFO: 2020-07-05 19:09:34,093:  
+INFO: 2020-07-05 19:09:34,093: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 19:21:50,212: Iterations: 150
+INFO: 2020-07-05 19:21:50,213: Time steps: 1228800
+INFO: 2020-07-05 19:21:50,213: Reward: -396.43923
+INFO: 2020-07-05 19:21:50,213:  
+INFO: 2020-07-05 19:21:50,214: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 19:33:49,076: Iterations: 160
+INFO: 2020-07-05 19:33:49,076: Time steps: 1310720
+INFO: 2020-07-05 19:33:49,077: Reward: -401.58942
+INFO: 2020-07-05 19:33:49,077:  
+INFO: 2020-07-05 19:46:32,038: Iterations: 170
+INFO: 2020-07-05 19:46:32,038: Time steps: 1392640
+INFO: 2020-07-05 19:46:32,039: Reward: -353.87825
+INFO: 2020-07-05 19:46:32,039:  
+INFO: 2020-07-05 19:46:32,039: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 19:59:55,479: Iterations: 180
+INFO: 2020-07-05 19:59:55,479: Time steps: 1474560
+INFO: 2020-07-05 19:59:55,480: Reward: -313.60431
+INFO: 2020-07-05 19:59:55,480:  
+INFO: 2020-07-05 19:59:55,480: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 20:14:01,985: Iterations: 190
+INFO: 2020-07-05 20:14:01,986: Time steps: 1556480
+INFO: 2020-07-05 20:14:01,986: Reward: -252.02064
+INFO: 2020-07-05 20:14:01,987:  
+INFO: 2020-07-05 20:14:01,987: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 20:28:14,029: Iterations: 200
+INFO: 2020-07-05 20:28:14,030: Time steps: 1638400
+INFO: 2020-07-05 20:28:14,030: Reward: -237.17391
+INFO: 2020-07-05 20:28:14,030:  
+INFO: 2020-07-05 20:28:14,031: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 20:39:10,569:  
+INFO: 2020-07-05 20:39:10,569: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 20:39:10,569: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 20:39:10,569:  
+INFO: 2020-07-05 20:39:10,570: ----------------------------------------------
+INFO: 2020-07-05 20:39:10,570: Experiment Settings
+INFO: 2020-07-05 20:39:10,570: ----------------------------------------------
+INFO: 2020-07-05 20:39:10,570: Number of workers: 16
+INFO: 2020-07-05 20:39:10,570: Batch size: 512
+INFO: 2020-07-05 20:39:10,570: Iterations: 2500
+INFO: 2020-07-05 20:39:10,570: Log interval: 10
+INFO: 2020-07-05 20:39:10,570: Experiment runs: 2500
+INFO: 2020-07-05 20:39:10,570: Number of test runs: 30
+INFO: 2020-07-05 20:39:10,570: ----------------------------------------------
+INFO: 2020-07-05 20:39:10,570: Network Parameters
+INFO: 2020-07-05 20:39:10,571: ----------------------------------------------
+INFO: 2020-07-05 20:39:10,571: Network input dim: 67
+INFO: 2020-07-05 20:39:10,571: Network hidden dim: 512
+INFO: 2020-07-05 20:39:10,571: Network layers: 2
+INFO: 2020-07-05 20:39:10,571: Network output dim: 4
+INFO: 2020-07-05 20:39:10,571: ----------------------------------------------
+INFO: 2020-07-05 20:39:10,571: Environment Parameters
+INFO: 2020-07-05 20:39:10,571: ----------------------------------------------
+INFO: 2020-07-05 20:40:09,305:  
+INFO: 2020-07-05 20:40:09,305: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 20:40:09,305: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 20:40:09,305:  
+INFO: 2020-07-05 20:40:09,306: ----------------------------------------------
+INFO: 2020-07-05 20:40:09,306: Experiment Settings
+INFO: 2020-07-05 20:40:09,306: ----------------------------------------------
+INFO: 2020-07-05 20:40:09,306: Number of workers: 16
+INFO: 2020-07-05 20:40:09,306: Batch size: 512
+INFO: 2020-07-05 20:40:09,306: Iterations: 2500
+INFO: 2020-07-05 20:40:09,306: Log interval: 10
+INFO: 2020-07-05 20:40:09,306: Experiment runs: 2500
+INFO: 2020-07-05 20:40:09,306: Number of test runs: 30
+INFO: 2020-07-05 20:40:09,306: ----------------------------------------------
+INFO: 2020-07-05 20:40:09,306: Network Parameters
+INFO: 2020-07-05 20:40:09,306: ----------------------------------------------
+INFO: 2020-07-05 20:40:09,306: Network input dim: 67
+INFO: 2020-07-05 20:40:09,306: Network hidden dim: 512
+INFO: 2020-07-05 20:40:09,306: Network layers: 2
+INFO: 2020-07-05 20:40:09,306: Network output dim: 4
+INFO: 2020-07-05 20:40:09,307: ----------------------------------------------
+INFO: 2020-07-05 20:40:09,307: Environment Parameters
+INFO: 2020-07-05 20:40:09,307: ----------------------------------------------
+INFO: 2020-07-05 20:40:10,315:  
+INFO: 2020-07-05 20:40:10,315: Iterations: 0
+INFO: 2020-07-05 20:40:10,315: Time steps: 0
+INFO: 2020-07-05 20:40:10,315: Reward: -367.36010
+INFO: 2020-07-05 20:40:10,315:  
+INFO: 2020-07-05 20:42:10,451: Iterations: 10
+INFO: 2020-07-05 20:42:10,451: Time steps: 81920
+INFO: 2020-07-05 20:42:10,451: Reward: -376.11169
+INFO: 2020-07-05 20:42:10,451:  
+INFO: 2020-07-05 20:44:13,068: Iterations: 20
+INFO: 2020-07-05 20:44:13,068: Time steps: 163840
+INFO: 2020-07-05 20:44:13,068: Reward: -367.95504
+INFO: 2020-07-05 20:44:13,068:  
+INFO: 2020-07-05 20:46:15,408: Iterations: 30
+INFO: 2020-07-05 20:46:15,408: Time steps: 245760
+INFO: 2020-07-05 20:46:15,408: Reward: -379.49784
+INFO: 2020-07-05 20:46:15,408:  
+INFO: 2020-07-05 20:48:18,696: Iterations: 40
+INFO: 2020-07-05 20:48:18,696: Time steps: 327680
+INFO: 2020-07-05 20:48:18,696: Reward: -354.91964
+INFO: 2020-07-05 20:48:18,696:  
+INFO: 2020-07-05 20:48:18,696: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 20:50:21,530: Iterations: 50
+INFO: 2020-07-05 20:50:21,530: Time steps: 409600
+INFO: 2020-07-05 20:50:21,530: Reward: -358.50472
+INFO: 2020-07-05 20:50:21,531:  
+INFO: 2020-07-05 20:52:26,248: Iterations: 60
+INFO: 2020-07-05 20:52:26,248: Time steps: 491520
+INFO: 2020-07-05 20:52:26,248: Reward: -372.37822
+INFO: 2020-07-05 20:52:26,248:  
+INFO: 2020-07-05 20:54:29,799: Iterations: 70
+INFO: 2020-07-05 20:54:29,800: Time steps: 573440
+INFO: 2020-07-05 20:54:29,800: Reward: -380.13054
+INFO: 2020-07-05 20:54:29,800:  
+INFO: 2020-07-05 20:56:32,724: Iterations: 80
+INFO: 2020-07-05 20:56:32,724: Time steps: 655360
+INFO: 2020-07-05 20:56:32,724: Reward: -365.37136
+INFO: 2020-07-05 20:56:32,724:  
+INFO: 2020-07-05 20:58:35,625: Iterations: 90
+INFO: 2020-07-05 20:58:35,625: Time steps: 737280
+INFO: 2020-07-05 20:58:35,626: Reward: -356.33846
+INFO: 2020-07-05 20:58:35,626:  
+INFO: 2020-07-05 21:00:38,091: Iterations: 100
+INFO: 2020-07-05 21:00:38,091: Time steps: 819200
+INFO: 2020-07-05 21:00:38,091: Reward: -358.50761
+INFO: 2020-07-05 21:00:38,092:  
+INFO: 2020-07-05 21:02:41,620: Iterations: 110
+INFO: 2020-07-05 21:02:41,620: Time steps: 901120
+INFO: 2020-07-05 21:02:41,620: Reward: -367.49625
+INFO: 2020-07-05 21:02:41,620:  
+INFO: 2020-07-05 21:04:44,468: Iterations: 120
+INFO: 2020-07-05 21:04:44,468: Time steps: 983040
+INFO: 2020-07-05 21:04:44,468: Reward: -370.68297
+INFO: 2020-07-05 21:04:44,468:  
+INFO: 2020-07-05 21:06:47,000: Iterations: 130
+INFO: 2020-07-05 21:06:47,000: Time steps: 1064960
+INFO: 2020-07-05 21:06:47,000: Reward: -371.48645
+INFO: 2020-07-05 21:06:47,000:  
+INFO: 2020-07-05 21:08:50,935: Iterations: 140
+INFO: 2020-07-05 21:08:50,935: Time steps: 1146880
+INFO: 2020-07-05 21:08:50,935: Reward: -367.30197
+INFO: 2020-07-05 21:08:50,935:  
+INFO: 2020-07-05 21:10:53,662: Iterations: 150
+INFO: 2020-07-05 21:10:53,662: Time steps: 1228800
+INFO: 2020-07-05 21:10:53,662: Reward: -375.83270
+INFO: 2020-07-05 21:10:53,662:  
+INFO: 2020-07-05 21:12:57,089: Iterations: 160
+INFO: 2020-07-05 21:12:57,089: Time steps: 1310720
+INFO: 2020-07-05 21:12:57,089: Reward: -387.69114
+INFO: 2020-07-05 21:12:57,089:  
+INFO: 2020-07-05 21:15:00,975: Iterations: 170
+INFO: 2020-07-05 21:15:00,975: Time steps: 1392640
+INFO: 2020-07-05 21:15:00,976: Reward: -380.59202
+INFO: 2020-07-05 21:15:00,976:  
+INFO: 2020-07-05 21:17:04,543: Iterations: 180
+INFO: 2020-07-05 21:17:04,543: Time steps: 1474560
+INFO: 2020-07-05 21:17:04,543: Reward: -357.90232
+INFO: 2020-07-05 21:17:04,543:  
+INFO: 2020-07-05 21:18:44,900:  
+INFO: 2020-07-05 21:18:44,900: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-05 21:18:44,900: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-05 21:18:44,900:  
+INFO: 2020-07-05 21:18:44,900: ----------------------------------------------
+INFO: 2020-07-05 21:18:44,900: Experiment Settings
+INFO: 2020-07-05 21:18:44,900: ----------------------------------------------
+INFO: 2020-07-05 21:18:44,900: Number of workers: 16
+INFO: 2020-07-05 21:18:44,900: Batch size: 512
+INFO: 2020-07-05 21:18:44,900: Iterations: 2500
+INFO: 2020-07-05 21:18:44,901: Log interval: 10
+INFO: 2020-07-05 21:18:44,901: Experiment runs: 2500
+INFO: 2020-07-05 21:18:44,901: Number of test runs: 30
+INFO: 2020-07-05 21:18:44,901: ----------------------------------------------
+INFO: 2020-07-05 21:18:44,901: Network Parameters
+INFO: 2020-07-05 21:18:44,901: ----------------------------------------------
+INFO: 2020-07-05 21:18:44,901: Network input dim: 67
+INFO: 2020-07-05 21:18:44,901: Network hidden dim: 512
+INFO: 2020-07-05 21:18:44,901: Network layers: 2
+INFO: 2020-07-05 21:18:44,901: Network output dim: 4
+INFO: 2020-07-05 21:18:44,901: ----------------------------------------------
+INFO: 2020-07-05 21:18:44,901: Environment Parameters
+INFO: 2020-07-05 21:18:44,901: ----------------------------------------------
+INFO: 2020-07-05 21:18:45,792:  
+INFO: 2020-07-05 21:18:45,792: Iterations: 0
+INFO: 2020-07-05 21:18:45,792: Time steps: 0
+INFO: 2020-07-05 21:18:45,793: Reward: -381.82353
+INFO: 2020-07-05 21:18:45,793:  
+INFO: 2020-07-05 21:20:47,776: Iterations: 10
+INFO: 2020-07-05 21:20:47,776: Time steps: 81920
+INFO: 2020-07-05 21:20:47,776: Reward: -380.47656
+INFO: 2020-07-05 21:20:47,776:  
+INFO: 2020-07-05 21:20:47,776: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 21:22:50,936: Iterations: 20
+INFO: 2020-07-05 21:22:50,936: Time steps: 163840
+INFO: 2020-07-05 21:22:50,936: Reward: -370.58208
+INFO: 2020-07-05 21:22:50,936:  
+INFO: 2020-07-05 21:22:50,936: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 21:24:54,377: Iterations: 30
+INFO: 2020-07-05 21:24:54,378: Time steps: 245760
+INFO: 2020-07-05 21:24:54,378: Reward: -364.93522
+INFO: 2020-07-05 21:24:54,378:  
+INFO: 2020-07-05 21:24:54,378: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 21:26:58,013: Iterations: 40
+INFO: 2020-07-05 21:26:58,013: Time steps: 327680
+INFO: 2020-07-05 21:26:58,013: Reward: -376.19615
+INFO: 2020-07-05 21:26:58,013:  
+INFO: 2020-07-05 21:29:00,874: Iterations: 50
+INFO: 2020-07-05 21:29:00,874: Time steps: 409600
+INFO: 2020-07-05 21:29:00,874: Reward: -369.73486
+INFO: 2020-07-05 21:29:00,874:  
+INFO: 2020-07-05 21:31:04,431: Iterations: 60
+INFO: 2020-07-05 21:31:04,432: Time steps: 491520
+INFO: 2020-07-05 21:31:04,432: Reward: -366.14256
+INFO: 2020-07-05 21:31:04,432:  
+INFO: 2020-07-05 21:33:07,541: Iterations: 70
+INFO: 2020-07-05 21:33:07,542: Time steps: 573440
+INFO: 2020-07-05 21:33:07,542: Reward: -372.68460
+INFO: 2020-07-05 21:33:07,542:  
+INFO: 2020-07-05 21:35:10,896: Iterations: 80
+INFO: 2020-07-05 21:35:10,896: Time steps: 655360
+INFO: 2020-07-05 21:35:10,896: Reward: -377.22532
+INFO: 2020-07-05 21:35:10,897:  
+INFO: 2020-07-05 21:37:14,094: Iterations: 90
+INFO: 2020-07-05 21:37:14,094: Time steps: 737280
+INFO: 2020-07-05 21:37:14,095: Reward: -366.53468
+INFO: 2020-07-05 21:37:14,095:  
+INFO: 2020-07-05 21:39:18,001: Iterations: 100
+INFO: 2020-07-05 21:39:18,001: Time steps: 819200
+INFO: 2020-07-05 21:39:18,001: Reward: -370.34094
+INFO: 2020-07-05 21:39:18,001:  
+INFO: 2020-07-05 21:41:21,619: Iterations: 110
+INFO: 2020-07-05 21:41:21,619: Time steps: 901120
+INFO: 2020-07-05 21:41:21,620: Reward: -373.80525
+INFO: 2020-07-05 21:41:21,620:  
+INFO: 2020-07-05 21:43:25,079: Iterations: 120
+INFO: 2020-07-05 21:43:25,079: Time steps: 983040
+INFO: 2020-07-05 21:43:25,079: Reward: -372.52932
+INFO: 2020-07-05 21:43:25,079:  
+INFO: 2020-07-05 21:45:29,032: Iterations: 130
+INFO: 2020-07-05 21:45:29,032: Time steps: 1064960
+INFO: 2020-07-05 21:45:29,032: Reward: -352.86726
+INFO: 2020-07-05 21:45:29,032:  
+INFO: 2020-07-05 21:45:29,032: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 21:47:33,563: Iterations: 140
+INFO: 2020-07-05 21:47:33,563: Time steps: 1146880
+INFO: 2020-07-05 21:47:33,563: Reward: -377.06790
+INFO: 2020-07-05 21:47:33,564:  
+INFO: 2020-07-05 21:49:37,381: Iterations: 150
+INFO: 2020-07-05 21:49:37,381: Time steps: 1228800
+INFO: 2020-07-05 21:49:37,381: Reward: -384.94826
+INFO: 2020-07-05 21:49:37,381:  
+INFO: 2020-07-05 21:51:42,061: Iterations: 160
+INFO: 2020-07-05 21:51:42,061: Time steps: 1310720
+INFO: 2020-07-05 21:51:42,061: Reward: -366.19543
+INFO: 2020-07-05 21:51:42,062:  
+INFO: 2020-07-05 21:53:46,027: Iterations: 170
+INFO: 2020-07-05 21:53:46,028: Time steps: 1392640
+INFO: 2020-07-05 21:53:46,028: Reward: -367.39789
+INFO: 2020-07-05 21:53:46,028:  
+INFO: 2020-07-05 21:55:50,010: Iterations: 180
+INFO: 2020-07-05 21:55:50,010: Time steps: 1474560
+INFO: 2020-07-05 21:55:50,010: Reward: -367.77002
+INFO: 2020-07-05 21:55:50,010:  
+INFO: 2020-07-05 21:57:54,097: Iterations: 190
+INFO: 2020-07-05 21:57:54,097: Time steps: 1556480
+INFO: 2020-07-05 21:57:54,098: Reward: -365.89249
+INFO: 2020-07-05 21:57:54,098:  
+INFO: 2020-07-05 21:59:58,098: Iterations: 200
+INFO: 2020-07-05 21:59:58,098: Time steps: 1638400
+INFO: 2020-07-05 21:59:58,098: Reward: -369.81739
+INFO: 2020-07-05 21:59:58,098:  
+INFO: 2020-07-05 22:02:02,396: Iterations: 210
+INFO: 2020-07-05 22:02:02,396: Time steps: 1720320
+INFO: 2020-07-05 22:02:02,396: Reward: -375.41735
+INFO: 2020-07-05 22:02:02,396:  
+INFO: 2020-07-05 22:04:06,840: Iterations: 220
+INFO: 2020-07-05 22:04:06,840: Time steps: 1802240
+INFO: 2020-07-05 22:04:06,840: Reward: -376.05600
+INFO: 2020-07-05 22:04:06,840:  
+INFO: 2020-07-05 22:06:11,103: Iterations: 230
+INFO: 2020-07-05 22:06:11,103: Time steps: 1884160
+INFO: 2020-07-05 22:06:11,103: Reward: -375.52766
+INFO: 2020-07-05 22:06:11,103:  
+INFO: 2020-07-05 22:08:15,328: Iterations: 240
+INFO: 2020-07-05 22:08:15,328: Time steps: 1966080
+INFO: 2020-07-05 22:08:15,328: Reward: -370.18734
+INFO: 2020-07-05 22:08:15,328:  
+INFO: 2020-07-05 22:10:19,640: Iterations: 250
+INFO: 2020-07-05 22:10:19,640: Time steps: 2048000
+INFO: 2020-07-05 22:10:19,640: Reward: -373.07212
+INFO: 2020-07-05 22:10:19,640:  
+INFO: 2020-07-05 22:12:24,032: Iterations: 260
+INFO: 2020-07-05 22:12:24,032: Time steps: 2129920
+INFO: 2020-07-05 22:12:24,032: Reward: -361.07304
+INFO: 2020-07-05 22:12:24,032:  
+INFO: 2020-07-05 22:14:28,722: Iterations: 270
+INFO: 2020-07-05 22:14:28,723: Time steps: 2211840
+INFO: 2020-07-05 22:14:28,723: Reward: -367.24766
+INFO: 2020-07-05 22:14:28,723:  
+INFO: 2020-07-05 22:16:32,950: Iterations: 280
+INFO: 2020-07-05 22:16:32,950: Time steps: 2293760
+INFO: 2020-07-05 22:16:32,950: Reward: -362.36376
+INFO: 2020-07-05 22:16:32,950:  
+INFO: 2020-07-05 22:18:37,683: Iterations: 290
+INFO: 2020-07-05 22:18:37,683: Time steps: 2375680
+INFO: 2020-07-05 22:18:37,684: Reward: -379.00026
+INFO: 2020-07-05 22:18:37,684:  
+INFO: 2020-07-05 22:20:41,417: Iterations: 300
+INFO: 2020-07-05 22:20:41,417: Time steps: 2457600
+INFO: 2020-07-05 22:20:41,417: Reward: -371.32626
+INFO: 2020-07-05 22:20:41,417:  
+INFO: 2020-07-05 22:22:45,147: Iterations: 310
+INFO: 2020-07-05 22:22:45,147: Time steps: 2539520
+INFO: 2020-07-05 22:22:45,147: Reward: -348.21116
+INFO: 2020-07-05 22:22:45,147:  
+INFO: 2020-07-05 22:22:45,147: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 22:24:49,747: Iterations: 320
+INFO: 2020-07-05 22:24:49,748: Time steps: 2621440
+INFO: 2020-07-05 22:24:49,748: Reward: -365.50127
+INFO: 2020-07-05 22:24:49,748:  
+INFO: 2020-07-05 22:26:53,902: Iterations: 330
+INFO: 2020-07-05 22:26:53,902: Time steps: 2703360
+INFO: 2020-07-05 22:26:53,903: Reward: -371.35916
+INFO: 2020-07-05 22:26:53,903:  
+INFO: 2020-07-05 22:28:57,345: Iterations: 340
+INFO: 2020-07-05 22:28:57,345: Time steps: 2785280
+INFO: 2020-07-05 22:28:57,345: Reward: -354.10137
+INFO: 2020-07-05 22:28:57,345:  
+INFO: 2020-07-05 22:31:02,415: Iterations: 350
+INFO: 2020-07-05 22:31:02,415: Time steps: 2867200
+INFO: 2020-07-05 22:31:02,415: Reward: -383.67229
+INFO: 2020-07-05 22:31:02,415:  
+INFO: 2020-07-05 22:33:07,599: Iterations: 360
+INFO: 2020-07-05 22:33:07,600: Time steps: 2949120
+INFO: 2020-07-05 22:33:07,600: Reward: -364.27800
+INFO: 2020-07-05 22:33:07,600:  
+INFO: 2020-07-05 22:35:12,614: Iterations: 370
+INFO: 2020-07-05 22:35:12,614: Time steps: 3031040
+INFO: 2020-07-05 22:35:12,615: Reward: -384.95765
+INFO: 2020-07-05 22:35:12,615:  
+INFO: 2020-07-05 22:37:16,953: Iterations: 380
+INFO: 2020-07-05 22:37:16,953: Time steps: 3112960
+INFO: 2020-07-05 22:37:16,953: Reward: -372.86011
+INFO: 2020-07-05 22:37:16,953:  
+INFO: 2020-07-05 22:39:21,328: Iterations: 390
+INFO: 2020-07-05 22:39:21,328: Time steps: 3194880
+INFO: 2020-07-05 22:39:21,328: Reward: -369.99400
+INFO: 2020-07-05 22:39:21,328:  
+INFO: 2020-07-05 22:41:26,179: Iterations: 400
+INFO: 2020-07-05 22:41:26,179: Time steps: 3276800
+INFO: 2020-07-05 22:41:26,179: Reward: -369.68229
+INFO: 2020-07-05 22:41:26,179:  
+INFO: 2020-07-05 22:43:30,582: Iterations: 410
+INFO: 2020-07-05 22:43:30,582: Time steps: 3358720
+INFO: 2020-07-05 22:43:30,582: Reward: -374.65661
+INFO: 2020-07-05 22:43:30,582:  
+INFO: 2020-07-05 22:45:34,708: Iterations: 420
+INFO: 2020-07-05 22:45:34,708: Time steps: 3440640
+INFO: 2020-07-05 22:45:34,708: Reward: -376.75152
+INFO: 2020-07-05 22:45:34,708:  
+INFO: 2020-07-05 22:47:39,475: Iterations: 430
+INFO: 2020-07-05 22:47:39,475: Time steps: 3522560
+INFO: 2020-07-05 22:47:39,475: Reward: -369.20065
+INFO: 2020-07-05 22:47:39,476:  
+INFO: 2020-07-05 22:49:43,880: Iterations: 440
+INFO: 2020-07-05 22:49:43,880: Time steps: 3604480
+INFO: 2020-07-05 22:49:43,880: Reward: -369.10708
+INFO: 2020-07-05 22:49:43,880:  
+INFO: 2020-07-05 22:51:48,487: Iterations: 450
+INFO: 2020-07-05 22:51:48,488: Time steps: 3686400
+INFO: 2020-07-05 22:51:48,488: Reward: -378.67838
+INFO: 2020-07-05 22:51:48,488:  
+INFO: 2020-07-05 22:53:53,253: Iterations: 460
+INFO: 2020-07-05 22:53:53,253: Time steps: 3768320
+INFO: 2020-07-05 22:53:53,253: Reward: -390.53233
+INFO: 2020-07-05 22:53:53,253:  
+INFO: 2020-07-05 22:55:57,852: Iterations: 470
+INFO: 2020-07-05 22:55:57,852: Time steps: 3850240
+INFO: 2020-07-05 22:55:57,852: Reward: -364.97865
+INFO: 2020-07-05 22:55:57,852:  
+INFO: 2020-07-05 22:58:01,962: Iterations: 480
+INFO: 2020-07-05 22:58:01,962: Time steps: 3932160
+INFO: 2020-07-05 22:58:01,962: Reward: -373.82821
+INFO: 2020-07-05 22:58:01,962:  
+INFO: 2020-07-05 23:00:06,981: Iterations: 490
+INFO: 2020-07-05 23:00:06,981: Time steps: 4014080
+INFO: 2020-07-05 23:00:06,981: Reward: -369.66703
+INFO: 2020-07-05 23:00:06,981:  
+INFO: 2020-07-05 23:02:11,284: Iterations: 500
+INFO: 2020-07-05 23:02:11,284: Time steps: 4096000
+INFO: 2020-07-05 23:02:11,285: Reward: -386.10196
+INFO: 2020-07-05 23:02:11,285:  
+INFO: 2020-07-05 23:04:14,505: Iterations: 510
+INFO: 2020-07-05 23:04:14,506: Time steps: 4177920
+INFO: 2020-07-05 23:04:14,506: Reward: -379.83726
+INFO: 2020-07-05 23:04:14,506:  
+INFO: 2020-07-05 23:06:19,883: Iterations: 520
+INFO: 2020-07-05 23:06:19,883: Time steps: 4259840
+INFO: 2020-07-05 23:06:19,883: Reward: -384.22150
+INFO: 2020-07-05 23:06:19,883:  
+INFO: 2020-07-05 23:08:23,688: Iterations: 530
+INFO: 2020-07-05 23:08:23,688: Time steps: 4341760
+INFO: 2020-07-05 23:08:23,688: Reward: -382.22421
+INFO: 2020-07-05 23:08:23,688:  
+INFO: 2020-07-05 23:10:28,392: Iterations: 540
+INFO: 2020-07-05 23:10:28,392: Time steps: 4423680
+INFO: 2020-07-05 23:10:28,393: Reward: -365.94910
+INFO: 2020-07-05 23:10:28,393:  
+INFO: 2020-07-05 23:12:33,373: Iterations: 550
+INFO: 2020-07-05 23:12:33,373: Time steps: 4505600
+INFO: 2020-07-05 23:12:33,373: Reward: -379.89098
+INFO: 2020-07-05 23:12:33,373:  
+INFO: 2020-07-05 23:14:38,142: Iterations: 560
+INFO: 2020-07-05 23:14:38,143: Time steps: 4587520
+INFO: 2020-07-05 23:14:38,143: Reward: -354.79090
+INFO: 2020-07-05 23:14:38,143:  
+INFO: 2020-07-05 23:16:43,038: Iterations: 570
+INFO: 2020-07-05 23:16:43,038: Time steps: 4669440
+INFO: 2020-07-05 23:16:43,038: Reward: -375.43109
+INFO: 2020-07-05 23:16:43,038:  
+INFO: 2020-07-05 23:18:47,809: Iterations: 580
+INFO: 2020-07-05 23:18:47,809: Time steps: 4751360
+INFO: 2020-07-05 23:18:47,809: Reward: -371.05457
+INFO: 2020-07-05 23:18:47,809:  
+INFO: 2020-07-05 23:20:53,135: Iterations: 590
+INFO: 2020-07-05 23:20:53,135: Time steps: 4833280
+INFO: 2020-07-05 23:20:53,135: Reward: -359.64116
+INFO: 2020-07-05 23:20:53,135:  
+INFO: 2020-07-05 23:22:57,712: Iterations: 600
+INFO: 2020-07-05 23:22:57,712: Time steps: 4915200
+INFO: 2020-07-05 23:22:57,712: Reward: -354.98649
+INFO: 2020-07-05 23:22:57,712:  
+INFO: 2020-07-05 23:25:01,367: Iterations: 610
+INFO: 2020-07-05 23:25:01,367: Time steps: 4997120
+INFO: 2020-07-05 23:25:01,367: Reward: -366.77885
+INFO: 2020-07-05 23:25:01,367:  
+INFO: 2020-07-05 23:27:06,430: Iterations: 620
+INFO: 2020-07-05 23:27:06,430: Time steps: 5079040
+INFO: 2020-07-05 23:27:06,430: Reward: -364.95084
+INFO: 2020-07-05 23:27:06,430:  
+INFO: 2020-07-05 23:29:11,392: Iterations: 630
+INFO: 2020-07-05 23:29:11,393: Time steps: 5160960
+INFO: 2020-07-05 23:29:11,393: Reward: -374.88970
+INFO: 2020-07-05 23:29:11,393:  
+INFO: 2020-07-05 23:31:15,226: Iterations: 640
+INFO: 2020-07-05 23:31:15,227: Time steps: 5242880
+INFO: 2020-07-05 23:31:15,227: Reward: -378.59426
+INFO: 2020-07-05 23:31:15,227:  
+INFO: 2020-07-05 23:33:20,439: Iterations: 650
+INFO: 2020-07-05 23:33:20,439: Time steps: 5324800
+INFO: 2020-07-05 23:33:20,439: Reward: -368.68788
+INFO: 2020-07-05 23:33:20,440:  
+INFO: 2020-07-05 23:35:24,776: Iterations: 660
+INFO: 2020-07-05 23:35:24,776: Time steps: 5406720
+INFO: 2020-07-05 23:35:24,776: Reward: -363.42840
+INFO: 2020-07-05 23:35:24,776:  
+INFO: 2020-07-05 23:37:29,554: Iterations: 670
+INFO: 2020-07-05 23:37:29,554: Time steps: 5488640
+INFO: 2020-07-05 23:37:29,554: Reward: -389.99180
+INFO: 2020-07-05 23:37:29,554:  
+INFO: 2020-07-05 23:39:34,009: Iterations: 680
+INFO: 2020-07-05 23:39:34,009: Time steps: 5570560
+INFO: 2020-07-05 23:39:34,009: Reward: -382.20397
+INFO: 2020-07-05 23:39:34,009:  
+INFO: 2020-07-05 23:41:38,928: Iterations: 690
+INFO: 2020-07-05 23:41:38,928: Time steps: 5652480
+INFO: 2020-07-05 23:41:38,928: Reward: -373.01207
+INFO: 2020-07-05 23:41:38,928:  
+INFO: 2020-07-05 23:43:44,035: Iterations: 700
+INFO: 2020-07-05 23:43:44,035: Time steps: 5734400
+INFO: 2020-07-05 23:43:44,035: Reward: -358.14982
+INFO: 2020-07-05 23:43:44,035:  
+INFO: 2020-07-05 23:45:48,707: Iterations: 710
+INFO: 2020-07-05 23:45:48,707: Time steps: 5816320
+INFO: 2020-07-05 23:45:48,707: Reward: -376.80953
+INFO: 2020-07-05 23:45:48,707:  
+INFO: 2020-07-05 23:47:53,654: Iterations: 720
+INFO: 2020-07-05 23:47:53,655: Time steps: 5898240
+INFO: 2020-07-05 23:47:53,655: Reward: -379.54446
+INFO: 2020-07-05 23:47:53,655:  
+INFO: 2020-07-05 23:49:58,019: Iterations: 730
+INFO: 2020-07-05 23:49:58,019: Time steps: 5980160
+INFO: 2020-07-05 23:49:58,020: Reward: -346.44344
+INFO: 2020-07-05 23:49:58,020:  
+INFO: 2020-07-05 23:49:58,020: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-05 23:52:03,228: Iterations: 740
+INFO: 2020-07-05 23:52:03,228: Time steps: 6062080
+INFO: 2020-07-05 23:52:03,228: Reward: -357.59361
+INFO: 2020-07-05 23:52:03,228:  
+INFO: 2020-07-05 23:54:07,903: Iterations: 750
+INFO: 2020-07-05 23:54:07,903: Time steps: 6144000
+INFO: 2020-07-05 23:54:07,903: Reward: -377.65044
+INFO: 2020-07-05 23:54:07,903:  
+INFO: 2020-07-05 23:56:11,546: Iterations: 760
+INFO: 2020-07-05 23:56:11,546: Time steps: 6225920
+INFO: 2020-07-05 23:56:11,547: Reward: -361.42247
+INFO: 2020-07-05 23:56:11,547:  
+INFO: 2020-07-05 23:58:16,676: Iterations: 770
+INFO: 2020-07-05 23:58:16,677: Time steps: 6307840
+INFO: 2020-07-05 23:58:16,677: Reward: -389.68076
+INFO: 2020-07-05 23:58:16,677:  
+INFO: 2020-07-06 00:00:21,764: Iterations: 780
+INFO: 2020-07-06 00:00:21,764: Time steps: 6389760
+INFO: 2020-07-06 00:00:21,764: Reward: -381.71802
+INFO: 2020-07-06 00:00:21,764:  
+INFO: 2020-07-06 00:02:26,774: Iterations: 790
+INFO: 2020-07-06 00:02:26,774: Time steps: 6471680
+INFO: 2020-07-06 00:02:26,774: Reward: -357.53055
+INFO: 2020-07-06 00:02:26,774:  
+INFO: 2020-07-06 00:04:32,025: Iterations: 800
+INFO: 2020-07-06 00:04:32,025: Time steps: 6553600
+INFO: 2020-07-06 00:04:32,025: Reward: -363.48961
+INFO: 2020-07-06 00:04:32,026:  
+INFO: 2020-07-06 00:06:36,536: Iterations: 810
+INFO: 2020-07-06 00:06:36,537: Time steps: 6635520
+INFO: 2020-07-06 00:06:36,537: Reward: -375.91021
+INFO: 2020-07-06 00:06:36,537:  
+INFO: 2020-07-06 00:08:42,026: Iterations: 820
+INFO: 2020-07-06 00:08:42,026: Time steps: 6717440
+INFO: 2020-07-06 00:08:42,026: Reward: -387.06624
+INFO: 2020-07-06 00:08:42,027:  
+INFO: 2020-07-06 00:10:47,071: Iterations: 830
+INFO: 2020-07-06 00:10:47,071: Time steps: 6799360
+INFO: 2020-07-06 00:10:47,071: Reward: -371.82691
+INFO: 2020-07-06 00:10:47,071:  
+INFO: 2020-07-06 00:12:51,751: Iterations: 840
+INFO: 2020-07-06 00:12:51,751: Time steps: 6881280
+INFO: 2020-07-06 00:12:51,751: Reward: -364.10318
+INFO: 2020-07-06 00:12:51,751:  
+INFO: 2020-07-06 00:14:57,353: Iterations: 850
+INFO: 2020-07-06 00:14:57,353: Time steps: 6963200
+INFO: 2020-07-06 00:14:57,353: Reward: -368.73456
+INFO: 2020-07-06 00:14:57,353:  
+INFO: 2020-07-06 00:17:01,885: Iterations: 860
+INFO: 2020-07-06 00:17:01,885: Time steps: 7045120
+INFO: 2020-07-06 00:17:01,885: Reward: -365.08967
+INFO: 2020-07-06 00:17:01,885:  
+INFO: 2020-07-06 00:19:06,168: Iterations: 870
+INFO: 2020-07-06 00:19:06,168: Time steps: 7127040
+INFO: 2020-07-06 00:19:06,168: Reward: -367.51519
+INFO: 2020-07-06 00:19:06,168:  
+INFO: 2020-07-06 00:21:10,613: Iterations: 880
+INFO: 2020-07-06 00:21:10,613: Time steps: 7208960
+INFO: 2020-07-06 00:21:10,613: Reward: -378.03254
+INFO: 2020-07-06 00:21:10,613:  
+INFO: 2020-07-06 00:23:15,602: Iterations: 890
+INFO: 2020-07-06 00:23:15,602: Time steps: 7290880
+INFO: 2020-07-06 00:23:15,602: Reward: -366.81964
+INFO: 2020-07-06 00:23:15,602:  
+INFO: 2020-07-06 00:25:20,270: Iterations: 900
+INFO: 2020-07-06 00:25:20,271: Time steps: 7372800
+INFO: 2020-07-06 00:25:20,271: Reward: -376.42287
+INFO: 2020-07-06 00:25:20,271:  
+INFO: 2020-07-06 00:27:24,523: Iterations: 910
+INFO: 2020-07-06 00:27:24,523: Time steps: 7454720
+INFO: 2020-07-06 00:27:24,523: Reward: -347.92746
+INFO: 2020-07-06 00:27:24,523:  
+INFO: 2020-07-06 00:29:29,396: Iterations: 920
+INFO: 2020-07-06 00:29:29,396: Time steps: 7536640
+INFO: 2020-07-06 00:29:29,396: Reward: -379.60854
+INFO: 2020-07-06 00:29:29,397:  
+INFO: 2020-07-06 00:31:34,597: Iterations: 930
+INFO: 2020-07-06 00:31:34,597: Time steps: 7618560
+INFO: 2020-07-06 00:31:34,597: Reward: -366.18429
+INFO: 2020-07-06 00:31:34,597:  
+INFO: 2020-07-06 00:33:39,826: Iterations: 940
+INFO: 2020-07-06 00:33:39,826: Time steps: 7700480
+INFO: 2020-07-06 00:33:39,826: Reward: -376.18344
+INFO: 2020-07-06 00:33:39,826:  
+INFO: 2020-07-06 00:35:44,836: Iterations: 950
+INFO: 2020-07-06 00:35:44,836: Time steps: 7782400
+INFO: 2020-07-06 00:35:44,836: Reward: -368.92732
+INFO: 2020-07-06 00:35:44,837:  
+INFO: 2020-07-06 00:37:50,216: Iterations: 960
+INFO: 2020-07-06 00:37:50,217: Time steps: 7864320
+INFO: 2020-07-06 00:37:50,217: Reward: -378.11314
+INFO: 2020-07-06 00:37:50,217:  
+INFO: 2020-07-06 00:39:54,929: Iterations: 970
+INFO: 2020-07-06 00:39:54,929: Time steps: 7946240
+INFO: 2020-07-06 00:39:54,930: Reward: -366.18523
+INFO: 2020-07-06 00:39:54,930:  
+INFO: 2020-07-06 00:41:59,735: Iterations: 980
+INFO: 2020-07-06 00:41:59,736: Time steps: 8028160
+INFO: 2020-07-06 00:41:59,736: Reward: -376.16049
+INFO: 2020-07-06 00:41:59,736:  
+INFO: 2020-07-06 00:44:04,735: Iterations: 990
+INFO: 2020-07-06 00:44:04,736: Time steps: 8110080
+INFO: 2020-07-06 00:44:04,736: Reward: -363.99316
+INFO: 2020-07-06 00:44:04,736:  
+INFO: 2020-07-06 00:46:09,413: Iterations: 1000
+INFO: 2020-07-06 00:46:09,414: Time steps: 8192000
+INFO: 2020-07-06 00:46:09,414: Reward: -369.98128
+INFO: 2020-07-06 00:46:09,414:  
+INFO: 2020-07-06 00:48:14,458: Iterations: 1010
+INFO: 2020-07-06 00:48:14,458: Time steps: 8273920
+INFO: 2020-07-06 00:48:14,458: Reward: -359.03867
+INFO: 2020-07-06 00:48:14,458:  
+INFO: 2020-07-06 00:50:19,556: Iterations: 1020
+INFO: 2020-07-06 00:50:19,557: Time steps: 8355840
+INFO: 2020-07-06 00:50:19,557: Reward: -381.97997
+INFO: 2020-07-06 00:50:19,557:  
+INFO: 2020-07-06 00:52:25,257: Iterations: 1030
+INFO: 2020-07-06 00:52:25,257: Time steps: 8437760
+INFO: 2020-07-06 00:52:25,257: Reward: -397.50466
+INFO: 2020-07-06 00:52:25,257:  
+INFO: 2020-07-06 00:54:30,569: Iterations: 1040
+INFO: 2020-07-06 00:54:30,569: Time steps: 8519680
+INFO: 2020-07-06 00:54:30,569: Reward: -377.44895
+INFO: 2020-07-06 00:54:30,569:  
+INFO: 2020-07-06 00:56:35,076: Iterations: 1050
+INFO: 2020-07-06 00:56:35,076: Time steps: 8601600
+INFO: 2020-07-06 00:56:35,077: Reward: -371.53163
+INFO: 2020-07-06 00:56:35,077:  
+INFO: 2020-07-06 00:58:40,093: Iterations: 1060
+INFO: 2020-07-06 00:58:40,094: Time steps: 8683520
+INFO: 2020-07-06 00:58:40,094: Reward: -380.24230
+INFO: 2020-07-06 00:58:40,094:  
+INFO: 2020-07-06 01:00:45,067: Iterations: 1070
+INFO: 2020-07-06 01:00:45,067: Time steps: 8765440
+INFO: 2020-07-06 01:00:45,067: Reward: -366.06992
+INFO: 2020-07-06 01:00:45,068:  
+INFO: 2020-07-06 01:02:49,823: Iterations: 1080
+INFO: 2020-07-06 01:02:49,823: Time steps: 8847360
+INFO: 2020-07-06 01:02:49,823: Reward: -376.16088
+INFO: 2020-07-06 01:02:49,823:  
+INFO: 2020-07-06 01:04:54,922: Iterations: 1090
+INFO: 2020-07-06 01:04:54,922: Time steps: 8929280
+INFO: 2020-07-06 01:04:54,922: Reward: -364.12478
+INFO: 2020-07-06 01:04:54,922:  
+INFO: 2020-07-06 01:07:00,367: Iterations: 1100
+INFO: 2020-07-06 01:07:00,367: Time steps: 9011200
+INFO: 2020-07-06 01:07:00,367: Reward: -375.02780
+INFO: 2020-07-06 01:07:00,367:  
+INFO: 2020-07-06 01:09:05,281: Iterations: 1110
+INFO: 2020-07-06 01:09:05,281: Time steps: 9093120
+INFO: 2020-07-06 01:09:05,281: Reward: -382.93718
+INFO: 2020-07-06 01:09:05,281:  
+INFO: 2020-07-06 01:11:10,152: Iterations: 1120
+INFO: 2020-07-06 01:11:10,152: Time steps: 9175040
+INFO: 2020-07-06 01:11:10,152: Reward: -381.12714
+INFO: 2020-07-06 01:11:10,152:  
+INFO: 2020-07-06 01:13:14,461: Iterations: 1130
+INFO: 2020-07-06 01:13:14,461: Time steps: 9256960
+INFO: 2020-07-06 01:13:14,461: Reward: -390.35013
+INFO: 2020-07-06 01:13:14,461:  
+INFO: 2020-07-06 01:15:19,859: Iterations: 1140
+INFO: 2020-07-06 01:15:19,859: Time steps: 9338880
+INFO: 2020-07-06 01:15:19,859: Reward: -372.07946
+INFO: 2020-07-06 01:15:19,859:  
+INFO: 2020-07-06 01:17:25,158: Iterations: 1150
+INFO: 2020-07-06 01:17:25,159: Time steps: 9420800
+INFO: 2020-07-06 01:17:25,159: Reward: -371.05717
+INFO: 2020-07-06 01:17:25,159:  
+INFO: 2020-07-06 01:19:30,086: Iterations: 1160
+INFO: 2020-07-06 01:19:30,086: Time steps: 9502720
+INFO: 2020-07-06 01:19:30,086: Reward: -371.85304
+INFO: 2020-07-06 01:19:30,087:  
+INFO: 2020-07-06 01:21:35,112: Iterations: 1170
+INFO: 2020-07-06 01:21:35,112: Time steps: 9584640
+INFO: 2020-07-06 01:21:35,112: Reward: -358.08549
+INFO: 2020-07-06 01:21:35,112:  
+INFO: 2020-07-06 01:23:40,447: Iterations: 1180
+INFO: 2020-07-06 01:23:40,448: Time steps: 9666560
+INFO: 2020-07-06 01:23:40,448: Reward: -394.25395
+INFO: 2020-07-06 01:23:40,448:  
+INFO: 2020-07-06 01:25:45,167: Iterations: 1190
+INFO: 2020-07-06 01:25:45,167: Time steps: 9748480
+INFO: 2020-07-06 01:25:45,167: Reward: -370.59484
+INFO: 2020-07-06 01:25:45,167:  
+INFO: 2020-07-06 01:27:50,134: Iterations: 1200
+INFO: 2020-07-06 01:27:50,135: Time steps: 9830400
+INFO: 2020-07-06 01:27:50,135: Reward: -372.99812
+INFO: 2020-07-06 01:27:50,135:  
+INFO: 2020-07-06 01:29:55,166: Iterations: 1210
+INFO: 2020-07-06 01:29:55,166: Time steps: 9912320
+INFO: 2020-07-06 01:29:55,166: Reward: -364.42633
+INFO: 2020-07-06 01:29:55,166:  
+INFO: 2020-07-06 01:32:00,617: Iterations: 1220
+INFO: 2020-07-06 01:32:00,618: Time steps: 9994240
+INFO: 2020-07-06 01:32:00,618: Reward: -369.50332
+INFO: 2020-07-06 01:32:00,618:  
+INFO: 2020-07-06 01:34:05,671: Iterations: 1230
+INFO: 2020-07-06 01:34:05,671: Time steps: 10076160
+INFO: 2020-07-06 01:34:05,671: Reward: -378.27310
+INFO: 2020-07-06 01:34:05,671:  
+INFO: 2020-07-06 01:36:10,282: Iterations: 1240
+INFO: 2020-07-06 01:36:10,282: Time steps: 10158080
+INFO: 2020-07-06 01:36:10,282: Reward: -381.98196
+INFO: 2020-07-06 01:36:10,282:  
+INFO: 2020-07-06 01:38:16,081: Iterations: 1250
+INFO: 2020-07-06 01:38:16,082: Time steps: 10240000
+INFO: 2020-07-06 01:38:16,082: Reward: -376.11965
+INFO: 2020-07-06 01:38:16,082:  
+INFO: 2020-07-06 01:40:21,466: Iterations: 1260
+INFO: 2020-07-06 01:40:21,467: Time steps: 10321920
+INFO: 2020-07-06 01:40:21,467: Reward: -371.52141
+INFO: 2020-07-06 01:40:21,467:  
+INFO: 2020-07-06 01:42:27,025: Iterations: 1270
+INFO: 2020-07-06 01:42:27,025: Time steps: 10403840
+INFO: 2020-07-06 01:42:27,026: Reward: -379.27650
+INFO: 2020-07-06 01:42:27,026:  
+INFO: 2020-07-06 01:44:32,631: Iterations: 1280
+INFO: 2020-07-06 01:44:32,631: Time steps: 10485760
+INFO: 2020-07-06 01:44:32,632: Reward: -366.78473
+INFO: 2020-07-06 01:44:32,632:  
+INFO: 2020-07-06 01:46:36,779: Iterations: 1290
+INFO: 2020-07-06 01:46:36,779: Time steps: 10567680
+INFO: 2020-07-06 01:46:36,779: Reward: -376.96587
+INFO: 2020-07-06 01:46:36,780:  
+INFO: 2020-07-06 01:48:41,631: Iterations: 1300
+INFO: 2020-07-06 01:48:41,631: Time steps: 10649600
+INFO: 2020-07-06 01:48:41,631: Reward: -374.57054
+INFO: 2020-07-06 01:48:41,631:  
+INFO: 2020-07-06 01:50:47,010: Iterations: 1310
+INFO: 2020-07-06 01:50:47,010: Time steps: 10731520
+INFO: 2020-07-06 01:50:47,010: Reward: -359.08885
+INFO: 2020-07-06 01:50:47,010:  
+INFO: 2020-07-06 01:52:52,178: Iterations: 1320
+INFO: 2020-07-06 01:52:52,178: Time steps: 10813440
+INFO: 2020-07-06 01:52:52,178: Reward: -360.86666
+INFO: 2020-07-06 01:52:52,178:  
+INFO: 2020-07-06 01:54:57,429: Iterations: 1330
+INFO: 2020-07-06 01:54:57,429: Time steps: 10895360
+INFO: 2020-07-06 01:54:57,429: Reward: -375.48162
+INFO: 2020-07-06 01:54:57,429:  
+INFO: 2020-07-06 01:57:02,824: Iterations: 1340
+INFO: 2020-07-06 01:57:02,824: Time steps: 10977280
+INFO: 2020-07-06 01:57:02,824: Reward: -365.37149
+INFO: 2020-07-06 01:57:02,824:  
+INFO: 2020-07-06 01:59:08,214: Iterations: 1350
+INFO: 2020-07-06 01:59:08,215: Time steps: 11059200
+INFO: 2020-07-06 01:59:08,215: Reward: -361.01232
+INFO: 2020-07-06 01:59:08,215:  
+INFO: 2020-07-06 02:01:13,613: Iterations: 1360
+INFO: 2020-07-06 02:01:13,613: Time steps: 11141120
+INFO: 2020-07-06 02:01:13,613: Reward: -382.38158
+INFO: 2020-07-06 02:01:13,613:  
+INFO: 2020-07-06 02:03:19,174: Iterations: 1370
+INFO: 2020-07-06 02:03:19,174: Time steps: 11223040
+INFO: 2020-07-06 02:03:19,174: Reward: -375.27383
+INFO: 2020-07-06 02:03:19,174:  
+INFO: 2020-07-06 02:05:25,023: Iterations: 1380
+INFO: 2020-07-06 02:05:25,023: Time steps: 11304960
+INFO: 2020-07-06 02:05:25,023: Reward: -362.81979
+INFO: 2020-07-06 02:05:25,023:  
+INFO: 2020-07-06 02:07:30,523: Iterations: 1390
+INFO: 2020-07-06 02:07:30,524: Time steps: 11386880
+INFO: 2020-07-06 02:07:30,524: Reward: -360.02249
+INFO: 2020-07-06 02:07:30,524:  
+INFO: 2020-07-06 02:09:35,873: Iterations: 1400
+INFO: 2020-07-06 02:09:35,874: Time steps: 11468800
+INFO: 2020-07-06 02:09:35,874: Reward: -379.46786
+INFO: 2020-07-06 02:09:35,874:  
+INFO: 2020-07-06 02:11:41,055: Iterations: 1410
+INFO: 2020-07-06 02:11:41,055: Time steps: 11550720
+INFO: 2020-07-06 02:11:41,055: Reward: -367.24990
+INFO: 2020-07-06 02:11:41,056:  
+INFO: 2020-07-06 02:13:46,004: Iterations: 1420
+INFO: 2020-07-06 02:13:46,004: Time steps: 11632640
+INFO: 2020-07-06 02:13:46,004: Reward: -392.32393
+INFO: 2020-07-06 02:13:46,004:  
+INFO: 2020-07-06 02:15:51,777: Iterations: 1430
+INFO: 2020-07-06 02:15:51,777: Time steps: 11714560
+INFO: 2020-07-06 02:15:51,777: Reward: -376.31376
+INFO: 2020-07-06 02:15:51,777:  
+INFO: 2020-07-06 02:17:57,454: Iterations: 1440
+INFO: 2020-07-06 02:17:57,454: Time steps: 11796480
+INFO: 2020-07-06 02:17:57,454: Reward: -367.66292
+INFO: 2020-07-06 02:17:57,454:  
+INFO: 2020-07-06 02:20:03,252: Iterations: 1450
+INFO: 2020-07-06 02:20:03,252: Time steps: 11878400
+INFO: 2020-07-06 02:20:03,252: Reward: -375.55536
+INFO: 2020-07-06 02:20:03,252:  
+INFO: 2020-07-06 02:22:09,098: Iterations: 1460
+INFO: 2020-07-06 02:22:09,098: Time steps: 11960320
+INFO: 2020-07-06 02:22:09,098: Reward: -359.87547
+INFO: 2020-07-06 02:22:09,098:  
+INFO: 2020-07-06 02:24:14,821: Iterations: 1470
+INFO: 2020-07-06 02:24:14,821: Time steps: 12042240
+INFO: 2020-07-06 02:24:14,821: Reward: -375.88445
+INFO: 2020-07-06 02:24:14,821:  
+INFO: 2020-07-06 02:26:20,222: Iterations: 1480
+INFO: 2020-07-06 02:26:20,222: Time steps: 12124160
+INFO: 2020-07-06 02:26:20,222: Reward: -355.90959
+INFO: 2020-07-06 02:26:20,222:  
+INFO: 2020-07-06 02:28:25,608: Iterations: 1490
+INFO: 2020-07-06 02:28:25,609: Time steps: 12206080
+INFO: 2020-07-06 02:28:25,609: Reward: -373.67755
+INFO: 2020-07-06 02:28:25,609:  
+INFO: 2020-07-06 02:30:30,885: Iterations: 1500
+INFO: 2020-07-06 02:30:30,885: Time steps: 12288000
+INFO: 2020-07-06 02:30:30,885: Reward: -375.07372
+INFO: 2020-07-06 02:30:30,885:  
+INFO: 2020-07-06 02:32:36,453: Iterations: 1510
+INFO: 2020-07-06 02:32:36,453: Time steps: 12369920
+INFO: 2020-07-06 02:32:36,453: Reward: -387.62306
+INFO: 2020-07-06 02:32:36,453:  
+INFO: 2020-07-06 02:34:41,406: Iterations: 1520
+INFO: 2020-07-06 02:34:41,406: Time steps: 12451840
+INFO: 2020-07-06 02:34:41,406: Reward: -352.53183
+INFO: 2020-07-06 02:34:41,406:  
+INFO: 2020-07-06 02:36:46,984: Iterations: 1530
+INFO: 2020-07-06 02:36:46,985: Time steps: 12533760
+INFO: 2020-07-06 02:36:46,985: Reward: -363.59765
+INFO: 2020-07-06 02:36:46,985:  
+INFO: 2020-07-06 02:38:52,022: Iterations: 1540
+INFO: 2020-07-06 02:38:52,023: Time steps: 12615680
+INFO: 2020-07-06 02:38:52,023: Reward: -356.66550
+INFO: 2020-07-06 02:38:52,023:  
+INFO: 2020-07-06 02:40:56,776: Iterations: 1550
+INFO: 2020-07-06 02:40:56,776: Time steps: 12697600
+INFO: 2020-07-06 02:40:56,776: Reward: -375.86156
+INFO: 2020-07-06 02:40:56,776:  
+INFO: 2020-07-06 02:43:01,897: Iterations: 1560
+INFO: 2020-07-06 02:43:01,897: Time steps: 12779520
+INFO: 2020-07-06 02:43:01,897: Reward: -380.86678
+INFO: 2020-07-06 02:43:01,897:  
+INFO: 2020-07-06 02:45:07,651: Iterations: 1570
+INFO: 2020-07-06 02:45:07,652: Time steps: 12861440
+INFO: 2020-07-06 02:45:07,652: Reward: -378.72444
+INFO: 2020-07-06 02:45:07,652:  
+INFO: 2020-07-06 02:47:13,365: Iterations: 1580
+INFO: 2020-07-06 02:47:13,366: Time steps: 12943360
+INFO: 2020-07-06 02:47:13,366: Reward: -366.09062
+INFO: 2020-07-06 02:47:13,366:  
+INFO: 2020-07-06 02:49:18,558: Iterations: 1590
+INFO: 2020-07-06 02:49:18,558: Time steps: 13025280
+INFO: 2020-07-06 02:49:18,558: Reward: -356.07246
+INFO: 2020-07-06 02:49:18,558:  
+INFO: 2020-07-06 02:51:23,750: Iterations: 1600
+INFO: 2020-07-06 02:51:23,750: Time steps: 13107200
+INFO: 2020-07-06 02:51:23,750: Reward: -371.87418
+INFO: 2020-07-06 02:51:23,751:  
+INFO: 2020-07-06 02:53:28,918: Iterations: 1610
+INFO: 2020-07-06 02:53:28,918: Time steps: 13189120
+INFO: 2020-07-06 02:53:28,918: Reward: -347.09189
+INFO: 2020-07-06 02:53:28,918:  
+INFO: 2020-07-06 02:55:33,612: Iterations: 1620
+INFO: 2020-07-06 02:55:33,612: Time steps: 13271040
+INFO: 2020-07-06 02:55:33,613: Reward: -365.86796
+INFO: 2020-07-06 02:55:33,613:  
+INFO: 2020-07-06 02:57:38,190: Iterations: 1630
+INFO: 2020-07-06 02:57:38,190: Time steps: 13352960
+INFO: 2020-07-06 02:57:38,190: Reward: -371.84012
+INFO: 2020-07-06 02:57:38,190:  
+INFO: 2020-07-06 02:59:43,297: Iterations: 1640
+INFO: 2020-07-06 02:59:43,298: Time steps: 13434880
+INFO: 2020-07-06 02:59:43,298: Reward: -368.90026
+INFO: 2020-07-06 02:59:43,298:  
+INFO: 2020-07-06 03:01:48,797: Iterations: 1650
+INFO: 2020-07-06 03:01:48,797: Time steps: 13516800
+INFO: 2020-07-06 03:01:48,797: Reward: -397.02160
+INFO: 2020-07-06 03:01:48,797:  
+INFO: 2020-07-06 03:03:53,625: Iterations: 1660
+INFO: 2020-07-06 03:03:53,625: Time steps: 13598720
+INFO: 2020-07-06 03:03:53,625: Reward: -393.30187
+INFO: 2020-07-06 03:03:53,625:  
+INFO: 2020-07-06 03:05:59,393: Iterations: 1670
+INFO: 2020-07-06 03:05:59,393: Time steps: 13680640
+INFO: 2020-07-06 03:05:59,394: Reward: -387.49926
+INFO: 2020-07-06 03:05:59,394:  
+INFO: 2020-07-06 03:08:04,987: Iterations: 1680
+INFO: 2020-07-06 03:08:04,987: Time steps: 13762560
+INFO: 2020-07-06 03:08:04,987: Reward: -357.69597
+INFO: 2020-07-06 03:08:04,987:  
+INFO: 2020-07-06 03:10:09,762: Iterations: 1690
+INFO: 2020-07-06 03:10:09,762: Time steps: 13844480
+INFO: 2020-07-06 03:10:09,762: Reward: -388.97673
+INFO: 2020-07-06 03:10:09,762:  
+INFO: 2020-07-06 03:12:14,967: Iterations: 1700
+INFO: 2020-07-06 03:12:14,967: Time steps: 13926400
+INFO: 2020-07-06 03:12:14,967: Reward: -360.77639
+INFO: 2020-07-06 03:12:14,967:  
+INFO: 2020-07-06 03:14:20,307: Iterations: 1710
+INFO: 2020-07-06 03:14:20,307: Time steps: 14008320
+INFO: 2020-07-06 03:14:20,307: Reward: -372.15163
+INFO: 2020-07-06 03:14:20,307:  
+INFO: 2020-07-06 03:16:25,686: Iterations: 1720
+INFO: 2020-07-06 03:16:25,686: Time steps: 14090240
+INFO: 2020-07-06 03:16:25,686: Reward: -376.10539
+INFO: 2020-07-06 03:16:25,686:  
+INFO: 2020-07-06 03:18:30,574: Iterations: 1730
+INFO: 2020-07-06 03:18:30,575: Time steps: 14172160
+INFO: 2020-07-06 03:18:30,575: Reward: -379.64956
+INFO: 2020-07-06 03:18:30,575:  
+INFO: 2020-07-06 03:20:35,843: Iterations: 1740
+INFO: 2020-07-06 03:20:35,843: Time steps: 14254080
+INFO: 2020-07-06 03:20:35,843: Reward: -355.77686
+INFO: 2020-07-06 03:20:35,843:  
+INFO: 2020-07-06 03:22:41,242: Iterations: 1750
+INFO: 2020-07-06 03:22:41,242: Time steps: 14336000
+INFO: 2020-07-06 03:22:41,242: Reward: -375.04102
+INFO: 2020-07-06 03:22:41,242:  
+INFO: 2020-07-06 03:24:46,521: Iterations: 1760
+INFO: 2020-07-06 03:24:46,521: Time steps: 14417920
+INFO: 2020-07-06 03:24:46,521: Reward: -377.95913
+INFO: 2020-07-06 03:24:46,521:  
+INFO: 2020-07-06 03:26:51,518: Iterations: 1770
+INFO: 2020-07-06 03:26:51,518: Time steps: 14499840
+INFO: 2020-07-06 03:26:51,518: Reward: -378.66333
+INFO: 2020-07-06 03:26:51,518:  
+INFO: 2020-07-06 03:28:56,417: Iterations: 1780
+INFO: 2020-07-06 03:28:56,417: Time steps: 14581760
+INFO: 2020-07-06 03:28:56,417: Reward: -368.16695
+INFO: 2020-07-06 03:28:56,417:  
+INFO: 2020-07-06 03:31:00,710: Iterations: 1790
+INFO: 2020-07-06 03:31:00,711: Time steps: 14663680
+INFO: 2020-07-06 03:31:00,711: Reward: -383.09650
+INFO: 2020-07-06 03:31:00,711:  
+INFO: 2020-07-06 03:33:05,747: Iterations: 1800
+INFO: 2020-07-06 03:33:05,747: Time steps: 14745600
+INFO: 2020-07-06 03:33:05,747: Reward: -370.03773
+INFO: 2020-07-06 03:33:05,747:  
+INFO: 2020-07-06 03:35:10,944: Iterations: 1810
+INFO: 2020-07-06 03:35:10,944: Time steps: 14827520
+INFO: 2020-07-06 03:35:10,945: Reward: -370.96320
+INFO: 2020-07-06 03:35:10,945:  
+INFO: 2020-07-06 03:37:16,397: Iterations: 1820
+INFO: 2020-07-06 03:37:16,397: Time steps: 14909440
+INFO: 2020-07-06 03:37:16,398: Reward: -370.07147
+INFO: 2020-07-06 03:37:16,398:  
+INFO: 2020-07-06 03:39:21,849: Iterations: 1830
+INFO: 2020-07-06 03:39:21,849: Time steps: 14991360
+INFO: 2020-07-06 03:39:21,849: Reward: -370.26331
+INFO: 2020-07-06 03:39:21,849:  
+INFO: 2020-07-06 03:41:26,647: Iterations: 1840
+INFO: 2020-07-06 03:41:26,647: Time steps: 15073280
+INFO: 2020-07-06 03:41:26,647: Reward: -380.24878
+INFO: 2020-07-06 03:41:26,647:  
+INFO: 2020-07-06 03:43:31,734: Iterations: 1850
+INFO: 2020-07-06 03:43:31,734: Time steps: 15155200
+INFO: 2020-07-06 03:43:31,734: Reward: -363.80309
+INFO: 2020-07-06 03:43:31,734:  
+INFO: 2020-07-06 03:45:37,589: Iterations: 1860
+INFO: 2020-07-06 03:45:37,589: Time steps: 15237120
+INFO: 2020-07-06 03:45:37,589: Reward: -365.36079
+INFO: 2020-07-06 03:45:37,590:  
+INFO: 2020-07-06 03:47:42,467: Iterations: 1870
+INFO: 2020-07-06 03:47:42,467: Time steps: 15319040
+INFO: 2020-07-06 03:47:42,467: Reward: -373.22753
+INFO: 2020-07-06 03:47:42,467:  
+INFO: 2020-07-06 03:49:47,930: Iterations: 1880
+INFO: 2020-07-06 03:49:47,930: Time steps: 15400960
+INFO: 2020-07-06 03:49:47,930: Reward: -392.24301
+INFO: 2020-07-06 03:49:47,930:  
+INFO: 2020-07-06 03:51:52,870: Iterations: 1890
+INFO: 2020-07-06 03:51:52,871: Time steps: 15482880
+INFO: 2020-07-06 03:51:52,871: Reward: -358.77645
+INFO: 2020-07-06 03:51:52,871:  
+INFO: 2020-07-06 03:53:57,683: Iterations: 1900
+INFO: 2020-07-06 03:53:57,684: Time steps: 15564800
+INFO: 2020-07-06 03:53:57,684: Reward: -389.23096
+INFO: 2020-07-06 03:53:57,684:  
+INFO: 2020-07-06 03:56:02,362: Iterations: 1910
+INFO: 2020-07-06 03:56:02,362: Time steps: 15646720
+INFO: 2020-07-06 03:56:02,362: Reward: -374.91438
+INFO: 2020-07-06 03:56:02,362:  
+INFO: 2020-07-06 03:58:07,416: Iterations: 1920
+INFO: 2020-07-06 03:58:07,416: Time steps: 15728640
+INFO: 2020-07-06 03:58:07,416: Reward: -351.03776
+INFO: 2020-07-06 03:58:07,416:  
+INFO: 2020-07-06 04:00:12,515: Iterations: 1930
+INFO: 2020-07-06 04:00:12,515: Time steps: 15810560
+INFO: 2020-07-06 04:00:12,515: Reward: -371.09875
+INFO: 2020-07-06 04:00:12,515:  
+INFO: 2020-07-06 04:02:17,749: Iterations: 1940
+INFO: 2020-07-06 04:02:17,749: Time steps: 15892480
+INFO: 2020-07-06 04:02:17,749: Reward: -377.57768
+INFO: 2020-07-06 04:02:17,749:  
+INFO: 2020-07-06 04:04:22,875: Iterations: 1950
+INFO: 2020-07-06 04:04:22,875: Time steps: 15974400
+INFO: 2020-07-06 04:04:22,875: Reward: -364.50805
+INFO: 2020-07-06 04:04:22,875:  
+INFO: 2020-07-06 04:06:28,066: Iterations: 1960
+INFO: 2020-07-06 04:06:28,066: Time steps: 16056320
+INFO: 2020-07-06 04:06:28,066: Reward: -368.07040
+INFO: 2020-07-06 04:06:28,066:  
+INFO: 2020-07-06 04:08:33,000: Iterations: 1970
+INFO: 2020-07-06 04:08:33,000: Time steps: 16138240
+INFO: 2020-07-06 04:08:33,000: Reward: -374.10275
+INFO: 2020-07-06 04:08:33,000:  
+INFO: 2020-07-06 04:10:38,170: Iterations: 1980
+INFO: 2020-07-06 04:10:38,170: Time steps: 16220160
+INFO: 2020-07-06 04:10:38,170: Reward: -358.88304
+INFO: 2020-07-06 04:10:38,170:  
+INFO: 2020-07-06 04:12:42,792: Iterations: 1990
+INFO: 2020-07-06 04:12:42,792: Time steps: 16302080
+INFO: 2020-07-06 04:12:42,792: Reward: -373.65113
+INFO: 2020-07-06 04:12:42,792:  
+INFO: 2020-07-06 04:14:48,875: Iterations: 2000
+INFO: 2020-07-06 04:14:48,875: Time steps: 16384000
+INFO: 2020-07-06 04:14:48,875: Reward: -370.34283
+INFO: 2020-07-06 04:14:48,875:  
+INFO: 2020-07-06 04:16:54,007: Iterations: 2010
+INFO: 2020-07-06 04:16:54,007: Time steps: 16465920
+INFO: 2020-07-06 04:16:54,008: Reward: -369.20126
+INFO: 2020-07-06 04:16:54,008:  
+INFO: 2020-07-06 04:18:58,562: Iterations: 2020
+INFO: 2020-07-06 04:18:58,563: Time steps: 16547840
+INFO: 2020-07-06 04:18:58,563: Reward: -358.54992
+INFO: 2020-07-06 04:18:58,563:  
+INFO: 2020-07-06 04:21:03,627: Iterations: 2030
+INFO: 2020-07-06 04:21:03,627: Time steps: 16629760
+INFO: 2020-07-06 04:21:03,627: Reward: -364.55940
+INFO: 2020-07-06 04:21:03,627:  
+INFO: 2020-07-06 04:23:08,861: Iterations: 2040
+INFO: 2020-07-06 04:23:08,861: Time steps: 16711680
+INFO: 2020-07-06 04:23:08,861: Reward: -386.09943
+INFO: 2020-07-06 04:23:08,862:  
+INFO: 2020-07-06 04:25:14,180: Iterations: 2050
+INFO: 2020-07-06 04:25:14,180: Time steps: 16793600
+INFO: 2020-07-06 04:25:14,180: Reward: -362.56415
+INFO: 2020-07-06 04:25:14,180:  
+INFO: 2020-07-06 04:27:19,263: Iterations: 2060
+INFO: 2020-07-06 04:27:19,263: Time steps: 16875520
+INFO: 2020-07-06 04:27:19,263: Reward: -373.57681
+INFO: 2020-07-06 04:27:19,263:  
+INFO: 2020-07-06 04:29:24,524: Iterations: 2070
+INFO: 2020-07-06 04:29:24,524: Time steps: 16957440
+INFO: 2020-07-06 04:29:24,524: Reward: -374.93359
+INFO: 2020-07-06 04:29:24,524:  
+INFO: 2020-07-06 04:31:28,884: Iterations: 2080
+INFO: 2020-07-06 04:31:28,884: Time steps: 17039360
+INFO: 2020-07-06 04:31:28,885: Reward: -367.79165
+INFO: 2020-07-06 04:31:28,885:  
+INFO: 2020-07-06 04:33:33,695: Iterations: 2090
+INFO: 2020-07-06 04:33:33,695: Time steps: 17121280
+INFO: 2020-07-06 04:33:33,695: Reward: -357.85908
+INFO: 2020-07-06 04:33:33,695:  
+INFO: 2020-07-06 04:35:38,011: Iterations: 2100
+INFO: 2020-07-06 04:35:38,012: Time steps: 17203200
+INFO: 2020-07-06 04:35:38,012: Reward: -375.54661
+INFO: 2020-07-06 04:35:38,012:  
+INFO: 2020-07-06 04:37:43,482: Iterations: 2110
+INFO: 2020-07-06 04:37:43,482: Time steps: 17285120
+INFO: 2020-07-06 04:37:43,482: Reward: -360.84863
+INFO: 2020-07-06 04:37:43,482:  
+INFO: 2020-07-06 04:39:48,825: Iterations: 2120
+INFO: 2020-07-06 04:39:48,825: Time steps: 17367040
+INFO: 2020-07-06 04:39:48,825: Reward: -366.62877
+INFO: 2020-07-06 04:39:48,825:  
+INFO: 2020-07-06 04:41:54,126: Iterations: 2130
+INFO: 2020-07-06 04:41:54,126: Time steps: 17448960
+INFO: 2020-07-06 04:41:54,126: Reward: -354.61740
+INFO: 2020-07-06 04:41:54,126:  
+INFO: 2020-07-06 04:43:58,825: Iterations: 2140
+INFO: 2020-07-06 04:43:58,825: Time steps: 17530880
+INFO: 2020-07-06 04:43:58,826: Reward: -367.86598
+INFO: 2020-07-06 04:43:58,826:  
+INFO: 2020-07-06 04:46:04,613: Iterations: 2150
+INFO: 2020-07-06 04:46:04,613: Time steps: 17612800
+INFO: 2020-07-06 04:46:04,613: Reward: -396.11228
+INFO: 2020-07-06 04:46:04,613:  
+INFO: 2020-07-06 04:48:09,539: Iterations: 2160
+INFO: 2020-07-06 04:48:09,539: Time steps: 17694720
+INFO: 2020-07-06 04:48:09,539: Reward: -350.63890
+INFO: 2020-07-06 04:48:09,540:  
+INFO: 2020-07-06 04:50:14,468: Iterations: 2170
+INFO: 2020-07-06 04:50:14,468: Time steps: 17776640
+INFO: 2020-07-06 04:50:14,468: Reward: -364.09938
+INFO: 2020-07-06 04:50:14,468:  
+INFO: 2020-07-06 04:52:20,498: Iterations: 2180
+INFO: 2020-07-06 04:52:20,498: Time steps: 17858560
+INFO: 2020-07-06 04:52:20,498: Reward: -377.13052
+INFO: 2020-07-06 04:52:20,499:  
+INFO: 2020-07-06 04:54:25,971: Iterations: 2190
+INFO: 2020-07-06 04:54:25,971: Time steps: 17940480
+INFO: 2020-07-06 04:54:25,971: Reward: -375.63545
+INFO: 2020-07-06 04:54:25,971:  
+INFO: 2020-07-06 04:56:31,646: Iterations: 2200
+INFO: 2020-07-06 04:56:31,646: Time steps: 18022400
+INFO: 2020-07-06 04:56:31,646: Reward: -385.49874
+INFO: 2020-07-06 04:56:31,646:  
+INFO: 2020-07-06 04:58:36,883: Iterations: 2210
+INFO: 2020-07-06 04:58:36,883: Time steps: 18104320
+INFO: 2020-07-06 04:58:36,883: Reward: -377.07583
+INFO: 2020-07-06 04:58:36,883:  
+INFO: 2020-07-06 05:00:42,156: Iterations: 2220
+INFO: 2020-07-06 05:00:42,156: Time steps: 18186240
+INFO: 2020-07-06 05:00:42,157: Reward: -353.39932
+INFO: 2020-07-06 05:00:42,157:  
+INFO: 2020-07-06 05:02:47,769: Iterations: 2230
+INFO: 2020-07-06 05:02:47,769: Time steps: 18268160
+INFO: 2020-07-06 05:02:47,769: Reward: -376.96558
+INFO: 2020-07-06 05:02:47,769:  
+INFO: 2020-07-06 05:04:52,890: Iterations: 2240
+INFO: 2020-07-06 05:04:52,890: Time steps: 18350080
+INFO: 2020-07-06 05:04:52,890: Reward: -383.61320
+INFO: 2020-07-06 05:04:52,890:  
+INFO: 2020-07-06 05:06:57,939: Iterations: 2250
+INFO: 2020-07-06 05:06:57,939: Time steps: 18432000
+INFO: 2020-07-06 05:06:57,939: Reward: -364.47742
+INFO: 2020-07-06 05:06:57,939:  
+INFO: 2020-07-06 05:09:03,295: Iterations: 2260
+INFO: 2020-07-06 05:09:03,295: Time steps: 18513920
+INFO: 2020-07-06 05:09:03,295: Reward: -372.49827
+INFO: 2020-07-06 05:09:03,295:  
+INFO: 2020-07-06 05:11:08,362: Iterations: 2270
+INFO: 2020-07-06 05:11:08,362: Time steps: 18595840
+INFO: 2020-07-06 05:11:08,362: Reward: -368.94054
+INFO: 2020-07-06 05:11:08,362:  
+INFO: 2020-07-06 05:13:13,493: Iterations: 2280
+INFO: 2020-07-06 05:13:13,493: Time steps: 18677760
+INFO: 2020-07-06 05:13:13,493: Reward: -343.96222
+INFO: 2020-07-06 05:13:13,493:  
+INFO: 2020-07-06 05:13:13,493: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-06 05:15:19,809: Iterations: 2290
+INFO: 2020-07-06 05:15:19,809: Time steps: 18759680
+INFO: 2020-07-06 05:15:19,809: Reward: -375.67285
+INFO: 2020-07-06 05:15:19,809:  
+INFO: 2020-07-06 05:17:24,954: Iterations: 2300
+INFO: 2020-07-06 05:17:24,954: Time steps: 18841600
+INFO: 2020-07-06 05:17:24,954: Reward: -372.85844
+INFO: 2020-07-06 05:17:24,954:  
+INFO: 2020-07-06 05:19:30,392: Iterations: 2310
+INFO: 2020-07-06 05:19:30,392: Time steps: 18923520
+INFO: 2020-07-06 05:19:30,392: Reward: -373.52986
+INFO: 2020-07-06 05:19:30,392:  
+INFO: 2020-07-06 05:21:36,082: Iterations: 2320
+INFO: 2020-07-06 05:21:36,083: Time steps: 19005440
+INFO: 2020-07-06 05:21:36,083: Reward: -391.28400
+INFO: 2020-07-06 05:21:36,083:  
+INFO: 2020-07-06 05:23:41,463: Iterations: 2330
+INFO: 2020-07-06 05:23:41,463: Time steps: 19087360
+INFO: 2020-07-06 05:23:41,463: Reward: -377.12725
+INFO: 2020-07-06 05:23:41,463:  
+INFO: 2020-07-06 05:25:46,873: Iterations: 2340
+INFO: 2020-07-06 05:25:46,873: Time steps: 19169280
+INFO: 2020-07-06 05:25:46,874: Reward: -356.79146
+INFO: 2020-07-06 05:25:46,874:  
+INFO: 2020-07-06 05:27:52,657: Iterations: 2350
+INFO: 2020-07-06 05:27:52,657: Time steps: 19251200
+INFO: 2020-07-06 05:27:52,657: Reward: -370.79144
+INFO: 2020-07-06 05:27:52,657:  
+INFO: 2020-07-06 05:29:58,069: Iterations: 2360
+INFO: 2020-07-06 05:29:58,069: Time steps: 19333120
+INFO: 2020-07-06 05:29:58,069: Reward: -371.95887
+INFO: 2020-07-06 05:29:58,070:  
+INFO: 2020-07-06 05:32:03,367: Iterations: 2370
+INFO: 2020-07-06 05:32:03,367: Time steps: 19415040
+INFO: 2020-07-06 05:32:03,367: Reward: -360.58668
+INFO: 2020-07-06 05:32:03,367:  
+INFO: 2020-07-06 05:34:08,894: Iterations: 2380
+INFO: 2020-07-06 05:34:08,894: Time steps: 19496960
+INFO: 2020-07-06 05:34:08,894: Reward: -371.56235
+INFO: 2020-07-06 05:34:08,894:  
+INFO: 2020-07-06 05:36:14,478: Iterations: 2390
+INFO: 2020-07-06 05:36:14,479: Time steps: 19578880
+INFO: 2020-07-06 05:36:14,479: Reward: -370.70861
+INFO: 2020-07-06 05:36:14,479:  
+INFO: 2020-07-06 05:38:20,248: Iterations: 2400
+INFO: 2020-07-06 05:38:20,248: Time steps: 19660800
+INFO: 2020-07-06 05:38:20,248: Reward: -367.34011
+INFO: 2020-07-06 05:38:20,248:  
+INFO: 2020-07-06 05:40:24,950: Iterations: 2410
+INFO: 2020-07-06 05:40:24,950: Time steps: 19742720
+INFO: 2020-07-06 05:40:24,950: Reward: -363.18550
+INFO: 2020-07-06 05:40:24,950:  
+INFO: 2020-07-06 05:42:30,094: Iterations: 2420
+INFO: 2020-07-06 05:42:30,094: Time steps: 19824640
+INFO: 2020-07-06 05:42:30,094: Reward: -371.33881
+INFO: 2020-07-06 05:42:30,094:  
+INFO: 2020-07-06 05:44:35,359: Iterations: 2430
+INFO: 2020-07-06 05:44:35,359: Time steps: 19906560
+INFO: 2020-07-06 05:44:35,359: Reward: -364.50721
+INFO: 2020-07-06 05:44:35,359:  
+INFO: 2020-07-06 05:46:40,128: Iterations: 2440
+INFO: 2020-07-06 05:46:40,128: Time steps: 19988480
+INFO: 2020-07-06 05:46:40,129: Reward: -361.99883
+INFO: 2020-07-06 05:46:40,129:  
+INFO: 2020-07-06 05:48:44,917: Iterations: 2450
+INFO: 2020-07-06 05:48:44,917: Time steps: 20070400
+INFO: 2020-07-06 05:48:44,917: Reward: -374.09045
+INFO: 2020-07-06 05:48:44,917:  
+INFO: 2020-07-06 05:50:50,512: Iterations: 2460
+INFO: 2020-07-06 05:50:50,512: Time steps: 20152320
+INFO: 2020-07-06 05:50:50,512: Reward: -362.86007
+INFO: 2020-07-06 05:50:50,512:  
+INFO: 2020-07-06 05:52:56,294: Iterations: 2470
+INFO: 2020-07-06 05:52:56,294: Time steps: 20234240
+INFO: 2020-07-06 05:52:56,294: Reward: -363.29245
+INFO: 2020-07-06 05:52:56,294:  
+INFO: 2020-07-06 05:55:01,671: Iterations: 2480
+INFO: 2020-07-06 05:55:01,671: Time steps: 20316160
+INFO: 2020-07-06 05:55:01,671: Reward: -367.49727
+INFO: 2020-07-06 05:55:01,671:  
+INFO: 2020-07-06 05:57:07,197: Iterations: 2490
+INFO: 2020-07-06 05:57:07,197: Time steps: 20398080
+INFO: 2020-07-06 05:57:07,197: Reward: -365.43573
+INFO: 2020-07-06 05:57:07,197:  
+INFO: 2020-07-06 05:59:11,796: Iterations: 2500
+INFO: 2020-07-06 05:59:11,796: Time steps: 20480000
+INFO: 2020-07-06 05:59:11,796: Reward: -391.29546
+INFO: 2020-07-06 05:59:11,796:  
+INFO: 2020-07-06 05:59:11,796: Saving final model as /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps_2020-07-06 05:59:11.796907_final.pth.tar

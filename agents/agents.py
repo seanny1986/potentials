@@ -39,60 +39,6 @@ class SimplePolicy(nn.Module):
         return mu, logvar.exp().sqrt()
 
 
-class ValueFunctionLSTM(nn.Module):
-    def __init__(self, input_dim, hidden_dim, output_dim):
-        super(ValueFunctionLSTM, self).__init__()
-        self.input_dim = input_dim
-        self.hidden_dim = hidden_dim
-        self.output_dim = output_dim
-        self.__lstm = nn.LSTM(input_dim, hidden_dim, 2)
-        self.__value = nn.Linear(hidden_dim, 1)
-    
-    def step(self, x, hidden=None):
-        hx, cx = self.__lstm(x.unsqueeze(0), hidden)
-        val = self.__value(hx.squeeze(0))
-        return val, cx
-
-    def forward(self, x, hidden=None, force=True, steps=0):
-        if force or steps == 0: steps = len(x)
-        vals = torch.zeros(steps, 1, 1)
-        for i in range(steps):
-            if force or i == 0:
-                input = x[i]
-            value, hidden = self.step(input, hidden)
-            vals[i] = value
-        return vals, hidden
-
-
-class GaussianPolicyLSTM(nn.Module):
-    def __init__(self, input_dim, hidden_dim, output_dim):
-        super(GaussianPolicyLSTM, self).__init__()
-        self.input_dim = input_dim
-        self.hidden_dim = hidden_dim
-        self.output_dim = output_dim
-        self.__lstm = nn.LSTM(input_dim, hidden_dim, 2)
-        self.__mu = nn.Linear(hidden_dim, output_dim)
-        self.__logvar = nn.Linear(hidden_dim, output_dim)
-    
-    def step(self, x, hidden=None):
-        hx, cx = self.__lstm(x.unsqueeze(0), hidden)
-        mu = self.__mu(hx.squeeze(0))
-        logvar = self.__logvar(hx.squeeze(0))
-        return mu, logvar.exp().sqrt(), cx
-
-    def forward(self, x, hidden=None, force=True, steps=0):
-        if force or steps == 0: steps = len(x)
-        mus = torch.zeros(steps, 1, self.output_dim)
-        sigmas = torch.zeros(steps, 1, self.output_dim)
-        for i in range(steps):
-            if force or i == 0:
-                input = x[i]
-            mu, sigma, hidden = self.step(input, hidden)
-            mus[i] = mu
-            sigmas[i] = sigma
-        return mus, sigmas, hidden
-
-
 class SimpleA2C(nn.Module):
     def __init__(self, input_dim, hidden_dim, output_dim, dim=2):
         super(SimpleA2C, self).__init__()
@@ -104,21 +50,18 @@ class SimpleA2C(nn.Module):
                                     nn.Tanh(),
                                     nn.Linear(hidden_dim, 1)).to(device)
 
-    def select_action(self, x, deterministic=False):
-        if deterministic == True:
-            mu, sigma = self.beta(x)
-            #print("Action: ", mu)
-            return mu
-        else:
-            mu, sigma = self.beta(x)
-            dist = Normal(mu, sigma)
-            action = dist.sample()
-            log_prob = dist.log_prob(action)
-            entropy = dist.entropy()
-            log_prob = torch.sum(log_prob, dim=-1, keepdim=True)
-            entropy = torch.sum(entropy, dim=-1, keepdim=True)
-            #print("Action: ", action)
-            return action, log_prob, entropy
+    def select_action(self, x):        
+        mu, sigma = self.beta(x)
+        dist = Normal(mu, sigma)
+        action = dist.sample()
+        log_prob = dist.log_prob(action)
+        entropy = dist.entropy()
+        log_prob = torch.sum(log_prob, dim=-1, keepdim=True)
+        entropy = torch.sum(entropy, dim=-1, keepdim=True)
+        return action, log_prob, entropy
+    
+    def test_action(self, x):
+        return self.beta(x)
 
     def get_phi(self, trajectory, critic, gamma=0.99):
         states = torch.stack(trajectory["states"]).to(device)

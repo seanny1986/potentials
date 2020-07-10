@@ -61,7 +61,7 @@ def make_term_2d():
 
 def make_traj_3d():
     def _thunk():
-        env = traj_3d.TrajectoryEnv3D()#gym.make("Trajectory-v0")
+        env = traj_3d.TrajectoryEnv3D()#gym.make("RandomWaypointNH-v0")
         return env
     return _thunk
 
@@ -93,12 +93,14 @@ def test(env, agent, render=False):
     done = False
     if render:
             env.render()
-            time.sleep(0.05)
+    sigmas = []
     while not done:
-        action, _, _ = agent.select_action(state.unsqueeze(0))
-        action = action.squeeze(0)
-        next_state, reward, done, info = env.step(action.cpu().data.numpy())
+        mu, sigma = agent.test_action(state.unsqueeze(0))
+        action, sigma = mu.squeeze(0).cpu().data.numpy(), sigma.squeeze(0).cpu().data.numpy()
+        next_state, reward, done, info = env.step(action)
+        sigmas.append(sigma)
         #print(info)
+        #input()
         if render:
             env.render()
             time.sleep(0.05)
@@ -106,16 +108,20 @@ def test(env, agent, render=False):
         next_state = torch.Tensor(next_state).to(device)
         state = next_state
     #if render: env.close()
-    return reward_sum
+    mean_sigma = np.mean(sigmas)
+    return reward_sum, mean_sigma
 
 def train_mp(logger, envs, t_env, agent, opt, batch_size, iterations, log_interval, t_runs, render=False, fname=None):
     rews = []
     eps = []
-    test_rew_best = np.mean([test(t_env, agent, render=render) for _ in range(t_runs)])
+    test_res = [test(t_env, agent, render=render) for _ in range(t_runs)]
+    test_rew_best = np.mean([t[0] for t in test_res])
+    sigma = np.mean([t[1] for t in test_res])
     logger.info(" ")
     logger.info("Iterations: {}".format(0))
     logger.info("Time steps: {}".format(0))
     logger.info("Reward: {:.5f}".format(test_rew_best))
+    logger.info("Test sigma: {:.5f}".format(sigma))
     logger.info(" ")
     eps.append(0)
     rews.append(test_rew_best)
@@ -123,6 +129,7 @@ def train_mp(logger, envs, t_env, agent, opt, batch_size, iterations, log_interv
     print("Iterations: ", 0)
     print("Time steps: ", 0)
     print("Reward: ", test_rew_best)
+    print("Test sigma: ", sigma)
     print()
     state = torch.Tensor(envs.reset()).to(device)
     for ep in range(1, iterations+1):
@@ -156,16 +163,20 @@ def train_mp(logger, envs, t_env, agent, opt, batch_size, iterations, log_interv
         agent.update(opt, trajectory)
         if ep % log_interval == 0:
             eps.append(len(envs)*batch_size*ep)
-            test_rew = np.mean([test(t_env, agent, render=render) for _ in range(t_runs)])
+            test_res = [test(t_env, agent, render=render) for _ in range(t_runs)]
+            test_rew = np.mean([t[0] for t in test_res])
+            sigma = np.mean([t[1] for t in test_res])
             logger.info("Iterations: {}".format(ep))
             logger.info("Time steps: {}".format(len(envs)*batch_size*ep))
             logger.info("Reward: {:.5f}".format(test_rew))
+            logger.info("Test sigma: {:.5f}".format(sigma))
             logger.info(" ")
             rews.append(test_rew)
             #plot(eps, rews)
             print("Iterations: ", ep)
             print("Time steps: ", len(envs)*batch_size*ep)
             print("Reward: ", test_rew)
+            print("Test sigma: ", sigma)
             if (test_rew > test_rew_best) and (fname is not None):
                 logger.info("Saving best parameters in " + fname + ".pth.tar")
                 print("Saving best parameters in " + fname + ".pth.tar")

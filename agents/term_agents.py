@@ -202,6 +202,8 @@ class Agent(TermA2C):
                         self.critic, 
                         categorical_fvp)
 
+
+
 def gaussian_fvp(gradient_vector, states, pi, beta):
     """
     Calculates the Fisher Vector Product using the KL-divergence of two Independent Gaussian

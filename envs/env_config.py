@@ -42,3 +42,5 @@ waypoint_dist_lower_bound = 1
 ##################
 # 3D ENVIRONMENTS#
 ##################
+waypoint_dist_upper_bound_3d = 1.5
+waypoint_dist_lower_bound_3d = 0.5
