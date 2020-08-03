@@ -33,14 +33,14 @@ class TrajectoryEnv3D(env_base.AeroEnv):
         else: return False
 
     def term_reward(self, term):
-        if term: return 100
-        else: return 0.
+        return 0.01/self.curr_dist if self.curr_dist > self.goal_thresh else 1/self.goal_thresh
+        #else: return 0.
 
     def reward(self, state, action):
         xyz, sin_zeta, cos_zeta, xyz_dot, pqr = state
 
         dist_rew = 100 * (self.prev_dist - self.curr_dist)
-        att_rew = 10 * ((self.prev_att_sin - self.curr_att_sin) + (self.prev_att_cos - self.curr_att_cos))
+        #att_rew = 10 * ((self.prev_att_sin - self.curr_att_sin) + (self.prev_att_cos - self.curr_att_cos))
         vel_rew = 0.1 * (self.prev_vel - self.curr_vel)
         ang_rew = 0.1 * (self.prev_ang - self.curr_ang)
 
@@ -51,21 +51,27 @@ class TrajectoryEnv3D(env_base.AeroEnv):
         
         time_rew = 0.
 
-        total_reward = dist_rew+att_rew+vel_rew+ang_rew+ctrl_rew+time_rew
+        total_reward = dist_rew+vel_rew+ang_rew+ctrl_rew+time_rew
 
         uvw = self.inertial_to_body(xyz_dot)
-        nh_rew = -0.01*(uvw[1])**2 # reward for nonholonomic waypoint navigation
+        nh_rew = -0.01*(uvw[1])**2 # reward for nonholonomic constrained flight
         f_rew = -1 if uvw[0] < 0 else 1
         f_rew *= 0.1
-        total_reward += nh_rew + f_rew
+
+        path_rew = -sum([(u-v)**2 for u, v in zip(xyz, self.prev_xyz)])
+        accel_rew = -sum([(u-v)**2 for u, v in zip(xyz_dot, self.prev_xyz_dot)])
+
+        total_reward += nh_rew + f_rew + path_rew + accel_rew
 
         return total_reward, {"dist_rew": dist_rew,
-                                "att_rew": att_rew,
+                                #"att_rew": att_rew,
                                 "vel_rew": vel_rew,
                                 "ang_rew": ang_rew,
                                 "ctrl_rew": ctrl_rew,
                                 "nh_rew": nh_rew,
                                 "f_rew": f_rew,
+                                "path_rew": path_rew,
+                                "accel_rew": accel_rew,
                                 "time_rew": time_rew}
     
     def get_obs(self, state, action, normalized_rpm):
@@ -103,15 +109,16 @@ class TrajectoryEnv3D(env_base.AeroEnv):
     def set_current_dists(self, state, action):
         xyz, sin_zeta, cos_zeta, xyz_dot, pqr = state
         if not self.goal_counter > self.traj_len-1:
-            self.curr_dist = np.linalg.norm([x - g for x, g in zip(xyz, self.goal_list_xyz[self.goal_counter])])
-            self.curr_att_sin = np.linalg.norm([sz - sin(g) for sz, g in zip(sin_zeta[:-1], self.goal_list_zeta[self.goal_counter][:-1])])
-            self.curr_att_cos = np.linalg.norm([cz - cos(g) for cz, g in zip(cos_zeta[:-1], self.goal_list_zeta[self.goal_counter][:-1])])
-            self.curr_vel = np.linalg.norm([x - g for x, g in zip(xyz_dot, self.goal_list_xyz_dot[self.goal_counter])])
-            self.curr_ang = np.linalg.norm([x - g for x, g in zip(pqr, self.goal_list_pqr[self.goal_counter])])
+            self.curr_dist = np.linalg.norm([(x - g) for x, g in zip(xyz, self.goal_list_xyz[self.goal_counter])])
+            self.curr_att_sin = np.linalg.norm([(sz - sin(g)) for sz, g in zip(sin_zeta[:-1], self.goal_list_zeta[self.goal_counter][:-1])])
+            self.curr_att_cos = np.linalg.norm([(cz - cos(g)) for cz, g in zip(cos_zeta[:-1], self.goal_list_zeta[self.goal_counter][:-1])])
+            self.curr_vel = np.linalg.norm([(x - g) for x, g in zip(xyz_dot, self.goal_list_xyz_dot[self.goal_counter])])
+            self.curr_ang = np.linalg.norm([(x - g) for x, g in zip(pqr, self.goal_list_pqr[self.goal_counter])])
         self.curr_xyz = xyz
 
     def step(self, action):
         commanded_rpm = self.translate_action(action[0:4])
+        #print(commanded_rpm)
         self.iris.sim_step(commanded_rpm[0], commanded_rpm[1], commanded_rpm[2], commanded_rpm[3], self.sim_steps)
         xyz, zeta, uvw, pqr = self.get_data()
         xyz_dot = self.get_xyz_dot()

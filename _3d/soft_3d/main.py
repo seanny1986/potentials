@@ -9,6 +9,7 @@ import os
 import pandas as pd
 import config as cfg
 import envs.env_config as ecfg
+import datetime
 
 wps = str(ecfg.num_fut_wp)
 
@@ -55,4 +56,4 @@ def run(logger, num_envs=16, hidden_dim=256, batch_size=1024, iterations=1000, l
             csv_input = pd.DataFrame()
             csv_input["timesteps"] = ep
         csv_input["run"+str(i)] = rew
-        csv_input.to_csv(path+"data_wp-"+wps+".csv", index=False)
+        csv_input.to_csv(path+"data_wp-"+wps+"-"+"-"+str(datetime.datetime.now())+".csv", index=False)

@@ -8,6 +8,7 @@ import pandas as pd
 import config as cfg
 import envs.env_config as ecfg
 import gym
+import datetime
 
 wps = str(ecfg.num_fut_wp)
 
@@ -49,7 +50,7 @@ def run(logger, num_envs=16, hidden_dim=256, batch_size=1024, iterations=1000, l
     for i in range(runs):
         agent = ag.Agent(state_dim, hidden_dim, action_dim, dim=2)
         opt = torch.optim.Adam(agent.parameters(), lr=cfg.lr)
-        ep, rew, term_rew, agent = tl.train_term_mp(logger, envs, t_env, agent, opt, batch_size, iterations, log_interval, render=True, fname=path+wps+"-wps")
+        ep, rew, term_rew, agent = tl.train_term_mp(logger, envs, t_env, agent, opt, batch_size, iterations, log_interval, render=False, fname=path+wps+"-wps")
         if i == 0:
             csv_input = pd.DataFrame()
             csv_input["iterations"] = ep
@@ -58,4 +59,4 @@ def run(logger, num_envs=16, hidden_dim=256, batch_size=1024, iterations=1000, l
         csv_input["run"+str(i)] = rew
         term_csv_input["run"+str(i)] = term_rew
         csv_input.to_csv(path+"data_wp-"+wps+".csv", index=False)
-        term_csv_input.to_csv(path+"term_data_wp-"+wps+".csv", index=False)
+        csv_input.to_csv(path+"data_wp-"+wps+"-"+"-"+str(datetime.datetime.now())+".csv", index=False)

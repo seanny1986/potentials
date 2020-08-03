@@ -1,0 +1,868 @@
+INFO: 2020-07-24 12:30:34,118:  
+INFO: 2020-07-24 12:30:34,118: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-24 12:30:34,118: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-24 12:30:34,118:  
+INFO: 2020-07-24 12:30:34,118: ----------------------------------------------
+INFO: 2020-07-24 12:30:34,118: Experiment Settings
+INFO: 2020-07-24 12:30:34,118: ----------------------------------------------
+INFO: 2020-07-24 12:30:34,118: Number of workers: 64
+INFO: 2020-07-24 12:30:34,118: Batch size: 1024
+INFO: 2020-07-24 12:30:34,119: Iterations: 2500
+INFO: 2020-07-24 12:30:34,119: Log interval: 10
+INFO: 2020-07-24 12:30:34,119: Experiment runs: 2500
+INFO: 2020-07-24 12:30:34,119: Number of test runs: 30
+INFO: 2020-07-24 12:30:34,119: ----------------------------------------------
+INFO: 2020-07-24 12:30:34,119: Network Parameters
+INFO: 2020-07-24 12:30:34,119: ----------------------------------------------
+INFO: 2020-07-24 12:30:34,119: Network input dim: 67
+INFO: 2020-07-24 12:30:34,119: Network hidden dim: 512
+INFO: 2020-07-24 12:30:34,119: Network layers: 2
+INFO: 2020-07-24 12:30:34,119: Network output dim: 4
+INFO: 2020-07-24 12:30:34,119: ----------------------------------------------
+INFO: 2020-07-24 12:30:34,119: Environment Parameters
+INFO: 2020-07-24 12:30:34,120: ----------------------------------------------
+INFO: 2020-07-24 12:30:34,120: Trajectory length: 5
+INFO: 2020-07-24 12:30:34,120: Obs future waypoints: 2
+INFO: 2020-07-24 12:30:34,120: Distribution temperature: 150
+INFO: 2020-07-24 12:30:34,120: Waypoint distance bounds: 0.5, 1.5
+INFO: 2020-07-24 12:30:34,120: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 12:30:34,756:  
+INFO: 2020-07-24 12:30:34,757: Iterations: 0
+INFO: 2020-07-24 12:30:34,757: Time steps: 0
+INFO: 2020-07-24 12:30:34,757: Reward: -474.66702
+INFO: 2020-07-24 12:30:34,757: Test sigma: 1.05475
+INFO: 2020-07-24 12:30:34,757:  
+INFO: 2020-07-24 12:31:01,393:  
+INFO: 2020-07-24 12:31:01,393: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-24 12:31:01,393: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-24 12:31:01,393:  
+INFO: 2020-07-24 12:31:01,393: ----------------------------------------------
+INFO: 2020-07-24 12:31:01,393: Experiment Settings
+INFO: 2020-07-24 12:31:01,394: ----------------------------------------------
+INFO: 2020-07-24 12:31:01,394: Number of workers: 64
+INFO: 2020-07-24 12:31:01,394: Batch size: 1024
+INFO: 2020-07-24 12:31:01,394: Iterations: 2500
+INFO: 2020-07-24 12:31:01,394: Log interval: 10
+INFO: 2020-07-24 12:31:01,394: Experiment runs: 2500
+INFO: 2020-07-24 12:31:01,394: Number of test runs: 30
+INFO: 2020-07-24 12:31:01,394: ----------------------------------------------
+INFO: 2020-07-24 12:31:01,394: Network Parameters
+INFO: 2020-07-24 12:31:01,395: ----------------------------------------------
+INFO: 2020-07-24 12:31:01,395: Network input dim: 67
+INFO: 2020-07-24 12:31:01,395: Network hidden dim: 512
+INFO: 2020-07-24 12:31:01,395: Network layers: 2
+INFO: 2020-07-24 12:31:01,395: Network output dim: 4
+INFO: 2020-07-24 12:31:01,395: ----------------------------------------------
+INFO: 2020-07-24 12:31:01,395: Environment Parameters
+INFO: 2020-07-24 12:31:01,395: ----------------------------------------------
+INFO: 2020-07-24 12:31:01,395: Trajectory length: 5
+INFO: 2020-07-24 12:31:01,395: Obs future waypoints: 2
+INFO: 2020-07-24 12:31:01,395: Distribution temperature: 150
+INFO: 2020-07-24 12:31:01,396: Waypoint distance bounds: 0.5, 1.5
+INFO: 2020-07-24 12:31:01,396: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 12:33:41,075:  
+INFO: 2020-07-24 12:33:41,075: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-24 12:33:41,075: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-24 12:33:41,075:  
+INFO: 2020-07-24 12:33:41,075: ----------------------------------------------
+INFO: 2020-07-24 12:33:41,075: Experiment Settings
+INFO: 2020-07-24 12:33:41,076: ----------------------------------------------
+INFO: 2020-07-24 12:33:41,076: Number of workers: 64
+INFO: 2020-07-24 12:33:41,076: Batch size: 1024
+INFO: 2020-07-24 12:33:41,076: Iterations: 2500
+INFO: 2020-07-24 12:33:41,076: Log interval: 10
+INFO: 2020-07-24 12:33:41,076: Experiment runs: 2500
+INFO: 2020-07-24 12:33:41,076: Number of test runs: 30
+INFO: 2020-07-24 12:33:41,076: ----------------------------------------------
+INFO: 2020-07-24 12:33:41,076: Network Parameters
+INFO: 2020-07-24 12:33:41,076: ----------------------------------------------
+INFO: 2020-07-24 12:33:41,076: Network input dim: 67
+INFO: 2020-07-24 12:33:41,076: Network hidden dim: 512
+INFO: 2020-07-24 12:33:41,076: Network layers: 2
+INFO: 2020-07-24 12:33:41,076: Network output dim: 4
+INFO: 2020-07-24 12:33:41,076: ----------------------------------------------
+INFO: 2020-07-24 12:33:41,076: Environment Parameters
+INFO: 2020-07-24 12:33:41,076: ----------------------------------------------
+INFO: 2020-07-24 12:33:41,076: Trajectory length: 5
+INFO: 2020-07-24 12:33:41,076: Obs future waypoints: 2
+INFO: 2020-07-24 12:33:41,077: Distribution temperature: 150
+INFO: 2020-07-24 12:33:41,077: Waypoint distance bounds: 0.5, 1.5
+INFO: 2020-07-24 12:33:41,077: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 12:38:36,538:  
+INFO: 2020-07-24 12:38:36,539: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-24 12:38:36,539: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-24 12:38:36,539:  
+INFO: 2020-07-24 12:38:36,539: ----------------------------------------------
+INFO: 2020-07-24 12:38:36,539: Experiment Settings
+INFO: 2020-07-24 12:38:36,539: ----------------------------------------------
+INFO: 2020-07-24 12:38:36,539: Number of workers: 64
+INFO: 2020-07-24 12:38:36,539: Batch size: 1024
+INFO: 2020-07-24 12:38:36,539: Iterations: 2500
+INFO: 2020-07-24 12:38:36,539: Log interval: 10
+INFO: 2020-07-24 12:38:36,539: Experiment runs: 2500
+INFO: 2020-07-24 12:38:36,540: Number of test runs: 30
+INFO: 2020-07-24 12:38:36,540: ----------------------------------------------
+INFO: 2020-07-24 12:38:36,540: Network Parameters
+INFO: 2020-07-24 12:38:36,540: ----------------------------------------------
+INFO: 2020-07-24 12:38:36,540: Network input dim: 67
+INFO: 2020-07-24 12:38:36,540: Network hidden dim: 512
+INFO: 2020-07-24 12:38:36,540: Network layers: 2
+INFO: 2020-07-24 12:38:36,540: Network output dim: 4
+INFO: 2020-07-24 12:38:36,540: ----------------------------------------------
+INFO: 2020-07-24 12:38:36,540: Environment Parameters
+INFO: 2020-07-24 12:38:36,540: ----------------------------------------------
+INFO: 2020-07-24 12:38:36,540: Trajectory length: 5
+INFO: 2020-07-24 12:38:36,540: Obs future waypoints: 2
+INFO: 2020-07-24 12:38:36,540: Distribution temperature: 150
+INFO: 2020-07-24 12:38:36,541: Waypoint distance bounds: 0.5, 1.5
+INFO: 2020-07-24 12:38:36,541: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 12:40:17,817:  
+INFO: 2020-07-24 12:40:17,818: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-24 12:40:17,818: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-24 12:40:17,818:  
+INFO: 2020-07-24 12:40:17,818: ----------------------------------------------
+INFO: 2020-07-24 12:40:17,818: Experiment Settings
+INFO: 2020-07-24 12:40:17,818: ----------------------------------------------
+INFO: 2020-07-24 12:40:17,818: Number of workers: 64
+INFO: 2020-07-24 12:40:17,818: Batch size: 1024
+INFO: 2020-07-24 12:40:17,818: Iterations: 2500
+INFO: 2020-07-24 12:40:17,818: Log interval: 10
+INFO: 2020-07-24 12:40:17,819: Experiment runs: 2500
+INFO: 2020-07-24 12:40:17,819: Number of test runs: 30
+INFO: 2020-07-24 12:40:17,819: ----------------------------------------------
+INFO: 2020-07-24 12:40:17,819: Network Parameters
+INFO: 2020-07-24 12:40:17,819: ----------------------------------------------
+INFO: 2020-07-24 12:40:17,819: Network input dim: 67
+INFO: 2020-07-24 12:40:17,819: Network hidden dim: 512
+INFO: 2020-07-24 12:40:17,819: Network layers: 2
+INFO: 2020-07-24 12:40:17,819: Network output dim: 4
+INFO: 2020-07-24 12:40:17,819: ----------------------------------------------
+INFO: 2020-07-24 12:40:17,819: Environment Parameters
+INFO: 2020-07-24 12:40:17,819: ----------------------------------------------
+INFO: 2020-07-24 12:40:17,819: Trajectory length: 5
+INFO: 2020-07-24 12:40:17,819: Obs future waypoints: 2
+INFO: 2020-07-24 12:40:17,819: Distribution temperature: 150
+INFO: 2020-07-24 12:40:17,820: Waypoint distance bounds: 0.5, 1.5
+INFO: 2020-07-24 12:40:17,820: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 12:40:41,341:  
+INFO: 2020-07-24 12:40:41,341: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-24 12:40:41,341: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-24 12:40:41,341:  
+INFO: 2020-07-24 12:40:41,341: ----------------------------------------------
+INFO: 2020-07-24 12:40:41,342: Experiment Settings
+INFO: 2020-07-24 12:40:41,342: ----------------------------------------------
+INFO: 2020-07-24 12:40:41,342: Number of workers: 64
+INFO: 2020-07-24 12:40:41,342: Batch size: 1024
+INFO: 2020-07-24 12:40:41,342: Iterations: 2500
+INFO: 2020-07-24 12:40:41,342: Log interval: 10
+INFO: 2020-07-24 12:40:41,342: Experiment runs: 2500
+INFO: 2020-07-24 12:40:41,342: Number of test runs: 30
+INFO: 2020-07-24 12:40:41,342: ----------------------------------------------
+INFO: 2020-07-24 12:40:41,342: Network Parameters
+INFO: 2020-07-24 12:40:41,342: ----------------------------------------------
+INFO: 2020-07-24 12:40:41,342: Network input dim: 67
+INFO: 2020-07-24 12:40:41,342: Network hidden dim: 512
+INFO: 2020-07-24 12:40:41,342: Network layers: 2
+INFO: 2020-07-24 12:40:41,342: Network output dim: 4
+INFO: 2020-07-24 12:40:41,342: ----------------------------------------------
+INFO: 2020-07-24 12:40:41,343: Environment Parameters
+INFO: 2020-07-24 12:40:41,343: ----------------------------------------------
+INFO: 2020-07-24 12:40:41,343: Trajectory length: 5
+INFO: 2020-07-24 12:40:41,343: Obs future waypoints: 2
+INFO: 2020-07-24 12:40:41,343: Distribution temperature: 150
+INFO: 2020-07-24 12:40:41,343: Waypoint distance bounds: 0.5, 1.5
+INFO: 2020-07-24 12:40:41,343: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 12:41:10,556:  
+INFO: 2020-07-24 12:41:10,556: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-24 12:41:10,556: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-24 12:41:10,556:  
+INFO: 2020-07-24 12:41:10,556: ----------------------------------------------
+INFO: 2020-07-24 12:41:10,556: Experiment Settings
+INFO: 2020-07-24 12:41:10,556: ----------------------------------------------
+INFO: 2020-07-24 12:41:10,556: Number of workers: 64
+INFO: 2020-07-24 12:41:10,556: Batch size: 1024
+INFO: 2020-07-24 12:41:10,556: Iterations: 2500
+INFO: 2020-07-24 12:41:10,556: Log interval: 10
+INFO: 2020-07-24 12:41:10,557: Experiment runs: 2500
+INFO: 2020-07-24 12:41:10,557: Number of test runs: 30
+INFO: 2020-07-24 12:41:10,557: ----------------------------------------------
+INFO: 2020-07-24 12:41:10,557: Network Parameters
+INFO: 2020-07-24 12:41:10,557: ----------------------------------------------
+INFO: 2020-07-24 12:41:10,557: Network input dim: 67
+INFO: 2020-07-24 12:41:10,557: Network hidden dim: 512
+INFO: 2020-07-24 12:41:10,557: Network layers: 2
+INFO: 2020-07-24 12:41:10,557: Network output dim: 4
+INFO: 2020-07-24 12:41:10,557: ----------------------------------------------
+INFO: 2020-07-24 12:41:10,557: Environment Parameters
+INFO: 2020-07-24 12:41:10,557: ----------------------------------------------
+INFO: 2020-07-24 12:41:10,557: Trajectory length: 5
+INFO: 2020-07-24 12:41:10,557: Obs future waypoints: 2
+INFO: 2020-07-24 12:41:10,557: Distribution temperature: 150
+INFO: 2020-07-24 12:41:10,558: Waypoint distance bounds: 0.5, 1.5
+INFO: 2020-07-24 12:41:10,558: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 12:41:59,895:  
+INFO: 2020-07-24 12:41:59,895: Initializing Hard Goals 3D Waypoint Navigation Environment
+INFO: 2020-07-24 12:41:59,895: Working directory is /home/seanny/Dropbox/potentials/_3d/traj_3d/
+INFO: 2020-07-24 12:41:59,895:  
+INFO: 2020-07-24 12:41:59,895: ----------------------------------------------
+INFO: 2020-07-24 12:41:59,895: Experiment Settings
+INFO: 2020-07-24 12:41:59,895: ----------------------------------------------
+INFO: 2020-07-24 12:41:59,895: Number of workers: 64
+INFO: 2020-07-24 12:41:59,895: Batch size: 1024
+INFO: 2020-07-24 12:41:59,895: Iterations: 2500
+INFO: 2020-07-24 12:41:59,896: Log interval: 10
+INFO: 2020-07-24 12:41:59,896: Experiment runs: 2500
+INFO: 2020-07-24 12:41:59,896: Number of test runs: 30
+INFO: 2020-07-24 12:41:59,896: ----------------------------------------------
+INFO: 2020-07-24 12:41:59,896: Network Parameters
+INFO: 2020-07-24 12:41:59,896: ----------------------------------------------
+INFO: 2020-07-24 12:41:59,896: Network input dim: 67
+INFO: 2020-07-24 12:41:59,896: Network hidden dim: 512
+INFO: 2020-07-24 12:41:59,896: Network layers: 2
+INFO: 2020-07-24 12:41:59,896: Network output dim: 4
+INFO: 2020-07-24 12:41:59,896: ----------------------------------------------
+INFO: 2020-07-24 12:41:59,896: Environment Parameters
+INFO: 2020-07-24 12:41:59,896: ----------------------------------------------
+INFO: 2020-07-24 12:41:59,896: Trajectory length: 5
+INFO: 2020-07-24 12:41:59,896: Obs future waypoints: 2
+INFO: 2020-07-24 12:41:59,896: Distribution temperature: 150
+INFO: 2020-07-24 12:41:59,897: Waypoint distance bounds: 0.5, 1.5
+INFO: 2020-07-24 12:41:59,897: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 12:42:00,655:  
+INFO: 2020-07-24 12:42:00,655: Iterations: 0
+INFO: 2020-07-24 12:42:00,655: Time steps: 0
+INFO: 2020-07-24 12:42:00,655: Reward: -489.24573
+INFO: 2020-07-24 12:42:00,655: Test sigma: 0.98680
+INFO: 2020-07-24 12:42:00,655:  
+INFO: 2020-07-24 12:55:46,423: Iterations: 10
+INFO: 2020-07-24 12:55:46,423: Time steps: 655360
+INFO: 2020-07-24 12:55:46,423: Reward: -409.06838
+INFO: 2020-07-24 12:55:46,423: Test sigma: 0.96029
+INFO: 2020-07-24 12:55:46,423:  
+INFO: 2020-07-24 12:55:46,424: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-24 13:09:31,795: Iterations: 20
+INFO: 2020-07-24 13:09:31,795: Time steps: 1310720
+INFO: 2020-07-24 13:09:31,795: Reward: -357.65840
+INFO: 2020-07-24 13:09:31,795: Test sigma: 0.74023
+INFO: 2020-07-24 13:09:31,795:  
+INFO: 2020-07-24 13:09:31,795: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-24 13:23:15,317: Iterations: 30
+INFO: 2020-07-24 13:23:15,317: Time steps: 1966080
+INFO: 2020-07-24 13:23:15,317: Reward: -161.34074
+INFO: 2020-07-24 13:23:15,317: Test sigma: 0.53581
+INFO: 2020-07-24 13:23:15,317:  
+INFO: 2020-07-24 13:23:15,317: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-24 13:36:59,762: Iterations: 40
+INFO: 2020-07-24 13:36:59,762: Time steps: 2621440
+INFO: 2020-07-24 13:36:59,762: Reward: -77.37610
+INFO: 2020-07-24 13:36:59,762: Test sigma: 0.47077
+INFO: 2020-07-24 13:36:59,763:  
+INFO: 2020-07-24 13:36:59,763: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-24 13:50:45,523: Iterations: 50
+INFO: 2020-07-24 13:50:45,523: Time steps: 3276800
+INFO: 2020-07-24 13:50:45,523: Reward: -73.91065
+INFO: 2020-07-24 13:50:45,523: Test sigma: 0.41201
+INFO: 2020-07-24 13:50:45,523:  
+INFO: 2020-07-24 13:50:45,523: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-24 14:04:32,674: Iterations: 60
+INFO: 2020-07-24 14:04:32,674: Time steps: 3932160
+INFO: 2020-07-24 14:04:32,674: Reward: -54.13113
+INFO: 2020-07-24 14:04:32,674: Test sigma: 0.40651
+INFO: 2020-07-24 14:04:32,674:  
+INFO: 2020-07-24 14:04:32,674: Saving best parameters in /home/seanny/Dropbox/potentials/_3d/traj_3d/2-wps.pth.tar
+INFO: 2020-07-24 14:18:16,528: Iterations: 70
+INFO: 2020-07-24 14:18:16,528: Time steps: 4587520
+INFO: 2020-07-24 14:18:16,528: Reward: -66.61922
+INFO: 2020-07-24 14:18:16,528: Test sigma: 0.40495
+INFO: 2020-07-24 14:18:16,528:  
+INFO: 2020-07-24 14:32:01,096: Iterations: 80
+INFO: 2020-07-24 14:32:01,096: Time steps: 5242880
+INFO: 2020-07-24 14:32:01,096: Reward: -68.85557
+INFO: 2020-07-24 14:32:01,096: Test sigma: 0.42726
+INFO: 2020-07-24 14:32:01,096:  
+INFO: 2020-07-24 14:45:46,783: Iterations: 90
+INFO: 2020-07-24 14:45:46,783: Time steps: 5898240
+INFO: 2020-07-24 14:45:46,783: Reward: -65.62387
+INFO: 2020-07-24 14:45:46,783: Test sigma: 0.43826
+INFO: 2020-07-24 14:45:46,783:  
+INFO: 2020-07-24 14:59:26,343: Iterations: 100
+INFO: 2020-07-24 14:59:26,343: Time steps: 6553600
+INFO: 2020-07-24 14:59:26,343: Reward: -63.55748
+INFO: 2020-07-24 14:59:26,343: Test sigma: 0.43207
+INFO: 2020-07-24 14:59:26,343:  
+INFO: 2020-07-24 15:13:08,147: Iterations: 110
+INFO: 2020-07-24 15:13:08,148: Time steps: 7208960
+INFO: 2020-07-24 15:13:08,148: Reward: -75.53964
+INFO: 2020-07-24 15:13:08,148: Test sigma: 0.41510
+INFO: 2020-07-24 15:13:08,148:  
+INFO: 2020-07-24 15:26:52,774: Iterations: 120
+INFO: 2020-07-24 15:26:52,774: Time steps: 7864320
+INFO: 2020-07-24 15:26:52,774: Reward: -71.90232
+INFO: 2020-07-24 15:26:52,774: Test sigma: 0.40425
+INFO: 2020-07-24 15:26:52,774:  
+INFO: 2020-07-24 15:40:35,111: Iterations: 130
+INFO: 2020-07-24 15:40:35,111: Time steps: 8519680
+INFO: 2020-07-24 15:40:35,111: Reward: -63.98150
+INFO: 2020-07-24 15:40:35,111: Test sigma: 0.40119
+INFO: 2020-07-24 15:40:35,111:  
+INFO: 2020-07-24 15:54:10,395: Iterations: 140
+INFO: 2020-07-24 15:54:10,395: Time steps: 9175040
+INFO: 2020-07-24 15:54:10,395: Reward: -75.11281
+INFO: 2020-07-24 15:54:10,395: Test sigma: 0.39105
+INFO: 2020-07-24 15:54:10,396:  
+INFO: 2020-07-24 16:12:04,499:  
+INFO: 2020-07-24 16:12:04,499: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-24 16:12:04,500: Working directory is /home/seanny/Dropbox/potentials/_2d/traj_2d/
+INFO: 2020-07-24 16:12:04,500:  
+INFO: 2020-07-24 16:12:04,500: ----------------------------------------------
+INFO: 2020-07-24 16:12:04,500: Experiment Settings
+INFO: 2020-07-24 16:12:04,500: ----------------------------------------------
+INFO: 2020-07-24 16:12:04,500: Number of workers: 64
+INFO: 2020-07-24 16:12:04,500: Batch size: 1024
+INFO: 2020-07-24 16:12:04,500: Iterations: 2500
+INFO: 2020-07-24 16:12:04,500: Log interval: 10
+INFO: 2020-07-24 16:12:04,500: Experiment runs: 2500
+INFO: 2020-07-24 16:12:04,500: Number of test runs: 30
+INFO: 2020-07-24 16:12:04,500: ----------------------------------------------
+INFO: 2020-07-24 16:12:04,501: Network Parameters
+INFO: 2020-07-24 16:12:04,501: ----------------------------------------------
+INFO: 2020-07-24 16:12:04,501: Network input dim: 34
+INFO: 2020-07-24 16:12:04,501: Network hidden dim: 512
+INFO: 2020-07-24 16:12:04,501: Network layers: 2
+INFO: 2020-07-24 16:12:04,501: Network output dim: 2
+INFO: 2020-07-24 16:12:04,501: ----------------------------------------------
+INFO: 2020-07-24 16:12:04,501: Environment Parameters
+INFO: 2020-07-24 16:12:04,501: ----------------------------------------------
+INFO: 2020-07-24 16:12:04,501: Trajectory length: 2
+INFO: 2020-07-24 16:12:04,501: Obs future waypoints: 2
+INFO: 2020-07-24 16:12:04,501: Distribution temperature: 150
+INFO: 2020-07-24 16:12:04,502: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-24 16:12:04,502: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 16:12:11,863:  
+INFO: 2020-07-24 16:12:11,863: Iterations: 0
+INFO: 2020-07-24 16:12:11,863: Time steps: 0
+INFO: 2020-07-24 16:12:11,863: Reward: 11.91300
+INFO: 2020-07-24 16:12:11,863: Test sigma: 1.07195
+INFO: 2020-07-24 16:12:11,863:  
+INFO: 2020-07-24 16:30:14,319: Iterations: 10
+INFO: 2020-07-24 16:30:14,319: Time steps: 655360
+INFO: 2020-07-24 16:30:14,319: Reward: 147.34857
+INFO: 2020-07-24 16:30:14,319: Test sigma: 1.07628
+INFO: 2020-07-24 16:30:14,319:  
+INFO: 2020-07-24 16:30:14,319: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 16:48:20,642: Iterations: 20
+INFO: 2020-07-24 16:48:20,642: Time steps: 1310720
+INFO: 2020-07-24 16:48:20,642: Reward: 131.43334
+INFO: 2020-07-24 16:48:20,642: Test sigma: 1.06286
+INFO: 2020-07-24 16:48:20,642:  
+INFO: 2020-07-24 17:07:12,734: Iterations: 30
+INFO: 2020-07-24 17:07:12,734: Time steps: 1966080
+INFO: 2020-07-24 17:07:12,734: Reward: 154.89039
+INFO: 2020-07-24 17:07:12,734: Test sigma: 0.95057
+INFO: 2020-07-24 17:07:12,734:  
+INFO: 2020-07-24 17:07:12,734: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 17:26:17,722: Iterations: 40
+INFO: 2020-07-24 17:26:17,723: Time steps: 2621440
+INFO: 2020-07-24 17:26:17,724: Reward: 180.10420
+INFO: 2020-07-24 17:26:17,724: Test sigma: 0.89624
+INFO: 2020-07-24 17:26:17,724:  
+INFO: 2020-07-24 17:26:17,724: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 17:45:29,235: Iterations: 50
+INFO: 2020-07-24 17:45:29,236: Time steps: 3276800
+INFO: 2020-07-24 17:45:29,236: Reward: 319.06479
+INFO: 2020-07-24 17:45:29,236: Test sigma: 0.85185
+INFO: 2020-07-24 17:45:29,236:  
+INFO: 2020-07-24 17:45:29,236: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 18:04:42,307: Iterations: 60
+INFO: 2020-07-24 18:04:42,308: Time steps: 3932160
+INFO: 2020-07-24 18:04:42,308: Reward: 326.02649
+INFO: 2020-07-24 18:04:42,308: Test sigma: 0.75189
+INFO: 2020-07-24 18:04:42,308:  
+INFO: 2020-07-24 18:04:42,308: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 18:23:46,533: Iterations: 70
+INFO: 2020-07-24 18:23:46,533: Time steps: 4587520
+INFO: 2020-07-24 18:23:46,533: Reward: 304.26975
+INFO: 2020-07-24 18:23:46,533: Test sigma: 0.71666
+INFO: 2020-07-24 18:23:46,533:  
+INFO: 2020-07-24 18:42:44,151: Iterations: 80
+INFO: 2020-07-24 18:42:44,151: Time steps: 5242880
+INFO: 2020-07-24 18:42:44,151: Reward: 350.56352
+INFO: 2020-07-24 18:42:44,152: Test sigma: 0.69865
+INFO: 2020-07-24 18:42:44,152:  
+INFO: 2020-07-24 18:42:44,152: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/traj_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 19:01:48,118: Iterations: 90
+INFO: 2020-07-24 19:01:48,118: Time steps: 5898240
+INFO: 2020-07-24 19:01:48,118: Reward: 300.57228
+INFO: 2020-07-24 19:01:48,118: Test sigma: 0.67818
+INFO: 2020-07-24 19:01:48,118:  
+INFO: 2020-07-24 19:20:49,668: Iterations: 100
+INFO: 2020-07-24 19:20:49,670: Time steps: 6553600
+INFO: 2020-07-24 19:20:49,670: Reward: 339.41193
+INFO: 2020-07-24 19:20:49,671: Test sigma: 0.66675
+INFO: 2020-07-24 19:20:49,671:  
+INFO: 2020-07-24 19:39:54,527: Iterations: 110
+INFO: 2020-07-24 19:39:54,527: Time steps: 7208960
+INFO: 2020-07-24 19:39:54,527: Reward: 278.17515
+INFO: 2020-07-24 19:39:54,527: Test sigma: 0.59211
+INFO: 2020-07-24 19:39:54,527:  
+INFO: 2020-07-24 19:58:56,174: Iterations: 120
+INFO: 2020-07-24 19:58:56,174: Time steps: 7864320
+INFO: 2020-07-24 19:58:56,174: Reward: 244.04943
+INFO: 2020-07-24 19:58:56,174: Test sigma: 0.61894
+INFO: 2020-07-24 19:58:56,174:  
+INFO: 2020-07-24 20:18:01,657: Iterations: 130
+INFO: 2020-07-24 20:18:01,657: Time steps: 8519680
+INFO: 2020-07-24 20:18:01,657: Reward: 226.81216
+INFO: 2020-07-24 20:18:01,658: Test sigma: 0.58199
+INFO: 2020-07-24 20:18:01,658:  
+INFO: 2020-07-24 20:37:00,781: Iterations: 140
+INFO: 2020-07-24 20:37:00,781: Time steps: 9175040
+INFO: 2020-07-24 20:37:00,781: Reward: 147.79156
+INFO: 2020-07-24 20:37:00,781: Test sigma: 0.59887
+INFO: 2020-07-24 20:37:00,781:  
+INFO: 2020-07-24 20:56:07,146: Iterations: 150
+INFO: 2020-07-24 20:56:07,146: Time steps: 9830400
+INFO: 2020-07-24 20:56:07,146: Reward: 268.15696
+INFO: 2020-07-24 20:56:07,146: Test sigma: 0.57667
+INFO: 2020-07-24 20:56:07,146:  
+INFO: 2020-07-24 21:15:03,904: Iterations: 160
+INFO: 2020-07-24 21:15:03,906: Time steps: 10485760
+INFO: 2020-07-24 21:15:03,906: Reward: 252.96733
+INFO: 2020-07-24 21:15:03,907: Test sigma: 0.62691
+INFO: 2020-07-24 21:15:03,907:  
+INFO: 2020-07-24 21:33:59,517: Iterations: 170
+INFO: 2020-07-24 21:33:59,518: Time steps: 11141120
+INFO: 2020-07-24 21:33:59,518: Reward: 230.52958
+INFO: 2020-07-24 21:33:59,518: Test sigma: 0.63516
+INFO: 2020-07-24 21:33:59,518:  
+INFO: 2020-07-24 21:52:57,973: Iterations: 180
+INFO: 2020-07-24 21:52:57,974: Time steps: 11796480
+INFO: 2020-07-24 21:52:57,974: Reward: 221.62900
+INFO: 2020-07-24 21:52:57,974: Test sigma: 0.56850
+INFO: 2020-07-24 21:52:57,974:  
+INFO: 2020-07-24 22:11:59,607: Iterations: 190
+INFO: 2020-07-24 22:11:59,607: Time steps: 12451840
+INFO: 2020-07-24 22:11:59,608: Reward: 286.27568
+INFO: 2020-07-24 22:11:59,608: Test sigma: 0.56264
+INFO: 2020-07-24 22:11:59,608:  
+INFO: 2020-07-24 22:31:04,620: Iterations: 200
+INFO: 2020-07-24 22:31:04,620: Time steps: 13107200
+INFO: 2020-07-24 22:31:04,620: Reward: 285.68725
+INFO: 2020-07-24 22:31:04,620: Test sigma: 0.54792
+INFO: 2020-07-24 22:31:04,620:  
+INFO: 2020-07-24 22:50:48,948: Iterations: 210
+INFO: 2020-07-24 22:50:48,948: Time steps: 13762560
+INFO: 2020-07-24 22:50:48,948: Reward: 238.04032
+INFO: 2020-07-24 22:50:48,948: Test sigma: 0.56327
+INFO: 2020-07-24 22:50:48,949:  
+INFO: 2020-07-24 23:09:48,596: Iterations: 220
+INFO: 2020-07-24 23:09:48,597: Time steps: 14417920
+INFO: 2020-07-24 23:09:48,597: Reward: 302.32069
+INFO: 2020-07-24 23:09:48,597: Test sigma: 0.57222
+INFO: 2020-07-24 23:09:48,597:  
+INFO: 2020-07-24 23:30:21,856:  
+INFO: 2020-07-24 23:30:21,856: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-24 23:30:21,856: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-24 23:30:21,856:  
+INFO: 2020-07-24 23:30:21,856: ----------------------------------------------
+INFO: 2020-07-24 23:30:21,856: Experiment Settings
+INFO: 2020-07-24 23:30:21,856: ----------------------------------------------
+INFO: 2020-07-24 23:30:21,856: Number of workers: 16
+INFO: 2020-07-24 23:30:21,856: Batch size: 256
+INFO: 2020-07-24 23:30:21,856: Iterations: 2500
+INFO: 2020-07-24 23:30:21,857: Log interval: 10
+INFO: 2020-07-24 23:30:21,857: Experiment runs: 2500
+INFO: 2020-07-24 23:30:21,857: Number of test runs: 30
+INFO: 2020-07-24 23:30:21,857: ----------------------------------------------
+INFO: 2020-07-24 23:30:21,857: Network Parameters
+INFO: 2020-07-24 23:30:21,857: ----------------------------------------------
+INFO: 2020-07-24 23:30:21,857: Network input dim: 34
+INFO: 2020-07-24 23:30:21,857: Network hidden dim: 256
+INFO: 2020-07-24 23:30:21,857: Network layers: 2
+INFO: 2020-07-24 23:30:21,857: Network output dim: 2
+INFO: 2020-07-24 23:30:21,857: ----------------------------------------------
+INFO: 2020-07-24 23:30:21,857: Environment Parameters
+INFO: 2020-07-24 23:30:21,857: ----------------------------------------------
+INFO: 2020-07-24 23:30:21,857: Trajectory length: 2
+INFO: 2020-07-24 23:30:21,857: Obs future waypoints: 2
+INFO: 2020-07-24 23:30:21,857: Distribution temperature: 150
+INFO: 2020-07-24 23:30:21,857: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-24 23:30:21,857: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 23:30:29,219:  
+INFO: 2020-07-24 23:30:29,220: Iterations: 0
+INFO: 2020-07-24 23:30:29,220: Time steps: 0
+INFO: 2020-07-24 23:30:29,220: Reward: 42.52390
+INFO: 2020-07-24 23:30:29,220: Test sigma: 0.98275
+INFO: 2020-07-24 23:30:29,220:  
+INFO: 2020-07-24 23:31:18,294: Iterations: 10
+INFO: 2020-07-24 23:31:18,294: Time steps: 40960
+INFO: 2020-07-24 23:31:18,294: Reward: 49.83740
+INFO: 2020-07-24 23:31:18,295: Test sigma: 0.94849
+INFO: 2020-07-24 23:31:18,295:  
+INFO: 2020-07-24 23:31:18,295: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:32:09,022: Iterations: 20
+INFO: 2020-07-24 23:32:09,023: Time steps: 81920
+INFO: 2020-07-24 23:32:09,023: Reward: 55.80247
+INFO: 2020-07-24 23:32:09,023: Test sigma: 1.01112
+INFO: 2020-07-24 23:32:09,023:  
+INFO: 2020-07-24 23:32:09,023: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:32:59,794: Iterations: 30
+INFO: 2020-07-24 23:32:59,794: Time steps: 122880
+INFO: 2020-07-24 23:32:59,794: Reward: 55.05434
+INFO: 2020-07-24 23:32:59,795: Test sigma: 1.00154
+INFO: 2020-07-24 23:32:59,795:  
+INFO: 2020-07-24 23:33:41,325:  
+INFO: 2020-07-24 23:33:41,325: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-24 23:33:41,325: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-24 23:33:41,325:  
+INFO: 2020-07-24 23:33:41,325: ----------------------------------------------
+INFO: 2020-07-24 23:33:41,325: Experiment Settings
+INFO: 2020-07-24 23:33:41,325: ----------------------------------------------
+INFO: 2020-07-24 23:33:41,325: Number of workers: 16
+INFO: 2020-07-24 23:33:41,325: Batch size: 256
+INFO: 2020-07-24 23:33:41,325: Iterations: 2500
+INFO: 2020-07-24 23:33:41,325: Log interval: 10
+INFO: 2020-07-24 23:33:41,325: Experiment runs: 2500
+INFO: 2020-07-24 23:33:41,326: Number of test runs: 30
+INFO: 2020-07-24 23:33:41,326: ----------------------------------------------
+INFO: 2020-07-24 23:33:41,326: Network Parameters
+INFO: 2020-07-24 23:33:41,326: ----------------------------------------------
+INFO: 2020-07-24 23:33:41,326: Network input dim: 34
+INFO: 2020-07-24 23:33:41,326: Network hidden dim: 256
+INFO: 2020-07-24 23:33:41,326: Network layers: 2
+INFO: 2020-07-24 23:33:41,326: Network output dim: 2
+INFO: 2020-07-24 23:33:41,326: ----------------------------------------------
+INFO: 2020-07-24 23:33:41,326: Environment Parameters
+INFO: 2020-07-24 23:33:41,326: ----------------------------------------------
+INFO: 2020-07-24 23:33:41,326: Trajectory length: 2
+INFO: 2020-07-24 23:33:41,326: Obs future waypoints: 2
+INFO: 2020-07-24 23:33:41,326: Distribution temperature: 150
+INFO: 2020-07-24 23:33:41,326: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-24 23:33:41,326: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 23:33:48,851:  
+INFO: 2020-07-24 23:33:48,851: Iterations: 0
+INFO: 2020-07-24 23:33:48,851: Time steps: 0
+INFO: 2020-07-24 23:33:48,852: Reward: 48.60360
+INFO: 2020-07-24 23:33:48,852: Test sigma: 0.98220
+INFO: 2020-07-24 23:33:48,852:  
+INFO: 2020-07-24 23:34:43,452: Iterations: 10
+INFO: 2020-07-24 23:34:43,453: Time steps: 40960
+INFO: 2020-07-24 23:34:43,453: Reward: 59.90484
+INFO: 2020-07-24 23:34:43,453: Test sigma: 1.02822
+INFO: 2020-07-24 23:34:43,453:  
+INFO: 2020-07-24 23:34:43,453: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:35:35,952: Iterations: 20
+INFO: 2020-07-24 23:35:35,952: Time steps: 81920
+INFO: 2020-07-24 23:35:35,952: Reward: 79.05370
+INFO: 2020-07-24 23:35:35,953: Test sigma: 0.94533
+INFO: 2020-07-24 23:35:35,953:  
+INFO: 2020-07-24 23:35:35,953: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:36:28,613: Iterations: 30
+INFO: 2020-07-24 23:36:28,613: Time steps: 122880
+INFO: 2020-07-24 23:36:28,613: Reward: 91.37604
+INFO: 2020-07-24 23:36:28,613: Test sigma: 1.00947
+INFO: 2020-07-24 23:36:28,613:  
+INFO: 2020-07-24 23:36:28,613: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:37:19,599: Iterations: 40
+INFO: 2020-07-24 23:37:19,599: Time steps: 163840
+INFO: 2020-07-24 23:37:19,599: Reward: 114.69194
+INFO: 2020-07-24 23:37:19,599: Test sigma: 0.98137
+INFO: 2020-07-24 23:37:19,599:  
+INFO: 2020-07-24 23:37:19,599: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:38:05,218: Iterations: 50
+INFO: 2020-07-24 23:38:05,218: Time steps: 204800
+INFO: 2020-07-24 23:38:05,218: Reward: 100.35530
+INFO: 2020-07-24 23:38:05,218: Test sigma: 0.97256
+INFO: 2020-07-24 23:38:05,219:  
+INFO: 2020-07-24 23:38:51,531: Iterations: 60
+INFO: 2020-07-24 23:38:51,531: Time steps: 245760
+INFO: 2020-07-24 23:38:51,531: Reward: 123.71203
+INFO: 2020-07-24 23:38:51,531: Test sigma: 0.95898
+INFO: 2020-07-24 23:38:51,531:  
+INFO: 2020-07-24 23:38:51,531: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:39:37,396: Iterations: 70
+INFO: 2020-07-24 23:39:37,396: Time steps: 286720
+INFO: 2020-07-24 23:39:37,396: Reward: 164.81644
+INFO: 2020-07-24 23:39:37,396: Test sigma: 0.96988
+INFO: 2020-07-24 23:39:37,396:  
+INFO: 2020-07-24 23:39:37,396: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:40:26,184: Iterations: 80
+INFO: 2020-07-24 23:40:26,185: Time steps: 327680
+INFO: 2020-07-24 23:40:26,185: Reward: 311.75003
+INFO: 2020-07-24 23:40:26,185: Test sigma: 0.97456
+INFO: 2020-07-24 23:40:26,185:  
+INFO: 2020-07-24 23:40:26,185: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:41:17,020: Iterations: 90
+INFO: 2020-07-24 23:41:17,020: Time steps: 368640
+INFO: 2020-07-24 23:41:17,020: Reward: 398.79256
+INFO: 2020-07-24 23:41:17,020: Test sigma: 0.97678
+INFO: 2020-07-24 23:41:17,020:  
+INFO: 2020-07-24 23:41:17,020: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:42:49,349:  
+INFO: 2020-07-24 23:42:49,349: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-24 23:42:49,349: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-24 23:42:49,349:  
+INFO: 2020-07-24 23:42:49,350: ----------------------------------------------
+INFO: 2020-07-24 23:42:49,350: Experiment Settings
+INFO: 2020-07-24 23:42:49,350: ----------------------------------------------
+INFO: 2020-07-24 23:42:49,350: Number of workers: 16
+INFO: 2020-07-24 23:42:49,350: Batch size: 256
+INFO: 2020-07-24 23:42:49,350: Iterations: 2500
+INFO: 2020-07-24 23:42:49,350: Log interval: 10
+INFO: 2020-07-24 23:42:49,350: Experiment runs: 2500
+INFO: 2020-07-24 23:42:49,350: Number of test runs: 30
+INFO: 2020-07-24 23:42:49,350: ----------------------------------------------
+INFO: 2020-07-24 23:42:49,350: Network Parameters
+INFO: 2020-07-24 23:42:49,350: ----------------------------------------------
+INFO: 2020-07-24 23:42:49,350: Network input dim: 34
+INFO: 2020-07-24 23:42:49,350: Network hidden dim: 256
+INFO: 2020-07-24 23:42:49,350: Network layers: 2
+INFO: 2020-07-24 23:42:49,350: Network output dim: 2
+INFO: 2020-07-24 23:42:49,351: ----------------------------------------------
+INFO: 2020-07-24 23:42:49,351: Environment Parameters
+INFO: 2020-07-24 23:42:49,351: ----------------------------------------------
+INFO: 2020-07-24 23:42:49,351: Trajectory length: 2
+INFO: 2020-07-24 23:42:49,351: Obs future waypoints: 2
+INFO: 2020-07-24 23:42:49,351: Distribution temperature: 150
+INFO: 2020-07-24 23:42:49,351: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-24 23:42:49,351: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 23:42:56,530:  
+INFO: 2020-07-24 23:42:56,531: Iterations: 0
+INFO: 2020-07-24 23:42:56,531: Time steps: 0
+INFO: 2020-07-24 23:42:56,531: Reward: 39.15322
+INFO: 2020-07-24 23:42:56,531: Test sigma: 0.99573
+INFO: 2020-07-24 23:42:56,531:  
+INFO: 2020-07-24 23:43:42,989:  
+INFO: 2020-07-24 23:43:42,989: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-24 23:43:42,989: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-24 23:43:42,989:  
+INFO: 2020-07-24 23:43:42,989: ----------------------------------------------
+INFO: 2020-07-24 23:43:42,989: Experiment Settings
+INFO: 2020-07-24 23:43:42,989: ----------------------------------------------
+INFO: 2020-07-24 23:43:42,990: Number of workers: 16
+INFO: 2020-07-24 23:43:42,990: Batch size: 256
+INFO: 2020-07-24 23:43:42,990: Iterations: 2500
+INFO: 2020-07-24 23:43:42,990: Log interval: 10
+INFO: 2020-07-24 23:43:42,990: Experiment runs: 2500
+INFO: 2020-07-24 23:43:42,990: Number of test runs: 30
+INFO: 2020-07-24 23:43:42,990: ----------------------------------------------
+INFO: 2020-07-24 23:43:42,990: Network Parameters
+INFO: 2020-07-24 23:43:42,990: ----------------------------------------------
+INFO: 2020-07-24 23:43:42,990: Network input dim: 34
+INFO: 2020-07-24 23:43:42,990: Network hidden dim: 256
+INFO: 2020-07-24 23:43:42,990: Network layers: 2
+INFO: 2020-07-24 23:43:42,990: Network output dim: 2
+INFO: 2020-07-24 23:43:42,990: ----------------------------------------------
+INFO: 2020-07-24 23:43:42,990: Environment Parameters
+INFO: 2020-07-24 23:43:42,990: ----------------------------------------------
+INFO: 2020-07-24 23:43:42,991: Trajectory length: 2
+INFO: 2020-07-24 23:43:42,991: Obs future waypoints: 2
+INFO: 2020-07-24 23:43:42,991: Distribution temperature: 150
+INFO: 2020-07-24 23:43:42,991: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-24 23:43:42,991: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 23:44:18,434:  
+INFO: 2020-07-24 23:44:18,434: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-24 23:44:18,434: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-24 23:44:18,434:  
+INFO: 2020-07-24 23:44:18,434: ----------------------------------------------
+INFO: 2020-07-24 23:44:18,434: Experiment Settings
+INFO: 2020-07-24 23:44:18,434: ----------------------------------------------
+INFO: 2020-07-24 23:44:18,434: Number of workers: 16
+INFO: 2020-07-24 23:44:18,435: Batch size: 256
+INFO: 2020-07-24 23:44:18,435: Iterations: 2500
+INFO: 2020-07-24 23:44:18,435: Log interval: 10
+INFO: 2020-07-24 23:44:18,435: Experiment runs: 2500
+INFO: 2020-07-24 23:44:18,435: Number of test runs: 30
+INFO: 2020-07-24 23:44:18,435: ----------------------------------------------
+INFO: 2020-07-24 23:44:18,435: Network Parameters
+INFO: 2020-07-24 23:44:18,435: ----------------------------------------------
+INFO: 2020-07-24 23:44:18,435: Network input dim: 34
+INFO: 2020-07-24 23:44:18,435: Network hidden dim: 256
+INFO: 2020-07-24 23:44:18,435: Network layers: 2
+INFO: 2020-07-24 23:44:18,435: Network output dim: 2
+INFO: 2020-07-24 23:44:18,435: ----------------------------------------------
+INFO: 2020-07-24 23:44:18,435: Environment Parameters
+INFO: 2020-07-24 23:44:18,435: ----------------------------------------------
+INFO: 2020-07-24 23:44:18,435: Trajectory length: 2
+INFO: 2020-07-24 23:44:18,435: Obs future waypoints: 2
+INFO: 2020-07-24 23:44:18,435: Distribution temperature: 150
+INFO: 2020-07-24 23:44:18,435: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-24 23:44:18,435: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 23:44:25,676:  
+INFO: 2020-07-24 23:44:25,676: Iterations: 0
+INFO: 2020-07-24 23:44:25,677: Time steps: 0
+INFO: 2020-07-24 23:44:25,677: Reward: 30.38861
+INFO: 2020-07-24 23:44:25,677: Test sigma: 1.05213
+INFO: 2020-07-24 23:44:25,677:  
+INFO: 2020-07-24 23:46:24,937:  
+INFO: 2020-07-24 23:46:24,937: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-24 23:46:24,937: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-24 23:46:24,937:  
+INFO: 2020-07-24 23:46:24,937: ----------------------------------------------
+INFO: 2020-07-24 23:46:24,937: Experiment Settings
+INFO: 2020-07-24 23:46:24,937: ----------------------------------------------
+INFO: 2020-07-24 23:46:24,937: Number of workers: 16
+INFO: 2020-07-24 23:46:24,937: Batch size: 256
+INFO: 2020-07-24 23:46:24,937: Iterations: 2500
+INFO: 2020-07-24 23:46:24,937: Log interval: 10
+INFO: 2020-07-24 23:46:24,937: Experiment runs: 2500
+INFO: 2020-07-24 23:46:24,938: Number of test runs: 30
+INFO: 2020-07-24 23:46:24,938: ----------------------------------------------
+INFO: 2020-07-24 23:46:24,938: Network Parameters
+INFO: 2020-07-24 23:46:24,938: ----------------------------------------------
+INFO: 2020-07-24 23:46:24,938: Network input dim: 34
+INFO: 2020-07-24 23:46:24,938: Network hidden dim: 256
+INFO: 2020-07-24 23:46:24,938: Network layers: 2
+INFO: 2020-07-24 23:46:24,938: Network output dim: 2
+INFO: 2020-07-24 23:46:24,938: ----------------------------------------------
+INFO: 2020-07-24 23:46:24,938: Environment Parameters
+INFO: 2020-07-24 23:46:24,938: ----------------------------------------------
+INFO: 2020-07-24 23:46:24,938: Trajectory length: 2
+INFO: 2020-07-24 23:46:24,938: Obs future waypoints: 2
+INFO: 2020-07-24 23:46:24,938: Distribution temperature: 150
+INFO: 2020-07-24 23:46:24,939: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-24 23:46:24,939: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 23:46:32,139:  
+INFO: 2020-07-24 23:46:32,139: Iterations: 0
+INFO: 2020-07-24 23:46:32,139: Time steps: 0
+INFO: 2020-07-24 23:46:32,139: Reward: 58.37047
+INFO: 2020-07-24 23:46:32,140: Test sigma: 1.05426
+INFO: 2020-07-24 23:46:32,140:  
+INFO: 2020-07-24 23:47:10,372:  
+INFO: 2020-07-24 23:47:10,372: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-24 23:47:10,372: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-24 23:47:10,373:  
+INFO: 2020-07-24 23:47:10,373: ----------------------------------------------
+INFO: 2020-07-24 23:47:10,373: Experiment Settings
+INFO: 2020-07-24 23:47:10,373: ----------------------------------------------
+INFO: 2020-07-24 23:47:10,373: Number of workers: 16
+INFO: 2020-07-24 23:47:10,373: Batch size: 256
+INFO: 2020-07-24 23:47:10,373: Iterations: 2500
+INFO: 2020-07-24 23:47:10,373: Log interval: 10
+INFO: 2020-07-24 23:47:10,373: Experiment runs: 2500
+INFO: 2020-07-24 23:47:10,373: Number of test runs: 30
+INFO: 2020-07-24 23:47:10,373: ----------------------------------------------
+INFO: 2020-07-24 23:47:10,373: Network Parameters
+INFO: 2020-07-24 23:47:10,373: ----------------------------------------------
+INFO: 2020-07-24 23:47:10,373: Network input dim: 34
+INFO: 2020-07-24 23:47:10,373: Network hidden dim: 256
+INFO: 2020-07-24 23:47:10,373: Network layers: 2
+INFO: 2020-07-24 23:47:10,373: Network output dim: 2
+INFO: 2020-07-24 23:47:10,373: ----------------------------------------------
+INFO: 2020-07-24 23:47:10,374: Environment Parameters
+INFO: 2020-07-24 23:47:10,374: ----------------------------------------------
+INFO: 2020-07-24 23:47:10,374: Trajectory length: 2
+INFO: 2020-07-24 23:47:10,374: Obs future waypoints: 2
+INFO: 2020-07-24 23:47:10,374: Distribution temperature: 150
+INFO: 2020-07-24 23:47:10,374: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-24 23:47:10,374: Maximum spread: 1.5707963267948966
+INFO: 2020-07-24 23:47:17,766:  
+INFO: 2020-07-24 23:47:17,766: Iterations: 0
+INFO: 2020-07-24 23:47:17,766: Time steps: 0
+INFO: 2020-07-24 23:47:17,766: Reward: 39.92489
+INFO: 2020-07-24 23:47:17,766: Test sigma: 0.98387
+INFO: 2020-07-24 23:47:17,766:  
+INFO: 2020-07-24 23:48:03,027: Iterations: 10
+INFO: 2020-07-24 23:48:03,027: Time steps: 40960
+INFO: 2020-07-24 23:48:03,027: Reward: 67.26016
+INFO: 2020-07-24 23:48:03,027: Test sigma: 1.01274
+INFO: 2020-07-24 23:48:03,027:  
+INFO: 2020-07-24 23:48:03,027: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:48:49,123: Iterations: 20
+INFO: 2020-07-24 23:48:49,123: Time steps: 81920
+INFO: 2020-07-24 23:48:49,123: Reward: 135.15314
+INFO: 2020-07-24 23:48:49,123: Test sigma: 1.03671
+INFO: 2020-07-24 23:48:49,123:  
+INFO: 2020-07-24 23:48:49,123: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:49:35,314: Iterations: 30
+INFO: 2020-07-24 23:49:35,314: Time steps: 122880
+INFO: 2020-07-24 23:49:35,315: Reward: 102.98510
+INFO: 2020-07-24 23:49:35,315: Test sigma: 1.04227
+INFO: 2020-07-24 23:49:35,315:  
+INFO: 2020-07-24 23:50:21,032: Iterations: 40
+INFO: 2020-07-24 23:50:21,032: Time steps: 163840
+INFO: 2020-07-24 23:50:21,032: Reward: 151.39185
+INFO: 2020-07-24 23:50:21,032: Test sigma: 1.07418
+INFO: 2020-07-24 23:50:21,032:  
+INFO: 2020-07-24 23:50:21,032: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:51:06,727: Iterations: 50
+INFO: 2020-07-24 23:51:06,727: Time steps: 204800
+INFO: 2020-07-24 23:51:06,727: Reward: 211.29736
+INFO: 2020-07-24 23:51:06,727: Test sigma: 1.06053
+INFO: 2020-07-24 23:51:06,727:  
+INFO: 2020-07-24 23:51:06,728: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:51:54,282: Iterations: 60
+INFO: 2020-07-24 23:51:54,282: Time steps: 245760
+INFO: 2020-07-24 23:51:54,282: Reward: 298.18188
+INFO: 2020-07-24 23:51:54,282: Test sigma: 1.00916
+INFO: 2020-07-24 23:51:54,282:  
+INFO: 2020-07-24 23:51:54,282: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:52:43,929: Iterations: 70
+INFO: 2020-07-24 23:52:43,930: Time steps: 286720
+INFO: 2020-07-24 23:52:43,930: Reward: 370.96744
+INFO: 2020-07-24 23:52:43,930: Test sigma: 0.93796
+INFO: 2020-07-24 23:52:43,930:  
+INFO: 2020-07-24 23:52:43,930: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:53:30,582: Iterations: 80
+INFO: 2020-07-24 23:53:30,582: Time steps: 327680
+INFO: 2020-07-24 23:53:30,582: Reward: 285.32495
+INFO: 2020-07-24 23:53:30,582: Test sigma: 0.98386
+INFO: 2020-07-24 23:53:30,582:  
+INFO: 2020-07-24 23:54:19,853: Iterations: 90
+INFO: 2020-07-24 23:54:19,853: Time steps: 368640
+INFO: 2020-07-24 23:54:19,853: Reward: 342.12779
+INFO: 2020-07-24 23:54:19,853: Test sigma: 0.93518
+INFO: 2020-07-24 23:54:19,853:  
+INFO: 2020-07-24 23:55:08,547: Iterations: 100
+INFO: 2020-07-24 23:55:08,547: Time steps: 409600
+INFO: 2020-07-24 23:55:08,548: Reward: 372.73650
+INFO: 2020-07-24 23:55:08,548: Test sigma: 0.90572
+INFO: 2020-07-24 23:55:08,548:  
+INFO: 2020-07-24 23:55:08,548: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:55:58,028: Iterations: 110
+INFO: 2020-07-24 23:55:58,028: Time steps: 450560
+INFO: 2020-07-24 23:55:58,028: Reward: 372.84430
+INFO: 2020-07-24 23:55:58,028: Test sigma: 0.86767
+INFO: 2020-07-24 23:55:58,028:  
+INFO: 2020-07-24 23:55:58,028: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:56:47,453: Iterations: 120
+INFO: 2020-07-24 23:56:47,453: Time steps: 491520
+INFO: 2020-07-24 23:56:47,453: Reward: 369.09584
+INFO: 2020-07-24 23:56:47,453: Test sigma: 0.76955
+INFO: 2020-07-24 23:56:47,453:  
+INFO: 2020-07-24 23:57:37,766: Iterations: 130
+INFO: 2020-07-24 23:57:37,766: Time steps: 532480
+INFO: 2020-07-24 23:57:37,766: Reward: 425.03143
+INFO: 2020-07-24 23:57:37,766: Test sigma: 0.72275
+INFO: 2020-07-24 23:57:37,766:  
+INFO: 2020-07-24 23:57:37,766: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-24 23:58:27,446: Iterations: 140
+INFO: 2020-07-24 23:58:27,446: Time steps: 573440
+INFO: 2020-07-24 23:58:27,446: Reward: 383.49131
+INFO: 2020-07-24 23:58:27,446: Test sigma: 0.69359
+INFO: 2020-07-24 23:58:27,446:  
+INFO: 2020-07-24 23:59:17,444: Iterations: 150
+INFO: 2020-07-24 23:59:17,445: Time steps: 614400
+INFO: 2020-07-24 23:59:17,445: Reward: 386.13003
+INFO: 2020-07-24 23:59:17,445: Test sigma: 0.65118
+INFO: 2020-07-24 23:59:17,445:  
+INFO: 2020-07-25 00:00:06,972: Iterations: 160
+INFO: 2020-07-25 00:00:06,973: Time steps: 655360
+INFO: 2020-07-25 00:00:06,973: Reward: 372.69605
+INFO: 2020-07-25 00:00:06,973: Test sigma: 0.64532
+INFO: 2020-07-25 00:00:06,973:  
+INFO: 2020-07-25 00:00:56,801: Iterations: 170
+INFO: 2020-07-25 00:00:56,802: Time steps: 696320
+INFO: 2020-07-25 00:00:56,802: Reward: 376.74732
+INFO: 2020-07-25 00:00:56,802: Test sigma: 0.68769
+INFO: 2020-07-25 00:00:56,802:  
+INFO: 2020-07-25 00:01:46,054: Iterations: 180
+INFO: 2020-07-25 00:01:46,054: Time steps: 737280
+INFO: 2020-07-25 00:01:46,054: Reward: 363.93639
+INFO: 2020-07-25 00:01:46,054: Test sigma: 0.71689
+INFO: 2020-07-25 00:01:46,054:  
+INFO: 2020-07-25 00:02:37,681: Iterations: 190
+INFO: 2020-07-25 00:02:37,682: Time steps: 778240
+INFO: 2020-07-25 00:02:37,682: Reward: 382.61216
+INFO: 2020-07-25 00:02:37,682: Test sigma: 0.72094
+INFO: 2020-07-25 00:02:37,682:  

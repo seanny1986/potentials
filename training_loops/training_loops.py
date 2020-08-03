@@ -6,8 +6,8 @@ import datetime
 
 import envs.waypoint_2d as wp_2d
 import envs.waypoint_3d as wp_3d
-import envs.nh_waypoint_3d as nh_wp_3d
 
+import envs.fan_2d as fan_2d
 import envs.traj_2d as traj_2d
 import envs.soft_2d as soft_2d
 import envs.term_2d as term_2d
@@ -35,9 +35,9 @@ def make_waypoint_3d():
         return env
     return _thunk
 
-def make_nh_waypoint_3d():
+def make_fan_2d():
     def _thunk():
-        env = nh_wp_3d.WaypointEnv3D()
+        env = fan_2d.FanTrajectoryEnv2D()
         return env
     return _thunk
 
@@ -67,13 +67,13 @@ def make_traj_3d():
 
 def make_soft_3d():
     def _thunk():
-        env = soft_3d.TrajectoryEnv3D()
+        env = soft_3d.SoftTrajectoryEnv3D()
         return env
     return _thunk
 
 def make_term_3d():
     def _thunk():
-        env = term_3d.TrajectoryEnvTerm()
+        env = term_3d.TrajectoryEnvTerm3D()
         return env
     return _thunk
 
@@ -92,11 +92,13 @@ def test(env, agent, render=False):
     reward_sum = 0
     done = False
     if render:
-            env.render()
+        env.render()
     sigmas = []
     while not done:
+        #print("state: ", state)
         mu, sigma = agent.test_action(state.unsqueeze(0))
         action, sigma = mu.squeeze(0).cpu().data.numpy(), sigma.squeeze(0).cpu().data.numpy()
+        #print("action", mu)
         next_state, reward, done, info = env.step(action)
         sigmas.append(sigma)
         #print(info)
@@ -109,6 +111,7 @@ def test(env, agent, render=False):
         state = next_state
     #if render: env.close()
     mean_sigma = np.mean(sigmas)
+    #print(reward_sum)
     return reward_sum, mean_sigma
 
 def train_mp(logger, envs, t_env, agent, opt, batch_size, iterations, log_interval, t_runs, render=False, fname=None):
@@ -141,8 +144,8 @@ def train_mp(logger, envs, t_env, agent, opt, batch_size, iterations, log_interv
             dones = [[not d] for d in done]
             reward = torch.Tensor(reward).unsqueeze(1).to(device)
             next_state = torch.Tensor(next_state).to(device)
-            reward += entropies.sum(dim=-1, keepdim=True)
-
+            reward += 0.5 * entropies.sum(dim=-1, keepdim=True)
+ 
             s_.append(state)
             a_.append(actions)
             ns_.append(next_state)
@@ -306,3 +309,72 @@ def train_term_mp(logger, envs, t_env, agent, opt, batch_size, iterations, log_i
     #plot(eps, rews, fname=fname)
     #plot(eps, term_rews, fname="term_"+fname)
     return eps, rews, term_rews, agent
+
+
+def train_online(env, agent, pol_opt, q_opt, v_opt, steps=1000, warmup=1000, batch_size=128, iterations=500, log_interval=10, t_runs=10):
+    # warmup to add transitions to replay memory
+    T = 0
+    while T < warmup:
+        state = torch.Tensor(env.reset()).to(device)
+        done = False
+        t = 0
+        while not done:
+            action, _, _ = agent.select_action(state)
+            action = action.detach()
+            next_state, reward, done, info = env.step(action.cpu().data.numpy())
+            mask = 1 if t == env._max_episode_steps else float(not done)
+            mask = torch.Tensor([mask]).to(device)
+            reward = torch.Tensor([reward]).to(device)
+            next_state = torch.Tensor(next_state).to(device)
+            agent.replay_memory.push(state, action, next_state, reward, mask)
+            state = next_state
+            t += 1
+        T += t
+    
+    print("Warmup finished, training agent.")
+    
+    test_rew_best = np.mean([test(env, agent, None) for _ in range(t_runs)])
+    data = []
+    data.append(test_rew_best)
+    print()
+    print("Iterations: ", 0)
+    print("Time steps: ", 0)
+    print("Reward: ", test_rew_best)
+    print()
+    
+    # run training loop
+    for ep in range(1, int(iterations + 1)):
+        T = 0
+        R = 0
+        n = 1
+        while T < steps:
+            done = False
+            state = torch.Tensor(env.reset()).to(device)
+            r = 0
+            t = 0
+            while not done:
+                action, _, _ = agent.select_action(state)
+                action = action.detach()
+                next_state, reward, done, info = env.step(action.cpu().data.numpy())
+                r += reward
+                mask = 1 if t == env._max_episode_steps else float(not done)
+                mask = torch.Tensor([mask]).to(device)
+                reward = torch.Tensor([reward]).to(device)
+                next_state = torch.Tensor(next_state).to(device)
+                agent.replay_memory.push(state, action, next_state, reward, mask)
+                agent.update(pol_opt, q_opt, v_opt, batch_size)
+                state = next_state
+                t += 1
+            T += t
+            R = (R*(n-1)+r)/n
+            n += 1
+        print("Batch {},  mean reward: {:.4f}".format(ep, R))        
+        if ep % log_interval == 0:
+            test_rew = np.mean([test(env, agent, render=True) for _ in range(t_runs)])
+            print("------------------------------")
+            print("Iterations: ", ep)
+            print("Time steps: ", ep * steps)
+            print("Test Reward: ", test_rew)
+            print("------------------------------")
+            data.append(test_rew)
+    return data

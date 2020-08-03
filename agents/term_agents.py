@@ -14,6 +14,24 @@ def init_weights(m):
         torch.nn.init.constant_(m.bias, 0.1)
 
 
+class CompositePolicy(nn.Module):
+    def __init__(self, input_dim, hidden_dim, output_dim):
+        super(CompositePolicy, self).__init__()
+        self.input_dim = input_dim
+        self.hidden_dim = hidden_dim
+        self.output_dim = output_dim
+        self.termination_score = nn.Sequential(
+                                    nn.Linear(input_dim, hidden_dim),
+                                    nn.Tanh(),
+                                    nn.Linear(hidden_dim, hidden_dim),
+                                    nn.Tanh(),
+                                    nn.Linear(hidden_dim, output_dim))
+
+    def forward(self, x):
+        termination_score = torch.softmax(self.termination_score(x), dim=-1)
+        return termination_score
+
+
 class TerminationPolicyLSTM(nn.Module):
     def __init__(self, input_dim, hidden_dim, output_dim):
         super(TerminationPolicyLSTM, self).__init__()

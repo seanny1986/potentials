@@ -8,6 +8,7 @@ import pandas as pd
 import config as cfg
 import envs.env_config as ecfg
 import gym
+import datetime
 
 wps = str(ecfg.num_fut_wp)
 goal_rad = str(ecfg.goal_thresh)
@@ -50,9 +51,9 @@ def run(logger, num_envs=16, hidden_dim=256, batch_size=1024, iterations=1000, l
     for i in range(runs):
         agent = ag.Agent(state_dim, hidden_dim, action_dim, dim=2)
         opt = torch.optim.Adam(agent.parameters(), lr=cfg.lr)
-        ep, rew, agent = tl.train_mp(logger, envs, t_env, agent, opt, batch_size, iterations, log_interval, t_runs, render=True, fname=path+wps+"-wps"+"-"+goal_rad)
+        ep, rew, agent = tl.train_mp(logger, envs, t_env, agent, opt, batch_size, iterations, log_interval, t_runs, render=False, fname=path+wps+"-wps"+"-"+goal_rad)
         if i == 0:
             csv_input = pd.DataFrame()
             csv_input["timesteps"] = ep
         csv_input["run"+str(i)] = rew
-        csv_input.to_csv(path+"data_wp-"+wps+"-"+goal_rad+".csv", index=False)
+        csv_input.to_csv(path+"data_wp-"+wps+"-"+goal_rad+"-"+str(datetime.datetime.now())+".csv", index=False)

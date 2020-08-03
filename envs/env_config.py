@@ -7,14 +7,14 @@ DIM = 15
 WINDOW_SIZE = 1000
 dt = 0.05 
 length = 0.3 
-max_steering_angle = 30 
-max_thrust = 7.5
-max_acceleration = 5.
+max_steering_angle = 35 
+max_thrust = 15
+max_acceleration = 15.
 max_velocity = 3
 tau_thrust = 0.8
-tau_steering = 0.5
+tau_steering = 0.8
 mass = 1.
-cd = 1.
+cd = 0.2
 
 # init parameters
 x = 0

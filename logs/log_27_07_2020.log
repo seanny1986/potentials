@@ -1,0 +1,2567 @@
+INFO: 2020-07-27 11:06:03,578:  
+INFO: 2020-07-27 11:06:03,578: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-27 11:06:03,578: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-27 11:06:03,578:  
+INFO: 2020-07-27 11:06:03,578: ----------------------------------------------
+INFO: 2020-07-27 11:06:03,578: Experiment Settings
+INFO: 2020-07-27 11:06:03,578: ----------------------------------------------
+INFO: 2020-07-27 11:06:03,578: Number of workers: 32
+INFO: 2020-07-27 11:06:03,578: Batch size: 512
+INFO: 2020-07-27 11:06:03,578: Iterations: 2500
+INFO: 2020-07-27 11:06:03,578: Log interval: 10
+INFO: 2020-07-27 11:06:03,578: Experiment runs: 2500
+INFO: 2020-07-27 11:06:03,578: Number of test runs: 30
+INFO: 2020-07-27 11:06:03,579: ----------------------------------------------
+INFO: 2020-07-27 11:06:03,579: Network Parameters
+INFO: 2020-07-27 11:06:03,579: ----------------------------------------------
+INFO: 2020-07-27 11:06:03,579: Network input dim: 22
+INFO: 2020-07-27 11:06:03,579: Network hidden dim: 256
+INFO: 2020-07-27 11:06:03,579: Network layers: 2
+INFO: 2020-07-27 11:06:03,579: Network output dim: 2
+INFO: 2020-07-27 11:06:03,579: ----------------------------------------------
+INFO: 2020-07-27 11:06:03,579: Environment Parameters
+INFO: 2020-07-27 11:06:03,579: ----------------------------------------------
+INFO: 2020-07-27 11:06:03,579: Trajectory length: 2
+INFO: 2020-07-27 11:06:03,579: Obs future waypoints: 1
+INFO: 2020-07-27 11:06:03,579: Distribution temperature: 150
+INFO: 2020-07-27 11:06:03,579: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-27 11:06:03,579: Maximum spread: 1.5707963267948966
+INFO: 2020-07-27 11:06:04,457:  
+INFO: 2020-07-27 11:06:04,458: Iterations: 0
+INFO: 2020-07-27 11:06:04,458: Time steps: 0
+INFO: 2020-07-27 11:06:04,458: Reward: -49.22008
+INFO: 2020-07-27 11:06:04,458: Test sigma: 0.96470
+INFO: 2020-07-27 11:06:04,458:  
+INFO: 2020-07-27 11:07:43,503: Iterations: 10
+INFO: 2020-07-27 11:07:43,503: Time steps: 163840
+INFO: 2020-07-27 11:07:43,503: Reward: 27.04488
+INFO: 2020-07-27 11:07:43,504: Test sigma: 0.91562
+INFO: 2020-07-27 11:07:43,504:  
+INFO: 2020-07-27 11:07:43,504: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 11:09:25,555: Iterations: 20
+INFO: 2020-07-27 11:09:25,555: Time steps: 327680
+INFO: 2020-07-27 11:09:25,555: Reward: 58.28263
+INFO: 2020-07-27 11:09:25,555: Test sigma: 0.96032
+INFO: 2020-07-27 11:09:25,556:  
+INFO: 2020-07-27 11:09:25,556: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 11:11:07,614: Iterations: 30
+INFO: 2020-07-27 11:11:07,615: Time steps: 491520
+INFO: 2020-07-27 11:11:07,615: Reward: 61.47938
+INFO: 2020-07-27 11:11:07,615: Test sigma: 0.93314
+INFO: 2020-07-27 11:11:07,615:  
+INFO: 2020-07-27 11:11:07,615: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 11:12:49,511: Iterations: 40
+INFO: 2020-07-27 11:12:49,511: Time steps: 655360
+INFO: 2020-07-27 11:12:49,511: Reward: 61.25307
+INFO: 2020-07-27 11:12:49,511: Test sigma: 0.86972
+INFO: 2020-07-27 11:12:49,511:  
+INFO: 2020-07-27 11:14:32,665: Iterations: 50
+INFO: 2020-07-27 11:14:32,665: Time steps: 819200
+INFO: 2020-07-27 11:14:32,665: Reward: 27.76003
+INFO: 2020-07-27 11:14:32,666: Test sigma: 0.79146
+INFO: 2020-07-27 11:14:32,666:  
+INFO: 2020-07-27 11:16:16,193: Iterations: 60
+INFO: 2020-07-27 11:16:16,193: Time steps: 983040
+INFO: 2020-07-27 11:16:16,193: Reward: 13.54156
+INFO: 2020-07-27 11:16:16,193: Test sigma: 0.81665
+INFO: 2020-07-27 11:16:16,193:  
+INFO: 2020-07-27 11:17:59,903: Iterations: 70
+INFO: 2020-07-27 11:17:59,903: Time steps: 1146880
+INFO: 2020-07-27 11:17:59,903: Reward: 22.49391
+INFO: 2020-07-27 11:17:59,903: Test sigma: 0.77928
+INFO: 2020-07-27 11:17:59,903:  
+INFO: 2020-07-27 11:19:43,664: Iterations: 80
+INFO: 2020-07-27 11:19:43,664: Time steps: 1310720
+INFO: 2020-07-27 11:19:43,664: Reward: 37.83967
+INFO: 2020-07-27 11:19:43,664: Test sigma: 0.76073
+INFO: 2020-07-27 11:19:43,664:  
+INFO: 2020-07-27 11:21:27,152: Iterations: 90
+INFO: 2020-07-27 11:21:27,152: Time steps: 1474560
+INFO: 2020-07-27 11:21:27,152: Reward: 43.62639
+INFO: 2020-07-27 11:21:27,152: Test sigma: 0.75257
+INFO: 2020-07-27 11:21:27,152:  
+INFO: 2020-07-27 11:23:10,889: Iterations: 100
+INFO: 2020-07-27 11:23:10,889: Time steps: 1638400
+INFO: 2020-07-27 11:23:10,890: Reward: 35.26802
+INFO: 2020-07-27 11:23:10,890: Test sigma: 0.76640
+INFO: 2020-07-27 11:23:10,890:  
+INFO: 2020-07-27 11:24:54,472: Iterations: 110
+INFO: 2020-07-27 11:24:54,472: Time steps: 1802240
+INFO: 2020-07-27 11:24:54,472: Reward: 47.25880
+INFO: 2020-07-27 11:24:54,472: Test sigma: 0.77894
+INFO: 2020-07-27 11:24:54,472:  
+INFO: 2020-07-27 11:26:37,928: Iterations: 120
+INFO: 2020-07-27 11:26:37,928: Time steps: 1966080
+INFO: 2020-07-27 11:26:37,928: Reward: 38.12450
+INFO: 2020-07-27 11:26:37,928: Test sigma: 0.76733
+INFO: 2020-07-27 11:26:37,928:  
+INFO: 2020-07-27 11:28:21,617: Iterations: 130
+INFO: 2020-07-27 11:28:21,617: Time steps: 2129920
+INFO: 2020-07-27 11:28:21,618: Reward: 37.75620
+INFO: 2020-07-27 11:28:21,618: Test sigma: 0.78613
+INFO: 2020-07-27 11:28:21,618:  
+INFO: 2020-07-27 11:30:05,489: Iterations: 140
+INFO: 2020-07-27 11:30:05,489: Time steps: 2293760
+INFO: 2020-07-27 11:30:05,489: Reward: 62.93986
+INFO: 2020-07-27 11:30:05,489: Test sigma: 0.76847
+INFO: 2020-07-27 11:30:05,489:  
+INFO: 2020-07-27 11:30:05,489: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 11:31:49,092: Iterations: 150
+INFO: 2020-07-27 11:31:49,092: Time steps: 2457600
+INFO: 2020-07-27 11:31:49,092: Reward: 53.68492
+INFO: 2020-07-27 11:31:49,092: Test sigma: 0.77929
+INFO: 2020-07-27 11:31:49,092:  
+INFO: 2020-07-27 11:33:33,192: Iterations: 160
+INFO: 2020-07-27 11:33:33,192: Time steps: 2621440
+INFO: 2020-07-27 11:33:33,192: Reward: 50.07650
+INFO: 2020-07-27 11:33:33,192: Test sigma: 0.80730
+INFO: 2020-07-27 11:33:33,193:  
+INFO: 2020-07-27 11:35:17,230: Iterations: 170
+INFO: 2020-07-27 11:35:17,231: Time steps: 2785280
+INFO: 2020-07-27 11:35:17,231: Reward: 76.35224
+INFO: 2020-07-27 11:35:17,231: Test sigma: 0.78313
+INFO: 2020-07-27 11:35:17,231:  
+INFO: 2020-07-27 11:35:17,231: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 11:37:01,794: Iterations: 180
+INFO: 2020-07-27 11:37:01,794: Time steps: 2949120
+INFO: 2020-07-27 11:37:01,794: Reward: 95.65829
+INFO: 2020-07-27 11:37:01,794: Test sigma: 0.75864
+INFO: 2020-07-27 11:37:01,794:  
+INFO: 2020-07-27 11:37:01,794: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 11:38:46,118: Iterations: 190
+INFO: 2020-07-27 11:38:46,119: Time steps: 3112960
+INFO: 2020-07-27 11:38:46,119: Reward: 40.96926
+INFO: 2020-07-27 11:38:46,119: Test sigma: 0.76087
+INFO: 2020-07-27 11:38:46,119:  
+INFO: 2020-07-27 11:40:29,833: Iterations: 200
+INFO: 2020-07-27 11:40:29,834: Time steps: 3276800
+INFO: 2020-07-27 11:40:29,834: Reward: 72.44635
+INFO: 2020-07-27 11:40:29,834: Test sigma: 0.72881
+INFO: 2020-07-27 11:40:29,834:  
+INFO: 2020-07-27 11:42:13,995: Iterations: 210
+INFO: 2020-07-27 11:42:13,996: Time steps: 3440640
+INFO: 2020-07-27 11:42:13,996: Reward: 83.31417
+INFO: 2020-07-27 11:42:13,996: Test sigma: 0.72108
+INFO: 2020-07-27 11:42:13,996:  
+INFO: 2020-07-27 11:43:57,992: Iterations: 220
+INFO: 2020-07-27 11:43:57,992: Time steps: 3604480
+INFO: 2020-07-27 11:43:57,992: Reward: 62.51970
+INFO: 2020-07-27 11:43:57,992: Test sigma: 0.72246
+INFO: 2020-07-27 11:43:57,993:  
+INFO: 2020-07-27 11:45:42,344: Iterations: 230
+INFO: 2020-07-27 11:45:42,345: Time steps: 3768320
+INFO: 2020-07-27 11:45:42,345: Reward: 66.24297
+INFO: 2020-07-27 11:45:42,345: Test sigma: 0.70773
+INFO: 2020-07-27 11:45:42,345:  
+INFO: 2020-07-27 11:47:26,490: Iterations: 240
+INFO: 2020-07-27 11:47:26,490: Time steps: 3932160
+INFO: 2020-07-27 11:47:26,490: Reward: 87.52517
+INFO: 2020-07-27 11:47:26,490: Test sigma: 0.67979
+INFO: 2020-07-27 11:47:26,491:  
+INFO: 2020-07-27 11:49:10,095: Iterations: 250
+INFO: 2020-07-27 11:49:10,095: Time steps: 4096000
+INFO: 2020-07-27 11:49:10,095: Reward: 74.21148
+INFO: 2020-07-27 11:49:10,095: Test sigma: 0.65584
+INFO: 2020-07-27 11:49:10,095:  
+INFO: 2020-07-27 11:50:54,691: Iterations: 260
+INFO: 2020-07-27 11:50:54,691: Time steps: 4259840
+INFO: 2020-07-27 11:50:54,691: Reward: 58.42945
+INFO: 2020-07-27 11:50:54,691: Test sigma: 0.69012
+INFO: 2020-07-27 11:50:54,691:  
+INFO: 2020-07-27 11:52:39,010: Iterations: 270
+INFO: 2020-07-27 11:52:39,010: Time steps: 4423680
+INFO: 2020-07-27 11:52:39,010: Reward: 58.36071
+INFO: 2020-07-27 11:52:39,010: Test sigma: 0.69442
+INFO: 2020-07-27 11:52:39,010:  
+INFO: 2020-07-27 11:54:22,954: Iterations: 280
+INFO: 2020-07-27 11:54:22,954: Time steps: 4587520
+INFO: 2020-07-27 11:54:22,954: Reward: 60.65063
+INFO: 2020-07-27 11:54:22,954: Test sigma: 0.68092
+INFO: 2020-07-27 11:54:22,954:  
+INFO: 2020-07-27 11:56:07,036: Iterations: 290
+INFO: 2020-07-27 11:56:07,036: Time steps: 4751360
+INFO: 2020-07-27 11:56:07,036: Reward: 54.09078
+INFO: 2020-07-27 11:56:07,036: Test sigma: 0.67008
+INFO: 2020-07-27 11:56:07,037:  
+INFO: 2020-07-27 11:57:51,022: Iterations: 300
+INFO: 2020-07-27 11:57:51,022: Time steps: 4915200
+INFO: 2020-07-27 11:57:51,022: Reward: 84.35713
+INFO: 2020-07-27 11:57:51,023: Test sigma: 0.67109
+INFO: 2020-07-27 11:57:51,023:  
+INFO: 2020-07-27 11:59:35,796: Iterations: 310
+INFO: 2020-07-27 11:59:35,796: Time steps: 5079040
+INFO: 2020-07-27 11:59:35,796: Reward: 57.36632
+INFO: 2020-07-27 11:59:35,796: Test sigma: 0.65873
+INFO: 2020-07-27 11:59:35,796:  
+INFO: 2020-07-27 12:01:19,987: Iterations: 320
+INFO: 2020-07-27 12:01:19,987: Time steps: 5242880
+INFO: 2020-07-27 12:01:19,987: Reward: 74.77148
+INFO: 2020-07-27 12:01:19,987: Test sigma: 0.64509
+INFO: 2020-07-27 12:01:19,987:  
+INFO: 2020-07-27 12:03:04,487: Iterations: 330
+INFO: 2020-07-27 12:03:04,487: Time steps: 5406720
+INFO: 2020-07-27 12:03:04,487: Reward: 53.45268
+INFO: 2020-07-27 12:03:04,487: Test sigma: 0.66400
+INFO: 2020-07-27 12:03:04,487:  
+INFO: 2020-07-27 12:04:54,736:  
+INFO: 2020-07-27 12:04:54,736: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-27 12:04:54,736: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-27 12:04:54,737:  
+INFO: 2020-07-27 12:04:54,737: ----------------------------------------------
+INFO: 2020-07-27 12:04:54,737: Experiment Settings
+INFO: 2020-07-27 12:04:54,737: ----------------------------------------------
+INFO: 2020-07-27 12:04:54,737: Number of workers: 32
+INFO: 2020-07-27 12:04:54,737: Batch size: 512
+INFO: 2020-07-27 12:04:54,737: Iterations: 2500
+INFO: 2020-07-27 12:04:54,737: Log interval: 10
+INFO: 2020-07-27 12:04:54,737: Experiment runs: 2500
+INFO: 2020-07-27 12:04:54,737: Number of test runs: 30
+INFO: 2020-07-27 12:04:54,737: ----------------------------------------------
+INFO: 2020-07-27 12:04:54,737: Network Parameters
+INFO: 2020-07-27 12:04:54,737: ----------------------------------------------
+INFO: 2020-07-27 12:04:54,737: Network input dim: 22
+INFO: 2020-07-27 12:04:54,737: Network hidden dim: 256
+INFO: 2020-07-27 12:04:54,737: Network layers: 2
+INFO: 2020-07-27 12:04:54,737: Network output dim: 2
+INFO: 2020-07-27 12:04:54,737: ----------------------------------------------
+INFO: 2020-07-27 12:04:54,738: Environment Parameters
+INFO: 2020-07-27 12:04:54,738: ----------------------------------------------
+INFO: 2020-07-27 12:04:54,738: Trajectory length: 2
+INFO: 2020-07-27 12:04:54,738: Obs future waypoints: 1
+INFO: 2020-07-27 12:04:54,738: Distribution temperature: 150
+INFO: 2020-07-27 12:04:54,738: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-27 12:04:54,738: Maximum spread: 1.5707963267948966
+INFO: 2020-07-27 12:04:55,615:  
+INFO: 2020-07-27 12:04:55,615: Iterations: 0
+INFO: 2020-07-27 12:04:55,616: Time steps: 0
+INFO: 2020-07-27 12:04:55,616: Reward: 49.87177
+INFO: 2020-07-27 12:04:55,616: Test sigma: 1.06000
+INFO: 2020-07-27 12:04:55,616:  
+INFO: 2020-07-27 12:06:38,226: Iterations: 10
+INFO: 2020-07-27 12:06:38,226: Time steps: 163840
+INFO: 2020-07-27 12:06:38,226: Reward: 558.39974
+INFO: 2020-07-27 12:06:38,226: Test sigma: 1.00655
+INFO: 2020-07-27 12:06:38,227:  
+INFO: 2020-07-27 12:06:38,227: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 12:08:21,136: Iterations: 20
+INFO: 2020-07-27 12:08:21,136: Time steps: 327680
+INFO: 2020-07-27 12:08:21,136: Reward: 592.75604
+INFO: 2020-07-27 12:08:21,136: Test sigma: 1.03041
+INFO: 2020-07-27 12:08:21,137:  
+INFO: 2020-07-27 12:08:21,137: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 12:10:04,380: Iterations: 30
+INFO: 2020-07-27 12:10:04,380: Time steps: 491520
+INFO: 2020-07-27 12:10:04,380: Reward: 490.34864
+INFO: 2020-07-27 12:10:04,380: Test sigma: 0.98960
+INFO: 2020-07-27 12:10:04,380:  
+INFO: 2020-07-27 12:11:47,084: Iterations: 40
+INFO: 2020-07-27 12:11:47,084: Time steps: 655360
+INFO: 2020-07-27 12:11:47,084: Reward: 665.56449
+INFO: 2020-07-27 12:11:47,084: Test sigma: 0.89924
+INFO: 2020-07-27 12:11:47,084:  
+INFO: 2020-07-27 12:11:47,084: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 12:13:30,560: Iterations: 50
+INFO: 2020-07-27 12:13:30,560: Time steps: 819200
+INFO: 2020-07-27 12:13:30,560: Reward: 694.14869
+INFO: 2020-07-27 12:13:30,560: Test sigma: 0.89812
+INFO: 2020-07-27 12:13:30,561:  
+INFO: 2020-07-27 12:13:30,561: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 12:15:13,819: Iterations: 60
+INFO: 2020-07-27 12:15:13,819: Time steps: 983040
+INFO: 2020-07-27 12:15:13,819: Reward: 603.42413
+INFO: 2020-07-27 12:15:13,819: Test sigma: 0.90537
+INFO: 2020-07-27 12:15:13,819:  
+INFO: 2020-07-27 12:16:56,964: Iterations: 70
+INFO: 2020-07-27 12:16:56,964: Time steps: 1146880
+INFO: 2020-07-27 12:16:56,965: Reward: 489.23415
+INFO: 2020-07-27 12:16:56,965: Test sigma: 0.91383
+INFO: 2020-07-27 12:16:56,965:  
+INFO: 2020-07-27 12:18:40,549: Iterations: 80
+INFO: 2020-07-27 12:18:40,549: Time steps: 1310720
+INFO: 2020-07-27 12:18:40,549: Reward: 507.62651
+INFO: 2020-07-27 12:18:40,549: Test sigma: 0.87335
+INFO: 2020-07-27 12:18:40,549:  
+INFO: 2020-07-27 12:20:24,304: Iterations: 90
+INFO: 2020-07-27 12:20:24,304: Time steps: 1474560
+INFO: 2020-07-27 12:20:24,304: Reward: 565.12936
+INFO: 2020-07-27 12:20:24,305: Test sigma: 0.84500
+INFO: 2020-07-27 12:20:24,305:  
+INFO: 2020-07-27 12:22:07,104: Iterations: 100
+INFO: 2020-07-27 12:22:07,104: Time steps: 1638400
+INFO: 2020-07-27 12:22:07,104: Reward: 524.56123
+INFO: 2020-07-27 12:22:07,104: Test sigma: 0.79299
+INFO: 2020-07-27 12:22:07,104:  
+INFO: 2020-07-27 12:23:50,003: Iterations: 110
+INFO: 2020-07-27 12:23:50,003: Time steps: 1802240
+INFO: 2020-07-27 12:23:50,003: Reward: 658.97269
+INFO: 2020-07-27 12:23:50,003: Test sigma: 0.79320
+INFO: 2020-07-27 12:23:50,003:  
+INFO: 2020-07-27 12:25:32,987: Iterations: 120
+INFO: 2020-07-27 12:25:32,987: Time steps: 1966080
+INFO: 2020-07-27 12:25:32,987: Reward: 518.01306
+INFO: 2020-07-27 12:25:32,988: Test sigma: 0.72669
+INFO: 2020-07-27 12:25:32,988:  
+INFO: 2020-07-27 12:27:16,421: Iterations: 130
+INFO: 2020-07-27 12:27:16,421: Time steps: 2129920
+INFO: 2020-07-27 12:27:16,421: Reward: 582.83226
+INFO: 2020-07-27 12:27:16,421: Test sigma: 0.69551
+INFO: 2020-07-27 12:27:16,421:  
+INFO: 2020-07-27 12:28:59,515: Iterations: 140
+INFO: 2020-07-27 12:28:59,515: Time steps: 2293760
+INFO: 2020-07-27 12:28:59,515: Reward: 733.83869
+INFO: 2020-07-27 12:28:59,515: Test sigma: 0.69834
+INFO: 2020-07-27 12:28:59,515:  
+INFO: 2020-07-27 12:28:59,515: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 12:30:43,525: Iterations: 150
+INFO: 2020-07-27 12:30:43,525: Time steps: 2457600
+INFO: 2020-07-27 12:30:43,525: Reward: 632.65543
+INFO: 2020-07-27 12:30:43,525: Test sigma: 0.70991
+INFO: 2020-07-27 12:30:43,525:  
+INFO: 2020-07-27 12:32:26,610: Iterations: 160
+INFO: 2020-07-27 12:32:26,611: Time steps: 2621440
+INFO: 2020-07-27 12:32:26,611: Reward: 654.40957
+INFO: 2020-07-27 12:32:26,611: Test sigma: 0.74025
+INFO: 2020-07-27 12:32:26,611:  
+INFO: 2020-07-27 12:34:09,998: Iterations: 170
+INFO: 2020-07-27 12:34:09,998: Time steps: 2785280
+INFO: 2020-07-27 12:34:09,998: Reward: 714.66511
+INFO: 2020-07-27 12:34:09,998: Test sigma: 0.69410
+INFO: 2020-07-27 12:34:09,998:  
+INFO: 2020-07-27 12:35:53,586: Iterations: 180
+INFO: 2020-07-27 12:35:53,586: Time steps: 2949120
+INFO: 2020-07-27 12:35:53,586: Reward: 708.93894
+INFO: 2020-07-27 12:35:53,586: Test sigma: 0.65945
+INFO: 2020-07-27 12:35:53,587:  
+INFO: 2020-07-27 12:37:37,339: Iterations: 190
+INFO: 2020-07-27 12:37:37,339: Time steps: 3112960
+INFO: 2020-07-27 12:37:37,339: Reward: 561.70714
+INFO: 2020-07-27 12:37:37,339: Test sigma: 0.62756
+INFO: 2020-07-27 12:37:37,339:  
+INFO: 2020-07-27 12:39:21,252: Iterations: 200
+INFO: 2020-07-27 12:39:21,252: Time steps: 3276800
+INFO: 2020-07-27 12:39:21,252: Reward: 650.71808
+INFO: 2020-07-27 12:39:21,252: Test sigma: 0.60636
+INFO: 2020-07-27 12:39:21,252:  
+INFO: 2020-07-27 12:41:05,206: Iterations: 210
+INFO: 2020-07-27 12:41:05,206: Time steps: 3440640
+INFO: 2020-07-27 12:41:05,206: Reward: 714.78182
+INFO: 2020-07-27 12:41:05,206: Test sigma: 0.57518
+INFO: 2020-07-27 12:41:05,206:  
+INFO: 2020-07-27 12:42:47,788: Iterations: 220
+INFO: 2020-07-27 12:42:47,788: Time steps: 3604480
+INFO: 2020-07-27 12:42:47,788: Reward: 762.69927
+INFO: 2020-07-27 12:42:47,788: Test sigma: 0.56967
+INFO: 2020-07-27 12:42:47,788:  
+INFO: 2020-07-27 12:42:47,788: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 12:44:31,329: Iterations: 230
+INFO: 2020-07-27 12:44:31,329: Time steps: 3768320
+INFO: 2020-07-27 12:44:31,329: Reward: 707.95910
+INFO: 2020-07-27 12:44:31,329: Test sigma: 0.55411
+INFO: 2020-07-27 12:44:31,329:  
+INFO: 2020-07-27 12:46:14,693: Iterations: 240
+INFO: 2020-07-27 12:46:14,693: Time steps: 3932160
+INFO: 2020-07-27 12:46:14,693: Reward: 788.73627
+INFO: 2020-07-27 12:46:14,693: Test sigma: 0.54093
+INFO: 2020-07-27 12:46:14,693:  
+INFO: 2020-07-27 12:46:14,693: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 12:47:57,591: Iterations: 250
+INFO: 2020-07-27 12:47:57,591: Time steps: 4096000
+INFO: 2020-07-27 12:47:57,591: Reward: 777.53574
+INFO: 2020-07-27 12:47:57,591: Test sigma: 0.50600
+INFO: 2020-07-27 12:47:57,591:  
+INFO: 2020-07-27 12:49:40,801: Iterations: 260
+INFO: 2020-07-27 12:49:40,801: Time steps: 4259840
+INFO: 2020-07-27 12:49:40,801: Reward: 746.42042
+INFO: 2020-07-27 12:49:40,801: Test sigma: 0.49844
+INFO: 2020-07-27 12:49:40,801:  
+INFO: 2020-07-27 12:51:24,707: Iterations: 270
+INFO: 2020-07-27 12:51:24,707: Time steps: 4423680
+INFO: 2020-07-27 12:51:24,707: Reward: 728.62840
+INFO: 2020-07-27 12:51:24,707: Test sigma: 0.49861
+INFO: 2020-07-27 12:51:24,707:  
+INFO: 2020-07-27 12:53:08,144: Iterations: 280
+INFO: 2020-07-27 12:53:08,144: Time steps: 4587520
+INFO: 2020-07-27 12:53:08,144: Reward: 776.76231
+INFO: 2020-07-27 12:53:08,144: Test sigma: 0.46816
+INFO: 2020-07-27 12:53:08,144:  
+INFO: 2020-07-27 12:54:51,471: Iterations: 290
+INFO: 2020-07-27 12:54:51,471: Time steps: 4751360
+INFO: 2020-07-27 12:54:51,471: Reward: 735.18619
+INFO: 2020-07-27 12:54:51,472: Test sigma: 0.44743
+INFO: 2020-07-27 12:54:51,472:  
+INFO: 2020-07-27 12:56:35,751: Iterations: 300
+INFO: 2020-07-27 12:56:35,752: Time steps: 4915200
+INFO: 2020-07-27 12:56:35,752: Reward: 734.14074
+INFO: 2020-07-27 12:56:35,752: Test sigma: 0.44817
+INFO: 2020-07-27 12:56:35,752:  
+INFO: 2020-07-27 12:58:20,228: Iterations: 310
+INFO: 2020-07-27 12:58:20,228: Time steps: 5079040
+INFO: 2020-07-27 12:58:20,228: Reward: 529.36257
+INFO: 2020-07-27 12:58:20,228: Test sigma: 0.44401
+INFO: 2020-07-27 12:58:20,228:  
+INFO: 2020-07-27 13:00:04,413: Iterations: 320
+INFO: 2020-07-27 13:00:04,413: Time steps: 5242880
+INFO: 2020-07-27 13:00:04,413: Reward: 554.04905
+INFO: 2020-07-27 13:00:04,413: Test sigma: 0.42221
+INFO: 2020-07-27 13:00:04,413:  
+INFO: 2020-07-27 13:01:48,461: Iterations: 330
+INFO: 2020-07-27 13:01:48,461: Time steps: 5406720
+INFO: 2020-07-27 13:01:48,461: Reward: 584.80148
+INFO: 2020-07-27 13:01:48,462: Test sigma: 0.44205
+INFO: 2020-07-27 13:01:48,462:  
+INFO: 2020-07-27 13:03:32,560: Iterations: 340
+INFO: 2020-07-27 13:03:32,560: Time steps: 5570560
+INFO: 2020-07-27 13:03:32,560: Reward: 518.98779
+INFO: 2020-07-27 13:03:32,560: Test sigma: 0.44075
+INFO: 2020-07-27 13:03:32,560:  
+INFO: 2020-07-27 13:05:16,376: Iterations: 350
+INFO: 2020-07-27 13:05:16,376: Time steps: 5734400
+INFO: 2020-07-27 13:05:16,376: Reward: 862.23713
+INFO: 2020-07-27 13:05:16,376: Test sigma: 0.37566
+INFO: 2020-07-27 13:05:16,376:  
+INFO: 2020-07-27 13:05:16,376: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:07:01,266: Iterations: 360
+INFO: 2020-07-27 13:07:01,266: Time steps: 5898240
+INFO: 2020-07-27 13:07:01,266: Reward: 646.95360
+INFO: 2020-07-27 13:07:01,266: Test sigma: 0.37033
+INFO: 2020-07-27 13:07:01,266:  
+INFO: 2020-07-27 13:09:19,671:  
+INFO: 2020-07-27 13:09:19,671: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-27 13:09:19,671: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-27 13:09:19,671:  
+INFO: 2020-07-27 13:09:19,671: ----------------------------------------------
+INFO: 2020-07-27 13:09:19,671: Experiment Settings
+INFO: 2020-07-27 13:09:19,671: ----------------------------------------------
+INFO: 2020-07-27 13:09:19,671: Number of workers: 32
+INFO: 2020-07-27 13:09:19,671: Batch size: 512
+INFO: 2020-07-27 13:09:19,671: Iterations: 2500
+INFO: 2020-07-27 13:09:19,671: Log interval: 10
+INFO: 2020-07-27 13:09:19,671: Experiment runs: 2500
+INFO: 2020-07-27 13:09:19,671: Number of test runs: 30
+INFO: 2020-07-27 13:09:19,671: ----------------------------------------------
+INFO: 2020-07-27 13:09:19,671: Network Parameters
+INFO: 2020-07-27 13:09:19,672: ----------------------------------------------
+INFO: 2020-07-27 13:09:19,672: Network input dim: 22
+INFO: 2020-07-27 13:09:19,672: Network hidden dim: 256
+INFO: 2020-07-27 13:09:19,672: Network layers: 2
+INFO: 2020-07-27 13:09:19,672: Network output dim: 2
+INFO: 2020-07-27 13:09:19,672: ----------------------------------------------
+INFO: 2020-07-27 13:09:19,672: Environment Parameters
+INFO: 2020-07-27 13:09:19,672: ----------------------------------------------
+INFO: 2020-07-27 13:09:19,672: Trajectory length: 2
+INFO: 2020-07-27 13:09:19,672: Obs future waypoints: 1
+INFO: 2020-07-27 13:09:19,672: Distribution temperature: 150
+INFO: 2020-07-27 13:09:19,672: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-27 13:09:19,672: Maximum spread: 1.5707963267948966
+INFO: 2020-07-27 13:09:20,548:  
+INFO: 2020-07-27 13:09:20,548: Iterations: 0
+INFO: 2020-07-27 13:09:20,548: Time steps: 0
+INFO: 2020-07-27 13:09:20,548: Reward: -60.00000
+INFO: 2020-07-27 13:09:20,548: Test sigma: 0.98335
+INFO: 2020-07-27 13:09:20,548:  
+INFO: 2020-07-27 13:10:59,795: Iterations: 10
+INFO: 2020-07-27 13:10:59,795: Time steps: 163840
+INFO: 2020-07-27 13:10:59,795: Reward: -9.69818
+INFO: 2020-07-27 13:10:59,795: Test sigma: 0.90513
+INFO: 2020-07-27 13:10:59,795:  
+INFO: 2020-07-27 13:10:59,795: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:12:42,172: Iterations: 20
+INFO: 2020-07-27 13:12:42,173: Time steps: 327680
+INFO: 2020-07-27 13:12:42,173: Reward: 28.56167
+INFO: 2020-07-27 13:12:42,173: Test sigma: 0.96253
+INFO: 2020-07-27 13:12:42,173:  
+INFO: 2020-07-27 13:12:42,173: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:14:24,703: Iterations: 30
+INFO: 2020-07-27 13:14:24,703: Time steps: 491520
+INFO: 2020-07-27 13:14:24,703: Reward: 65.12766
+INFO: 2020-07-27 13:14:24,703: Test sigma: 1.06017
+INFO: 2020-07-27 13:14:24,703:  
+INFO: 2020-07-27 13:14:24,703: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:16:07,389: Iterations: 40
+INFO: 2020-07-27 13:16:07,390: Time steps: 655360
+INFO: 2020-07-27 13:16:07,390: Reward: 97.95291
+INFO: 2020-07-27 13:16:07,390: Test sigma: 0.96915
+INFO: 2020-07-27 13:16:07,390:  
+INFO: 2020-07-27 13:16:07,390: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:17:50,740: Iterations: 50
+INFO: 2020-07-27 13:17:50,741: Time steps: 819200
+INFO: 2020-07-27 13:17:50,741: Reward: 104.91138
+INFO: 2020-07-27 13:17:50,741: Test sigma: 0.91102
+INFO: 2020-07-27 13:17:50,741:  
+INFO: 2020-07-27 13:17:50,741: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:19:34,065: Iterations: 60
+INFO: 2020-07-27 13:19:34,065: Time steps: 983040
+INFO: 2020-07-27 13:19:34,065: Reward: 79.79708
+INFO: 2020-07-27 13:19:34,066: Test sigma: 0.88089
+INFO: 2020-07-27 13:19:34,066:  
+INFO: 2020-07-27 13:21:17,782: Iterations: 70
+INFO: 2020-07-27 13:21:17,782: Time steps: 1146880
+INFO: 2020-07-27 13:21:17,782: Reward: 101.24810
+INFO: 2020-07-27 13:21:17,782: Test sigma: 0.90382
+INFO: 2020-07-27 13:21:17,783:  
+INFO: 2020-07-27 13:23:00,736: Iterations: 80
+INFO: 2020-07-27 13:23:00,736: Time steps: 1310720
+INFO: 2020-07-27 13:23:00,736: Reward: 104.95003
+INFO: 2020-07-27 13:23:00,736: Test sigma: 0.90811
+INFO: 2020-07-27 13:23:00,736:  
+INFO: 2020-07-27 13:23:00,736: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:24:44,426: Iterations: 90
+INFO: 2020-07-27 13:24:44,426: Time steps: 1474560
+INFO: 2020-07-27 13:24:44,426: Reward: 127.55740
+INFO: 2020-07-27 13:24:44,426: Test sigma: 0.82014
+INFO: 2020-07-27 13:24:44,426:  
+INFO: 2020-07-27 13:24:44,427: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:26:27,662: Iterations: 100
+INFO: 2020-07-27 13:26:27,662: Time steps: 1638400
+INFO: 2020-07-27 13:26:27,663: Reward: 88.95325
+INFO: 2020-07-27 13:26:27,663: Test sigma: 0.80236
+INFO: 2020-07-27 13:26:27,663:  
+INFO: 2020-07-27 13:28:11,334: Iterations: 110
+INFO: 2020-07-27 13:28:11,334: Time steps: 1802240
+INFO: 2020-07-27 13:28:11,334: Reward: 73.59935
+INFO: 2020-07-27 13:28:11,334: Test sigma: 0.72241
+INFO: 2020-07-27 13:28:11,334:  
+INFO: 2020-07-27 13:29:53,950: Iterations: 120
+INFO: 2020-07-27 13:29:53,950: Time steps: 1966080
+INFO: 2020-07-27 13:29:53,950: Reward: 120.30986
+INFO: 2020-07-27 13:29:53,950: Test sigma: 0.76386
+INFO: 2020-07-27 13:29:53,950:  
+INFO: 2020-07-27 13:32:49,517:  
+INFO: 2020-07-27 13:32:49,517: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-27 13:32:49,517: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-27 13:32:49,517:  
+INFO: 2020-07-27 13:32:49,517: ----------------------------------------------
+INFO: 2020-07-27 13:32:49,518: Experiment Settings
+INFO: 2020-07-27 13:32:49,518: ----------------------------------------------
+INFO: 2020-07-27 13:32:49,518: Number of workers: 32
+INFO: 2020-07-27 13:32:49,518: Batch size: 512
+INFO: 2020-07-27 13:32:49,518: Iterations: 2500
+INFO: 2020-07-27 13:32:49,518: Log interval: 10
+INFO: 2020-07-27 13:32:49,518: Experiment runs: 2500
+INFO: 2020-07-27 13:32:49,518: Number of test runs: 30
+INFO: 2020-07-27 13:32:49,518: ----------------------------------------------
+INFO: 2020-07-27 13:32:49,518: Network Parameters
+INFO: 2020-07-27 13:32:49,518: ----------------------------------------------
+INFO: 2020-07-27 13:32:49,518: Network input dim: 22
+INFO: 2020-07-27 13:32:49,518: Network hidden dim: 256
+INFO: 2020-07-27 13:32:49,518: Network layers: 2
+INFO: 2020-07-27 13:32:49,518: Network output dim: 2
+INFO: 2020-07-27 13:32:49,518: ----------------------------------------------
+INFO: 2020-07-27 13:32:49,518: Environment Parameters
+INFO: 2020-07-27 13:32:49,519: ----------------------------------------------
+INFO: 2020-07-27 13:32:49,519: Trajectory length: 2
+INFO: 2020-07-27 13:32:49,519: Obs future waypoints: 1
+INFO: 2020-07-27 13:32:49,519: Distribution temperature: 150
+INFO: 2020-07-27 13:32:49,519: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-27 13:32:49,519: Maximum spread: 1.5707963267948966
+INFO: 2020-07-27 13:32:50,403:  
+INFO: 2020-07-27 13:32:50,403: Iterations: 0
+INFO: 2020-07-27 13:32:50,403: Time steps: 0
+INFO: 2020-07-27 13:32:50,403: Reward: -60.00000
+INFO: 2020-07-27 13:32:50,403: Test sigma: 1.00413
+INFO: 2020-07-27 13:32:50,403:  
+INFO: 2020-07-27 13:34:10,294:  
+INFO: 2020-07-27 13:34:10,294: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-27 13:34:10,294: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-27 13:34:10,294:  
+INFO: 2020-07-27 13:34:10,295: ----------------------------------------------
+INFO: 2020-07-27 13:34:10,295: Experiment Settings
+INFO: 2020-07-27 13:34:10,295: ----------------------------------------------
+INFO: 2020-07-27 13:34:10,295: Number of workers: 32
+INFO: 2020-07-27 13:34:10,295: Batch size: 512
+INFO: 2020-07-27 13:34:10,295: Iterations: 2500
+INFO: 2020-07-27 13:34:10,295: Log interval: 10
+INFO: 2020-07-27 13:34:10,295: Experiment runs: 2500
+INFO: 2020-07-27 13:34:10,295: Number of test runs: 30
+INFO: 2020-07-27 13:34:10,295: ----------------------------------------------
+INFO: 2020-07-27 13:34:10,295: Network Parameters
+INFO: 2020-07-27 13:34:10,295: ----------------------------------------------
+INFO: 2020-07-27 13:34:10,295: Network input dim: 22
+INFO: 2020-07-27 13:34:10,295: Network hidden dim: 256
+INFO: 2020-07-27 13:34:10,295: Network layers: 2
+INFO: 2020-07-27 13:34:10,296: Network output dim: 2
+INFO: 2020-07-27 13:34:10,296: ----------------------------------------------
+INFO: 2020-07-27 13:34:10,296: Environment Parameters
+INFO: 2020-07-27 13:34:10,296: ----------------------------------------------
+INFO: 2020-07-27 13:34:10,296: Trajectory length: 2
+INFO: 2020-07-27 13:34:10,296: Obs future waypoints: 1
+INFO: 2020-07-27 13:34:10,296: Distribution temperature: 150
+INFO: 2020-07-27 13:34:10,296: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-27 13:34:10,296: Maximum spread: 1.5707963267948966
+INFO: 2020-07-27 13:34:11,177:  
+INFO: 2020-07-27 13:34:11,177: Iterations: 0
+INFO: 2020-07-27 13:34:11,177: Time steps: 0
+INFO: 2020-07-27 13:34:11,177: Reward: -3.59978
+INFO: 2020-07-27 13:34:11,177: Test sigma: 1.04792
+INFO: 2020-07-27 13:34:11,177:  
+INFO: 2020-07-27 13:35:55,808: Iterations: 10
+INFO: 2020-07-27 13:35:55,809: Time steps: 163840
+INFO: 2020-07-27 13:35:55,809: Reward: 24.88454
+INFO: 2020-07-27 13:35:55,809: Test sigma: 0.98240
+INFO: 2020-07-27 13:35:55,809:  
+INFO: 2020-07-27 13:35:55,809: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:37:40,106: Iterations: 20
+INFO: 2020-07-27 13:37:40,107: Time steps: 327680
+INFO: 2020-07-27 13:37:40,107: Reward: 54.53997
+INFO: 2020-07-27 13:37:40,107: Test sigma: 0.95899
+INFO: 2020-07-27 13:37:40,107:  
+INFO: 2020-07-27 13:37:40,107: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:39:22,656: Iterations: 30
+INFO: 2020-07-27 13:39:22,657: Time steps: 491520
+INFO: 2020-07-27 13:39:22,657: Reward: 48.91289
+INFO: 2020-07-27 13:39:22,657: Test sigma: 0.85891
+INFO: 2020-07-27 13:39:22,657:  
+INFO: 2020-07-27 13:41:05,413: Iterations: 40
+INFO: 2020-07-27 13:41:05,413: Time steps: 655360
+INFO: 2020-07-27 13:41:05,413: Reward: 74.11669
+INFO: 2020-07-27 13:41:05,413: Test sigma: 0.82156
+INFO: 2020-07-27 13:41:05,413:  
+INFO: 2020-07-27 13:41:05,413: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:42:48,456: Iterations: 50
+INFO: 2020-07-27 13:42:48,456: Time steps: 819200
+INFO: 2020-07-27 13:42:48,456: Reward: 92.11039
+INFO: 2020-07-27 13:42:48,456: Test sigma: 0.75229
+INFO: 2020-07-27 13:42:48,456:  
+INFO: 2020-07-27 13:42:48,456: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:44:31,158: Iterations: 60
+INFO: 2020-07-27 13:44:31,158: Time steps: 983040
+INFO: 2020-07-27 13:44:31,158: Reward: 97.43150
+INFO: 2020-07-27 13:44:31,158: Test sigma: 0.76789
+INFO: 2020-07-27 13:44:31,158:  
+INFO: 2020-07-27 13:44:31,158: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:46:14,297: Iterations: 70
+INFO: 2020-07-27 13:46:14,298: Time steps: 1146880
+INFO: 2020-07-27 13:46:14,298: Reward: 174.41442
+INFO: 2020-07-27 13:46:14,298: Test sigma: 0.78083
+INFO: 2020-07-27 13:46:14,298:  
+INFO: 2020-07-27 13:46:14,298: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:47:57,095: Iterations: 80
+INFO: 2020-07-27 13:47:57,096: Time steps: 1310720
+INFO: 2020-07-27 13:47:57,096: Reward: 109.22224
+INFO: 2020-07-27 13:47:57,096: Test sigma: 0.76508
+INFO: 2020-07-27 13:47:57,096:  
+INFO: 2020-07-27 13:49:40,173: Iterations: 90
+INFO: 2020-07-27 13:49:40,173: Time steps: 1474560
+INFO: 2020-07-27 13:49:40,173: Reward: 130.87818
+INFO: 2020-07-27 13:49:40,174: Test sigma: 0.76274
+INFO: 2020-07-27 13:49:40,174:  
+INFO: 2020-07-27 13:51:23,608: Iterations: 100
+INFO: 2020-07-27 13:51:23,609: Time steps: 1638400
+INFO: 2020-07-27 13:51:23,609: Reward: 138.31887
+INFO: 2020-07-27 13:51:23,609: Test sigma: 0.69662
+INFO: 2020-07-27 13:51:23,609:  
+INFO: 2020-07-27 13:53:07,253: Iterations: 110
+INFO: 2020-07-27 13:53:07,253: Time steps: 1802240
+INFO: 2020-07-27 13:53:07,253: Reward: 151.89661
+INFO: 2020-07-27 13:53:07,253: Test sigma: 0.67074
+INFO: 2020-07-27 13:53:07,253:  
+INFO: 2020-07-27 13:54:51,027: Iterations: 120
+INFO: 2020-07-27 13:54:51,027: Time steps: 1966080
+INFO: 2020-07-27 13:54:51,027: Reward: 172.67447
+INFO: 2020-07-27 13:54:51,027: Test sigma: 0.65032
+INFO: 2020-07-27 13:54:51,027:  
+INFO: 2020-07-27 13:56:34,187: Iterations: 130
+INFO: 2020-07-27 13:56:34,187: Time steps: 2129920
+INFO: 2020-07-27 13:56:34,187: Reward: 197.17839
+INFO: 2020-07-27 13:56:34,188: Test sigma: 0.63010
+INFO: 2020-07-27 13:56:34,188:  
+INFO: 2020-07-27 13:56:34,188: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 13:58:17,215: Iterations: 140
+INFO: 2020-07-27 13:58:17,215: Time steps: 2293760
+INFO: 2020-07-27 13:58:17,215: Reward: 208.42332
+INFO: 2020-07-27 13:58:17,215: Test sigma: 0.59979
+INFO: 2020-07-27 13:58:17,215:  
+INFO: 2020-07-27 13:58:17,215: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 14:00:01,095: Iterations: 150
+INFO: 2020-07-27 14:00:01,096: Time steps: 2457600
+INFO: 2020-07-27 14:00:01,096: Reward: 188.59700
+INFO: 2020-07-27 14:00:01,096: Test sigma: 0.59330
+INFO: 2020-07-27 14:00:01,096:  
+INFO: 2020-07-27 14:01:44,126: Iterations: 160
+INFO: 2020-07-27 14:01:44,126: Time steps: 2621440
+INFO: 2020-07-27 14:01:44,126: Reward: 173.39865
+INFO: 2020-07-27 14:01:44,126: Test sigma: 0.57937
+INFO: 2020-07-27 14:01:44,126:  
+INFO: 2020-07-27 14:03:27,831: Iterations: 170
+INFO: 2020-07-27 14:03:27,831: Time steps: 2785280
+INFO: 2020-07-27 14:03:27,831: Reward: 196.23892
+INFO: 2020-07-27 14:03:27,831: Test sigma: 0.57274
+INFO: 2020-07-27 14:03:27,832:  
+INFO: 2020-07-27 14:05:11,740: Iterations: 180
+INFO: 2020-07-27 14:05:11,740: Time steps: 2949120
+INFO: 2020-07-27 14:05:11,740: Reward: 193.45470
+INFO: 2020-07-27 14:05:11,740: Test sigma: 0.56550
+INFO: 2020-07-27 14:05:11,740:  
+INFO: 2020-07-27 14:06:55,949: Iterations: 190
+INFO: 2020-07-27 14:06:55,950: Time steps: 3112960
+INFO: 2020-07-27 14:06:55,950: Reward: 219.00284
+INFO: 2020-07-27 14:06:55,950: Test sigma: 0.58346
+INFO: 2020-07-27 14:06:55,950:  
+INFO: 2020-07-27 14:06:55,950: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 14:08:39,439: Iterations: 200
+INFO: 2020-07-27 14:08:39,439: Time steps: 3276800
+INFO: 2020-07-27 14:08:39,440: Reward: 254.53393
+INFO: 2020-07-27 14:08:39,440: Test sigma: 0.60330
+INFO: 2020-07-27 14:08:39,440:  
+INFO: 2020-07-27 14:08:39,440: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 14:10:22,950: Iterations: 210
+INFO: 2020-07-27 14:10:22,951: Time steps: 3440640
+INFO: 2020-07-27 14:10:22,951: Reward: 224.47821
+INFO: 2020-07-27 14:10:22,951: Test sigma: 0.59316
+INFO: 2020-07-27 14:10:22,951:  
+INFO: 2020-07-27 14:12:07,029: Iterations: 220
+INFO: 2020-07-27 14:12:07,030: Time steps: 3604480
+INFO: 2020-07-27 14:12:07,030: Reward: 198.16780
+INFO: 2020-07-27 14:12:07,030: Test sigma: 0.60365
+INFO: 2020-07-27 14:12:07,030:  
+INFO: 2020-07-27 14:13:50,963: Iterations: 230
+INFO: 2020-07-27 14:13:50,964: Time steps: 3768320
+INFO: 2020-07-27 14:13:50,964: Reward: 226.29911
+INFO: 2020-07-27 14:13:50,964: Test sigma: 0.63011
+INFO: 2020-07-27 14:13:50,964:  
+INFO: 2020-07-27 14:15:35,089: Iterations: 240
+INFO: 2020-07-27 14:15:35,089: Time steps: 3932160
+INFO: 2020-07-27 14:15:35,090: Reward: 232.04376
+INFO: 2020-07-27 14:15:35,090: Test sigma: 0.66455
+INFO: 2020-07-27 14:15:35,090:  
+INFO: 2020-07-27 14:17:18,666: Iterations: 250
+INFO: 2020-07-27 14:17:18,666: Time steps: 4096000
+INFO: 2020-07-27 14:17:18,666: Reward: 193.46337
+INFO: 2020-07-27 14:17:18,666: Test sigma: 0.63622
+INFO: 2020-07-27 14:17:18,667:  
+INFO: 2020-07-27 14:19:03,086: Iterations: 260
+INFO: 2020-07-27 14:19:03,086: Time steps: 4259840
+INFO: 2020-07-27 14:19:03,086: Reward: 229.22805
+INFO: 2020-07-27 14:19:03,086: Test sigma: 0.63645
+INFO: 2020-07-27 14:19:03,086:  
+INFO: 2020-07-27 14:20:47,172: Iterations: 270
+INFO: 2020-07-27 14:20:47,172: Time steps: 4423680
+INFO: 2020-07-27 14:20:47,172: Reward: 227.29930
+INFO: 2020-07-27 14:20:47,172: Test sigma: 0.61699
+INFO: 2020-07-27 14:20:47,172:  
+INFO: 2020-07-27 14:22:31,068: Iterations: 280
+INFO: 2020-07-27 14:22:31,068: Time steps: 4587520
+INFO: 2020-07-27 14:22:31,068: Reward: 214.18759
+INFO: 2020-07-27 14:22:31,068: Test sigma: 0.62674
+INFO: 2020-07-27 14:22:31,068:  
+INFO: 2020-07-27 14:24:24,383: Iterations: 290
+INFO: 2020-07-27 14:24:24,385: Time steps: 4751360
+INFO: 2020-07-27 14:24:24,386: Reward: 186.37905
+INFO: 2020-07-27 14:24:24,387: Test sigma: 0.62150
+INFO: 2020-07-27 14:24:24,389:  
+INFO: 2020-07-27 14:26:32,849: Iterations: 300
+INFO: 2020-07-27 14:26:32,849: Time steps: 4915200
+INFO: 2020-07-27 14:26:32,850: Reward: 193.32460
+INFO: 2020-07-27 14:26:32,850: Test sigma: 0.63014
+INFO: 2020-07-27 14:26:32,850:  
+INFO: 2020-07-27 14:26:49,943:  
+INFO: 2020-07-27 14:26:49,944: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-27 14:26:49,944: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-27 14:26:49,944:  
+INFO: 2020-07-27 14:26:49,944: ----------------------------------------------
+INFO: 2020-07-27 14:26:49,944: Experiment Settings
+INFO: 2020-07-27 14:26:49,944: ----------------------------------------------
+INFO: 2020-07-27 14:26:49,944: Number of workers: 32
+INFO: 2020-07-27 14:26:49,944: Batch size: 512
+INFO: 2020-07-27 14:26:49,944: Iterations: 2500
+INFO: 2020-07-27 14:26:49,944: Log interval: 10
+INFO: 2020-07-27 14:26:49,944: Experiment runs: 2500
+INFO: 2020-07-27 14:26:49,944: Number of test runs: 30
+INFO: 2020-07-27 14:26:49,944: ----------------------------------------------
+INFO: 2020-07-27 14:26:49,944: Network Parameters
+INFO: 2020-07-27 14:26:49,944: ----------------------------------------------
+INFO: 2020-07-27 14:26:49,945: Network input dim: 22
+INFO: 2020-07-27 14:26:49,945: Network hidden dim: 256
+INFO: 2020-07-27 14:26:49,945: Network layers: 2
+INFO: 2020-07-27 14:26:49,945: Network output dim: 2
+INFO: 2020-07-27 14:26:49,945: ----------------------------------------------
+INFO: 2020-07-27 14:26:49,945: Environment Parameters
+INFO: 2020-07-27 14:26:49,945: ----------------------------------------------
+INFO: 2020-07-27 14:26:49,945: Trajectory length: 2
+INFO: 2020-07-27 14:26:49,945: Obs future waypoints: 1
+INFO: 2020-07-27 14:26:49,945: Distribution temperature: 150
+INFO: 2020-07-27 14:26:49,945: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-27 14:26:49,945: Maximum spread: 1.5707963267948966
+INFO: 2020-07-27 14:26:50,834:  
+INFO: 2020-07-27 14:26:50,834: Iterations: 0
+INFO: 2020-07-27 14:26:50,834: Time steps: 0
+INFO: 2020-07-27 14:26:50,834: Reward: -35.01406
+INFO: 2020-07-27 14:26:50,834: Test sigma: 1.00636
+INFO: 2020-07-27 14:26:50,834:  
+INFO: 2020-07-27 14:28:31,267: Iterations: 10
+INFO: 2020-07-27 14:28:31,267: Time steps: 163840
+INFO: 2020-07-27 14:28:31,267: Reward: -18.87276
+INFO: 2020-07-27 14:28:31,267: Test sigma: 0.99358
+INFO: 2020-07-27 14:28:31,267:  
+INFO: 2020-07-27 14:28:31,267: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 14:30:13,627: Iterations: 20
+INFO: 2020-07-27 14:30:13,627: Time steps: 327680
+INFO: 2020-07-27 14:30:13,628: Reward: 45.58001
+INFO: 2020-07-27 14:30:13,628: Test sigma: 0.92862
+INFO: 2020-07-27 14:30:13,628:  
+INFO: 2020-07-27 14:30:13,628: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 14:31:56,234: Iterations: 30
+INFO: 2020-07-27 14:31:56,235: Time steps: 491520
+INFO: 2020-07-27 14:31:56,235: Reward: 19.20075
+INFO: 2020-07-27 14:31:56,235: Test sigma: 0.94139
+INFO: 2020-07-27 14:31:56,235:  
+INFO: 2020-07-27 14:33:39,945: Iterations: 40
+INFO: 2020-07-27 14:33:39,945: Time steps: 655360
+INFO: 2020-07-27 14:33:39,945: Reward: 4.92854
+INFO: 2020-07-27 14:33:39,945: Test sigma: 1.00095
+INFO: 2020-07-27 14:33:39,945:  
+INFO: 2020-07-27 14:35:22,783: Iterations: 50
+INFO: 2020-07-27 14:35:22,784: Time steps: 819200
+INFO: 2020-07-27 14:35:22,784: Reward: 107.40858
+INFO: 2020-07-27 14:35:22,784: Test sigma: 0.92560
+INFO: 2020-07-27 14:35:22,784:  
+INFO: 2020-07-27 14:35:22,784: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 14:37:06,027: Iterations: 60
+INFO: 2020-07-27 14:37:06,027: Time steps: 983040
+INFO: 2020-07-27 14:37:06,027: Reward: 90.33028
+INFO: 2020-07-27 14:37:06,027: Test sigma: 0.88080
+INFO: 2020-07-27 14:37:06,027:  
+INFO: 2020-07-27 14:38:49,004: Iterations: 70
+INFO: 2020-07-27 14:38:49,004: Time steps: 1146880
+INFO: 2020-07-27 14:38:49,004: Reward: 112.41319
+INFO: 2020-07-27 14:38:49,004: Test sigma: 0.88936
+INFO: 2020-07-27 14:38:49,004:  
+INFO: 2020-07-27 14:38:49,004: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 14:40:32,088: Iterations: 80
+INFO: 2020-07-27 14:40:32,089: Time steps: 1310720
+INFO: 2020-07-27 14:40:32,089: Reward: 53.43481
+INFO: 2020-07-27 14:40:32,089: Test sigma: 0.81958
+INFO: 2020-07-27 14:40:32,089:  
+INFO: 2020-07-27 14:42:14,740: Iterations: 90
+INFO: 2020-07-27 14:42:14,741: Time steps: 1474560
+INFO: 2020-07-27 14:42:14,741: Reward: 96.14652
+INFO: 2020-07-27 14:42:14,741: Test sigma: 0.80069
+INFO: 2020-07-27 14:42:14,741:  
+INFO: 2020-07-27 14:43:58,165: Iterations: 100
+INFO: 2020-07-27 14:43:58,165: Time steps: 1638400
+INFO: 2020-07-27 14:43:58,165: Reward: 145.26895
+INFO: 2020-07-27 14:43:58,165: Test sigma: 0.75291
+INFO: 2020-07-27 14:43:58,166:  
+INFO: 2020-07-27 14:43:58,166: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 14:45:41,421: Iterations: 110
+INFO: 2020-07-27 14:45:41,421: Time steps: 1802240
+INFO: 2020-07-27 14:45:41,421: Reward: 117.11014
+INFO: 2020-07-27 14:45:41,422: Test sigma: 0.75993
+INFO: 2020-07-27 14:45:41,422:  
+INFO: 2020-07-27 14:47:24,516: Iterations: 120
+INFO: 2020-07-27 14:47:24,516: Time steps: 1966080
+INFO: 2020-07-27 14:47:24,516: Reward: 137.83236
+INFO: 2020-07-27 14:47:24,516: Test sigma: 0.70489
+INFO: 2020-07-27 14:47:24,516:  
+INFO: 2020-07-27 14:49:07,301: Iterations: 130
+INFO: 2020-07-27 14:49:07,301: Time steps: 2129920
+INFO: 2020-07-27 14:49:07,301: Reward: 134.30815
+INFO: 2020-07-27 14:49:07,301: Test sigma: 0.69498
+INFO: 2020-07-27 14:49:07,301:  
+INFO: 2020-07-27 14:50:50,390: Iterations: 140
+INFO: 2020-07-27 14:50:50,391: Time steps: 2293760
+INFO: 2020-07-27 14:50:50,391: Reward: 141.41134
+INFO: 2020-07-27 14:50:50,391: Test sigma: 0.71748
+INFO: 2020-07-27 14:50:50,391:  
+INFO: 2020-07-27 14:52:34,585: Iterations: 150
+INFO: 2020-07-27 14:52:34,585: Time steps: 2457600
+INFO: 2020-07-27 14:52:34,585: Reward: 131.72701
+INFO: 2020-07-27 14:52:34,585: Test sigma: 0.71389
+INFO: 2020-07-27 14:52:34,586:  
+INFO: 2020-07-27 14:54:17,772: Iterations: 160
+INFO: 2020-07-27 14:54:17,772: Time steps: 2621440
+INFO: 2020-07-27 14:54:17,772: Reward: 140.77069
+INFO: 2020-07-27 14:54:17,772: Test sigma: 0.70663
+INFO: 2020-07-27 14:54:17,772:  
+INFO: 2020-07-27 14:56:01,040: Iterations: 170
+INFO: 2020-07-27 14:56:01,040: Time steps: 2785280
+INFO: 2020-07-27 14:56:01,040: Reward: 151.03454
+INFO: 2020-07-27 14:56:01,040: Test sigma: 0.70795
+INFO: 2020-07-27 14:56:01,040:  
+INFO: 2020-07-27 14:56:01,040: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 14:57:43,765: Iterations: 180
+INFO: 2020-07-27 14:57:43,765: Time steps: 2949120
+INFO: 2020-07-27 14:57:43,765: Reward: 132.26967
+INFO: 2020-07-27 14:57:43,765: Test sigma: 0.69650
+INFO: 2020-07-27 14:57:43,765:  
+INFO: 2020-07-27 14:59:27,298: Iterations: 190
+INFO: 2020-07-27 14:59:27,298: Time steps: 3112960
+INFO: 2020-07-27 14:59:27,298: Reward: 163.91262
+INFO: 2020-07-27 14:59:27,298: Test sigma: 0.67844
+INFO: 2020-07-27 14:59:27,298:  
+INFO: 2020-07-27 14:59:27,298: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:01:10,520: Iterations: 200
+INFO: 2020-07-27 15:01:10,520: Time steps: 3276800
+INFO: 2020-07-27 15:01:10,520: Reward: 226.77976
+INFO: 2020-07-27 15:01:10,520: Test sigma: 0.70971
+INFO: 2020-07-27 15:01:10,520:  
+INFO: 2020-07-27 15:01:10,520: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:02:54,111: Iterations: 210
+INFO: 2020-07-27 15:02:54,112: Time steps: 3440640
+INFO: 2020-07-27 15:02:54,112: Reward: 207.18364
+INFO: 2020-07-27 15:02:54,112: Test sigma: 0.71135
+INFO: 2020-07-27 15:02:54,112:  
+INFO: 2020-07-27 15:04:37,477: Iterations: 220
+INFO: 2020-07-27 15:04:37,478: Time steps: 3604480
+INFO: 2020-07-27 15:04:37,478: Reward: 265.72707
+INFO: 2020-07-27 15:04:37,478: Test sigma: 0.72160
+INFO: 2020-07-27 15:04:37,478:  
+INFO: 2020-07-27 15:04:37,478: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:06:20,800: Iterations: 230
+INFO: 2020-07-27 15:06:20,800: Time steps: 3768320
+INFO: 2020-07-27 15:06:20,800: Reward: 274.31206
+INFO: 2020-07-27 15:06:20,800: Test sigma: 0.72172
+INFO: 2020-07-27 15:06:20,800:  
+INFO: 2020-07-27 15:06:20,801: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:08:04,675: Iterations: 240
+INFO: 2020-07-27 15:08:04,675: Time steps: 3932160
+INFO: 2020-07-27 15:08:04,675: Reward: 213.94046
+INFO: 2020-07-27 15:08:04,675: Test sigma: 0.71881
+INFO: 2020-07-27 15:08:04,675:  
+INFO: 2020-07-27 15:09:47,658: Iterations: 250
+INFO: 2020-07-27 15:09:47,658: Time steps: 4096000
+INFO: 2020-07-27 15:09:47,658: Reward: 170.28118
+INFO: 2020-07-27 15:09:47,658: Test sigma: 0.71599
+INFO: 2020-07-27 15:09:47,658:  
+INFO: 2020-07-27 15:11:31,228: Iterations: 260
+INFO: 2020-07-27 15:11:31,228: Time steps: 4259840
+INFO: 2020-07-27 15:11:31,228: Reward: 295.14504
+INFO: 2020-07-27 15:11:31,228: Test sigma: 0.73284
+INFO: 2020-07-27 15:11:31,229:  
+INFO: 2020-07-27 15:11:31,229: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:13:14,475: Iterations: 270
+INFO: 2020-07-27 15:13:14,475: Time steps: 4423680
+INFO: 2020-07-27 15:13:14,476: Reward: 233.73258
+INFO: 2020-07-27 15:13:14,476: Test sigma: 0.73738
+INFO: 2020-07-27 15:13:14,476:  
+INFO: 2020-07-27 15:14:57,241: Iterations: 280
+INFO: 2020-07-27 15:14:57,241: Time steps: 4587520
+INFO: 2020-07-27 15:14:57,241: Reward: 246.21865
+INFO: 2020-07-27 15:14:57,241: Test sigma: 0.73473
+INFO: 2020-07-27 15:14:57,242:  
+INFO: 2020-07-27 15:16:40,671: Iterations: 290
+INFO: 2020-07-27 15:16:40,671: Time steps: 4751360
+INFO: 2020-07-27 15:16:40,671: Reward: 301.88393
+INFO: 2020-07-27 15:16:40,671: Test sigma: 0.72068
+INFO: 2020-07-27 15:16:40,671:  
+INFO: 2020-07-27 15:16:40,671: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:18:23,723: Iterations: 300
+INFO: 2020-07-27 15:18:23,723: Time steps: 4915200
+INFO: 2020-07-27 15:18:23,723: Reward: 371.58588
+INFO: 2020-07-27 15:18:23,724: Test sigma: 0.71564
+INFO: 2020-07-27 15:18:23,724:  
+INFO: 2020-07-27 15:18:23,724: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:20:07,053: Iterations: 310
+INFO: 2020-07-27 15:20:07,054: Time steps: 5079040
+INFO: 2020-07-27 15:20:07,054: Reward: 409.15129
+INFO: 2020-07-27 15:20:07,054: Test sigma: 0.72218
+INFO: 2020-07-27 15:20:07,054:  
+INFO: 2020-07-27 15:20:07,054: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:21:50,199: Iterations: 320
+INFO: 2020-07-27 15:21:50,200: Time steps: 5242880
+INFO: 2020-07-27 15:21:50,200: Reward: 427.79156
+INFO: 2020-07-27 15:21:50,200: Test sigma: 0.71586
+INFO: 2020-07-27 15:21:50,200:  
+INFO: 2020-07-27 15:21:50,200: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:23:33,908: Iterations: 330
+INFO: 2020-07-27 15:23:33,908: Time steps: 5406720
+INFO: 2020-07-27 15:23:33,908: Reward: 447.92117
+INFO: 2020-07-27 15:23:33,908: Test sigma: 0.70536
+INFO: 2020-07-27 15:23:33,908:  
+INFO: 2020-07-27 15:23:33,908: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:25:16,973: Iterations: 340
+INFO: 2020-07-27 15:25:16,973: Time steps: 5570560
+INFO: 2020-07-27 15:25:16,973: Reward: 488.42128
+INFO: 2020-07-27 15:25:16,973: Test sigma: 0.68775
+INFO: 2020-07-27 15:25:16,973:  
+INFO: 2020-07-27 15:25:16,974: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:27:00,348: Iterations: 350
+INFO: 2020-07-27 15:27:00,349: Time steps: 5734400
+INFO: 2020-07-27 15:27:00,349: Reward: 457.85713
+INFO: 2020-07-27 15:27:00,349: Test sigma: 0.69285
+INFO: 2020-07-27 15:27:00,349:  
+INFO: 2020-07-27 15:28:43,645: Iterations: 360
+INFO: 2020-07-27 15:28:43,645: Time steps: 5898240
+INFO: 2020-07-27 15:28:43,645: Reward: 449.84433
+INFO: 2020-07-27 15:28:43,645: Test sigma: 0.68780
+INFO: 2020-07-27 15:28:43,645:  
+INFO: 2020-07-27 15:30:26,928: Iterations: 370
+INFO: 2020-07-27 15:30:26,928: Time steps: 6062080
+INFO: 2020-07-27 15:30:26,928: Reward: 453.20634
+INFO: 2020-07-27 15:30:26,928: Test sigma: 0.69444
+INFO: 2020-07-27 15:30:26,928:  
+INFO: 2020-07-27 15:32:10,208: Iterations: 380
+INFO: 2020-07-27 15:32:10,208: Time steps: 6225920
+INFO: 2020-07-27 15:32:10,208: Reward: 439.17326
+INFO: 2020-07-27 15:32:10,208: Test sigma: 0.67788
+INFO: 2020-07-27 15:32:10,208:  
+INFO: 2020-07-27 15:33:53,562: Iterations: 390
+INFO: 2020-07-27 15:33:53,562: Time steps: 6389760
+INFO: 2020-07-27 15:33:53,563: Reward: 490.51767
+INFO: 2020-07-27 15:33:53,563: Test sigma: 0.69027
+INFO: 2020-07-27 15:33:53,563:  
+INFO: 2020-07-27 15:33:53,563: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:35:37,082: Iterations: 400
+INFO: 2020-07-27 15:35:37,082: Time steps: 6553600
+INFO: 2020-07-27 15:35:37,083: Reward: 446.03156
+INFO: 2020-07-27 15:35:37,083: Test sigma: 0.68626
+INFO: 2020-07-27 15:35:37,083:  
+INFO: 2020-07-27 15:37:21,029: Iterations: 410
+INFO: 2020-07-27 15:37:21,029: Time steps: 6717440
+INFO: 2020-07-27 15:37:21,029: Reward: 461.36273
+INFO: 2020-07-27 15:37:21,030: Test sigma: 0.69402
+INFO: 2020-07-27 15:37:21,030:  
+INFO: 2020-07-27 15:39:04,214: Iterations: 420
+INFO: 2020-07-27 15:39:04,214: Time steps: 6881280
+INFO: 2020-07-27 15:39:04,214: Reward: 429.57021
+INFO: 2020-07-27 15:39:04,214: Test sigma: 0.68992
+INFO: 2020-07-27 15:39:04,214:  
+INFO: 2020-07-27 15:40:47,417: Iterations: 430
+INFO: 2020-07-27 15:40:47,417: Time steps: 7045120
+INFO: 2020-07-27 15:40:47,417: Reward: 414.93297
+INFO: 2020-07-27 15:40:47,417: Test sigma: 0.67868
+INFO: 2020-07-27 15:40:47,417:  
+INFO: 2020-07-27 15:42:30,226: Iterations: 440
+INFO: 2020-07-27 15:42:30,226: Time steps: 7208960
+INFO: 2020-07-27 15:42:30,226: Reward: 464.85363
+INFO: 2020-07-27 15:42:30,226: Test sigma: 0.67982
+INFO: 2020-07-27 15:42:30,227:  
+INFO: 2020-07-27 15:44:14,131: Iterations: 450
+INFO: 2020-07-27 15:44:14,132: Time steps: 7372800
+INFO: 2020-07-27 15:44:14,132: Reward: 460.03626
+INFO: 2020-07-27 15:44:14,132: Test sigma: 0.63881
+INFO: 2020-07-27 15:44:14,132:  
+INFO: 2020-07-27 15:45:57,446: Iterations: 460
+INFO: 2020-07-27 15:45:57,446: Time steps: 7536640
+INFO: 2020-07-27 15:45:57,446: Reward: 469.48731
+INFO: 2020-07-27 15:45:57,446: Test sigma: 0.64307
+INFO: 2020-07-27 15:45:57,446:  
+INFO: 2020-07-27 15:47:40,676: Iterations: 470
+INFO: 2020-07-27 15:47:40,676: Time steps: 7700480
+INFO: 2020-07-27 15:47:40,676: Reward: 482.46031
+INFO: 2020-07-27 15:47:40,676: Test sigma: 0.63272
+INFO: 2020-07-27 15:47:40,676:  
+INFO: 2020-07-27 15:49:23,854: Iterations: 480
+INFO: 2020-07-27 15:49:23,855: Time steps: 7864320
+INFO: 2020-07-27 15:49:23,855: Reward: 457.39638
+INFO: 2020-07-27 15:49:23,855: Test sigma: 0.61341
+INFO: 2020-07-27 15:49:23,855:  
+INFO: 2020-07-27 15:51:06,911: Iterations: 490
+INFO: 2020-07-27 15:51:06,911: Time steps: 8028160
+INFO: 2020-07-27 15:51:06,911: Reward: 479.51728
+INFO: 2020-07-27 15:51:06,911: Test sigma: 0.61217
+INFO: 2020-07-27 15:51:06,911:  
+INFO: 2020-07-27 15:52:50,496: Iterations: 500
+INFO: 2020-07-27 15:52:50,496: Time steps: 8192000
+INFO: 2020-07-27 15:52:50,496: Reward: 495.01985
+INFO: 2020-07-27 15:52:50,496: Test sigma: 0.61896
+INFO: 2020-07-27 15:52:50,496:  
+INFO: 2020-07-27 15:52:50,496: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:54:33,978: Iterations: 510
+INFO: 2020-07-27 15:54:33,979: Time steps: 8355840
+INFO: 2020-07-27 15:54:33,979: Reward: 475.73221
+INFO: 2020-07-27 15:54:33,979: Test sigma: 0.60010
+INFO: 2020-07-27 15:54:33,979:  
+INFO: 2020-07-27 15:56:17,214: Iterations: 520
+INFO: 2020-07-27 15:56:17,214: Time steps: 8519680
+INFO: 2020-07-27 15:56:17,214: Reward: 495.13130
+INFO: 2020-07-27 15:56:17,214: Test sigma: 0.60567
+INFO: 2020-07-27 15:56:17,215:  
+INFO: 2020-07-27 15:56:17,215: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 15:58:01,758: Iterations: 530
+INFO: 2020-07-27 15:58:01,758: Time steps: 8683520
+INFO: 2020-07-27 15:58:01,758: Reward: 490.44859
+INFO: 2020-07-27 15:58:01,758: Test sigma: 0.61322
+INFO: 2020-07-27 15:58:01,758:  
+INFO: 2020-07-27 15:59:45,142: Iterations: 540
+INFO: 2020-07-27 15:59:45,142: Time steps: 8847360
+INFO: 2020-07-27 15:59:45,142: Reward: 512.75546
+INFO: 2020-07-27 15:59:45,142: Test sigma: 0.59787
+INFO: 2020-07-27 15:59:45,142:  
+INFO: 2020-07-27 15:59:45,142: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 16:01:28,315: Iterations: 550
+INFO: 2020-07-27 16:01:28,315: Time steps: 9011200
+INFO: 2020-07-27 16:01:28,315: Reward: 505.10404
+INFO: 2020-07-27 16:01:28,315: Test sigma: 0.55602
+INFO: 2020-07-27 16:01:28,315:  
+INFO: 2020-07-27 16:03:11,564: Iterations: 560
+INFO: 2020-07-27 16:03:11,565: Time steps: 9175040
+INFO: 2020-07-27 16:03:11,565: Reward: 505.66994
+INFO: 2020-07-27 16:03:11,565: Test sigma: 0.54915
+INFO: 2020-07-27 16:03:11,565:  
+INFO: 2020-07-27 16:04:54,655: Iterations: 570
+INFO: 2020-07-27 16:04:54,655: Time steps: 9338880
+INFO: 2020-07-27 16:04:54,655: Reward: 505.26884
+INFO: 2020-07-27 16:04:54,655: Test sigma: 0.55798
+INFO: 2020-07-27 16:04:54,655:  
+INFO: 2020-07-27 16:06:37,942: Iterations: 580
+INFO: 2020-07-27 16:06:37,942: Time steps: 9502720
+INFO: 2020-07-27 16:06:37,942: Reward: 515.04058
+INFO: 2020-07-27 16:06:37,942: Test sigma: 0.55973
+INFO: 2020-07-27 16:06:37,942:  
+INFO: 2020-07-27 16:06:37,942: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 16:08:22,201: Iterations: 590
+INFO: 2020-07-27 16:08:22,202: Time steps: 9666560
+INFO: 2020-07-27 16:08:22,202: Reward: 505.71891
+INFO: 2020-07-27 16:08:22,202: Test sigma: 0.55237
+INFO: 2020-07-27 16:08:22,202:  
+INFO: 2020-07-27 16:10:05,417: Iterations: 600
+INFO: 2020-07-27 16:10:05,417: Time steps: 9830400
+INFO: 2020-07-27 16:10:05,417: Reward: 509.72878
+INFO: 2020-07-27 16:10:05,417: Test sigma: 0.55439
+INFO: 2020-07-27 16:10:05,417:  
+INFO: 2020-07-27 16:11:48,544: Iterations: 610
+INFO: 2020-07-27 16:11:48,544: Time steps: 9994240
+INFO: 2020-07-27 16:11:48,544: Reward: 518.55664
+INFO: 2020-07-27 16:11:48,544: Test sigma: 0.58013
+INFO: 2020-07-27 16:11:48,544:  
+INFO: 2020-07-27 16:11:48,545: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 16:13:32,074: Iterations: 620
+INFO: 2020-07-27 16:13:32,074: Time steps: 10158080
+INFO: 2020-07-27 16:13:32,074: Reward: 512.85134
+INFO: 2020-07-27 16:13:32,074: Test sigma: 0.57849
+INFO: 2020-07-27 16:13:32,074:  
+INFO: 2020-07-27 16:15:15,580: Iterations: 630
+INFO: 2020-07-27 16:15:15,580: Time steps: 10321920
+INFO: 2020-07-27 16:15:15,580: Reward: 510.71525
+INFO: 2020-07-27 16:15:15,580: Test sigma: 0.55723
+INFO: 2020-07-27 16:15:15,580:  
+INFO: 2020-07-27 16:16:58,975: Iterations: 640
+INFO: 2020-07-27 16:16:58,976: Time steps: 10485760
+INFO: 2020-07-27 16:16:58,976: Reward: 498.11163
+INFO: 2020-07-27 16:16:58,976: Test sigma: 0.54189
+INFO: 2020-07-27 16:16:58,976:  
+INFO: 2020-07-27 16:18:42,374: Iterations: 650
+INFO: 2020-07-27 16:18:42,374: Time steps: 10649600
+INFO: 2020-07-27 16:18:42,374: Reward: 520.53661
+INFO: 2020-07-27 16:18:42,374: Test sigma: 0.53411
+INFO: 2020-07-27 16:18:42,374:  
+INFO: 2020-07-27 16:18:42,375: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 16:20:25,892: Iterations: 660
+INFO: 2020-07-27 16:20:25,892: Time steps: 10813440
+INFO: 2020-07-27 16:20:25,892: Reward: 492.34967
+INFO: 2020-07-27 16:20:25,892: Test sigma: 0.51851
+INFO: 2020-07-27 16:20:25,892:  
+INFO: 2020-07-27 16:22:09,516: Iterations: 670
+INFO: 2020-07-27 16:22:09,517: Time steps: 10977280
+INFO: 2020-07-27 16:22:09,517: Reward: 504.47427
+INFO: 2020-07-27 16:22:09,517: Test sigma: 0.53325
+INFO: 2020-07-27 16:22:09,517:  
+INFO: 2020-07-27 16:23:53,002: Iterations: 680
+INFO: 2020-07-27 16:23:53,002: Time steps: 11141120
+INFO: 2020-07-27 16:23:53,002: Reward: 522.09574
+INFO: 2020-07-27 16:23:53,003: Test sigma: 0.52831
+INFO: 2020-07-27 16:23:53,003:  
+INFO: 2020-07-27 16:23:53,003: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 16:25:36,209: Iterations: 690
+INFO: 2020-07-27 16:25:36,209: Time steps: 11304960
+INFO: 2020-07-27 16:25:36,210: Reward: 509.80158
+INFO: 2020-07-27 16:25:36,210: Test sigma: 0.52922
+INFO: 2020-07-27 16:25:36,210:  
+INFO: 2020-07-27 16:27:19,760: Iterations: 700
+INFO: 2020-07-27 16:27:19,760: Time steps: 11468800
+INFO: 2020-07-27 16:27:19,761: Reward: 436.33399
+INFO: 2020-07-27 16:27:19,761: Test sigma: 0.52236
+INFO: 2020-07-27 16:27:19,761:  
+INFO: 2020-07-27 16:29:03,035: Iterations: 710
+INFO: 2020-07-27 16:29:03,036: Time steps: 11632640
+INFO: 2020-07-27 16:29:03,036: Reward: 515.51200
+INFO: 2020-07-27 16:29:03,036: Test sigma: 0.52576
+INFO: 2020-07-27 16:29:03,036:  
+INFO: 2020-07-27 16:30:46,485: Iterations: 720
+INFO: 2020-07-27 16:30:46,486: Time steps: 11796480
+INFO: 2020-07-27 16:30:46,486: Reward: 522.44077
+INFO: 2020-07-27 16:30:46,486: Test sigma: 0.54229
+INFO: 2020-07-27 16:30:46,486:  
+INFO: 2020-07-27 16:30:46,486: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 16:32:29,778: Iterations: 730
+INFO: 2020-07-27 16:32:29,778: Time steps: 11960320
+INFO: 2020-07-27 16:32:29,778: Reward: 513.87724
+INFO: 2020-07-27 16:32:29,778: Test sigma: 0.52386
+INFO: 2020-07-27 16:32:29,778:  
+INFO: 2020-07-27 16:34:13,175: Iterations: 740
+INFO: 2020-07-27 16:34:13,175: Time steps: 12124160
+INFO: 2020-07-27 16:34:13,175: Reward: 513.04617
+INFO: 2020-07-27 16:34:13,175: Test sigma: 0.52358
+INFO: 2020-07-27 16:34:13,175:  
+INFO: 2020-07-27 16:35:56,538: Iterations: 750
+INFO: 2020-07-27 16:35:56,538: Time steps: 12288000
+INFO: 2020-07-27 16:35:56,538: Reward: 530.76048
+INFO: 2020-07-27 16:35:56,538: Test sigma: 0.53997
+INFO: 2020-07-27 16:35:56,538:  
+INFO: 2020-07-27 16:35:56,539: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 16:37:40,322: Iterations: 760
+INFO: 2020-07-27 16:37:40,322: Time steps: 12451840
+INFO: 2020-07-27 16:37:40,322: Reward: 533.37177
+INFO: 2020-07-27 16:37:40,322: Test sigma: 0.52700
+INFO: 2020-07-27 16:37:40,322:  
+INFO: 2020-07-27 16:37:40,322: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 16:39:23,841: Iterations: 770
+INFO: 2020-07-27 16:39:23,842: Time steps: 12615680
+INFO: 2020-07-27 16:39:23,842: Reward: 531.20906
+INFO: 2020-07-27 16:39:23,842: Test sigma: 0.51395
+INFO: 2020-07-27 16:39:23,842:  
+INFO: 2020-07-27 16:41:06,948: Iterations: 780
+INFO: 2020-07-27 16:41:06,949: Time steps: 12779520
+INFO: 2020-07-27 16:41:06,949: Reward: 532.95717
+INFO: 2020-07-27 16:41:06,949: Test sigma: 0.52877
+INFO: 2020-07-27 16:41:06,949:  
+INFO: 2020-07-27 16:42:50,589: Iterations: 790
+INFO: 2020-07-27 16:42:50,589: Time steps: 12943360
+INFO: 2020-07-27 16:42:50,589: Reward: 531.84476
+INFO: 2020-07-27 16:42:50,589: Test sigma: 0.51688
+INFO: 2020-07-27 16:42:50,589:  
+INFO: 2020-07-27 16:44:34,075: Iterations: 800
+INFO: 2020-07-27 16:44:34,075: Time steps: 13107200
+INFO: 2020-07-27 16:44:34,075: Reward: 531.24364
+INFO: 2020-07-27 16:44:34,075: Test sigma: 0.51054
+INFO: 2020-07-27 16:44:34,075:  
+INFO: 2020-07-27 16:46:18,017: Iterations: 810
+INFO: 2020-07-27 16:46:18,017: Time steps: 13271040
+INFO: 2020-07-27 16:46:18,017: Reward: 525.32790
+INFO: 2020-07-27 16:46:18,017: Test sigma: 0.50729
+INFO: 2020-07-27 16:46:18,018:  
+INFO: 2020-07-27 16:48:01,277: Iterations: 820
+INFO: 2020-07-27 16:48:01,277: Time steps: 13434880
+INFO: 2020-07-27 16:48:01,277: Reward: 534.74257
+INFO: 2020-07-27 16:48:01,277: Test sigma: 0.49711
+INFO: 2020-07-27 16:48:01,277:  
+INFO: 2020-07-27 16:48:01,277: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 16:49:44,505: Iterations: 830
+INFO: 2020-07-27 16:49:44,505: Time steps: 13598720
+INFO: 2020-07-27 16:49:44,505: Reward: 538.39946
+INFO: 2020-07-27 16:49:44,505: Test sigma: 0.49903
+INFO: 2020-07-27 16:49:44,505:  
+INFO: 2020-07-27 16:49:44,506: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 16:52:32,629: Iterations: 840
+INFO: 2020-07-27 16:52:32,629: Time steps: 13762560
+INFO: 2020-07-27 16:52:32,629: Reward: 527.53442
+INFO: 2020-07-27 16:52:32,630: Test sigma: 0.49354
+INFO: 2020-07-27 16:52:32,630:  
+INFO: 2020-07-27 16:55:48,207: Iterations: 850
+INFO: 2020-07-27 16:55:48,209: Time steps: 13926400
+INFO: 2020-07-27 16:55:48,210: Reward: 540.88972
+INFO: 2020-07-27 16:55:48,211: Test sigma: 0.49522
+INFO: 2020-07-27 16:55:48,211:  
+INFO: 2020-07-27 16:55:48,213: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 16:59:12,374: Iterations: 860
+INFO: 2020-07-27 16:59:12,375: Time steps: 14090240
+INFO: 2020-07-27 16:59:12,376: Reward: 538.92429
+INFO: 2020-07-27 16:59:12,376: Test sigma: 0.48227
+INFO: 2020-07-27 16:59:12,378:  
+INFO: 2020-07-27 17:00:47,971:  
+INFO: 2020-07-27 17:00:47,971: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-27 17:00:47,971: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-27 17:00:47,971:  
+INFO: 2020-07-27 17:00:47,972: ----------------------------------------------
+INFO: 2020-07-27 17:00:47,972: Experiment Settings
+INFO: 2020-07-27 17:00:47,972: ----------------------------------------------
+INFO: 2020-07-27 17:00:47,972: Number of workers: 32
+INFO: 2020-07-27 17:00:47,972: Batch size: 512
+INFO: 2020-07-27 17:00:47,972: Iterations: 2500
+INFO: 2020-07-27 17:00:47,972: Log interval: 10
+INFO: 2020-07-27 17:00:47,972: Experiment runs: 2500
+INFO: 2020-07-27 17:00:47,972: Number of test runs: 30
+INFO: 2020-07-27 17:00:47,972: ----------------------------------------------
+INFO: 2020-07-27 17:00:47,972: Network Parameters
+INFO: 2020-07-27 17:00:47,972: ----------------------------------------------
+INFO: 2020-07-27 17:00:47,972: Network input dim: 22
+INFO: 2020-07-27 17:00:47,972: Network hidden dim: 256
+INFO: 2020-07-27 17:00:47,972: Network layers: 2
+INFO: 2020-07-27 17:00:47,972: Network output dim: 2
+INFO: 2020-07-27 17:00:47,972: ----------------------------------------------
+INFO: 2020-07-27 17:00:47,973: Environment Parameters
+INFO: 2020-07-27 17:00:47,973: ----------------------------------------------
+INFO: 2020-07-27 17:00:47,973: Trajectory length: 2
+INFO: 2020-07-27 17:00:47,973: Obs future waypoints: 1
+INFO: 2020-07-27 17:00:47,973: Distribution temperature: 150
+INFO: 2020-07-27 17:00:47,973: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-27 17:00:47,973: Maximum spread: 1.5707963267948966
+INFO: 2020-07-27 17:00:48,860:  
+INFO: 2020-07-27 17:00:48,860: Iterations: 0
+INFO: 2020-07-27 17:00:48,860: Time steps: 0
+INFO: 2020-07-27 17:00:48,860: Reward: -59.78407
+INFO: 2020-07-27 17:00:48,860: Test sigma: 0.92512
+INFO: 2020-07-27 17:00:48,861:  
+INFO: 2020-07-27 17:02:35,415: Iterations: 10
+INFO: 2020-07-27 17:02:35,416: Time steps: 163840
+INFO: 2020-07-27 17:02:35,416: Reward: -59.15347
+INFO: 2020-07-27 17:02:35,416: Test sigma: 0.95992
+INFO: 2020-07-27 17:02:35,416:  
+INFO: 2020-07-27 17:02:35,416: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:04:33,078: Iterations: 20
+INFO: 2020-07-27 17:04:33,078: Time steps: 327680
+INFO: 2020-07-27 17:04:33,079: Reward: 129.87427
+INFO: 2020-07-27 17:04:33,079: Test sigma: 0.97851
+INFO: 2020-07-27 17:04:33,079:  
+INFO: 2020-07-27 17:04:33,079: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:06:37,905: Iterations: 30
+INFO: 2020-07-27 17:06:37,906: Time steps: 491520
+INFO: 2020-07-27 17:06:37,906: Reward: 889.00374
+INFO: 2020-07-27 17:06:37,906: Test sigma: 0.95809
+INFO: 2020-07-27 17:06:37,906:  
+INFO: 2020-07-27 17:06:37,906: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:08:32,922: Iterations: 40
+INFO: 2020-07-27 17:08:32,922: Time steps: 655360
+INFO: 2020-07-27 17:08:32,923: Reward: 905.86511
+INFO: 2020-07-27 17:08:32,923: Test sigma: 0.86374
+INFO: 2020-07-27 17:08:32,923:  
+INFO: 2020-07-27 17:08:32,923: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:10:16,124: Iterations: 50
+INFO: 2020-07-27 17:10:16,124: Time steps: 819200
+INFO: 2020-07-27 17:10:16,125: Reward: 1203.51725
+INFO: 2020-07-27 17:10:16,125: Test sigma: 0.83515
+INFO: 2020-07-27 17:10:16,125:  
+INFO: 2020-07-27 17:10:16,125: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:11:58,674: Iterations: 60
+INFO: 2020-07-27 17:11:58,674: Time steps: 983040
+INFO: 2020-07-27 17:11:58,674: Reward: 1633.16744
+INFO: 2020-07-27 17:11:58,674: Test sigma: 0.80803
+INFO: 2020-07-27 17:11:58,675:  
+INFO: 2020-07-27 17:11:58,675: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:14:16,316: Iterations: 70
+INFO: 2020-07-27 17:14:16,316: Time steps: 1146880
+INFO: 2020-07-27 17:14:16,317: Reward: 2016.34188
+INFO: 2020-07-27 17:14:16,317: Test sigma: 0.72593
+INFO: 2020-07-27 17:14:16,317:  
+INFO: 2020-07-27 17:14:16,317: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:15:58,307: Iterations: 80
+INFO: 2020-07-27 17:15:58,308: Time steps: 1310720
+INFO: 2020-07-27 17:15:58,308: Reward: 2644.45123
+INFO: 2020-07-27 17:15:58,308: Test sigma: 0.69052
+INFO: 2020-07-27 17:15:58,308:  
+INFO: 2020-07-27 17:15:58,308: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:17:40,090: Iterations: 90
+INFO: 2020-07-27 17:17:40,090: Time steps: 1474560
+INFO: 2020-07-27 17:17:40,090: Reward: 2442.62477
+INFO: 2020-07-27 17:17:40,090: Test sigma: 0.69181
+INFO: 2020-07-27 17:17:40,090:  
+INFO: 2020-07-27 17:19:22,311: Iterations: 100
+INFO: 2020-07-27 17:19:22,311: Time steps: 1638400
+INFO: 2020-07-27 17:19:22,311: Reward: 1292.27816
+INFO: 2020-07-27 17:19:22,311: Test sigma: 0.65821
+INFO: 2020-07-27 17:19:22,311:  
+INFO: 2020-07-27 17:21:04,790: Iterations: 110
+INFO: 2020-07-27 17:21:04,791: Time steps: 1802240
+INFO: 2020-07-27 17:21:04,791: Reward: 1259.81557
+INFO: 2020-07-27 17:21:04,791: Test sigma: 0.68852
+INFO: 2020-07-27 17:21:04,791:  
+INFO: 2020-07-27 17:22:47,294: Iterations: 120
+INFO: 2020-07-27 17:22:47,295: Time steps: 1966080
+INFO: 2020-07-27 17:22:47,295: Reward: 2002.79038
+INFO: 2020-07-27 17:22:47,295: Test sigma: 0.69381
+INFO: 2020-07-27 17:22:47,295:  
+INFO: 2020-07-27 17:24:30,271: Iterations: 130
+INFO: 2020-07-27 17:24:30,271: Time steps: 2129920
+INFO: 2020-07-27 17:24:30,271: Reward: 2297.49761
+INFO: 2020-07-27 17:24:30,271: Test sigma: 0.68499
+INFO: 2020-07-27 17:24:30,271:  
+INFO: 2020-07-27 17:26:13,019: Iterations: 140
+INFO: 2020-07-27 17:26:13,019: Time steps: 2293760
+INFO: 2020-07-27 17:26:13,019: Reward: 2227.44377
+INFO: 2020-07-27 17:26:13,019: Test sigma: 0.65778
+INFO: 2020-07-27 17:26:13,019:  
+INFO: 2020-07-27 17:27:55,372: Iterations: 150
+INFO: 2020-07-27 17:27:55,372: Time steps: 2457600
+INFO: 2020-07-27 17:27:55,372: Reward: 2231.49222
+INFO: 2020-07-27 17:27:55,372: Test sigma: 0.65190
+INFO: 2020-07-27 17:27:55,372:  
+INFO: 2020-07-27 17:29:37,697: Iterations: 160
+INFO: 2020-07-27 17:29:37,697: Time steps: 2621440
+INFO: 2020-07-27 17:29:37,698: Reward: 2302.92112
+INFO: 2020-07-27 17:29:37,698: Test sigma: 0.65957
+INFO: 2020-07-27 17:29:37,698:  
+INFO: 2020-07-27 17:31:20,008: Iterations: 170
+INFO: 2020-07-27 17:31:20,008: Time steps: 2785280
+INFO: 2020-07-27 17:31:20,008: Reward: 2438.40203
+INFO: 2020-07-27 17:31:20,008: Test sigma: 0.63703
+INFO: 2020-07-27 17:31:20,008:  
+INFO: 2020-07-27 17:33:03,030: Iterations: 180
+INFO: 2020-07-27 17:33:03,030: Time steps: 2949120
+INFO: 2020-07-27 17:33:03,030: Reward: 2443.44770
+INFO: 2020-07-27 17:33:03,030: Test sigma: 0.63715
+INFO: 2020-07-27 17:33:03,030:  
+INFO: 2020-07-27 17:34:45,656: Iterations: 190
+INFO: 2020-07-27 17:34:45,656: Time steps: 3112960
+INFO: 2020-07-27 17:34:45,656: Reward: 2510.41560
+INFO: 2020-07-27 17:34:45,656: Test sigma: 0.62271
+INFO: 2020-07-27 17:34:45,656:  
+INFO: 2020-07-27 17:36:28,066: Iterations: 200
+INFO: 2020-07-27 17:36:28,066: Time steps: 3276800
+INFO: 2020-07-27 17:36:28,066: Reward: 2712.83011
+INFO: 2020-07-27 17:36:28,066: Test sigma: 0.60052
+INFO: 2020-07-27 17:36:28,066:  
+INFO: 2020-07-27 17:36:28,066: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:38:11,296: Iterations: 210
+INFO: 2020-07-27 17:38:11,296: Time steps: 3440640
+INFO: 2020-07-27 17:38:11,296: Reward: 2714.16461
+INFO: 2020-07-27 17:38:11,297: Test sigma: 0.59567
+INFO: 2020-07-27 17:38:11,297:  
+INFO: 2020-07-27 17:38:11,297: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:39:54,361: Iterations: 220
+INFO: 2020-07-27 17:39:54,361: Time steps: 3604480
+INFO: 2020-07-27 17:39:54,361: Reward: 2514.36221
+INFO: 2020-07-27 17:39:54,361: Test sigma: 0.59810
+INFO: 2020-07-27 17:39:54,361:  
+INFO: 2020-07-27 17:41:36,745: Iterations: 230
+INFO: 2020-07-27 17:41:36,745: Time steps: 3768320
+INFO: 2020-07-27 17:41:36,745: Reward: 2652.35178
+INFO: 2020-07-27 17:41:36,745: Test sigma: 0.60497
+INFO: 2020-07-27 17:41:36,745:  
+INFO: 2020-07-27 17:43:19,764: Iterations: 240
+INFO: 2020-07-27 17:43:19,764: Time steps: 3932160
+INFO: 2020-07-27 17:43:19,764: Reward: 2853.94245
+INFO: 2020-07-27 17:43:19,764: Test sigma: 0.61591
+INFO: 2020-07-27 17:43:19,764:  
+INFO: 2020-07-27 17:43:19,764: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:45:03,034: Iterations: 250
+INFO: 2020-07-27 17:45:03,034: Time steps: 4096000
+INFO: 2020-07-27 17:45:03,035: Reward: 2852.28591
+INFO: 2020-07-27 17:45:03,035: Test sigma: 0.59838
+INFO: 2020-07-27 17:45:03,035:  
+INFO: 2020-07-27 17:46:46,202: Iterations: 260
+INFO: 2020-07-27 17:46:46,202: Time steps: 4259840
+INFO: 2020-07-27 17:46:46,202: Reward: 2788.57374
+INFO: 2020-07-27 17:46:46,202: Test sigma: 0.58697
+INFO: 2020-07-27 17:46:46,202:  
+INFO: 2020-07-27 17:48:29,035: Iterations: 270
+INFO: 2020-07-27 17:48:29,035: Time steps: 4423680
+INFO: 2020-07-27 17:48:29,035: Reward: 2854.50735
+INFO: 2020-07-27 17:48:29,035: Test sigma: 0.58453
+INFO: 2020-07-27 17:48:29,035:  
+INFO: 2020-07-27 17:48:29,036: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:50:11,525: Iterations: 280
+INFO: 2020-07-27 17:50:11,525: Time steps: 4587520
+INFO: 2020-07-27 17:50:11,525: Reward: 2652.91841
+INFO: 2020-07-27 17:50:11,526: Test sigma: 0.57846
+INFO: 2020-07-27 17:50:11,526:  
+INFO: 2020-07-27 17:51:54,117: Iterations: 290
+INFO: 2020-07-27 17:51:54,117: Time steps: 4751360
+INFO: 2020-07-27 17:51:54,117: Reward: 2788.22161
+INFO: 2020-07-27 17:51:54,117: Test sigma: 0.58228
+INFO: 2020-07-27 17:51:54,117:  
+INFO: 2020-07-27 17:53:36,828: Iterations: 300
+INFO: 2020-07-27 17:53:36,828: Time steps: 4915200
+INFO: 2020-07-27 17:53:36,828: Reward: 2654.38296
+INFO: 2020-07-27 17:53:36,828: Test sigma: 0.59082
+INFO: 2020-07-27 17:53:36,829:  
+INFO: 2020-07-27 17:55:19,695: Iterations: 310
+INFO: 2020-07-27 17:55:19,695: Time steps: 5079040
+INFO: 2020-07-27 17:55:19,695: Reward: 2856.14874
+INFO: 2020-07-27 17:55:19,695: Test sigma: 0.57788
+INFO: 2020-07-27 17:55:19,695:  
+INFO: 2020-07-27 17:55:19,695: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 17:57:02,579: Iterations: 320
+INFO: 2020-07-27 17:57:02,579: Time steps: 5242880
+INFO: 2020-07-27 17:57:02,579: Reward: 2722.05858
+INFO: 2020-07-27 17:57:02,579: Test sigma: 0.58854
+INFO: 2020-07-27 17:57:02,579:  
+INFO: 2020-07-27 17:58:45,566: Iterations: 330
+INFO: 2020-07-27 17:58:45,566: Time steps: 5406720
+INFO: 2020-07-27 17:58:45,566: Reward: 2922.64384
+INFO: 2020-07-27 17:58:45,566: Test sigma: 0.58330
+INFO: 2020-07-27 17:58:45,566:  
+INFO: 2020-07-27 17:58:45,566: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 18:00:28,398: Iterations: 340
+INFO: 2020-07-27 18:00:28,398: Time steps: 5570560
+INFO: 2020-07-27 18:00:28,398: Reward: 2792.26220
+INFO: 2020-07-27 18:00:28,398: Test sigma: 0.57980
+INFO: 2020-07-27 18:00:28,398:  
+INFO: 2020-07-27 18:02:11,458: Iterations: 350
+INFO: 2020-07-27 18:02:11,458: Time steps: 5734400
+INFO: 2020-07-27 18:02:11,458: Reward: 2858.69459
+INFO: 2020-07-27 18:02:11,458: Test sigma: 0.56881
+INFO: 2020-07-27 18:02:11,458:  
+INFO: 2020-07-27 18:03:54,466: Iterations: 360
+INFO: 2020-07-27 18:03:54,466: Time steps: 5898240
+INFO: 2020-07-27 18:03:54,466: Reward: 2925.32919
+INFO: 2020-07-27 18:03:54,466: Test sigma: 0.54908
+INFO: 2020-07-27 18:03:54,466:  
+INFO: 2020-07-27 18:03:54,467: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 18:05:37,962: Iterations: 370
+INFO: 2020-07-27 18:05:37,963: Time steps: 6062080
+INFO: 2020-07-27 18:05:37,963: Reward: 2518.18723
+INFO: 2020-07-27 18:05:37,963: Test sigma: 0.55991
+INFO: 2020-07-27 18:05:37,963:  
+INFO: 2020-07-27 18:07:21,517: Iterations: 380
+INFO: 2020-07-27 18:07:21,518: Time steps: 6225920
+INFO: 2020-07-27 18:07:21,518: Reward: 2721.94084
+INFO: 2020-07-27 18:07:21,518: Test sigma: 0.56628
+INFO: 2020-07-27 18:07:21,518:  
+INFO: 2020-07-27 18:09:05,217: Iterations: 390
+INFO: 2020-07-27 18:09:05,218: Time steps: 6389760
+INFO: 2020-07-27 18:09:05,218: Reward: 2656.24581
+INFO: 2020-07-27 18:09:05,218: Test sigma: 0.54318
+INFO: 2020-07-27 18:09:05,218:  
+INFO: 2020-07-27 18:10:48,531: Iterations: 400
+INFO: 2020-07-27 18:10:48,531: Time steps: 6553600
+INFO: 2020-07-27 18:10:48,531: Reward: 2791.04688
+INFO: 2020-07-27 18:10:48,531: Test sigma: 0.53352
+INFO: 2020-07-27 18:10:48,531:  
+INFO: 2020-07-27 18:12:31,788: Iterations: 410
+INFO: 2020-07-27 18:12:31,788: Time steps: 6717440
+INFO: 2020-07-27 18:12:31,788: Reward: 2925.19799
+INFO: 2020-07-27 18:12:31,788: Test sigma: 0.51298
+INFO: 2020-07-27 18:12:31,788:  
+INFO: 2020-07-27 18:14:15,168: Iterations: 420
+INFO: 2020-07-27 18:14:15,168: Time steps: 6881280
+INFO: 2020-07-27 18:14:15,168: Reward: 2793.77494
+INFO: 2020-07-27 18:14:15,168: Test sigma: 0.50943
+INFO: 2020-07-27 18:14:15,168:  
+INFO: 2020-07-27 18:15:58,186: Iterations: 430
+INFO: 2020-07-27 18:15:58,186: Time steps: 7045120
+INFO: 2020-07-27 18:15:58,186: Reward: 2858.63674
+INFO: 2020-07-27 18:15:58,186: Test sigma: 0.49679
+INFO: 2020-07-27 18:15:58,186:  
+INFO: 2020-07-27 18:17:41,434: Iterations: 440
+INFO: 2020-07-27 18:17:41,434: Time steps: 7208960
+INFO: 2020-07-27 18:17:41,434: Reward: 2725.75130
+INFO: 2020-07-27 18:17:41,434: Test sigma: 0.48897
+INFO: 2020-07-27 18:17:41,434:  
+INFO: 2020-07-27 18:19:24,643: Iterations: 450
+INFO: 2020-07-27 18:19:24,643: Time steps: 7372800
+INFO: 2020-07-27 18:19:24,643: Reward: 2858.24057
+INFO: 2020-07-27 18:19:24,643: Test sigma: 0.48233
+INFO: 2020-07-27 18:19:24,643:  
+INFO: 2020-07-27 18:21:07,770: Iterations: 460
+INFO: 2020-07-27 18:21:07,770: Time steps: 7536640
+INFO: 2020-07-27 18:21:07,770: Reward: 2659.07968
+INFO: 2020-07-27 18:21:07,771: Test sigma: 0.48777
+INFO: 2020-07-27 18:21:07,771:  
+INFO: 2020-07-27 18:22:50,602: Iterations: 470
+INFO: 2020-07-27 18:22:50,602: Time steps: 7700480
+INFO: 2020-07-27 18:22:50,602: Reward: 2928.39347
+INFO: 2020-07-27 18:22:50,602: Test sigma: 0.47972
+INFO: 2020-07-27 18:22:50,602:  
+INFO: 2020-07-27 18:22:50,602: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 18:25:06,383: Iterations: 480
+INFO: 2020-07-27 18:25:06,384: Time steps: 7864320
+INFO: 2020-07-27 18:25:06,386: Reward: 2859.28543
+INFO: 2020-07-27 18:25:06,387: Test sigma: 0.47347
+INFO: 2020-07-27 18:25:06,388:  
+INFO: 2020-07-27 18:28:39,377: Iterations: 490
+INFO: 2020-07-27 18:28:39,379: Time steps: 8028160
+INFO: 2020-07-27 18:28:39,380: Reward: 2727.04911
+INFO: 2020-07-27 18:28:39,382: Test sigma: 0.47221
+INFO: 2020-07-27 18:28:39,384:  
+INFO: 2020-07-27 18:29:29,757:  
+INFO: 2020-07-27 18:29:29,758: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-27 18:29:29,758: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-27 18:29:29,758:  
+INFO: 2020-07-27 18:29:29,758: ----------------------------------------------
+INFO: 2020-07-27 18:29:29,758: Experiment Settings
+INFO: 2020-07-27 18:29:29,758: ----------------------------------------------
+INFO: 2020-07-27 18:29:29,758: Number of workers: 32
+INFO: 2020-07-27 18:29:29,758: Batch size: 512
+INFO: 2020-07-27 18:29:29,758: Iterations: 2500
+INFO: 2020-07-27 18:29:29,758: Log interval: 10
+INFO: 2020-07-27 18:29:29,758: Experiment runs: 2500
+INFO: 2020-07-27 18:29:29,758: Number of test runs: 30
+INFO: 2020-07-27 18:29:29,758: ----------------------------------------------
+INFO: 2020-07-27 18:29:29,758: Network Parameters
+INFO: 2020-07-27 18:29:29,758: ----------------------------------------------
+INFO: 2020-07-27 18:29:29,758: Network input dim: 22
+INFO: 2020-07-27 18:29:29,758: Network hidden dim: 256
+INFO: 2020-07-27 18:29:29,758: Network layers: 2
+INFO: 2020-07-27 18:29:29,758: Network output dim: 2
+INFO: 2020-07-27 18:29:29,758: ----------------------------------------------
+INFO: 2020-07-27 18:29:29,759: Environment Parameters
+INFO: 2020-07-27 18:29:29,759: ----------------------------------------------
+INFO: 2020-07-27 18:29:29,759: Trajectory length: 2
+INFO: 2020-07-27 18:29:29,759: Obs future waypoints: 1
+INFO: 2020-07-27 18:29:29,759: Distribution temperature: 150
+INFO: 2020-07-27 18:29:29,759: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-27 18:29:29,759: Maximum spread: 1.5707963267948966
+INFO: 2020-07-27 18:29:30,637:  
+INFO: 2020-07-27 18:29:30,637: Iterations: 0
+INFO: 2020-07-27 18:29:30,637: Time steps: 0
+INFO: 2020-07-27 18:29:30,637: Reward: -60.46253
+INFO: 2020-07-27 18:29:30,637: Test sigma: 1.05368
+INFO: 2020-07-27 18:29:30,637:  
+INFO: 2020-07-27 18:31:13,333: Iterations: 10
+INFO: 2020-07-27 18:31:13,334: Time steps: 163840
+INFO: 2020-07-27 18:31:13,334: Reward: 1010.07022
+INFO: 2020-07-27 18:31:13,334: Test sigma: 0.96952
+INFO: 2020-07-27 18:31:13,334:  
+INFO: 2020-07-27 18:31:13,334: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 18:32:56,959: Iterations: 20
+INFO: 2020-07-27 18:32:56,959: Time steps: 327680
+INFO: 2020-07-27 18:32:56,960: Reward: 1132.64116
+INFO: 2020-07-27 18:32:56,960: Test sigma: 0.88131
+INFO: 2020-07-27 18:32:56,960:  
+INFO: 2020-07-27 18:32:56,960: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 18:34:40,346: Iterations: 30
+INFO: 2020-07-27 18:34:40,346: Time steps: 491520
+INFO: 2020-07-27 18:34:40,346: Reward: 743.05054
+INFO: 2020-07-27 18:34:40,346: Test sigma: 0.80447
+INFO: 2020-07-27 18:34:40,346:  
+INFO: 2020-07-27 18:36:23,049: Iterations: 40
+INFO: 2020-07-27 18:36:23,050: Time steps: 655360
+INFO: 2020-07-27 18:36:23,050: Reward: 1246.68262
+INFO: 2020-07-27 18:36:23,050: Test sigma: 0.67859
+INFO: 2020-07-27 18:36:23,050:  
+INFO: 2020-07-27 18:36:23,050: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 18:38:06,808: Iterations: 50
+INFO: 2020-07-27 18:38:06,808: Time steps: 819200
+INFO: 2020-07-27 18:38:06,808: Reward: 1074.20327
+INFO: 2020-07-27 18:38:06,808: Test sigma: 0.59780
+INFO: 2020-07-27 18:38:06,808:  
+INFO: 2020-07-27 18:39:50,240: Iterations: 60
+INFO: 2020-07-27 18:39:50,240: Time steps: 983040
+INFO: 2020-07-27 18:39:50,240: Reward: 1468.39178
+INFO: 2020-07-27 18:39:50,240: Test sigma: 0.57911
+INFO: 2020-07-27 18:39:50,240:  
+INFO: 2020-07-27 18:39:50,240: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 18:41:33,611: Iterations: 70
+INFO: 2020-07-27 18:41:33,611: Time steps: 1146880
+INFO: 2020-07-27 18:41:33,611: Reward: 2075.83084
+INFO: 2020-07-27 18:41:33,611: Test sigma: 0.54155
+INFO: 2020-07-27 18:41:33,611:  
+INFO: 2020-07-27 18:41:33,611: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 18:43:16,860: Iterations: 80
+INFO: 2020-07-27 18:43:16,860: Time steps: 1310720
+INFO: 2020-07-27 18:43:16,860: Reward: 1401.60797
+INFO: 2020-07-27 18:43:16,860: Test sigma: 0.54988
+INFO: 2020-07-27 18:43:16,860:  
+INFO: 2020-07-27 18:45:00,203: Iterations: 90
+INFO: 2020-07-27 18:45:00,203: Time steps: 1474560
+INFO: 2020-07-27 18:45:00,203: Reward: 1604.49102
+INFO: 2020-07-27 18:45:00,203: Test sigma: 0.54325
+INFO: 2020-07-27 18:45:00,203:  
+INFO: 2020-07-27 18:46:43,483: Iterations: 100
+INFO: 2020-07-27 18:46:43,483: Time steps: 1638400
+INFO: 2020-07-27 18:46:43,483: Reward: 1535.39928
+INFO: 2020-07-27 18:46:43,483: Test sigma: 0.50589
+INFO: 2020-07-27 18:46:43,483:  
+INFO: 2020-07-27 18:48:26,482: Iterations: 110
+INFO: 2020-07-27 18:48:26,482: Time steps: 1802240
+INFO: 2020-07-27 18:48:26,482: Reward: 2100.36913
+INFO: 2020-07-27 18:48:26,482: Test sigma: 0.46296
+INFO: 2020-07-27 18:48:26,482:  
+INFO: 2020-07-27 18:48:26,482: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 18:50:09,523: Iterations: 120
+INFO: 2020-07-27 18:50:09,524: Time steps: 1966080
+INFO: 2020-07-27 18:50:09,524: Reward: 1932.19636
+INFO: 2020-07-27 18:50:09,524: Test sigma: 0.43688
+INFO: 2020-07-27 18:50:09,524:  
+INFO: 2020-07-27 18:51:52,535: Iterations: 130
+INFO: 2020-07-27 18:51:52,535: Time steps: 2129920
+INFO: 2020-07-27 18:51:52,535: Reward: 2537.45834
+INFO: 2020-07-27 18:51:52,535: Test sigma: 0.41755
+INFO: 2020-07-27 18:51:52,535:  
+INFO: 2020-07-27 18:51:52,536: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 18:53:36,258: Iterations: 140
+INFO: 2020-07-27 18:53:36,259: Time steps: 2293760
+INFO: 2020-07-27 18:53:36,259: Reward: 2671.05130
+INFO: 2020-07-27 18:53:36,259: Test sigma: 0.39276
+INFO: 2020-07-27 18:53:36,259:  
+INFO: 2020-07-27 18:53:36,259: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 18:55:20,689: Iterations: 150
+INFO: 2020-07-27 18:55:20,690: Time steps: 2457600
+INFO: 2020-07-27 18:55:20,690: Reward: 2470.43741
+INFO: 2020-07-27 18:55:20,690: Test sigma: 0.36274
+INFO: 2020-07-27 18:55:20,690:  
+INFO: 2020-07-27 18:57:03,994: Iterations: 160
+INFO: 2020-07-27 18:57:03,994: Time steps: 2621440
+INFO: 2020-07-27 18:57:03,994: Reward: 2440.91016
+INFO: 2020-07-27 18:57:03,994: Test sigma: 0.37741
+INFO: 2020-07-27 18:57:03,994:  
+INFO: 2020-07-27 18:58:47,219: Iterations: 170
+INFO: 2020-07-27 18:58:47,219: Time steps: 2785280
+INFO: 2020-07-27 18:58:47,219: Reward: 2399.98463
+INFO: 2020-07-27 18:58:47,219: Test sigma: 0.37171
+INFO: 2020-07-27 18:58:47,220:  
+INFO: 2020-07-27 19:00:30,356: Iterations: 180
+INFO: 2020-07-27 19:00:30,357: Time steps: 2949120
+INFO: 2020-07-27 19:00:30,357: Reward: 2328.19923
+INFO: 2020-07-27 19:00:30,357: Test sigma: 0.35678
+INFO: 2020-07-27 19:00:30,357:  
+INFO: 2020-07-27 19:02:13,635: Iterations: 190
+INFO: 2020-07-27 19:02:13,635: Time steps: 3112960
+INFO: 2020-07-27 19:02:13,636: Reward: 2326.32225
+INFO: 2020-07-27 19:02:13,636: Test sigma: 0.35264
+INFO: 2020-07-27 19:02:13,636:  
+INFO: 2020-07-27 19:03:57,049: Iterations: 200
+INFO: 2020-07-27 19:03:57,049: Time steps: 3276800
+INFO: 2020-07-27 19:03:57,049: Reward: 2262.14766
+INFO: 2020-07-27 19:03:57,049: Test sigma: 0.33384
+INFO: 2020-07-27 19:03:57,049:  
+INFO: 2020-07-27 19:05:40,039: Iterations: 210
+INFO: 2020-07-27 19:05:40,039: Time steps: 3440640
+INFO: 2020-07-27 19:05:40,039: Reward: 1958.76189
+INFO: 2020-07-27 19:05:40,039: Test sigma: 0.32282
+INFO: 2020-07-27 19:05:40,039:  
+INFO: 2020-07-27 19:07:23,706: Iterations: 220
+INFO: 2020-07-27 19:07:23,707: Time steps: 3604480
+INFO: 2020-07-27 19:07:23,707: Reward: 2162.25061
+INFO: 2020-07-27 19:07:23,707: Test sigma: 0.28633
+INFO: 2020-07-27 19:07:23,707:  
+INFO: 2020-07-27 19:09:06,720: Iterations: 230
+INFO: 2020-07-27 19:09:06,720: Time steps: 3768320
+INFO: 2020-07-27 19:09:06,720: Reward: 1795.95984
+INFO: 2020-07-27 19:09:06,720: Test sigma: 0.27347
+INFO: 2020-07-27 19:09:06,720:  
+INFO: 2020-07-27 19:10:49,803: Iterations: 240
+INFO: 2020-07-27 19:10:49,803: Time steps: 3932160
+INFO: 2020-07-27 19:10:49,803: Reward: 2052.99504
+INFO: 2020-07-27 19:10:49,803: Test sigma: 0.27562
+INFO: 2020-07-27 19:10:49,803:  
+INFO: 2020-07-27 19:12:32,470: Iterations: 250
+INFO: 2020-07-27 19:12:32,471: Time steps: 4096000
+INFO: 2020-07-27 19:12:32,471: Reward: 2423.76128
+INFO: 2020-07-27 19:12:32,471: Test sigma: 0.26877
+INFO: 2020-07-27 19:12:32,471:  
+INFO: 2020-07-27 19:14:15,790: Iterations: 260
+INFO: 2020-07-27 19:14:15,790: Time steps: 4259840
+INFO: 2020-07-27 19:14:15,790: Reward: 2021.34941
+INFO: 2020-07-27 19:14:15,790: Test sigma: 0.27257
+INFO: 2020-07-27 19:14:15,790:  
+INFO: 2020-07-27 19:15:58,813: Iterations: 270
+INFO: 2020-07-27 19:15:58,814: Time steps: 4423680
+INFO: 2020-07-27 19:15:58,814: Reward: 2449.58385
+INFO: 2020-07-27 19:15:58,814: Test sigma: 0.27810
+INFO: 2020-07-27 19:15:58,814:  
+INFO: 2020-07-27 19:17:41,735: Iterations: 280
+INFO: 2020-07-27 19:17:41,736: Time steps: 4587520
+INFO: 2020-07-27 19:17:41,736: Reward: 2420.16964
+INFO: 2020-07-27 19:17:41,736: Test sigma: 0.28308
+INFO: 2020-07-27 19:17:41,736:  
+INFO: 2020-07-27 19:19:24,839: Iterations: 290
+INFO: 2020-07-27 19:19:24,839: Time steps: 4751360
+INFO: 2020-07-27 19:19:24,839: Reward: 1939.11724
+INFO: 2020-07-27 19:19:24,839: Test sigma: 0.28425
+INFO: 2020-07-27 19:19:24,839:  
+INFO: 2020-07-27 19:21:07,468: Iterations: 300
+INFO: 2020-07-27 19:21:07,468: Time steps: 4915200
+INFO: 2020-07-27 19:21:07,468: Reward: 2651.87381
+INFO: 2020-07-27 19:21:07,468: Test sigma: 0.27155
+INFO: 2020-07-27 19:21:07,468:  
+INFO: 2020-07-27 19:22:50,924: Iterations: 310
+INFO: 2020-07-27 19:22:50,924: Time steps: 5079040
+INFO: 2020-07-27 19:22:50,924: Reward: 2253.19112
+INFO: 2020-07-27 19:22:50,924: Test sigma: 0.27753
+INFO: 2020-07-27 19:22:50,924:  
+INFO: 2020-07-27 19:24:34,498: Iterations: 320
+INFO: 2020-07-27 19:24:34,498: Time steps: 5242880
+INFO: 2020-07-27 19:24:34,498: Reward: 2850.61194
+INFO: 2020-07-27 19:24:34,498: Test sigma: 0.27515
+INFO: 2020-07-27 19:24:34,498:  
+INFO: 2020-07-27 19:24:34,498: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 19:26:17,468: Iterations: 330
+INFO: 2020-07-27 19:26:17,469: Time steps: 5406720
+INFO: 2020-07-27 19:26:17,469: Reward: 2653.09958
+INFO: 2020-07-27 19:26:17,469: Test sigma: 0.26529
+INFO: 2020-07-27 19:26:17,469:  
+INFO: 2020-07-27 19:29:19,504: Iterations: 340
+INFO: 2020-07-27 19:29:19,505: Time steps: 5570560
+INFO: 2020-07-27 19:29:19,508: Reward: 2510.90448
+INFO: 2020-07-27 19:29:19,511: Test sigma: 0.28184
+INFO: 2020-07-27 19:29:19,511:  
+INFO: 2020-07-27 19:32:53,607: Iterations: 350
+INFO: 2020-07-27 19:32:53,607: Time steps: 5734400
+INFO: 2020-07-27 19:32:53,608: Reward: 2509.42602
+INFO: 2020-07-27 19:32:53,609: Test sigma: 0.28150
+INFO: 2020-07-27 19:32:53,610:  
+INFO: 2020-07-27 19:35:36,280: Iterations: 360
+INFO: 2020-07-27 19:35:36,280: Time steps: 5898240
+INFO: 2020-07-27 19:35:36,281: Reward: 2470.91248
+INFO: 2020-07-27 19:35:36,281: Test sigma: 0.29688
+INFO: 2020-07-27 19:35:36,281:  
+INFO: 2020-07-27 21:54:25,036:  
+INFO: 2020-07-27 21:54:25,036: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-27 21:54:25,036: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-27 21:54:25,036:  
+INFO: 2020-07-27 21:54:25,037: ----------------------------------------------
+INFO: 2020-07-27 21:54:25,037: Experiment Settings
+INFO: 2020-07-27 21:54:25,037: ----------------------------------------------
+INFO: 2020-07-27 21:54:25,037: Number of workers: 32
+INFO: 2020-07-27 21:54:25,037: Batch size: 512
+INFO: 2020-07-27 21:54:25,037: Iterations: 2500
+INFO: 2020-07-27 21:54:25,037: Log interval: 10
+INFO: 2020-07-27 21:54:25,037: Experiment runs: 2500
+INFO: 2020-07-27 21:54:25,037: Number of test runs: 30
+INFO: 2020-07-27 21:54:25,037: ----------------------------------------------
+INFO: 2020-07-27 21:54:25,037: Network Parameters
+INFO: 2020-07-27 21:54:25,037: ----------------------------------------------
+INFO: 2020-07-27 21:54:25,037: Network input dim: 22
+INFO: 2020-07-27 21:54:25,037: Network hidden dim: 256
+INFO: 2020-07-27 21:54:25,037: Network layers: 2
+INFO: 2020-07-27 21:54:25,037: Network output dim: 2
+INFO: 2020-07-27 21:54:25,038: ----------------------------------------------
+INFO: 2020-07-27 21:54:25,038: Environment Parameters
+INFO: 2020-07-27 21:54:25,038: ----------------------------------------------
+INFO: 2020-07-27 21:54:25,038: Trajectory length: 2
+INFO: 2020-07-27 21:54:25,038: Obs future waypoints: 1
+INFO: 2020-07-27 21:54:25,038: Distribution temperature: 150
+INFO: 2020-07-27 21:54:25,038: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-27 21:54:25,038: Maximum spread: 1.5707963267948966
+INFO: 2020-07-27 21:54:25,933:  
+INFO: 2020-07-27 21:54:25,933: Iterations: 0
+INFO: 2020-07-27 21:54:25,933: Time steps: 0
+INFO: 2020-07-27 21:54:25,934: Reward: -60.14924
+INFO: 2020-07-27 21:54:25,934: Test sigma: 0.95730
+INFO: 2020-07-27 21:54:25,934:  
+INFO: 2020-07-27 21:56:05,777: Iterations: 10
+INFO: 2020-07-27 21:56:05,777: Time steps: 163840
+INFO: 2020-07-27 21:56:05,777: Reward: -60.27155
+INFO: 2020-07-27 21:56:05,778: Test sigma: 0.98803
+INFO: 2020-07-27 21:56:05,778:  
+INFO: 2020-07-27 21:57:48,705: Iterations: 20
+INFO: 2020-07-27 21:57:48,705: Time steps: 327680
+INFO: 2020-07-27 21:57:48,705: Reward: 62.64355
+INFO: 2020-07-27 21:57:48,705: Test sigma: 0.92266
+INFO: 2020-07-27 21:57:48,705:  
+INFO: 2020-07-27 21:57:48,706: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 21:59:31,856: Iterations: 30
+INFO: 2020-07-27 21:59:31,856: Time steps: 491520
+INFO: 2020-07-27 21:59:31,856: Reward: -67.10873
+INFO: 2020-07-27 21:59:31,856: Test sigma: 0.77154
+INFO: 2020-07-27 21:59:31,856:  
+INFO: 2020-07-27 22:01:33,195: Iterations: 40
+INFO: 2020-07-27 22:01:33,195: Time steps: 655360
+INFO: 2020-07-27 22:01:33,195: Reward: 886.04136
+INFO: 2020-07-27 22:01:33,195: Test sigma: 0.69217
+INFO: 2020-07-27 22:01:33,195:  
+INFO: 2020-07-27 22:01:33,195: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 22:04:23,033: Iterations: 50
+INFO: 2020-07-27 22:04:23,034: Time steps: 819200
+INFO: 2020-07-27 22:04:23,034: Reward: 1197.38840
+INFO: 2020-07-27 22:04:23,034: Test sigma: 0.65566
+INFO: 2020-07-27 22:04:23,034:  
+INFO: 2020-07-27 22:04:23,034: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 22:06:05,379: Iterations: 60
+INFO: 2020-07-27 22:06:05,379: Time steps: 983040
+INFO: 2020-07-27 22:06:05,379: Reward: 620.26197
+INFO: 2020-07-27 22:06:05,379: Test sigma: 0.63692
+INFO: 2020-07-27 22:06:05,379:  
+INFO: 2020-07-27 22:07:48,303: Iterations: 70
+INFO: 2020-07-27 22:07:48,303: Time steps: 1146880
+INFO: 2020-07-27 22:07:48,303: Reward: 301.85032
+INFO: 2020-07-27 22:07:48,303: Test sigma: 0.55468
+INFO: 2020-07-27 22:07:48,303:  
+INFO: 2020-07-27 22:09:30,391: Iterations: 80
+INFO: 2020-07-27 22:09:30,391: Time steps: 1310720
+INFO: 2020-07-27 22:09:30,391: Reward: 395.25189
+INFO: 2020-07-27 22:09:30,391: Test sigma: 0.54152
+INFO: 2020-07-27 22:09:30,391:  
+INFO: 2020-07-27 22:11:42,827: Iterations: 90
+INFO: 2020-07-27 22:11:42,827: Time steps: 1474560
+INFO: 2020-07-27 22:11:42,827: Reward: 266.91397
+INFO: 2020-07-27 22:11:42,828: Test sigma: 0.55928
+INFO: 2020-07-27 22:11:42,828:  
+INFO: 2020-07-27 22:13:25,436: Iterations: 100
+INFO: 2020-07-27 22:13:25,436: Time steps: 1638400
+INFO: 2020-07-27 22:13:25,437: Reward: 1870.73126
+INFO: 2020-07-27 22:13:25,437: Test sigma: 0.51767
+INFO: 2020-07-27 22:13:25,437:  
+INFO: 2020-07-27 22:13:25,437: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 22:15:08,500: Iterations: 110
+INFO: 2020-07-27 22:15:08,500: Time steps: 1802240
+INFO: 2020-07-27 22:15:08,501: Reward: 1730.36734
+INFO: 2020-07-27 22:15:08,501: Test sigma: 0.52518
+INFO: 2020-07-27 22:15:08,501:  
+INFO: 2020-07-27 22:16:51,758: Iterations: 120
+INFO: 2020-07-27 22:16:51,759: Time steps: 1966080
+INFO: 2020-07-27 22:16:51,759: Reward: 1862.42470
+INFO: 2020-07-27 22:16:51,759: Test sigma: 0.50533
+INFO: 2020-07-27 22:16:51,759:  
+INFO: 2020-07-27 22:18:34,929: Iterations: 130
+INFO: 2020-07-27 22:18:34,929: Time steps: 2129920
+INFO: 2020-07-27 22:18:34,929: Reward: 1994.79052
+INFO: 2020-07-27 22:18:34,929: Test sigma: 0.48925
+INFO: 2020-07-27 22:18:34,929:  
+INFO: 2020-07-27 22:18:34,929: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 22:20:18,688: Iterations: 140
+INFO: 2020-07-27 22:20:18,688: Time steps: 2293760
+INFO: 2020-07-27 22:20:18,688: Reward: 2124.53897
+INFO: 2020-07-27 22:20:18,688: Test sigma: 0.49403
+INFO: 2020-07-27 22:20:18,688:  
+INFO: 2020-07-27 22:20:18,688: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 22:22:01,293: Iterations: 150
+INFO: 2020-07-27 22:22:01,293: Time steps: 2457600
+INFO: 2020-07-27 22:22:01,293: Reward: 2189.87932
+INFO: 2020-07-27 22:22:01,293: Test sigma: 0.47001
+INFO: 2020-07-27 22:22:01,293:  
+INFO: 2020-07-27 22:22:01,293: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 22:23:44,614: Iterations: 160
+INFO: 2020-07-27 22:23:44,614: Time steps: 2621440
+INFO: 2020-07-27 22:23:44,615: Reward: 1596.42310
+INFO: 2020-07-27 22:23:44,615: Test sigma: 0.44900
+INFO: 2020-07-27 22:23:44,615:  
+INFO: 2020-07-27 22:25:27,729: Iterations: 170
+INFO: 2020-07-27 22:25:27,729: Time steps: 2785280
+INFO: 2020-07-27 22:25:27,729: Reward: 2126.41104
+INFO: 2020-07-27 22:25:27,729: Test sigma: 0.45094
+INFO: 2020-07-27 22:25:27,729:  
+INFO: 2020-07-27 22:27:10,867: Iterations: 180
+INFO: 2020-07-27 22:27:10,867: Time steps: 2949120
+INFO: 2020-07-27 22:27:10,867: Reward: 1853.79456
+INFO: 2020-07-27 22:27:10,867: Test sigma: 0.44175
+INFO: 2020-07-27 22:27:10,868:  
+INFO: 2020-07-27 22:28:54,344: Iterations: 190
+INFO: 2020-07-27 22:28:54,344: Time steps: 3112960
+INFO: 2020-07-27 22:28:54,344: Reward: 2244.23917
+INFO: 2020-07-27 22:28:54,344: Test sigma: 0.40833
+INFO: 2020-07-27 22:28:54,344:  
+INFO: 2020-07-27 22:28:54,344: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 22:30:38,060: Iterations: 200
+INFO: 2020-07-27 22:30:38,060: Time steps: 3276800
+INFO: 2020-07-27 22:30:38,060: Reward: 2305.92181
+INFO: 2020-07-27 22:30:38,060: Test sigma: 0.39004
+INFO: 2020-07-27 22:30:38,060:  
+INFO: 2020-07-27 22:30:38,060: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 22:32:21,185: Iterations: 210
+INFO: 2020-07-27 22:32:21,185: Time steps: 3440640
+INFO: 2020-07-27 22:32:21,185: Reward: 2108.04266
+INFO: 2020-07-27 22:32:21,185: Test sigma: 0.36013
+INFO: 2020-07-27 22:32:21,185:  
+INFO: 2020-07-27 22:34:04,859: Iterations: 220
+INFO: 2020-07-27 22:34:04,859: Time steps: 3604480
+INFO: 2020-07-27 22:34:04,860: Reward: 1761.61129
+INFO: 2020-07-27 22:34:04,860: Test sigma: 0.39428
+INFO: 2020-07-27 22:34:04,860:  
+INFO: 2020-07-27 22:35:47,959: Iterations: 230
+INFO: 2020-07-27 22:35:47,959: Time steps: 3768320
+INFO: 2020-07-27 22:35:47,959: Reward: 2305.20132
+INFO: 2020-07-27 22:35:47,959: Test sigma: 0.34831
+INFO: 2020-07-27 22:35:47,959:  
+INFO: 2020-07-27 22:37:31,301: Iterations: 240
+INFO: 2020-07-27 22:37:31,301: Time steps: 3932160
+INFO: 2020-07-27 22:37:31,301: Reward: 2305.46804
+INFO: 2020-07-27 22:37:31,301: Test sigma: 0.35094
+INFO: 2020-07-27 22:37:31,301:  
+INFO: 2020-07-27 22:39:14,599: Iterations: 250
+INFO: 2020-07-27 22:39:14,599: Time steps: 4096000
+INFO: 2020-07-27 22:39:14,599: Reward: 2098.42836
+INFO: 2020-07-27 22:39:14,599: Test sigma: 0.33354
+INFO: 2020-07-27 22:39:14,599:  
+INFO: 2020-07-27 22:40:57,694: Iterations: 260
+INFO: 2020-07-27 22:40:57,695: Time steps: 4259840
+INFO: 2020-07-27 22:40:57,695: Reward: 2093.03518
+INFO: 2020-07-27 22:40:57,695: Test sigma: 0.34372
+INFO: 2020-07-27 22:40:57,695:  
+INFO: 2020-07-27 22:42:40,926: Iterations: 270
+INFO: 2020-07-27 22:42:40,926: Time steps: 4423680
+INFO: 2020-07-27 22:42:40,926: Reward: 1961.08035
+INFO: 2020-07-27 22:42:40,926: Test sigma: 0.32631
+INFO: 2020-07-27 22:42:40,926:  
+INFO: 2020-07-27 22:44:23,747: Iterations: 280
+INFO: 2020-07-27 22:44:23,747: Time steps: 4587520
+INFO: 2020-07-27 22:44:23,747: Reward: 2358.79243
+INFO: 2020-07-27 22:44:23,747: Test sigma: 0.31107
+INFO: 2020-07-27 22:44:23,747:  
+INFO: 2020-07-27 22:44:23,747: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 22:46:06,812: Iterations: 290
+INFO: 2020-07-27 22:46:06,812: Time steps: 4751360
+INFO: 2020-07-27 22:46:06,812: Reward: 2089.51775
+INFO: 2020-07-27 22:46:06,812: Test sigma: 0.31063
+INFO: 2020-07-27 22:46:06,812:  
+INFO: 2020-07-27 22:47:49,419: Iterations: 300
+INFO: 2020-07-27 22:47:49,419: Time steps: 4915200
+INFO: 2020-07-27 22:47:49,419: Reward: 2084.10539
+INFO: 2020-07-27 22:47:49,419: Test sigma: 0.31623
+INFO: 2020-07-27 22:47:49,419:  
+INFO: 2020-07-27 22:50:03,299: Iterations: 310
+INFO: 2020-07-27 22:50:03,300: Time steps: 5079040
+INFO: 2020-07-27 22:50:03,300: Reward: 2492.14102
+INFO: 2020-07-27 22:50:03,300: Test sigma: 0.29698
+INFO: 2020-07-27 22:50:03,300:  
+INFO: 2020-07-27 22:50:03,300: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 22:51:51,508: Iterations: 320
+INFO: 2020-07-27 22:51:51,508: Time steps: 5242880
+INFO: 2020-07-27 22:51:51,508: Reward: 2085.72612
+INFO: 2020-07-27 22:51:51,508: Test sigma: 0.29666
+INFO: 2020-07-27 22:51:51,508:  
+INFO: 2020-07-27 22:53:42,747: Iterations: 330
+INFO: 2020-07-27 22:53:42,748: Time steps: 5406720
+INFO: 2020-07-27 22:53:42,748: Reward: 2083.42852
+INFO: 2020-07-27 22:53:42,748: Test sigma: 0.30354
+INFO: 2020-07-27 22:53:42,748:  
+INFO: 2020-07-27 22:56:44,809: Iterations: 340
+INFO: 2020-07-27 22:56:44,811: Time steps: 5570560
+INFO: 2020-07-27 22:56:44,812: Reward: 2419.62990
+INFO: 2020-07-27 22:56:44,816: Test sigma: 0.28528
+INFO: 2020-07-27 22:56:44,818:  
+INFO: 2020-07-27 23:00:11,785: Iterations: 350
+INFO: 2020-07-27 23:00:11,785: Time steps: 5734400
+INFO: 2020-07-27 23:00:11,785: Reward: 2212.97826
+INFO: 2020-07-27 23:00:11,785: Test sigma: 0.29787
+INFO: 2020-07-27 23:00:11,785:  
+INFO: 2020-07-27 23:02:01,600: Iterations: 360
+INFO: 2020-07-27 23:02:01,600: Time steps: 5898240
+INFO: 2020-07-27 23:02:01,601: Reward: 2412.70982
+INFO: 2020-07-27 23:02:01,601: Test sigma: 0.29376
+INFO: 2020-07-27 23:02:01,601:  
+INFO: 2020-07-27 23:04:12,932: Iterations: 370
+INFO: 2020-07-27 23:04:12,933: Time steps: 6062080
+INFO: 2020-07-27 23:04:12,933: Reward: 2343.68330
+INFO: 2020-07-27 23:04:12,933: Test sigma: 0.30976
+INFO: 2020-07-27 23:04:12,934:  
+INFO: 2020-07-27 23:07:20,329: Iterations: 380
+INFO: 2020-07-27 23:07:20,330: Time steps: 6225920
+INFO: 2020-07-27 23:07:20,330: Reward: 2477.44193
+INFO: 2020-07-27 23:07:20,330: Test sigma: 0.32493
+INFO: 2020-07-27 23:07:20,330:  
+INFO: 2020-07-27 23:07:42,462:  
+INFO: 2020-07-27 23:07:42,463: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-27 23:07:42,463: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-27 23:07:42,463:  
+INFO: 2020-07-27 23:07:42,463: ----------------------------------------------
+INFO: 2020-07-27 23:07:42,463: Experiment Settings
+INFO: 2020-07-27 23:07:42,463: ----------------------------------------------
+INFO: 2020-07-27 23:07:42,463: Number of workers: 32
+INFO: 2020-07-27 23:07:42,463: Batch size: 512
+INFO: 2020-07-27 23:07:42,463: Iterations: 2500
+INFO: 2020-07-27 23:07:42,463: Log interval: 10
+INFO: 2020-07-27 23:07:42,463: Experiment runs: 2500
+INFO: 2020-07-27 23:07:42,463: Number of test runs: 30
+INFO: 2020-07-27 23:07:42,463: ----------------------------------------------
+INFO: 2020-07-27 23:07:42,463: Network Parameters
+INFO: 2020-07-27 23:07:42,463: ----------------------------------------------
+INFO: 2020-07-27 23:07:42,463: Network input dim: 22
+INFO: 2020-07-27 23:07:42,463: Network hidden dim: 256
+INFO: 2020-07-27 23:07:42,463: Network layers: 2
+INFO: 2020-07-27 23:07:42,463: Network output dim: 2
+INFO: 2020-07-27 23:07:42,463: ----------------------------------------------
+INFO: 2020-07-27 23:07:42,463: Environment Parameters
+INFO: 2020-07-27 23:07:42,464: ----------------------------------------------
+INFO: 2020-07-27 23:07:42,464: Trajectory length: 2
+INFO: 2020-07-27 23:07:42,464: Obs future waypoints: 1
+INFO: 2020-07-27 23:07:42,464: Distribution temperature: 150
+INFO: 2020-07-27 23:07:42,464: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-27 23:07:42,464: Maximum spread: 1.5707963267948966
+INFO: 2020-07-27 23:07:43,357:  
+INFO: 2020-07-27 23:07:43,357: Iterations: 0
+INFO: 2020-07-27 23:07:43,357: Time steps: 0
+INFO: 2020-07-27 23:07:43,357: Reward: -19.21494
+INFO: 2020-07-27 23:07:43,358: Test sigma: 1.03518
+INFO: 2020-07-27 23:07:43,358:  
+INFO: 2020-07-27 23:09:24,844: Iterations: 10
+INFO: 2020-07-27 23:09:24,844: Time steps: 163840
+INFO: 2020-07-27 23:09:24,844: Reward: 28.08884
+INFO: 2020-07-27 23:09:24,844: Test sigma: 0.83915
+INFO: 2020-07-27 23:09:24,844:  
+INFO: 2020-07-27 23:09:24,844: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 23:11:14,721: Iterations: 20
+INFO: 2020-07-27 23:11:14,721: Time steps: 327680
+INFO: 2020-07-27 23:11:14,721: Reward: 64.51679
+INFO: 2020-07-27 23:11:14,721: Test sigma: 0.74823
+INFO: 2020-07-27 23:11:14,721:  
+INFO: 2020-07-27 23:11:14,721: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 23:12:58,703: Iterations: 30
+INFO: 2020-07-27 23:12:58,703: Time steps: 491520
+INFO: 2020-07-27 23:12:58,703: Reward: 240.38231
+INFO: 2020-07-27 23:12:58,703: Test sigma: 0.70835
+INFO: 2020-07-27 23:12:58,703:  
+INFO: 2020-07-27 23:12:58,704: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 23:15:18,023: Iterations: 40
+INFO: 2020-07-27 23:15:18,025: Time steps: 655360
+INFO: 2020-07-27 23:15:18,026: Reward: 54.11201
+INFO: 2020-07-27 23:15:18,028: Test sigma: 0.58312
+INFO: 2020-07-27 23:15:18,029:  
+INFO: 2020-07-27 23:17:20,002: Iterations: 50
+INFO: 2020-07-27 23:17:20,002: Time steps: 819200
+INFO: 2020-07-27 23:17:20,002: Reward: 1814.61108
+INFO: 2020-07-27 23:17:20,002: Test sigma: 0.64443
+INFO: 2020-07-27 23:17:20,002:  
+INFO: 2020-07-27 23:17:20,002: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 23:19:21,619: Iterations: 60
+INFO: 2020-07-27 23:19:21,620: Time steps: 983040
+INFO: 2020-07-27 23:19:21,620: Reward: 1517.00402
+INFO: 2020-07-27 23:19:21,620: Test sigma: 0.59602
+INFO: 2020-07-27 23:19:21,620:  
+INFO: 2020-07-27 23:21:08,102: Iterations: 70
+INFO: 2020-07-27 23:21:08,103: Time steps: 1146880
+INFO: 2020-07-27 23:21:08,103: Reward: 1702.15711
+INFO: 2020-07-27 23:21:08,103: Test sigma: 0.57872
+INFO: 2020-07-27 23:21:08,103:  
+INFO: 2020-07-27 23:22:54,300: Iterations: 80
+INFO: 2020-07-27 23:22:54,300: Time steps: 1310720
+INFO: 2020-07-27 23:22:54,300: Reward: 1409.04013
+INFO: 2020-07-27 23:22:54,300: Test sigma: 0.56801
+INFO: 2020-07-27 23:22:54,300:  
+INFO: 2020-07-27 23:24:42,654: Iterations: 90
+INFO: 2020-07-27 23:24:42,654: Time steps: 1474560
+INFO: 2020-07-27 23:24:42,654: Reward: 2048.31795
+INFO: 2020-07-27 23:24:42,654: Test sigma: 0.56923
+INFO: 2020-07-27 23:24:42,654:  
+INFO: 2020-07-27 23:24:42,654: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 23:27:38,579: Iterations: 100
+INFO: 2020-07-27 23:27:38,579: Time steps: 1638400
+INFO: 2020-07-27 23:27:38,579: Reward: 2116.07870
+INFO: 2020-07-27 23:27:38,579: Test sigma: 0.53363
+INFO: 2020-07-27 23:27:38,579:  
+INFO: 2020-07-27 23:27:38,579: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 23:29:36,705: Iterations: 110
+INFO: 2020-07-27 23:29:36,706: Time steps: 1802240
+INFO: 2020-07-27 23:29:36,710: Reward: 2143.49027
+INFO: 2020-07-27 23:29:36,712: Test sigma: 0.54037
+INFO: 2020-07-27 23:29:36,714:  
+INFO: 2020-07-27 23:29:36,717: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 23:31:58,249: Iterations: 120
+INFO: 2020-07-27 23:31:58,249: Time steps: 1966080
+INFO: 2020-07-27 23:31:58,249: Reward: 1837.83171
+INFO: 2020-07-27 23:31:58,250: Test sigma: 0.51607
+INFO: 2020-07-27 23:31:58,250:  
+INFO: 2020-07-27 23:34:17,870: Iterations: 130
+INFO: 2020-07-27 23:34:17,870: Time steps: 2129920
+INFO: 2020-07-27 23:34:17,870: Reward: 2397.02126
+INFO: 2020-07-27 23:34:17,870: Test sigma: 0.51028
+INFO: 2020-07-27 23:34:17,870:  
+INFO: 2020-07-27 23:34:17,870: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 23:36:03,910: Iterations: 140
+INFO: 2020-07-27 23:36:03,910: Time steps: 2293760
+INFO: 2020-07-27 23:36:03,910: Reward: 2519.28904
+INFO: 2020-07-27 23:36:03,910: Test sigma: 0.50200
+INFO: 2020-07-27 23:36:03,910:  
+INFO: 2020-07-27 23:36:03,911: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 23:39:33,085: Iterations: 150
+INFO: 2020-07-27 23:39:33,086: Time steps: 2457600
+INFO: 2020-07-27 23:39:33,087: Reward: 2383.11004
+INFO: 2020-07-27 23:39:33,089: Test sigma: 0.50265
+INFO: 2020-07-27 23:39:33,090:  
+INFO: 2020-07-27 23:43:01,217: Iterations: 160
+INFO: 2020-07-27 23:43:01,220: Time steps: 2621440
+INFO: 2020-07-27 23:43:01,221: Reward: 2798.70035
+INFO: 2020-07-27 23:43:01,222: Test sigma: 0.49932
+INFO: 2020-07-27 23:43:01,223:  
+INFO: 2020-07-27 23:43:01,224: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-27 23:45:32,081: Iterations: 170
+INFO: 2020-07-27 23:45:32,082: Time steps: 2785280
+INFO: 2020-07-27 23:45:32,082: Reward: 2514.51774
+INFO: 2020-07-27 23:45:32,082: Test sigma: 0.49720
+INFO: 2020-07-27 23:45:32,082:  
+INFO: 2020-07-27 23:46:11,802:  
+INFO: 2020-07-27 23:46:11,802: Initializing Hard Goals 2D Waypoint Navigation Environment
+INFO: 2020-07-27 23:46:11,802: Working directory is /home/seanny/Dropbox/potentials/_2d/fan_2d/
+INFO: 2020-07-27 23:46:11,802:  
+INFO: 2020-07-27 23:46:11,802: ----------------------------------------------
+INFO: 2020-07-27 23:46:11,802: Experiment Settings
+INFO: 2020-07-27 23:46:11,802: ----------------------------------------------
+INFO: 2020-07-27 23:46:11,802: Number of workers: 64
+INFO: 2020-07-27 23:46:11,802: Batch size: 1024
+INFO: 2020-07-27 23:46:11,802: Iterations: 2500
+INFO: 2020-07-27 23:46:11,802: Log interval: 10
+INFO: 2020-07-27 23:46:11,802: Experiment runs: 2500
+INFO: 2020-07-27 23:46:11,802: Number of test runs: 30
+INFO: 2020-07-27 23:46:11,803: ----------------------------------------------
+INFO: 2020-07-27 23:46:11,803: Network Parameters
+INFO: 2020-07-27 23:46:11,803: ----------------------------------------------
+INFO: 2020-07-27 23:46:11,803: Network input dim: 22
+INFO: 2020-07-27 23:46:11,803: Network hidden dim: 512
+INFO: 2020-07-27 23:46:11,803: Network layers: 2
+INFO: 2020-07-27 23:46:11,803: Network output dim: 2
+INFO: 2020-07-27 23:46:11,803: ----------------------------------------------
+INFO: 2020-07-27 23:46:11,803: Environment Parameters
+INFO: 2020-07-27 23:46:11,803: ----------------------------------------------
+INFO: 2020-07-27 23:46:11,803: Trajectory length: 2
+INFO: 2020-07-27 23:46:11,803: Obs future waypoints: 1
+INFO: 2020-07-27 23:46:11,803: Distribution temperature: 150
+INFO: 2020-07-27 23:46:11,803: Waypoint distance bounds: 1, 2.5
+INFO: 2020-07-27 23:46:11,803: Maximum spread: 1.5707963267948966
+INFO: 2020-07-27 23:46:12,764:  
+INFO: 2020-07-27 23:46:12,765: Iterations: 0
+INFO: 2020-07-27 23:46:12,765: Time steps: 0
+INFO: 2020-07-27 23:46:12,765: Reward: -49.37775
+INFO: 2020-07-27 23:46:12,765: Test sigma: 1.03389
+INFO: 2020-07-27 23:46:12,765:  
+INFO: 2020-07-28 00:01:03,633: Iterations: 10
+INFO: 2020-07-28 00:01:03,634: Time steps: 655360
+INFO: 2020-07-28 00:01:03,634: Reward: 60.85035
+INFO: 2020-07-28 00:01:03,634: Test sigma: 0.78297
+INFO: 2020-07-28 00:01:03,634:  
+INFO: 2020-07-28 00:01:03,634: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 00:15:27,238: Iterations: 20
+INFO: 2020-07-28 00:15:27,238: Time steps: 1310720
+INFO: 2020-07-28 00:15:27,238: Reward: 81.36909
+INFO: 2020-07-28 00:15:27,238: Test sigma: 0.64359
+INFO: 2020-07-28 00:15:27,238:  
+INFO: 2020-07-28 00:15:27,238: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 00:29:41,284: Iterations: 30
+INFO: 2020-07-28 00:29:41,285: Time steps: 1966080
+INFO: 2020-07-28 00:29:41,285: Reward: 124.52722
+INFO: 2020-07-28 00:29:41,285: Test sigma: 0.58215
+INFO: 2020-07-28 00:29:41,285:  
+INFO: 2020-07-28 00:29:41,285: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 00:43:55,166: Iterations: 40
+INFO: 2020-07-28 00:43:55,166: Time steps: 2621440
+INFO: 2020-07-28 00:43:55,166: Reward: 158.21439
+INFO: 2020-07-28 00:43:55,167: Test sigma: 0.53767
+INFO: 2020-07-28 00:43:55,167:  
+INFO: 2020-07-28 00:43:55,167: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 00:58:10,129: Iterations: 50
+INFO: 2020-07-28 00:58:10,129: Time steps: 3276800
+INFO: 2020-07-28 00:58:10,129: Reward: 178.18867
+INFO: 2020-07-28 00:58:10,130: Test sigma: 0.48436
+INFO: 2020-07-28 00:58:10,130:  
+INFO: 2020-07-28 00:58:10,130: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 01:12:26,249: Iterations: 60
+INFO: 2020-07-28 01:12:26,249: Time steps: 3932160
+INFO: 2020-07-28 01:12:26,249: Reward: 184.22998
+INFO: 2020-07-28 01:12:26,249: Test sigma: 0.42240
+INFO: 2020-07-28 01:12:26,249:  
+INFO: 2020-07-28 01:12:26,250: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 01:26:42,355: Iterations: 70
+INFO: 2020-07-28 01:26:42,355: Time steps: 4587520
+INFO: 2020-07-28 01:26:42,355: Reward: 177.81799
+INFO: 2020-07-28 01:26:42,355: Test sigma: 0.38477
+INFO: 2020-07-28 01:26:42,355:  
+INFO: 2020-07-28 01:40:58,987: Iterations: 80
+INFO: 2020-07-28 01:40:58,987: Time steps: 5242880
+INFO: 2020-07-28 01:40:58,987: Reward: 181.40951
+INFO: 2020-07-28 01:40:58,987: Test sigma: 0.36475
+INFO: 2020-07-28 01:40:58,987:  
+INFO: 2020-07-28 01:55:13,454: Iterations: 90
+INFO: 2020-07-28 01:55:13,454: Time steps: 5898240
+INFO: 2020-07-28 01:55:13,454: Reward: 189.38364
+INFO: 2020-07-28 01:55:13,454: Test sigma: 0.35205
+INFO: 2020-07-28 01:55:13,454:  
+INFO: 2020-07-28 01:55:13,454: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 02:09:28,582: Iterations: 100
+INFO: 2020-07-28 02:09:28,583: Time steps: 6553600
+INFO: 2020-07-28 02:09:28,583: Reward: 191.98514
+INFO: 2020-07-28 02:09:28,583: Test sigma: 0.31833
+INFO: 2020-07-28 02:09:28,583:  
+INFO: 2020-07-28 02:09:28,583: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 02:23:43,776: Iterations: 110
+INFO: 2020-07-28 02:23:43,777: Time steps: 7208960
+INFO: 2020-07-28 02:23:43,777: Reward: 180.11896
+INFO: 2020-07-28 02:23:43,777: Test sigma: 0.27120
+INFO: 2020-07-28 02:23:43,777:  
+INFO: 2020-07-28 02:37:59,802: Iterations: 120
+INFO: 2020-07-28 02:37:59,802: Time steps: 7864320
+INFO: 2020-07-28 02:37:59,802: Reward: 179.48634
+INFO: 2020-07-28 02:37:59,802: Test sigma: 0.28357
+INFO: 2020-07-28 02:37:59,803:  
+INFO: 2020-07-28 02:52:15,229: Iterations: 130
+INFO: 2020-07-28 02:52:15,229: Time steps: 8519680
+INFO: 2020-07-28 02:52:15,229: Reward: 184.37853
+INFO: 2020-07-28 02:52:15,230: Test sigma: 0.30460
+INFO: 2020-07-28 02:52:15,230:  
+INFO: 2020-07-28 03:06:32,365: Iterations: 140
+INFO: 2020-07-28 03:06:32,365: Time steps: 9175040
+INFO: 2020-07-28 03:06:32,365: Reward: 184.72593
+INFO: 2020-07-28 03:06:32,365: Test sigma: 0.29243
+INFO: 2020-07-28 03:06:32,365:  
+INFO: 2020-07-28 03:20:48,427: Iterations: 150
+INFO: 2020-07-28 03:20:48,427: Time steps: 9830400
+INFO: 2020-07-28 03:20:48,427: Reward: 191.33151
+INFO: 2020-07-28 03:20:48,427: Test sigma: 0.29310
+INFO: 2020-07-28 03:20:48,427:  
+INFO: 2020-07-28 03:35:04,446: Iterations: 160
+INFO: 2020-07-28 03:35:04,446: Time steps: 10485760
+INFO: 2020-07-28 03:35:04,446: Reward: 185.82919
+INFO: 2020-07-28 03:35:04,446: Test sigma: 0.27471
+INFO: 2020-07-28 03:35:04,446:  
+INFO: 2020-07-28 03:49:21,516: Iterations: 170
+INFO: 2020-07-28 03:49:21,516: Time steps: 11141120
+INFO: 2020-07-28 03:49:21,516: Reward: 188.05488
+INFO: 2020-07-28 03:49:21,516: Test sigma: 0.27543
+INFO: 2020-07-28 03:49:21,516:  
+INFO: 2020-07-28 04:03:37,269: Iterations: 180
+INFO: 2020-07-28 04:03:37,269: Time steps: 11796480
+INFO: 2020-07-28 04:03:37,270: Reward: 193.21109
+INFO: 2020-07-28 04:03:37,270: Test sigma: 0.26265
+INFO: 2020-07-28 04:03:37,270:  
+INFO: 2020-07-28 04:03:37,270: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 04:17:53,675: Iterations: 190
+INFO: 2020-07-28 04:17:53,675: Time steps: 12451840
+INFO: 2020-07-28 04:17:53,675: Reward: 182.19574
+INFO: 2020-07-28 04:17:53,675: Test sigma: 0.27468
+INFO: 2020-07-28 04:17:53,675:  
+INFO: 2020-07-28 04:32:09,927: Iterations: 200
+INFO: 2020-07-28 04:32:09,927: Time steps: 13107200
+INFO: 2020-07-28 04:32:09,927: Reward: 189.26251
+INFO: 2020-07-28 04:32:09,927: Test sigma: 0.26657
+INFO: 2020-07-28 04:32:09,927:  
+INFO: 2020-07-28 04:46:26,761: Iterations: 210
+INFO: 2020-07-28 04:46:26,761: Time steps: 13762560
+INFO: 2020-07-28 04:46:26,761: Reward: 182.67374
+INFO: 2020-07-28 04:46:26,761: Test sigma: 0.25958
+INFO: 2020-07-28 04:46:26,762:  
+INFO: 2020-07-28 05:00:42,947: Iterations: 220
+INFO: 2020-07-28 05:00:42,947: Time steps: 14417920
+INFO: 2020-07-28 05:00:42,947: Reward: 195.87183
+INFO: 2020-07-28 05:00:42,947: Test sigma: 0.24927
+INFO: 2020-07-28 05:00:42,947:  
+INFO: 2020-07-28 05:00:42,947: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 05:15:00,141: Iterations: 230
+INFO: 2020-07-28 05:15:00,141: Time steps: 15073280
+INFO: 2020-07-28 05:15:00,141: Reward: 190.70157
+INFO: 2020-07-28 05:15:00,141: Test sigma: 0.24381
+INFO: 2020-07-28 05:15:00,141:  
+INFO: 2020-07-28 05:29:15,978: Iterations: 240
+INFO: 2020-07-28 05:29:15,978: Time steps: 15728640
+INFO: 2020-07-28 05:29:15,978: Reward: 192.52369
+INFO: 2020-07-28 05:29:15,978: Test sigma: 0.22724
+INFO: 2020-07-28 05:29:15,978:  
+INFO: 2020-07-28 05:43:32,132: Iterations: 250
+INFO: 2020-07-28 05:43:32,133: Time steps: 16384000
+INFO: 2020-07-28 05:43:32,133: Reward: 192.60062
+INFO: 2020-07-28 05:43:32,133: Test sigma: 0.24121
+INFO: 2020-07-28 05:43:32,133:  
+INFO: 2020-07-28 05:57:48,411: Iterations: 260
+INFO: 2020-07-28 05:57:48,411: Time steps: 17039360
+INFO: 2020-07-28 05:57:48,411: Reward: 192.64511
+INFO: 2020-07-28 05:57:48,411: Test sigma: 0.22616
+INFO: 2020-07-28 05:57:48,411:  
+INFO: 2020-07-28 06:12:04,783: Iterations: 270
+INFO: 2020-07-28 06:12:04,783: Time steps: 17694720
+INFO: 2020-07-28 06:12:04,783: Reward: 194.27935
+INFO: 2020-07-28 06:12:04,783: Test sigma: 0.23054
+INFO: 2020-07-28 06:12:04,783:  
+INFO: 2020-07-28 06:26:25,018: Iterations: 280
+INFO: 2020-07-28 06:26:25,018: Time steps: 18350080
+INFO: 2020-07-28 06:26:25,018: Reward: 195.27251
+INFO: 2020-07-28 06:26:25,018: Test sigma: 0.22938
+INFO: 2020-07-28 06:26:25,019:  
+INFO: 2020-07-28 06:40:42,151: Iterations: 290
+INFO: 2020-07-28 06:40:42,152: Time steps: 19005440
+INFO: 2020-07-28 06:40:42,152: Reward: 197.01507
+INFO: 2020-07-28 06:40:42,152: Test sigma: 0.21711
+INFO: 2020-07-28 06:40:42,152:  
+INFO: 2020-07-28 06:40:42,152: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 06:54:58,697: Iterations: 300
+INFO: 2020-07-28 06:54:58,698: Time steps: 19660800
+INFO: 2020-07-28 06:54:58,698: Reward: 201.42131
+INFO: 2020-07-28 06:54:58,698: Test sigma: 0.21076
+INFO: 2020-07-28 06:54:58,698:  
+INFO: 2020-07-28 06:54:58,698: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 07:09:15,843: Iterations: 310
+INFO: 2020-07-28 07:09:15,843: Time steps: 20316160
+INFO: 2020-07-28 07:09:15,843: Reward: 197.31654
+INFO: 2020-07-28 07:09:15,843: Test sigma: 0.22287
+INFO: 2020-07-28 07:09:15,843:  
+INFO: 2020-07-28 07:23:32,293: Iterations: 320
+INFO: 2020-07-28 07:23:32,294: Time steps: 20971520
+INFO: 2020-07-28 07:23:32,294: Reward: 198.30235
+INFO: 2020-07-28 07:23:32,294: Test sigma: 0.21518
+INFO: 2020-07-28 07:23:32,294:  
+INFO: 2020-07-28 07:37:49,945: Iterations: 330
+INFO: 2020-07-28 07:37:49,945: Time steps: 21626880
+INFO: 2020-07-28 07:37:49,945: Reward: 197.02466
+INFO: 2020-07-28 07:37:49,945: Test sigma: 0.21571
+INFO: 2020-07-28 07:37:49,945:  
+INFO: 2020-07-28 07:52:07,746: Iterations: 340
+INFO: 2020-07-28 07:52:07,747: Time steps: 22282240
+INFO: 2020-07-28 07:52:07,747: Reward: 190.79958
+INFO: 2020-07-28 07:52:07,747: Test sigma: 0.21723
+INFO: 2020-07-28 07:52:07,747:  
+INFO: 2020-07-28 08:06:25,121: Iterations: 350
+INFO: 2020-07-28 08:06:25,121: Time steps: 22937600
+INFO: 2020-07-28 08:06:25,121: Reward: 202.89489
+INFO: 2020-07-28 08:06:25,121: Test sigma: 0.22271
+INFO: 2020-07-28 08:06:25,121:  
+INFO: 2020-07-28 08:06:25,121: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 08:20:42,625: Iterations: 360
+INFO: 2020-07-28 08:20:42,625: Time steps: 23592960
+INFO: 2020-07-28 08:20:42,626: Reward: 195.36269
+INFO: 2020-07-28 08:20:42,626: Test sigma: 0.22174
+INFO: 2020-07-28 08:20:42,626:  
+INFO: 2020-07-28 08:34:57,716: Iterations: 370
+INFO: 2020-07-28 08:34:57,716: Time steps: 24248320
+INFO: 2020-07-28 08:34:57,716: Reward: 200.21387
+INFO: 2020-07-28 08:34:57,717: Test sigma: 0.23613
+INFO: 2020-07-28 08:34:57,717:  
+INFO: 2020-07-28 08:49:13,972: Iterations: 380
+INFO: 2020-07-28 08:49:13,973: Time steps: 24903680
+INFO: 2020-07-28 08:49:13,973: Reward: 204.03364
+INFO: 2020-07-28 08:49:13,973: Test sigma: 0.22745
+INFO: 2020-07-28 08:49:13,973:  
+INFO: 2020-07-28 08:49:13,973: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 09:03:31,871: Iterations: 390
+INFO: 2020-07-28 09:03:31,871: Time steps: 25559040
+INFO: 2020-07-28 09:03:31,871: Reward: 201.46427
+INFO: 2020-07-28 09:03:31,871: Test sigma: 0.21743
+INFO: 2020-07-28 09:03:31,871:  
+INFO: 2020-07-28 09:18:31,547: Iterations: 400
+INFO: 2020-07-28 09:18:31,548: Time steps: 26214400
+INFO: 2020-07-28 09:18:31,548: Reward: 198.63382
+INFO: 2020-07-28 09:18:31,548: Test sigma: 0.20456
+INFO: 2020-07-28 09:18:31,548:  
+INFO: 2020-07-28 09:32:47,470: Iterations: 410
+INFO: 2020-07-28 09:32:47,470: Time steps: 26869760
+INFO: 2020-07-28 09:32:47,470: Reward: 201.05038
+INFO: 2020-07-28 09:32:47,470: Test sigma: 0.20194
+INFO: 2020-07-28 09:32:47,470:  
+INFO: 2020-07-28 09:47:04,301: Iterations: 420
+INFO: 2020-07-28 09:47:04,301: Time steps: 27525120
+INFO: 2020-07-28 09:47:04,301: Reward: 211.65996
+INFO: 2020-07-28 09:47:04,301: Test sigma: 0.19181
+INFO: 2020-07-28 09:47:04,301:  
+INFO: 2020-07-28 09:47:04,302: Saving best parameters in /home/seanny/Dropbox/potentials/_2d/fan_2d/2-wps-0.1.pth.tar
+INFO: 2020-07-28 10:01:20,907: Iterations: 430
+INFO: 2020-07-28 10:01:20,907: Time steps: 28180480
+INFO: 2020-07-28 10:01:20,907: Reward: 204.45382
+INFO: 2020-07-28 10:01:20,907: Test sigma: 0.18576
+INFO: 2020-07-28 10:01:20,907:  
+INFO: 2020-07-28 10:15:38,076: Iterations: 440
+INFO: 2020-07-28 10:15:38,076: Time steps: 28835840
+INFO: 2020-07-28 10:15:38,076: Reward: 205.19209
+INFO: 2020-07-28 10:15:38,076: Test sigma: 0.17987
+INFO: 2020-07-28 10:15:38,077:  
+INFO: 2020-07-28 10:29:55,169: Iterations: 450
+INFO: 2020-07-28 10:29:55,169: Time steps: 29491200
+INFO: 2020-07-28 10:29:55,170: Reward: 201.55677
+INFO: 2020-07-28 10:29:55,170: Test sigma: 0.18416
+INFO: 2020-07-28 10:29:55,170:  
+INFO: 2020-07-28 10:44:13,357: Iterations: 460
+INFO: 2020-07-28 10:44:13,358: Time steps: 30146560
+INFO: 2020-07-28 10:44:13,358: Reward: 194.22667
+INFO: 2020-07-28 10:44:13,358: Test sigma: 0.17634
+INFO: 2020-07-28 10:44:13,358:  
+INFO: 2020-07-28 10:58:30,260: Iterations: 470
+INFO: 2020-07-28 10:58:30,260: Time steps: 30801920
+INFO: 2020-07-28 10:58:30,260: Reward: 198.88751
+INFO: 2020-07-28 10:58:30,260: Test sigma: 0.18754
+INFO: 2020-07-28 10:58:30,260:  
+INFO: 2020-07-28 11:12:47,257: Iterations: 480
+INFO: 2020-07-28 11:12:47,258: Time steps: 31457280
+INFO: 2020-07-28 11:12:47,258: Reward: 203.40025
+INFO: 2020-07-28 11:12:47,258: Test sigma: 0.17404
+INFO: 2020-07-28 11:12:47,258:  
+INFO: 2020-07-28 11:27:03,943: Iterations: 490
+INFO: 2020-07-28 11:27:03,943: Time steps: 32112640
+INFO: 2020-07-28 11:27:03,943: Reward: 199.08330
+INFO: 2020-07-28 11:27:03,943: Test sigma: 0.17250
+INFO: 2020-07-28 11:27:03,944:  
+INFO: 2020-07-28 11:41:21,612: Iterations: 500
+INFO: 2020-07-28 11:41:21,612: Time steps: 32768000
+INFO: 2020-07-28 11:41:21,612: Reward: 198.11271
+INFO: 2020-07-28 11:41:21,612: Test sigma: 0.17925
+INFO: 2020-07-28 11:41:21,613:  
+INFO: 2020-07-28 11:55:38,076: Iterations: 510
+INFO: 2020-07-28 11:55:38,077: Time steps: 33423360
+INFO: 2020-07-28 11:55:38,077: Reward: 203.64541
+INFO: 2020-07-28 11:55:38,077: Test sigma: 0.17529
+INFO: 2020-07-28 11:55:38,077:  
+INFO: 2020-07-28 12:09:55,670: Iterations: 520
+INFO: 2020-07-28 12:09:55,670: Time steps: 34078720
+INFO: 2020-07-28 12:09:55,670: Reward: 193.44369
+INFO: 2020-07-28 12:09:55,671: Test sigma: 0.17402
+INFO: 2020-07-28 12:09:55,671:  
+INFO: 2020-07-28 12:24:11,742: Iterations: 530
+INFO: 2020-07-28 12:24:11,743: Time steps: 34734080
+INFO: 2020-07-28 12:24:11,743: Reward: 194.42523
+INFO: 2020-07-28 12:24:11,743: Test sigma: 0.17997
+INFO: 2020-07-28 12:24:11,743:  
+INFO: 2020-07-28 12:38:29,375: Iterations: 540
+INFO: 2020-07-28 12:38:29,376: Time steps: 35389440
+INFO: 2020-07-28 12:38:29,376: Reward: 194.47681
+INFO: 2020-07-28 12:38:29,376: Test sigma: 0.18474
+INFO: 2020-07-28 12:38:29,376:  
+INFO: 2020-07-28 12:52:47,792: Iterations: 550
+INFO: 2020-07-28 12:52:47,792: Time steps: 36044800
+INFO: 2020-07-28 12:52:47,792: Reward: 196.88997
+INFO: 2020-07-28 12:52:47,792: Test sigma: 0.18118
+INFO: 2020-07-28 12:52:47,793:  
+INFO: 2020-07-28 13:07:05,870: Iterations: 560
+INFO: 2020-07-28 13:07:05,870: Time steps: 36700160
+INFO: 2020-07-28 13:07:05,870: Reward: 150.09899
+INFO: 2020-07-28 13:07:05,870: Test sigma: 0.17489
+INFO: 2020-07-28 13:07:05,870:  
+INFO: 2020-07-28 13:21:24,309: Iterations: 570
+INFO: 2020-07-28 13:21:24,309: Time steps: 37355520
+INFO: 2020-07-28 13:21:24,309: Reward: 192.63404
+INFO: 2020-07-28 13:21:24,309: Test sigma: 0.17452
+INFO: 2020-07-28 13:21:24,309:  
+INFO: 2020-07-28 13:35:52,398: Iterations: 580
+INFO: 2020-07-28 13:35:52,398: Time steps: 38010880
+INFO: 2020-07-28 13:35:52,398: Reward: 203.32987
+INFO: 2020-07-28 13:35:52,398: Test sigma: 0.17258
+INFO: 2020-07-28 13:35:52,398:  
+INFO: 2020-07-28 13:50:35,096: Iterations: 590
+INFO: 2020-07-28 13:50:35,096: Time steps: 38666240
+INFO: 2020-07-28 13:50:35,096: Reward: 189.91030
+INFO: 2020-07-28 13:50:35,097: Test sigma: 0.17117
+INFO: 2020-07-28 13:50:35,097:  
+INFO: 2020-07-28 14:05:00,973: Iterations: 600
+INFO: 2020-07-28 14:05:00,973: Time steps: 39321600
+INFO: 2020-07-28 14:05:00,973: Reward: 200.93178
+INFO: 2020-07-28 14:05:00,973: Test sigma: 0.16944
+INFO: 2020-07-28 14:05:00,973:  
+INFO: 2020-07-28 14:19:27,928: Iterations: 610
+INFO: 2020-07-28 14:19:27,928: Time steps: 39976960
+INFO: 2020-07-28 14:19:27,928: Reward: 205.07848
+INFO: 2020-07-28 14:19:27,928: Test sigma: 0.16493
+INFO: 2020-07-28 14:19:27,928:  
+INFO: 2020-07-28 14:33:53,724: Iterations: 620
+INFO: 2020-07-28 14:33:53,724: Time steps: 40632320
+INFO: 2020-07-28 14:33:53,725: Reward: 191.71894
+INFO: 2020-07-28 14:33:53,725: Test sigma: 0.15789
+INFO: 2020-07-28 14:33:53,725:  
+INFO: 2020-07-28 14:48:19,053: Iterations: 630
+INFO: 2020-07-28 14:48:19,053: Time steps: 41287680
+INFO: 2020-07-28 14:48:19,054: Reward: 188.89224
+INFO: 2020-07-28 14:48:19,054: Test sigma: 0.15197
+INFO: 2020-07-28 14:48:19,054:  
+INFO: 2020-07-28 15:02:43,708: Iterations: 640
+INFO: 2020-07-28 15:02:43,709: Time steps: 41943040
+INFO: 2020-07-28 15:02:43,709: Reward: 195.08502
+INFO: 2020-07-28 15:02:43,709: Test sigma: 0.15606
+INFO: 2020-07-28 15:02:43,709:  
+INFO: 2020-07-28 15:17:10,316: Iterations: 650
+INFO: 2020-07-28 15:17:10,317: Time steps: 42598400
+INFO: 2020-07-28 15:17:10,317: Reward: 203.08775
+INFO: 2020-07-28 15:17:10,317: Test sigma: 0.14740
+INFO: 2020-07-28 15:17:10,317:  
+INFO: 2020-07-28 15:31:35,306: Iterations: 660
+INFO: 2020-07-28 15:31:35,307: Time steps: 43253760
+INFO: 2020-07-28 15:31:35,307: Reward: 199.77847
+INFO: 2020-07-28 15:31:35,307: Test sigma: 0.14707
+INFO: 2020-07-28 15:31:35,307:  
+INFO: 2020-07-28 15:46:01,017: Iterations: 670
+INFO: 2020-07-28 15:46:01,018: Time steps: 43909120
+INFO: 2020-07-28 15:46:01,018: Reward: 175.02695
+INFO: 2020-07-28 15:46:01,018: Test sigma: 0.14135
+INFO: 2020-07-28 15:46:01,018:  
+INFO: 2020-07-28 16:00:25,341: Iterations: 680
+INFO: 2020-07-28 16:00:25,341: Time steps: 44564480
+INFO: 2020-07-28 16:00:25,341: Reward: 162.74219
+INFO: 2020-07-28 16:00:25,341: Test sigma: 0.14077
+INFO: 2020-07-28 16:00:25,342:  
+INFO: 2020-07-28 16:14:51,111: Iterations: 690
+INFO: 2020-07-28 16:14:51,112: Time steps: 45219840
+INFO: 2020-07-28 16:14:51,112: Reward: 91.69185
+INFO: 2020-07-28 16:14:51,112: Test sigma: 0.12847
+INFO: 2020-07-28 16:14:51,112:  
+INFO: 2020-07-28 16:29:17,855: Iterations: 700
+INFO: 2020-07-28 16:29:17,856: Time steps: 45875200
+INFO: 2020-07-28 16:29:17,856: Reward: 179.54256
+INFO: 2020-07-28 16:29:17,856: Test sigma: 0.13251
+INFO: 2020-07-28 16:29:17,856:  
+INFO: 2020-07-28 16:43:44,788: Iterations: 710
+INFO: 2020-07-28 16:43:44,788: Time steps: 46530560
+INFO: 2020-07-28 16:43:44,788: Reward: 191.95965
+INFO: 2020-07-28 16:43:44,788: Test sigma: 0.13149
+INFO: 2020-07-28 16:43:44,788:  
+INFO: 2020-07-28 16:58:11,476: Iterations: 720
+INFO: 2020-07-28 16:58:11,476: Time steps: 47185920
+INFO: 2020-07-28 16:58:11,476: Reward: 194.62781
+INFO: 2020-07-28 16:58:11,476: Test sigma: 0.13172
+INFO: 2020-07-28 16:58:11,477:  
+INFO: 2020-07-28 17:12:37,623: Iterations: 730
+INFO: 2020-07-28 17:12:37,624: Time steps: 47841280
+INFO: 2020-07-28 17:12:37,624: Reward: 191.21371
+INFO: 2020-07-28 17:12:37,624: Test sigma: 0.13319
+INFO: 2020-07-28 17:12:37,624:  
+INFO: 2020-07-28 17:27:03,947: Iterations: 740
+INFO: 2020-07-28 17:27:03,947: Time steps: 48496640
+INFO: 2020-07-28 17:27:03,947: Reward: 190.66186
+INFO: 2020-07-28 17:27:03,947: Test sigma: 0.12708
+INFO: 2020-07-28 17:27:03,947:  
+INFO: 2020-07-28 17:41:32,314: Iterations: 750
+INFO: 2020-07-28 17:41:32,314: Time steps: 49152000
+INFO: 2020-07-28 17:41:32,314: Reward: 188.24770
+INFO: 2020-07-28 17:41:32,314: Test sigma: 0.12113
+INFO: 2020-07-28 17:41:32,315:  
+INFO: 2020-07-28 17:55:59,482: Iterations: 760
+INFO: 2020-07-28 17:55:59,482: Time steps: 49807360
+INFO: 2020-07-28 17:55:59,482: Reward: 190.83088
+INFO: 2020-07-28 17:55:59,482: Test sigma: 0.12244
+INFO: 2020-07-28 17:55:59,482:  
+INFO: 2020-07-28 18:10:25,082: Iterations: 770
+INFO: 2020-07-28 18:10:25,082: Time steps: 50462720
+INFO: 2020-07-28 18:10:25,082: Reward: 193.31243
+INFO: 2020-07-28 18:10:25,082: Test sigma: 0.12254
+INFO: 2020-07-28 18:10:25,082:  

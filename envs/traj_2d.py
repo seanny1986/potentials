@@ -69,6 +69,9 @@ class TrajectoryEnv2D(gym.Env):
 
         att_rew = sin_att_rew+cos_att_rew
 
+        path_rew = -0.1*sum([(x - u)**2 for x, u in zip(xy, self.prev_xy)])
+        accel_rew = -0.1*sum([(x - u)**2 for x, u in zip(uv, self.prev_uv)])
+
         # agent gets a negative reward for excessive action inputs
         ctrl_rew = -1e-4*sum([a**2 for a in action]) - 1e-4*(self.player.steering_angle**2)
 
@@ -86,7 +89,7 @@ class TrajectoryEnv2D(gym.Env):
         time_rew = 0
 
         # calculate total reward
-        total_reward = dist_rew+att_rew+vel_rew+ang_rew+ctrl_rew+time_rew
+        total_reward = dist_rew+att_rew+vel_rew+ang_rew+ctrl_rew+time_rew+path_rew+accel_rew
         return total_reward, {"dist_rew": dist_rew,
                                 "att_rew": att_rew,
                                 "vel_rew": vel_rew,
@@ -97,7 +100,8 @@ class TrajectoryEnv2D(gym.Env):
                                 "att_dev" : sin_att_dev_rew+cos_att_dev_rew,
                                 "vel_dev" : vel_dev_rew,
                                 "ang_dev" : ang_dev_rew,
-                                "time_rew": time_rew}
+                                "time_rew": time_rew,
+                                "path_rew": path_rew}
     
     def term_reward(self, term):
         if term: return 100
@@ -175,6 +179,7 @@ class TrajectoryEnv2D(gym.Env):
     def translate_action(self, actions):
         thrust_c, steering_c = actions[0], actions[1]
         steering_c *= 5. * pi / 180
+        thrust_c += 0.5
         return thrust_c, steering_c
 
     def step(self, data):
@@ -210,7 +215,7 @@ class TrajectoryEnv2D(gym.Env):
         angle = np.random.RandomState().uniform(low=-self.max_spread, high=self.max_spread)
         rad = np.random.RandomState().uniform(self.waypoint_dist_lower_bound, self.waypoint_dist_upper_bound)
         xy_ = np.array([rad*cos(angle), rad*sin(angle)])
-        self.goal_list_xy.append(xy_.copy())
+        self.goal_list_xy.append(list(xy_.copy()))
         for _ in range(self.traj_len-1):
             angle = np.random.RandomState().uniform(low=-self.max_spread, high=self.max_spread)
             rad = np.random.RandomState().uniform(self.waypoint_dist_lower_bound, self.waypoint_dist_upper_bound)
@@ -316,6 +321,7 @@ class TrajectoryEnv2D(gym.Env):
                                         self.player.colour)
             
             # dump data to screen for debugging
+            
             time_text = self.font.render("Timestamp: {:.2f}".format(self.t), False, (0,0,0))
             frame_text = self.font.render("Frame: {}".format(int(self.t/self.dt)), False, (0,0,0))
             goal_text = self.font.render("Goal index: {}".format(self.goal_counter), False, (0,0,0))
@@ -360,7 +366,7 @@ class TrajectoryEnv2D(gym.Env):
                 text_rect.left += 5
                 text_rect.top += 5 + text_rect.height + i * 25
                 self.screen.blit(t, text_rect)
-
+            
             pygame.display.flip()
 
 
